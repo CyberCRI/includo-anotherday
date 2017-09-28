@@ -99,3 +99,9 @@ ENV/
 
 # mypy
 .mypy_cache/
+
+#ren'py
+errors.txt
+log.txt
+traceback.txt
+DS_Store
