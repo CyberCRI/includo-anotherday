@@ -1,0 +1,1 @@
+{"layout": null, "name": "Includo", "package": "com.cri.includo", "orientation": "sensorLandscape", "include_pil": false, "expansion": false, "source": false, "icon_name": "Includo", "version": "0.1", "target_version": 14, "permissions": ["VIBRATE"], "include_sqlite": false, "store": "play", "numeric_version": "1"}
