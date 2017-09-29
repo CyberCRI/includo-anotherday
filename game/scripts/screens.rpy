@@ -400,15 +400,15 @@ screen act_menu():
         frame:
             background "closure_background"
             style_prefix "act_menu"
-            at zoom(0.75)
+            at bloom(1, 1.25, .75)
             xalign .1
             yalign .43
 
             fixed:
                 xmaximum 1
                 ymaximum 1
-                image "closure_label.png"
-                image "closure_checkbox"
+                image "closure_label.png" at from_horizontal(pause_time=1.75, easein_time=3.0, xorigin=.3, xdestination=.01)
+                image "closure_checkbox" at elastic_splash(rotate_value=0, time_value=1.15)
                 if act_1_completed == True:
                     image "closure_checkbox_tick1.png"
                 if act_2_completed == True:
@@ -425,64 +425,64 @@ screen act_menu():
         frame:
             background "act_1_background"
             style_prefix "act_menu"
-            at zoom(0.75)
+            at bloom(1, .25, .75)
             xalign .25
             yalign 0
 
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_1_button.png" action Start("act1")
-                image "act_1_label.png"
-                image "act_1_checkbox.png"
+                imagebutton idle "act_1_button.png" action Start("act1") at zoom_on_hover(1, 1.025)
+                image "act_1_label.png" at from_horizontal(pause_time=0.75, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_1_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.75)
                 if act_1_completed == True:
                     image "act_1_checkbox_tick.png"
 
         frame:
             background "act_2_background"
             style_prefix "act_menu"
-            at zoom(0.75)
+            at bloom(1, .5, .75)
             xalign .59
             yalign .05
 
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_2_button.png" action Start("act2")
-                image "act_2_label.png"
-                image "act_2_checkbox.png"
+                imagebutton idle "act_2_button.png" action Start("act2") at zoom_on_hover(1, 1.025)
+                image "act_2_label.png" at from_horizontal(pause_time=1.0, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_2_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.85)
                 if act_2_completed == True:
                     image "act_2_checkbox_tick.png"
 
         frame:
             background "act_3_background"
             style_prefix "act_menu"
-            at zoom(0.75)
+            at bloom(1, .75, .75)
             xalign .58
             yalign .35
 
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_3_button.png" action Start("act2")
-                image "act_3_label.png"
-                image "act_3_checkbox.png"
+                imagebutton idle "act_3_button.png" action Start("act3") at zoom_on_hover(1, 1.025)
+                image "act_3_label.png" at from_horizontal(pause_time=1.25, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_3_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.95)
                 if act_3_completed == True:
                     image "act_3_checkbox_tick.png"
 
         frame:
             background "act_4_background"
             style_prefix "act_menu"
-            at zoom(0.75)
+            at bloom(1, 1, .75)
             xalign .035
             yalign .18
 
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_4_button.png" action Start("act4")
-                image "act_4_checkbox.png"
-                image "act_4_label.png"
+                imagebutton idle "act_4_button.png" action Start("act4") at zoom_on_hover(1, 1.025)
+                image "act_4_checkbox.png" at elastic_splash(rotate_value=0, time_value=1.05)
+                image "act_4_label.png" at from_horizontal(pause_time=1.5, easein_time=3.0, xorigin=.5, xdestination=.01)
                 if act_4_completed == True:
                     image "act_4_checkbox_tick.png"
 
