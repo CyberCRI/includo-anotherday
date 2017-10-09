@@ -3,6 +3,10 @@
 
 label act1:
     $act_1_completed = False
+    $act_1_ending_14 = False
+    $act_1_ending_31 = False
+    $act_1_ending_32 = False
+    $act_1_ending_33 = False
 
     $lunch = False
     window hide
@@ -53,13 +57,13 @@ label .scene2:
 
     priyanka "Sometimes they whistle, or they make gestures to me."
 
-    priyanka "You know, {w=1}bad gestures."
+    priyanka "You know, {w=0.25}bad gestures."
 
     priyanka "Yesterday afternoon, I heard Bapat call me a westernized slut, and the whole office was laughing."
 
     priyanka "They crack lewd jokes with Donatello, and now they say I can’t come to work wearing a skirt, heels, or even makeup."
 
-    priyanka "Maybe they’re not used to well-groomed women, but{w=1} this is important to me."
+    priyanka "Maybe they’re not used to well-groomed women, but{w=0.25} this is important to me."
 
     "Why don’t you change the way you dress?"
 
@@ -182,8 +186,6 @@ label .scene6:
     thinking "And if so, of what exactly?"
 
     thinking "Is it possible that they’re pushing hard because they genuinely feel offended?"
-
-    narration "Whatever the case, you now find yourself in the meeting room {nw}"
 
     scene bg meeting_room
     with dissolve
@@ -379,27 +381,27 @@ label .scene12:
 
     show priyanka with dissolve
 
-    priyanka "How can you-{w=0.5}{nw}"
+    priyanka "How can you-"
 
     show bapat with dissolve
 
-    bapat "Look at Giti Madam, Priyanka, or sweet Manali, they dress with de-{w=0.5}cen-{w=0.5}cy."
+    bapat "Look at Giti Madam, Priyanka, or sweet Manali, they dress with de-{w=0.25}cen-{w=0.25}cy."
 
     show priyanka with dissolve
 
-    priyanka "What’s your prob-{w=0.5}{nw}"
+    priyanka "What’s your prob-"
 
     show bapat with dissolve
 
     bapat "When you dress like this, like western people trying to find a partner, of course we’re just men, "
 
-    bapat "it’s difficult to concentrate, and ignore you, and the same goes for the customers, you’re ask-{w=0.5}{nw}"
+    bapat "it’s difficult to concentrate, and ignore you, and the same goes for the customers, you’re ask-"
 
     "Bapat!"
 
     "Stop this now, you need to keep your speech under control !"
 
-    "The same goes for you, {nw}"
+    "The same goes for you, {w=0.25}{nw}"
 
     show donatello with dissolve
 
@@ -429,6 +431,10 @@ label .scene14:
     Bapat and Donatello gloat in the open space, and start making jokes about Manali, the Secretary, as well.{p=1}
     Given the terms of her contract, Priyanka has to stay for a month, now wearing an oversized sweater, and trousers, and will be there when the new CEO comes.{p=1}
     Let’s hope you made the right choice."
+
+    $act_1_ending_14 = True
+
+    $act_1_completed = True
 
     return
 
@@ -463,7 +469,7 @@ label .scene15:
 
     show donatello
 
-    donatello "Come on, religion? {w=0.5}How are fireworks, and techno music connected with religion in any way?"
+    donatello "Come on, religion? {w=0.25}How are fireworks, and techno music connected with religion in any way?"
 
     show bapat
 
@@ -535,7 +541,7 @@ label .scene18:
 
     giti "It is true that Bapat, and Donald Sir, have been making very bad jokes on Priyanka, and calling her names, "
 
-    giti "But the way she dresses pushes them to-{w=1}"
+    giti "But the way she dresses pushes them to-"
 
     "You mean that she’s asking for it?"
 
@@ -547,7 +553,7 @@ label .scene18:
 
     narration "You try to imagine Giti with Priyanka’s clothes on, but somewhat, you can’t."
 
-    "*sigh* {w=0.5}Carry on."
+    "*sigh* {w=0.25}Carry on."
 
     giti "I have said what I needed to, Abhay Sir."
 
@@ -589,7 +595,7 @@ label .scene19:
 
     manali "I can’t say, Abhay Sir, I am not in a position to say."
 
-    "Because you’re a woman? {w=0.5}Or a Secretary? {w=1}Nonsense. Please tell me."
+    "Because you’re a woman? {w=0.25}Or a Secretary? {w=0.25}Nonsense. Please tell me."
 
     narration "Manali clears her throat, looks at the ceiling, clears her throat again, and speaks"
 
@@ -599,7 +605,7 @@ label .scene19:
 
     "Just what?"
 
-    manali "Just that you should talk to her, so that she can change maybe? {w=0.5}Please?"
+    manali "Just that you should talk to her, so that she can change maybe? {w=0.25}Please?"
 
     thinking "I feel she's hiding something, but pushing her is maybe a bad idea. What should I do ?"
 
@@ -840,6 +846,9 @@ label .scene31:
     narration "A week later, Priyanka gives you her resignation letter. {p=1}
     Given the terms of her contract, she has to stay for a month, now wearing an oversized sweater, and trousers, not talking to anyone anymore."
 
+    $act_1_ending_31 = True
+    $act_1_completed = True
+
     return
 
 label .scene32:
@@ -849,6 +858,8 @@ label .scene32:
     Since you don’t want her to be punished, you need to find a way to offer her another position in another Indian branch of the company. {p=1}
     You write the new CEO an email to request it, and manage to convince Priyanka to stay meanwhile."
 
+    $act_1_ending_32 = True
+    $act_1_completed = True
     return
 
 label .scene33:
@@ -858,6 +869,8 @@ label .scene33:
     Sure, you’ve managed to escape the most immediate threats, but nothing is solved, and Priyanka is shamed, and harassed every day by the same gang during the next week. {p=1}
     At the end of the week, the new CEO will step in. Hopefully, the new CEO will understand you stance, and all will be well."
 
+    $act_1_ending_33 = True
+    $act_1_completed = True
     return
 
 label .scene34:
@@ -873,6 +886,8 @@ label .scene34:
     narration "Days later, not only does Priyanka come to thank you, but Manali starts to dress up more elegantly too. {p=1}
     Congratulations."
 
+    $act_1_ending_34 = True
+    $act_1_completed = True
     return
 
 

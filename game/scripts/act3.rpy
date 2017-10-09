@@ -2,886 +2,1132 @@
 # The game starts here.
 
 label act3:
-    $act_1_completed = False
+    $act_3_completed = False
 
-    $lunch = False
-    window hide
+    $talk_bapat_act3 = False
+    $talk_manali_act3 = False
+    $talk_priyanka_act3 = False
+    $talk_giti_act3 = False
 
-    scene bg meeting_room
-    with dissolve
+    $talk_bapat_act3_2 = False
+    $talk_manali_act3_2 = False
+    $talk_priyanka_act3_2 = False
+    $talk_giti_act3_2 = False
 
-    narration "You reach the office early as usual."
+    $act_3_ending_10 = False
+    $act_3_ending_13 = False
 
-    narration "You like taking your time, and sipping on your first tea in the open space,
-                trying to take the pulse of the day before it starts, and people shuffle in one by one."
+    scene bg lunch_room with dissolve
 
-    narration "Your office feels homely in a way. It’s a box, really,
-                but you like to think you’ve made the most of it though you took great care in stripping it of anything too personal,
-                you’re the Human Resources Manager after all.{p}
-                With the CEO still abroad, and M. Gopinath, the Administrative Director,
-                on leave, you’re the one in charge of the whole office this week."
+    narration "Everybody’s at lunch, gathered together in the small canteen."
 
-    narration "You sigh, and wish silently that you won’t have to take too many decisions.
-                Your cup in hand, you walk slowly to your office, and find the door already open, and the lights on.
-                When you hear muffled cries from within, you realize that your wish for a peaceful, and uneventful day, might have been lost."
+    narration "You unpack your lunchbox, and share around the delicious parathas you find inside before starting to eat.{p}
+            The last events have taken their toll, and the atmosphere is rather uneasy."
+
+    thinking "People don't like change."
+
+    narration "Priyanka and Manali’s jokes are most welcome today, lifting up the mood a bit."
+
+    priyanka "...And then, he turned around and said, “Are you sure these are your trousers?”"
+
+    narration "Manali bursts into laughter, almost tipping her glass over."
+
+    manali "So he's not the one, I gues, Priyanka?"
+
+    priyanka "Definitely not the one."
+
+    manali "Well, he sounds funny at least. Is your husband funny, Giti?"
+
+    narration "They both laugh."
+
+    giti "Shoo, you girls, what a racket you're making today!"
+
+    priyanka "Come one, Giti, everybody’s married except us, we are entitled to our fun!"
+
+    bapat "Not everyone!"
+
+    priyanka "!"
+
+    giti "!"
+
+    manali "!"
+
+    bapat "Donatello is a bachelor as well!"
+
+    donatello "...!"
+
+    manali "Is it true, Donald?"
+
+    donatello "..."
+
+    narration "Donatello wipes his mouth with a napkin, and stares into the void a little too long before answering."
+
+    donatello "I am a bachelor, yes."
+
+    priyanka "How come?!"
+
+    priyanka "You have a good job and all, why aren't you married?"
+
+    bapat "Yes, {i}why{/i}?"
+
+    #bapat sly
+
+    donatello "..."
+
+    #donatello red
+
+    manali "Maybe he hasn't found the one true love?"
+
+    #manali joking
+
+    bapat "Or maybe he can't tell..."
+
+    #bapat sly
+
+    priyanka "We were joking, Bapat, don't be your usual downer!"
+
+    #priyanka annoyed
+
+    bapat "I am joking too! {i}Hahaha!{/i}"
+
+    #bapat forced laugher
+
+    donatello "..."
+
+    narration "Donatello leaves the table, heading to the sink with his plate, shortly followed by Bapat."
+
+    thinking "Here comes trouble..."
 
     menu:
-        "Enter.":
+        "You follow them as well.":
             jump .scene2
 
 label .scene2:
-    scene bg office
-    with dissolve
+    narration "You see Bapat and Donatello whispering furiously to each other near the sink. From the sound of it, their conversation doesn't seem especially friendly."
 
-    narration "Priyanka was sitting inside, facing your desk. You wonder how long she’s been waiting here."
-
-    show priyanka crying with dissolve 
-
-    narration "When she sees you, she stands up clumsily, tries to wipe her tears away, then sits back again. "
-
-    narration "Puzzled, you speed up onto your chair."
-
-    "What’s the matter, Priyanka? It’s very early."
-
-    priyanka "I can’t stand it anymore, M. Chandrakant, I just can’t."
-
-    priyanka "Every day… Every day I come in, and it’s the same, they just won’t stop-"
-
-    "Wait, who? Who won’t stop? Stop doing what?"
-
-    priyanka "They talk about the way I dress, my makeup, everything."
-
-    priyanka "Sometimes they whistle, or they make gestures to me."
-
-    priyanka "You know, {w=1}bad gestures."
-
-    priyanka "Yesterday afternoon, I heard Bapat call me a westernized slut, and the whole office was laughing."
-
-    priyanka "They crack lewd jokes with Donatello, and now they say I can’t come to work wearing a skirt, heels, or even makeup."
-
-    priyanka "Maybe they’re not used to well-groomed women, but{w=1} this is important to me."
-
-    "Why don’t you change the way you dress?"
-
-    priyanka "Why is it to me to change my ways? Why can’t I be myself?"
-
-    priyanka "Am I supposed to come in a sari with flowers every day?"
-
-    thinking "I’m in a bit of a pickle now."
-
-    thinking "Bapat is the Marketing Executive, and Donatello is the Senior Commercial Assistant."
-
-    thinking "Two Very Important Persons, that you don’t want for enemies."
-
-    thinking "Yet, if what Priyanka says is true, something must be done."
-
-    thinking "Maybe there’s some truth in what she says?"
-
-    thinking "Or maybe she’s plain wrong?"
-
+    thinking "Maybe I should let them be..."
 
     menu:
-        thinking "What should I do ?"
-        "Talk to them?":
+        "Get closer to hear what they say.":
             jump .scene3
-        "Let it slide?":
-            jump .scene6
+        "Slip away, and let them be.":
+            jump .scene4
 
 label .scene3:
-    scene bg lunch_room
-    with dissolve
+    show bapat with dissolve
 
-    narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
+    bapat "I was going to pay, yes."
 
-    show donatello sad at left
-    show bapat at right
+    bapat "But no longer."
 
-    narration "Looks like the whole team has decided to get up early today."
+    #bapat menacing
 
-    "Did you two fall out of your beds?"
+    show donatello with dissolve
 
-    bapat "We were waiting for you, Abhay"
+    donatello "What are you talking about?"
 
-    show donatello nods
+    donatello "Of course you will give me the money back, Bapat, or I will-"
 
-    "That’s interesting because I was looking for the two of you myself"
+    show bapat with dissolve
 
-    narration "They both look at each other smugly."
+    bapat "You will nothing."
 
-    thinking "Something must have happened yesterday, you think, else they wouldn’t all be gathered around me this morning like they are now."
+    narration "Bapat takes his cell phone out of his pocket."
 
-    narration "You decide to bet on it:"
+    show donatello with dissolve
 
-    "So who’s going to tell me about what happened yesterday?"
+    donatello "And why is that?"
 
-    bapat "It’s the same as usual, Abhay, this Priyanka she walks around half-naked, it’s not decent."
+    show bapat with dissolve
 
-    donatello "And because of this, people cannot work properly, what is she looking for?"
+    bapat "You just look at this."
 
-    "So nothing happened?"
+    narration "Bapat shows his phone to Donatello."
 
-    donatello "Of course, we tried to tell her with humour, but she doesn’t get it"
+    show donatello with dissolve
 
-    donatello " and she has the nerve to pretend to be angry at us now!"
+    donatello "...{b}!{/b}"
 
-    bapat "And pretending to cry with that! Like we’re the bad guys now!"
+    #donatello surprised
 
-    "Hold on a second"
+    donatello "Where did you get this?!"
 
-    "I’ve heard enough, guys, let me decide about this."
+    #donatello scared
+
+    show bapat with dissolve
+
+    #bapat evil
+
+    bapat "Ah, ah, interested now?"
+
+    bapat "I've taken a picture of your computer, you've left your email open, Donald."
+
+    bapat "or should I say... {i}Daisy{/}?"
+
+    show donatello with dissolve
+
+    donatello "Are you threatening me for real?"
+
+    #donatello angry
+
+    show bapat with dissolve
+
+    bapat "Oh I am{w=0.5}, yes I am, either you support my decisions, or I tell everyone."
+
+    bapat "How would you like it, the whole office knowing?"
+
+    #bapat evil
+
+    bapat "I can almost hear them already."
+
+    "{i}Ahem.{/i}"
+
+    bapat "!"
+
+    show donatello with dissolve
+
+    donatello "!"
+
+    "Knowing {i}what{/i}?"
+
+    show bapat with dissolve
+
+    bapat "Nothing, Abhay, it's nothing."
+
+    bapat "Professional stuff, corporate stuff, high-level."
+
+    "Indeed."
+
+    "Is there anything you'd like to report to me, Donatello?"
+
+    show donatello with dissolve
+
+    donatello "No, Abhay, no, it's nothing."
+
+    "We'll see about that."
+
+    hide donatello with dissolve
+
+    narration "You leave the room."
+
+    thinking "This is definitely suspicious to say the least."
 
     menu:
-        "What to choose next?"
-        "Get to the bottom of this, and talk to the others ?":
-            jump .scene4
-        "Leave it be":
+        "Give a warning to Bapat straight away.":
             jump .scene5
+        "Let them cope by themselves.":
+            jump .scene6
 
 label .scene4:
-    scene bg lunch_room
-    with dissolve
+    narration "You’re not supposed to be spying on the employees, so you walk away, and let them sort out whatever it is they need to sort out among themselves.{p}
+                The rest of the day is uneventful though you can’t dismiss the feeling that you’ve missed something important no matter how hard you try to shrug it off."
 
-    narration "Bapat and Donatello have left, leaving you alone in the canteen."
+    scene bg office with dissolve
 
-    narration "You hesitate between gathering everyone, and making a public inquiry, or meeting with all the others individually in your office."
+    narration "The next day, just before lunch break, Donatello asks to see you."
 
-    narration "While you ponder, you receive an email from Bapat on your phone asking all employees to come and meet him and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a rebellion."
+    narration "Since you remember the last team lunch vividly enough, you let him come into your office, and talk."
+
+    show donatello with dissolve
+
+    donatello "I need to tell it to everyone, Abhay."
+
+    donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
+
+    "Wait, say what? What did Bapat do?"
+
+    donatello "Doesn't matter, Abhay."
+
+    donatello "What matters is that I need to say it, I really need."
+
+    donatello "And be able to live my life as myself, not the image I give all the time."
+
+    "What on Earth are you talking about?"
+
+label .gay:
+
+    donatello "I am gay, Abhay, that's why I'm not married."
+
+    "W-What?"
+
+    "But it was only yesterday that you groped Priyanka! Are you insane?"
+
+    donatello "That was a mask, Abhay. I was overdoing it on purpose."
+
+    thinking "Just wow."
+
+    "Did you even think about how she felt?"
+
+    "You should have tried to tell her, maybe she would have helped!"
+
+    donatello "You don't know Priyanka so well, Abhay, no offense but-"
+
+    "Right. But why the hurry?"
+
+    "Why do you need to shout it to the whole office, Donald?"
+
+    "You're not married with these people, you don't owe them any kind of explanation."
+
+    donatello "It's not that."
+
+    donatello "I feel like I'm lying to them- all the time, and to myself!"
+
+    donatello "Plus they already know, Abhay, it's too late for hiding."
+
+    donatello "Bapat tried to use it against me, they all will, and it will be worse, better say it now!"
+
+    #donatello nervous
+
+    thinking "He's awfully nervous, even out of his mind."
+
+    thinking "Is this because what he's doing right now takes a lot of courage..."
+
+    thinking "Or is he going mad somewhat, and just making this all up?"
+
+    "You should think before going ahead like that, Donald."
+
+    "There will be consequences, and you won't be able to take it back, and-"
+
+    donatello "You, of all people, I thought you would understand, Abhay!"
+
+    #donatello angry
+
+    hide donatello with dissolve
+
+    narration "Donatello strides away in a whirlwind."
+
+    thinking "Wait, no!"
 
     menu:
-        "Go to the meeting room":
-            jump .scene6
+        "Follow him":
+            jump .scene7
+
 
 label .scene5:
-    scene bg lunch_room
-    with dissolve
+    scene bg office with dissolve
 
-    narration "Bapat and Donatello have left, leaving you alone in the canteen."
+    show bapat at left with dissolve
 
-    thinking "That was a close one."
+    show donatello at right with dissolve
 
-    narration "Since you want everyone on board, and can’t afford to lose either Priyanka, Bapat, or Donatello before the new CEO comes in, you’ve chosen the path of least resistance: doing nothing."
 
-    narration "While you congratulate yourself for your wisdom, you receive an email from Bapat on your phone asking all employees to come meet him, and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a revolution."
+    narration "You call Bapat and Donatello together into your office just before the lunch break on the next morning.
+                Neither of them sit down. {w=0.5}Instead they both stand in front of you like naughty college students waiting for their scolding."
 
-    menu:
-        "Go to the meeting room":
-            jump .scene6
+    "I heard you threatening Donatello yesterday, Bapat"
+
+    bapat "Oh, Abhay, it's not like that-"
+
+    #bapat surprised
+
+    "I've heard it! {w=0.5}Kindly don't insult my intelligence."
+
+    narration "You give him {b}the look{/b}, forehead lowered, eyes looking up straight at him like a bull."
+
+    "I don’t want to know what you’ve threatened him with, Bapat, I just-"
+
+    hide bapat with dissolve
+
+    show donatello with dissolve
+
+    donatello "But you will."
+
+    bapat "...!"
+
+    "I beg your pardon?"
+
+    donatello "You will know because I've had enough."
+
+    donatello " I need to tell it to everyone, Abhay, I don’t see why I should hide, and let people like Bapat try to take advantage of me."
+
+    "Wait, say what?"
+
+    jump .gay
 
 label .scene6:
 
-    narration "It looks like you won’t get away with Bapat, and Donatello so easily."
+    thinking "Something's not right, I can feel it in my bones."
 
-    narration "Before you could take a decision about the situation yourself—if you had any intention of taking one—they’ve gathered everyone for a meeting to address what they describe as “decency issues”."
+    thinking "After all those years as a HR Manager, I've developed some kind of special sense when it comes to trouble, and trouble there is."
 
-    thinking "Why the haste?"
+    thinking "Yet, I can't really accuse Bapat without more proof than something I've overheard at the canteen."
 
-    thinking "Are they afraid of the decision I might take?"
+    thinking "Plus, I'm not supposed to listen in on private conversations."
 
-    thinking "Do they feel guilty in any way?"
+    thinking "It's better to let it slip."
 
-    thinking "And if so, of what exactly?"
+    scene bg office with dissolve
 
-    thinking "Is it possible that they’re pushing hard because they genuinely feel offended?"
+    pause 1.0
 
-    narration "Whatever the case, you now find yourself in the meeting room {nw}"
+    narration "The next day, just before lunch break, Donatello asks to see you."
 
-    scene bg meeting_room
-    with dissolve
+    narration "Since you remember the last team lunch vividly enough, you let him come into your office, and talk."
 
-    narration "Whatever the case, you now find yourself in the meeting room with everyone but Priyanka. You double-check your emails to verify that she’s been invited as well, and find that she wasn’t."
+    show donatello with dissolve
 
-    narration "Bapat, and Donatello, are talking loud, and fast.
-    Everybody else listens, scolds, or nod in agreement with them as statements go.
-    This sure seems like a there’s a situation, and that the situation needs to be addressed.
-    Still, you can’t ignore the feeling that something unusual happened yesterday, and that the reason of all this ruckus escapes you."
+    donatello "I need to tell it to everyone, Abhay."
 
-    "I am sorry to interrupt,"
+    donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "but this isn’t how it works."
+    "Wait, say what? What did Bapat do?"
 
-    show donatello at left with dissolve
-    show giti with dissolve 
-    show bapat at right with dissolve
+    donatello "Doesn't matter, Abhay."
 
-    narration "Everybody looks at you now, you carry on:"
+    donatello "What matters is that I need to say it, I really need."
 
-    "You can’t call for a public meeting, especially when you exclude another employee from this meeting,"
+    donatello "And be able to live my life as myself, not the image I give all the time."
 
-    "I am the one in charge of Human Resources here, and with M. Gopinath away, and the new CEO on the way, of the whole company at the moment."
+    "What on Earth are you talking about?"
 
-    "If I wanted to call for a public meeting I would have done it."
+    jump .gay
 
-    narration "There’s a lot of shoegazing as everybody falls silent."
+label .scene7:
 
-    "I’d rather we stop this, and get back to work, we all have more important matters on our plates"
+    narration "You lean back into your chair, surprised by the turn the events have taken."
 
-    "Don’t forget that we need to handle the deliveries for next week."
+    narration "A few minutes later, you start wondering where Donatello might have gone after storming out of your office, and you head to the canteen."
+
+    scene bg lunch_room with dissolve
+
+    narration "When you reach it, you hear Donatello’s shaky voice echoing in a dead silence before you open the door."
+
+    donatello "... So no, I'm not married, and never will be, {w=0.5}or not to a woman."
+
+    thinking "So he did it."
+
+    thinking "There's no way to predict how people will react to this."
+
+    thinking "And I can't help feeling afraid of the consequences..."
+
+    thinking "He must be feeling the same way."
+
+    bapat "You should move to the US if you want to marry a man, there will none of it here!"
+
+    donatello "..."
+
+    narration "You hear a couple of people clapping, cheering, and whistling."
+
+    bapat "How can I work with you now that I know?"
+
+    bapat "I'm not going to be your girlfriend, you need to move to another office!"
+
+    #bapat sly
+
+    thinking "Just look at him, excited by his own success."
+
+    thinking "Everyone has fifteen minutes of glory in life, or so I've heard, maybe this is Bapat's moment of fame."
+
+    bapat "Are we supposed to accept this indecency ?!"
+
+    giti "..."
+
+    #bapat angry
+
+    thinking "Ok, time to step in."
+
+    narration "You push the door, and see Bapat standing, his face contorted with anger.
+            Priyanka, and Manali are laughing nervously. Only Giti remains silent, still listening to Donatello, who seems to be holding his own."
+
+    "Did he say he wants you for a boyfriend, Bapat? {i}Who would?{/i}"
+
+    show bapat with dissolve
+
+    bapat "He should offer his services elsewhere, Abhay, we can't sork like this!"
+
+    show giti with dissolve
+
+    giti "That's enough."
+
+    #giti determined
+
+    bapat "...!"
+
+    donatello "...!"
 
     hide giti with dissolve
 
-    "As employees leave the meeting room one by one, you halt one of the culprits to speak with him privately."
+    narration "Giti stands up, and takes Donatello’s hands in hers, and for a magic moment, everybody stops, and just watches."
+
+    show giti with dissolve
+
+    giti "He is who he is, Bapat Sir, why can’t we just accept it?"
+
+    narration "Bapat sits back into his chair, and the laughter stops."
+
+    donatello "Thank you for understanding, Giti"
+
+    narration "He releases her hands as he leaves the room."
+
+    thinking "Do I need to do something? And if yes, what?"
 
     menu:
-        thinking "Who should I talk to ?"
-        "Bapat?":
-            hide donatello with dissolve
-            jump .scene7
-        "Donatello?":
-            hide bapat with dissolve
+        "Think about it":
             jump .scene8
 
-label .scene7:
-    "I want you to tell me what happened yesterday."
-
-    bapat "Ah, it’s nothing, Abhay, don’t get all wrangled up,"
-
-    "So, something happened indeed."
-
-    "I need to know it before I decide what to do with all this fuss."
-
-    "Bapat, I can’t follow whatever it is you’re doing without being aware of the background."
-
-    bapat "Ah okay, this Priyanka you know, she came in a mini-skirt like she does sometimes,"
-
-    bapat "All provocation, no shame."
-
-    bapat "And there are many men in the office"
-
-    bapat "Even Giti was shocked."
-
-    "And?"
-
-    bapat "And The Donald, Donatello I mean, well, he’s a man, Abhay."
-
-    bapat "He made some noises, and maybe a couple of jokes, and there she went, crying all over like a baby girl, and-"
-
-    "So you thought that he could be in trouble, hence the ruckus you raise this morning."
-
-    bapat "You don’t get it, Abhay, not at all."
-
-    bapat "We just want to work peacefully, this is interfering with productivity."
-
-    "Thank you, Bapat, I know all I need to know now."
-
-    menu:
-        "Go back to the meeting room":
-            show donatello at left with dissolve
-            jump .scene9
-
 label .scene8:
-    "I want you to tell me what happened yesterday."
 
-    donatello "Nothing, why do you bother?"
+    scene bg office with dissolve
 
-    "I bother because I’m the HR Manager of this company, Donatello, not you,"
+    narration "Giti’s magic moment didn’t last long."
 
-    "and you called for a public meeting the very same day I find Priyanka in my office,
-    and didn’t even bother to invite her to this meeting."
+    narration "During the next days, you hear a lot of homophobic “jokes”, and notice that there has been no meeting of the Sales & Marketing Department where Bapat and Donatello are supposed to work together.{p}
+            Every time you’ve walked past his office, or his seat at lunch, Donatello was alone, and staring off into the distance."
 
-    donatello "‘This woman is really a problem, you know, Abhay."
-
-    "Well at least she doesn’t raise a ruckus like you and Bapat did…"
-
-    "Now kindly tell me what happened."
-
-    donatello "Oh well, she came to work like she’s going to party all night"
-
-    donatello "and Bapat, well, he’s just a man, Abhay."
-
-    donatello "He made noises, and motions, and maybe I made a couple of jokes, and felt her a bit, and she started to cry, and become angry as if WE were the problem, not her, and-"
-
-    "So you thought that you both could be in trouble, hence the ruckus you raise this morning."
-
-    donatello "I only think about the well-being of the company, Abhay,"
-
-    donatello "customers come in here sometimes, what impression do we give to them by having Priyanka dressed up like this?"
-
-    donatello "This isn’t a massage parlor, and what if the others, like Manali, start to copy her?"
-
-    donatello "Men have drives, Abhay, she’s asking for it,"
-
-    donatello "I can’t blame her really because we’re good-looking and all, but she must keep her instincts in control."
-
-    "Thank you, Donatello, I know all I need to know now."
+    thinking "The situation festers."
 
     menu:
-        "Go back to the meeting room":
-            show bapat at right with dissolve
+        "Give a collective warning to everyone but Giti":
             jump .scene9
+        "Ask for the lawyer's advice.":
+            jump .scene11
+        "Leave it be, the situation will resolve itself.":
+            jump .scene12
+        "Talk to the other employees.":
+            jump .scene14
 
 label .scene9:
+    narration "It’s your duty to preserve a safe and welcoming workspace for all your employees."
 
-    narration "Before he leaves, his accomplice steps in as you are about to alight."
+    narration "You need to keep the team together, and to make sure they can work without harassment because of their orientation, gender, religion, caste, or origin."
 
-    narration "They both look at you with a strange mixture of mistrust, and eagerness."
+    narration "Now that Donatello has come out in the open, it is your responsibility to protect him from the rampant homophobia you’ve seen for a few days."
 
-    bapat "Are you going to do something about it, Abhay?"
+    narration "Since everyone but Giti has been contributing to his lynching, you decide to give them all a warning."
 
     menu:
-        "Yes, I am ready to take a decision.":
-            hide donatello with dissolve
-            hide bapat with dissolve
+        "Give them a warning.":
             jump .scene10
-        "After my lunch." if lunch == False:
-            $lunch =  True
-            jump .scene15
 
 label .scene10:
-    scene bg office
-    with dissolve
+    narration "You assumed that giving them a warning would make them reconsider their actions and attitudes, and eventually stop harassing him, but instead the opposite happened."
 
-    narration "You’ve heard their explanations, and have gathered enough information to take a decision, and solve this problem now."
+    narration "You’ve just made it worse for Donatello since everyone now resents him for the warning they’ve got as well."
 
-    narration "You could draft a dress code for all the employees of the office, so that Priyanka wouldn’t feel targeted, and that good work conditions can be maintained for everyone."
+    narration "In the next few days, the harassment reaches a whole new level as people stop talking to him altogether, and leave the room when he comes in."
 
-    narration "You could also take even less risks by calling for a public poll in the meeting room, so that everybody will have the opportunity to give one’s advice, and if anything goes wrong, you won’t be held responsible for it."
+    narration "There’s nothing you can do now, except to wait for the new CEO to step in, hoping that they can resolve the situation, and maybe even help Donatello."
 
-    narration "Or maybe you think that sometimes, a HR Manager has to take difficult decisions, and since Priyanka is the root of this trouble, you will issue her a warning to have her start dressing more appropriately, after all, she’s the only troublesome one as nobody ever complains about the other women."
-
-    menu:
-        "Draft a dress code.":
-            jump .scene11
-        "Call for a public poll.":
-            jump .scene12
-        "Issue a warning to Priyanka.":
-            jump .scene13
-        "Have lunch before you decide anything." if lunch == False:
-            $lunch = True
-            jump .scene15
-
-label .scene11:
-    narration "You draft a dress code forbidding short dresses, heels, and skirts, and requesting decency from the employees"
-
-    narration "Later this day, you send it to all, and forward your email to M. GOPINATH, the Administrative Director, and to the new CEO. Better safe than sorry."
-
-    menu:
-        "The next morning...":
-            jump .scene14
-
-label .scene12:
-    narration "You’ve decided to call for a public poll, and gather everyone once again in the meeting room."
-
-    narration "Priyanka joined you, eager to find a solution, but when you describe the situation to the people, Bapat, and Donatello are very vocal, and slowly get everyone on board with their agenda."
-
-    show bapat with dissolve
-
-    bapat "Why does she have to dress like this? This isn’t a party!"
-
-    show priyanka with dissolve
-
-    priyanka "And how do I dress exactly, Bapat, do tell me? Is this because I’m not wrapped head to toe in a sari?"
-
-    show donatello with dissolve
-
-    donatello "It’s either sari, or panties with you."
-
-    narration "The other women blush, and laugh with him."
-
-    show priyanka with dissolve
-
-    priyanka "How can you-{w=0.5}{nw}"
-
-    show bapat with dissolve
-
-    bapat "Look at Giti Madam, Priyanka, or sweet Manali, they dress with de-{w=0.5}cen-{w=0.5}cy."
-
-    show priyanka with dissolve
-
-    priyanka "What’s your prob-{w=0.5}{nw}"
-
-    show bapat with dissolve
-
-    bapat "When you dress like this, like western people trying to find a partner, of course we’re just men, "
-
-    bapat "it’s difficult to concentrate, and ignore you, and the same goes for the customers, you’re ask-{w=0.5}{nw}"
-
-    "Bapat!"
-
-    "Stop this now, you need to keep your speech under control !"
-
-    "The same goes for you, {nw}"
-
-    show donatello with dissolve
-
-    extend "Donatello."
-
-    donatello "Then she needs to help us being in control, this shameless woman!"
-
-    narration "With this, Priyanka leaves the meeting room in tears while the others whistle, and laugh.
-    {p} Since the public meeting has turned into a nightmare, and added to Priyanka’s shaming, you regret this idea, but it’s a little too late."
-
-    menu:
-        "The next morning...":
-            jump .scene14
-
-label .scene13:
-    narration "Since Priyanka is the only one causing trouble, you see no need to bother everyone with a dress code, or a public poll."
-
-    narration "After all, Bapat, and Donatello have both explained the situation to you, and though you dislike doing it, you decide to issue Priyanka a warning.{p}
-                It’s not your problem whether she accepts it peacefully or not, she has to be professional. Since the new CEO is said to be tough, this could be your chance to prove yourself worthwhile, and who knows, to be promoted."
-    menu:
-        "The next morning...":
-            jump .scene14
-
-label .scene14:
-    scene bg none
-    narration "Following your decision, and the events of the day, Priyanka gives you her resignation letter the next morning.{p=1}
-    Bapat and Donatello gloat in the open space, and start making jokes about Manali, the Secretary, as well.{p=1}
-    Given the terms of her contract, Priyanka has to stay for a month, now wearing an oversized sweater, and trousers, and will be there when the new CEO comes.{p=1}
-    Let’s hope you made the right choice."
-
+    $act_3_ending_10 = True
+    $act_3_completed = True
     return
 
-label .scene15:
-    scene bg lunch_room
+label .scene11:
+    narration "You write to M. Rajkumar, You write to M. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
+                He answers a few hours later."
 
-    narration "You unpack your lunch box in the canteen. It’s a most welcomed time of the day as everybody blows off some steam, and engage in small talk."
+    mail "rajkumarrajkumarltd@gmail.com 
+            To: abhay.chandrakant@cryptaloo.in
+            Re: Homosexuality and Discrimination
+            Respected M. Chandrakant,
+            It will be very difficult to protect your employee since homosexual intercourse is still considered a criminal offence under the Indian Law, section 377 of the Indian Penal Code. Hence and hereby, he cannot be protected against discrimination where the fact discriminated hitherto would fall under penal Law, and Nemo auditur propriam turpitudinem allegans would apply so that his arguing on the basis of his homosexuality would ipso facto disqualify him from the protections the Law normally applies for discrimination.
+            With my very best regards,
+            M. Rajkumar"
 
-    show donatello with dissolve
+    narration "After you’ve googled the sentences in Latin to decode this legal talk, you lay back into your chair."
 
-    donatello "...can you believe this ?"
+    thinking "{b}Ipso facto{/b} indeed."
 
-    show giti
+    thinking "{b}Ipso facto{/b} there's nothing I can do."
 
-    giti "Well, you know, my community’s just off the main road, so I’m rather happy with this decision."
+    thinking "{b}Ipso facto{/b}, Donatello is harassed, and you I do nothing but watch."
 
-    show bapat
-
-    bapat "‘But it’s a festival, Giti, how are we supposed to celebrate without fireworks, or sound system?"
-
-    show manali
-
-    manali "And it’s dry day as well."
-
-    show bapat
-
-    bapat "That is normal, it’s different!"
-
-    show priyanka
-
-    priyanka "How come the High Court decides about religion anyway?"
-
-    show donatello
-
-    donatello "Come on, religion? {w=0.5}How are fireworks, and techno music connected with religion in any way?"
-
-    show bapat
-
-    bapat "It’s like that, it’s what we do."
-
-    bapat "What we’ve always done!"
-
-    thinking "Gossips, and issues all the time."
-
-    narration "The conversation then trails off on the subject of the new CEO.{p=1}
-    M. BAJU, the former, wasn’t proactive, to put it mildly, but he maintained a peaceful if a bit droning work environment.{p=1}
-    . We are creatures of habit, and don’t like to be shaken off them, and BAJU was our habit of a CEO, aloof, quiet, almost jaded.{p=1}
-    You all got used to this. That was relaxing in a way.{p=1}
-    Now that he’s gone, people are excited, and the bad stuff surfaces in this ungoverned space."
-
-    narration "This is usually where you fall back on M. GOPINATH, the Administrative Director, but he’s taken his annual leave, and has left you alone to deal with everything."
-
-    narration "Without active CEO, and M. GOPINATH being away, you are the highest ranking employee in the company right now, a company in turmoil with Priyanka’s issue this morning."
-
-    thinking "I need to solve it, and to gather everyone's opinion."
+    thinking "So much for the work atmosphere."
 
     menu:
-        "Talk to the other employees individually.":
-            jump .scene16
+        "A few days later.":
+            jump .scene19
 
-label .scene16:
-    scene bg office
+label .scene12:
 
-    narration "If all you do to find the truth about people harassing women is talk with the harassers, you won’t go very far, you think. You need to gather the opinion of other employees, and maybe to ask the lawyer, M. RAJKUMAR, to give you his opinion."
-    $email = False
-    $talk_giti = False
-    $talk_manali = False
-    jump .employees
+    thinking "I can't spend my whole work day roaming in the office like a traffic cop, handing out warnings to everyone making jokes."
+
+    thinking "Furthermore, doing so will only just turn them all against Donatello."
+
+    thinking "After all, {i}he{/i}'s the one who's decided to come out of the closed, why did he need to do that?"
+
+    thinking "I could have scolded Bapat, and that would have been the end of it!"
+
+    thinking "Wasn't Donatello the first to harass Priyanka a few days ago?"
+
+    thinking "Wasn't he discriminating against Giti himself?"
+
+    thinking "Why is everyone wanting some special status in this company?"
+
+    thinking "Is this because there's no CEO yet? Well, they sure will sing a different kind of song when the CEO will come!"
+
+    menu:
+        "The next weeks.":
+            jump .scene13
+
+label .scene13:
+    scene none with dissolve
+
+    narration "Since you did nothing, the situation escalates quickly. Every day, you receive a new formal complaint from an employee, or another, telling you how Donatello leaned too close to them, or was looking at them suggestively."
+
+    narration "Every day, you hear new cruel jokes made at his expense."
+
+    narration "Eventually, he stops to speak to anyone, and stays on his own."
+
+    thinking "If only he could leave before the new CEO comes in..."
+
+    thinking "Chances are he wont."
+
+    thinking "No matter, I'll explain everything, and all will be well."
+
+    $act_3_ending_13 = True
+    $act_3_completed = True
+    return
+
+label .scene14:
+
+    thinking "The situation has gone beyond what lawyers and warnings could help with."
+
+    thinking "What am I going to write in the warning ?"
+
+    thinking "\"Don't be yourself\"?"
+
+    thinking "\"Stop making bad jokes, it's cruel, and useless?\""
+
+    thinking "It doesn't work like this, I should talk to the other employees instead."
+
+    thinking "But which one first?"
 
 label .employees:
     menu:
-        "Write an email to M. Rajkumar." if email == False:
-            $email = True
+        "Bapat" if talk_bapat_act3 == False:
+            jump .scene15
+        "Manali" if talk_manali_act3 == False:
+            jump .scene16
+        "Priyanka" if talk_priyanka_act3 == False:
             jump .scene17
-        "Talk to Giti, the chief secretary, in your office" if talk_giti == False:
-            $talk_giti = True
+        "Giti" if talk_giti_act3 == False:
             jump .scene18
-        "Talk to Manali, the secretary, in your office" if talk_manali == False:
-            $talk_manali = True
+        "You talked to enough people." if talk_giti_act3 == True:
             jump .scene19
-        "You've talked to enough people." if talk_manali:
-            jump .scene20
+
+label .scene15:
+    scene bg office with dissolve
+
+    show bapat with dissolve
+
+    bapat "Have you heard that, Abhay?"
+
+    bapat "The guy has the nerve to tell everyone!"
+
+    bapat "Now, he must leave, there's nothing else we can do!"
+
+    "I see. {w=0.5}You would try to hide it if it were you, isn't it, Bapat?"
+
+    bapat "No need, I'm not gay!"
+
+    #bapat angry
+
+    "But since that's how you would react yourself, you thought that his orientation would be a good tool to threaten him with."
+
+    bapat "No, no, Abhay, it's not that at all!"
+
+    bapat "I was just telling him that I could remain silent about it, the best thing for everybody, honest, and that he should be more grateful to me."
+
+    "Graceful for {i}what{/i}? For disrespecting him?"
+
+    bapat "Abhay, Abhay, stop getting on your high horses again!"
+
+    bapat "I'm {i}protecting this company{/i}, it's against the Law, do you know that?"
+
+    bapat "And what if we become gay too?!"
+
+    narration "You suppress a rising laugh."
+
+    "I must admit that I didn't think about that."
+
+    bapat "Ah! Ah!"
+
+    "Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!"
+
+    bapat "Who knows, Abhay!"
+
+    bapat "And now he's spreading propaganda too!"
+
+    "He {i}expressed{/i} himself, Bapat, just you would if you ever had anything interesting to say."
+
+    bapat "...!"
+
+    narration "You sigh and dismiss him."
+
+    hide bapat with dissolve
+
+    thinking "It's worthless. Nothing I can say will change his mind."
+
+    $talk_bapat_act3 = True
+
+    menu:
+        "Talk to someone else.":
+            jump .employees
+
+label .scene16:
+    scene bg office with dissolve
+
+    show manali with dissolve
+
+    "Do you have a boyfriend, Manali?"
+
+    #manali blushing
+
+    narration "She blushes."
+
+    "Maybe there was someone you liked in high school, or college, isn't it?"
+
+    manali "...!"
+
+    #manali shocked
+
+    "You know in high school when somebody laughs at you because you like someone special, for instance?"
+
+    manali "..."
+
+    narration "She nods."
+
+    "Well that's a little bit the same thing you're doing to Donatello right this moment, {w=0.25}only worse."
+
+    manali "!"
+
+    manali "Oh."
+
+    "This is not a very mature behaviour, Manali."
+
+    "We are all in this together, trying to make this company successful, as well as a nice place to work."
+
+    "Do you think this is a nice place to work for Donatello now?"
+
+    manali "No, Sir."
+
+    "And why not?"
+
+    #manali embarassed
+
+    manali "But why did he have to say it, Sir?"
+
+    manali "He could just say he's not married, that's all, there was no need to talk about this...{w=0.5}thing."
+
+    manali "That's {i}his{/i} fault."
+
+    "Being gay?"
+
+    #manali blushes
+
+    narration "She blushes again."
+
+    manali "No, Sir, not that! {w=0.5}Maybe. {w=0.5}I don't know."
+
+    manali "But telling us, that's his fault."
+
+    "So you prefer lies, or else you mock people?"
+
+    manali "No, Sir."
+
+    "This needs to stop, Manali, is this clear?"
+
+    manali "Yes, Abhay Sir, I will stop."
+
+    "And work with him, in peace and respect."
+
+    manali "I will do my best, Sir."
+
+    thinking "She'll do it, I'm confident about it."
+
+    hide manali with dissolve
+
+    thinking "But things won't ever be the same with Donatello..."
+
+    $talk_manali_act3 = True
+
+    menu:
+        "Talk to someone else":
+            jump .employees
 
 label .scene17:
-    scene bg email_screen
+    scene bg office with dissolve
 
-    narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later:"
+    show priyanka with dissolve
 
-    #TODO:MAIL
-    narration "<INSERT MAIL HERE>"
+    priyanka "I don't care much, Abhay"
+
+    #priyanka uninterrested
+
+    "Then why? {w=0.25}Why you hurt someone if you don't care?"
+
+    priyanka "..."
+
+    priyanka "..."
+
+    #priyanka thinking
+
+    priyanka "He's betrayed us, Abhay{w=0.25}, that's why."
+
+    "You mean you thought he was an abusive man, and now that you find out that he's not what you thought..."
+
+    "You take this opportunity to bite him back?"
+
+    priyanka "No, please, it's not that."
+
+    priyanka "Of course he's been an idiot for a long time, that doesn't change the fact, but we thought he was like us, {w=0.25}normal."
+
+    "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
+
+    priyanka "This is difficult to accept, Abhay, what will I say to my family? {w=0.25}They will want me to move."
+
+    "So they were happy to let you stay when you stay when you were shamed for the way you dress."
+
+    "But they will want you to move is someone being honest with you in the company?"
+
+    priyanka "Maybe, I don't need to tell them."
+
+    "Maybe yes, Priyanka, and you need to accept him as he is, the way he is."
+
+    priyanka "...I will try my best, Abhay."
+
+    hide priyanka with dissolve
+
+    $talk_priyanka_act3 = True
 
     menu:
         "Talk to someone else.":
             jump .employees
 
 label .scene18:
-    scene bg office
+    scene bg office with dissolve
 
     show giti with dissolve
 
-    narration "Giti smiles intently while you explain her the situation, trying to offer both points of views as you do so. She cuts you off as you’re about to ask for her opinion."
+    "I must admit I was surprised by what you've done, Giti"
 
-    giti "I know very well everything you’re talking about, Abhay Sir."
+    giti "No need for surprise, Abhay Sir."
 
-    giti "It is true that Bapat, and Donald Sir, have been making very bad jokes on Priyanka, and calling her names, "
+    "I mean, Donatello isn't exactly a nice person, he-"
 
-    giti "But the way she dresses pushes them to-{w=1}"
+    giti "He's not."
 
-    "You mean that she’s asking for it?"
+    giti "But if we are never nice to mean people, that doesn't leave many people to be nice to."
 
-    "Why would she? Are they so gorgeous?"
+    "Ah! Ah!"
 
-    giti "Women should have a sense of decency, we’re not in New York Miami USA here."
+    "True, very true."
 
-    giti "I would be very ashamed if I went around dressed like she does."
+    giti "I am not a learned person, Abhay Sir, but I know we are all the same, and all equal."
 
-    narration "You try to imagine Giti with Priyanka’s clothes on, but somewhat, you can’t."
+    giti "White{w=0.25}, black{w=0.25}, gay{w=0.25}, not gay{w=0.25}, it is not different, Sir."
 
-    "*sigh* {w=0.5}Carry on."
+    "..."
 
-    giti "I have said what I needed to, Abhay Sir."
+    giti "..."
 
-    "What should I do then? Should I punish Priyanka, and leave the guys alone?"
+    "What should I do, Giti?"
 
-    giti "Maybe you should give them all a warning, then decide on a dress code, or give Priyanka more warnings if she doesn’t change her ways."
+    giti "Last year I had the same problem with the Transportation Department, Abhay Sir."
 
-    "By company policy, I have to fire her after three warnings have been issued, Giti, did you know that?"
+    "And what did you do?"
 
-    giti "I did not know, Abhay Sir."
+    giti "I talked to them, {w=0.25}I said{w=0.25} \"We need to respect each other\"{w=0.25}, they stopped after that."
 
-    "But you still advise me to do it?"
+    "If only that worked here."
 
-    giti "No Sir, I have no solution."
+    giti "It can't, Abhay Sir, here it's too serious, and there's no policy to protect Donatello."
 
-    hide giti with dissolve
+    giti "In the office, people won't do anything without a policy, it's not like in the Transportation Department."
 
-    narration "This being said, Giti leaves your office."
+    "Would he {i}want{/i} that?"
+
+    giti "I will check, Abhay Sir."
+
+    $talk_giti_act3 = True
 
     menu:
+        "Find out.":
+            jump .scene19
         "Talk to someone else.":
             jump .employees
 
 label .scene19:
-    scene bg office
+    scene bg office with dissolve
 
-    narration "When Manali sits down in your office, you feel like a police officer conducting an interrogation. {p=1}
-    She gazes at her shoes, and blushes a lot, twisting her fingers as she does."
+    narration "The sound of the printer is relaxing sometimes, you think. You hear the sheets shuffle back and forth, as if the machine were purring. It smells of fresh ink, and of warm paper, lulling you to sleep."
 
-    show manali with dissolve
+    narration "You fight it to keep up with the day, drinking yet another cup of tea, surveilling the corridor through your open door."
 
-    "You know why I have called you, right?"
+    narration "Seeing Donatello walk straight to your office wakes you up instantly."
 
-    manali "Maybe because it’s about Priyanka and the management, Sir?"
+    show donatello with dissolve
 
-    "Yes, it’s about that. Her, and Bapat, and Donatello, and whatever happened between them. {w=1}*sigh*"
+    thinking "Up to something again."
 
-    "Do you think she dresses too provocatively for work, Manali? That I should do something?"
+    thinking "I hope it's good..."
 
-    manali "I can’t say, Abhay Sir, I am not in a position to say."
+    donatello "It doesn't work, Abhay!"
 
-    "Because you’re a woman? {w=0.5}Or a Secretary? {w=1}Nonsense. Please tell me."
+    "What doesn't work?"
 
-    narration "Manali clears her throat, looks at the ceiling, clears her throat again, and speaks"
+    donatello "Nothing does, warnings, talking to the people, nothing."
 
-    manali "Well. Well, I don’t think so too much, Abhay Sir. It’s just…"
+    donatello "They simply won’t accept me, and won’t work with me anymore. This is all falling apart!"
 
-    narration "And with that, she stops speaking, and looks at the ceiling again."
+    "And what's your solutionm then?"
 
-    "Just what?"
+    donatello "You are the HR Manager, Abhay, this is your responsibility."
 
-    manali "Just that you should talk to her, so that she can change maybe? {w=0.5}Please?"
+    donatello "But fortunately I spoke with Giti, and she gave me  an idea."
 
-    thinking "I feel she's hiding something, but pushing her is maybe a bad idea. What should I do ?"
+    "Tell me."
+
+    donatello "We need a policy, an inclusive policy, which recognizes the rights of homosexual employees when they face discrimination, and gives them equal opportunities."
+
+    donatello "If this becomes part of our policy, they will change, Abhay."
+
+    "I'm not sure I can, Donald, because-"
+
+    donatello "Because {i}what{/i}?!"
+
+    donatello "I will request it officially to the company headquarters."
+
+    thinking "Would that be a solution ?"
+
+    thinking "How will the others react to that?"
+
+    thinking "Is that even legally possible?"
 
     menu:
-        "Talk to someone else.":
-            hide manali
-            jump .employees
-        "Push Manali to talk nevertheless.":
+        "Ask M. Rajkumar, the company's lawyer":
+            jump .scene20
+        "Ask the others.":
             jump .scene21
 
 label .scene20:
-    narration "The idea that Manali has not told you everything lingers in your mind, but you cast it off, you’re not supposed to make people uncomfortable, or to get the details of their private life, you keep the workplace productive, that’s your job.{p=1}
-    You’ve talked to people enough anyway, it’s about time you take a decision. Who knows, maybe you’ll get another chance to talk to her."
+    scene bg office with dissolve
+
+    narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
+
+    mail "rajkumarrajkumarltd@gmail.com 
+        To: abhay.chandrakant@cryptaloo.in
+        Re: Inclusive Policy
+        Dear M. Chandrakant,
+        Since homosexuality is criminal in India, it is not possible to implement a policy protecting it at the office, cadit quaestio, and casus belli henceforthwith.
+        With my very best regards,
+        M. Rajkumar"
+
+    thinking "A tricky situation."
 
     menu:
-        "Take a decision.":
-            jump .scene10
+        "Reject Donatello's request.":
+            jump .scene13
+        "Ask the others.":
+            jump .scene21
+
 
 label .scene21:
-    "I need to know, Manali, I am the HR Manager here, I can’t take decisions blindly. {p=0.5}You understand that?"
+    scene bg office with dissolve
 
-    narration "She nods."
-
-    "If whatever it is that you’re hiding is connected to this situation, and can change the way it is for either Priyanka, Bapat, or Donatello,"
-
-    "you need to tell me so that I don’t treat them unfairly."
-
-    narration "She nods again."
-
-    "You know something else, don’t you?"
-
-    narration "She nods."
-
-    "Then tell!"
-
-    manali "It’s Priyanka, Abhay Sir, she was dating Bapat’s son last year."
-
-    manali "They went on holidays together with Bapat even, and he never complained about her before, but since she’s left his son, he’s mad at her now."
-
-    narration "She blushes into a deeper shade of red."
-
-    thinking "What should I do now ?"
+    thinking "Who do I want to talk to?"
 
     menu:
-        "Talk to Bapat privately.":
-            hide manali with dissolve
+        "Bapat." if talk_bapat_act3_2 == False:
             jump .scene22
-        "Take a decision straight away.":
-            hide manali with dissolve
+        "Manali." if talk_manali_act3_2 == False:
+            jump .scene23
+        "Priyanka." if talk_priyanka_act3_2 == False:
             jump .scene24
+        "Giti." if talk_giti_act3_2 == False:
+            jump .scene25
 
 label .scene22:
-    narration "Given the new piece of information you’ve collected from Manali, you decide to talk to Bapat privately."
-
+    scene bg office with dissolve
     show bapat with dissolve
 
-    "I need to talk to you, Bapat."
+    bapat "A policy?"
 
-    bapat "Sure, what’s the matter?"
+    bapat "A {i}policy{/i}?! And why not a bonus!"
 
-    narration "Bapat moves nervously on the chair."
+    "It's just to protect him, Bapat"
 
-    "Is there something I should know about Priyanka that you didn’t tell me yet?"
+    bapat "Oh yes? {w=0.25}Special rights now. A schedule, why not!"
 
-    bapat "What is this nonsense?"
+    "You work here, Bapat, right?"
 
-    "You tell me."
+    bapat "I do, Abhay brother."
 
-    narration "Bapat stutters as he reddens with anger."
+    "So if a policy is implemented, and approved at the highest level, you will have no choice, will you?"
 
-    bapat "What did she tell you?!"
+    bapat "No I won’t, but it won’t happen, you just wait until the new CEO comes!"
 
-    "She told me nothing, Bapat, I’m fumbling in the dark here."
+    "So you'll stay?"
 
-    narration "Bapat sighs with obvious relief"
+    bapat "Yes of course, why would I leave? He wants my job now, this Donaldino?"
 
-    bapat "There’s nothing, Abhay, nothing."
+    "See, the way you talk convinces me even more to draft it."
 
-    bapat "You should know better, and ignore the gossip."
+    bapat "Do whatever you want, Abhay, it won’t pass."
 
-    bapat "You’re the HR Manager, and I will make sure that the new CEO recognizes your merits, and value."
-
-    narration "With that, Bapat shakes your hand, {nw}"
-
-    hide bapat with dissolve
-
-    extend "and leaves your office. "
-
-    thinking "Given his reaction, Manali was obviously right, something’s amiss, and Priyanka having had an affair with his son would explain it all."
-
-    thinking "Should I ignore the whole situation to keep both Priyanka, and Bapat on my side ?"
-
-    thinking "Or should I take a decision with this new piece of information?"
+    $talk_bapat_act3_2 = True
 
     menu:
-        "Ignore the situation.":
-            jump .scene23
-        "Take a decision.":
-            jump .scene24
+        "Talk to someone else." if talk_giti_act3_2 == False or talk_manali_act3_2 == False or talk_priyanka_act3_2 == False or talk_bapat_act3_2 == False:
+            jump .scene21
+        "Ask M. Rajkumar." if talk_giti_act3_2 == True:
+            jump .scene26
+        "Check the international policy." if talk_giti_act3_2 == True:
+            jump .scene27
 
 label .scene23:
-    narration "Since Bapat knows that you know, even though nothing has been said openly, it’s now easy to ignore the whole situation. {p=1}
-    Maybe he, and Donatello will calm down now, and stop shaming Priyanka. Regardless, the situation has become too complicated for you, a mere HR Manager, to dabble in."
+    scene bg office with dissolve
+    show manali with dissolve
+
+    if talk_manali_act3:
+        manali "I thought about what you've said to me the other day, Abhay Sir."
+    else:
+        manali "I thought a lot about all the situation with Donatello, Abhay Sir."
+
+    "Oh yes?"
+
+    manali "Yes, and I think I want to change now, I have not been very nice."
+
+    "Yes, Manali, and thank you for this."
+
+    "You would be OK with a policy protecting our employees from this kind of discrimination, then?"
+
+    manali "Yes, I would, Sir, since I'm doing it already."
+
+    $talk_manali_act3_2 = True
 
     menu:
-        "Hope that the situation will resolve by itself.":
-            jump .scene33
+        "Talk to someone else." if talk_giti_act3_2 == False or talk_manali_act3_2 == False or talk_priyanka_act3_2 == False or talk_bapat_act3_2 == False:
+            jump .scene21
+        "Ask M. Rajkumar." if talk_giti_act3_2 == True:
+            jump .scene26
+        "Check the international policy." if talk_giti_act3_2 == True:
+            jump .scene27
 
 label .scene24:
-    thinking "I have a grasp of the whole situation now. What should I do ?"
+    scene bg office with dissolve
+    show priyanka with dissolve
+
+    "So here’s what I’m thinking, Priyanka."
+
+    "I could add an inclusivity clause to our policy to see that everyone is putting their best efforts into accepting each other, as they are."
+
+    priyanka "But we already do, Abhay, as long as they’re not too-"
+
+    "No you don’t, Priyanka, think about Donatello."
+
+    priyanka "But he’s mean anyway, why protect him?"
+
+    "Because it’s not about him."
+
+    priyanka "!"
+
+    "It’s about everybody, people we don’t know yet, who will come in the future, and that the likes of Bapat will harass, and it’s about the image of our company."
+
+    priyanka "But precisely, Abhay, the company’s image will suffer."
+
+    "From {i}whom{/i}?"
+
+    "We sell to the younger generations, don’t you think this can convey a positive message, I don’t know, like we’re Apple or something?"
+
+    priyanka "Apple works with China, Abhay, and I am representative of the young generation."
+
+    "All harassment is connected, Priyanka, you don’t get it."
+
+    "Gay-shaming{w=0.25}, slut-shaming,{w=0.25} it’s the same!"
+
+    "You, of all people, are a victim of this frame of mind already, don’t you see it?"
+
+    priyanka "I will think about it, Abhay."
+
+    $talk_priyanka_act3_2 = True
 
     menu:
-        "Talk to Bapat again, telling him that you know.":
-            jump .scene25
-        "Talk to Bapat, and Priyanka together.":
+        "Talk to someone else." if talk_giti_act3_2 == False or talk_manali_act3_2 == False or talk_priyanka_act3_2 == False or talk_bapat_act3_2 == False:
+            jump .scene21
+        "Ask M. Rajkumar." if talk_giti_act3_2 == True:
             jump .scene26
-        "Gather everyone, and accuse Bapat publicly":
+        "Check the international policy." if talk_giti_act3_2 == True:
             jump .scene27
-        "Let it slide, ignore the whole situation":
-            jump .scene28
-        "Draft an inclusive dress code":
-            jump .scene29
-        "Write to the international headquarters":
-            jump .scene30
 
 label .scene25:
-    show bapat with dissolve
+    scene bg office with dissolve
 
-    bapat "What is it again, Abhay?"
+    show giti with dissolve
 
-    "I know everything, Bapat, about your son."
+    giti "I have done my research, Abhay."
 
-    bapat "Ah now she decided to tell you, she really has no shame, this woman!"
+    "What research, tell me?"
 
-    "So it is true."
+    giti "The Penal Code says that homosexual sexual intercourse is illegal, not that being homosexual is criminal."
 
-    bapat "Yes, it is true, this is how I found out how shameless she is!"
+    "But-"
 
-    bapat "She dresses like this because she’s a tease! No other reason."
+    giti "Wait, Abhay, wait. {w=0.25}Also I have seen that nowhere since 2013 this has been applied. {w=0.25}A policy is possible."
 
-    "She didn’t tell me, Bapat. I don’t think she would have."
+    giti "In fact, own own company CRYPTALOO, already has this policy  in the USA, and for Europe too. Such a policy isn’t illegal, after all. You can make one, Abhay."
 
-    bapat "Yet something must be done about this woman, Abhay Sir."
+    "And if I decide to make  it, maybe I can just copy the international policy, and-"
 
-    bapat "We can’t have women like this going around the office, breaking hearts and all."
+    giti "Yes, Abhay, that’s a good idea."
 
-    "You never did anything against her before she left your son. This needs to stop!"
+    thinking "Still, this is Giti talking, and she could be wrong in her interpretation of the law."
 
-    bapat "What’s the difference? People are with me!"
+    thinking "Should I check CRYPTALOO's international policy, or ask M. Rajkumar for his advice?"
 
-    bapat "They think the same, we can’t have <b>sluts</b> around!"
-
-    "Okay, this breaks the camel’s back."
-
-    "I will give you a warning, Bapat."
-
-    bapat "Do it, so that I can tell everyone how not only she dresses shamelessly, but also dates men all around the place !"
+    $talk_giti_act3_2 = True
 
     menu:
-        "Do it.":
-            jump .scene31
+        "Ask M. Rajkumar." if talk_giti_act3_2 == True:
+            jump .scene26
+        "Check the international policy." if talk_giti_act3_2 == True:
+            jump .scene27
+        "Talk to someone else." if talk_giti_act3_2 == False or talk_manali_act3_2 == False or talk_priyanka_act3_2 == False or talk_bapat_act3_2 == False:
+            jump .scene21
 
 label .scene26:
-    show bapat at left with dissolve
-    show priyanka at right with dissolve
 
-    narration "Once both Bapat and Priyanka, are seated in your office, you expose them what you know. {p=1}
-    Bapat erupts at once, shouting in the office, while Priyanka remains silent, her gaze set upon the postcards on your walls. {p=1}
-    As you’re trying to calm Bapat down, the other employees gather around, watching the scene with a keen interest, overhearing too many things to keep the meeting as private as it should."
+    narration "You write to M. Rajkumar, the company’s Lawyer, and tell him what Giti’s just told you, asking for his advice."
 
-    hide bapat with dissolve
-    hide priyanka with dissolve
-    show priyanka crying with dissolve
+    mail "rajkumarrajkumarltd@gmail.com 
+        To: abhay.chandrakant@cryptaloo.in
+        Re: Re: Inclusive Policy
+        Dear M. Chandrakant,
+        Technically, your colleague is right, the Indian Penal Code only forbids the sexual intercourse de jure, not the fact of declaring oneself homosexual, which would be doli incapax, but we all know that there cannot be one without the other. Further, it is not because a Law hasn’t been applied that it is invalid, a vote must first happen to change, or cancel the Law accordingly so that you would always take a risk for the future of the company by drafting, and implementing this policy, which I don’t recommend.
+        With my very best regards,
+        M. Rajkumar"
 
-    priyanka "How can I stay now?"
+    thinking "What should I do?"
 
     menu:
-        "How indeed?":
-            jump .scene31
+        "Check the international policy nevertheless":
+            jump .scene27
+        "Follow the lawyer's advice.":
+            jump .scene13
 
 label .scene27:
+    scene bg office with dissolve
 
-    narration "You gather everyone in the meeting room to expose them what you know, and put the shaming to a stop. {p=1}
-    When you talk about the affair Priyanka had with Bapat’s son, and explain that it’s the reason why Bapat is now harassing her, things don’t go as you expected as you see them side with Bapat, and accuse Priyanka. {p=1}
-    Not only have you failed to defend her, but you have added to her plight as everyone sympathizes with Bapat."
+    narration "You can’t believe what you find  when you finally receive the international inclusivity policy from CRYPTALOO’s headquarters.{p}
+                Not only is discrimination on the basis of sexual orientation forbidden, but it is severely punished as well, a rightful cause of the work contract’s termination, as is the protection of the person’s privacy."
+
+    narration "There’s a lot more in this document, but you prefer to take one step at a time. You copy the international policy into the branch’s policy, and send it off to the whole comapny by email. Later, you forward this email to the new CEO."
+
+    narration ""
 
     menu:
-        "The next morning...":
-            jump .scene32
+        "The aftermath.":
+            jump .scene28
 
 label .scene28:
+    scene bg none with dissolve
 
-    thinking "This is tricky."
+    narration "Now that a policy has been passed, effective immediately, nobody dares harass Donatello anymore.{p}
+                Some employees have sent emails to complain about you, and threatened to leave.{p}
+                They’ve even found the new CEO’s email, and forwarded their complaints there. Let’s hope this move will be appreciated. Else you’re in big, big trouble."
 
-    thinking "On one side, Bapat harasses Priyanka with vengeance, and bitterness in mind."
-
-    thinking "On the other, this is all rooted in their private life, that I can’t expose at the office."
-
-    thinking "Now that I know the full extent of the situation, I can’t possibly take decisions that would shame Priyanka, or punish her..."
-
-    thinking "But I can’t expose Bapat either because this all would eventually bounce back on her."
-
-    thinking "So what's left to do ?"
-
-    menu:
-        "Do nothing.":
-            jump .scene33
-
-label .scene29:
-    narration "You need to do something, clearly, but you can’t accuse anyone, or try to solve interpersonal difficulties all by yourself, that’s not your job. {p=1}
-    Deep down, you don’t want Bapat to get away with his vengeance either, but you can’t issue him a warning because this will eventually bounce back on Priyanka, and you’re not in a capacity to fire anyone, especially not a manager as the new CEO hasn’t arrived yet."
-
-    thinking "They want a dress code ?"
-
-    thinking "Let's give them a dress code."
-
-    narration "So you do it, and write down the most inclusive dress code ever. Blue hair? Allowed. Mini-skirts? Allowed. Chapals? Allowed. No chapals? Allowed. Mohawks, and Black Metal tees? Allowed. {p=1}
-    Of course, when the job requires a contact with clients, the dress code details a professional attire, a tailored skirt maybe, of whatever length, closed shoes, ties, etc. {p=1}
-    Once you’ve finished with your draft, you send it to the new CEO’s email. After all, you don’t want to stay in a company who doesn’t understand this."
-
-    menu:
-        "Read the answer.":
-            jump .scene30
-
-label .scene30:
-    narration "You write an email to the international Head Office, but they never answer you back."
-
-    menu:
-        "Take a decision by yourself.":
-            jump .scene11
-
-
-label .scene31:
-    scene bg none
-    narration "Instead of helping her, exposing Priyanka’s former relationship with Bapat’s son has fuelled the attacks against her. {p=1}
-    For most people at the office, this is a proof that Bapat is a bad person, but also that Priyanka has no decency, and that Bapat was right in shaming her."
-
-    narration "A week later, Priyanka gives you her resignation letter. {p=1}
-    Given the terms of her contract, she has to stay for a month, now wearing an oversized sweater, and trousers, not talking to anyone anymore."
+    $act_3_ending_28 = True
+    $act_3_completed = True
 
     return
-
-label .scene32:
-    scene bg none
-
-    narration "Given the way the last meeting went, the situation becomes unbearable for Priyanka. {p=1}
-    Since you don’t want her to be punished, you need to find a way to offer her another position in another Indian branch of the company. {p=1}
-    You write the new CEO an email to request it, and manage to convince Priyanka to stay meanwhile."
-
-    return
-
-label .scene33:
-    scene bg none
-
-    narration "You simply ignore the situation, forgetting that this all started with Priyanka crying in your office this very morning. {p=1}
-    Sure, you’ve managed to escape the most immediate threats, but nothing is solved, and Priyanka is shamed, and harassed every day by the same gang during the next week. {p=1}
-    At the end of the week, the new CEO will step in. Hopefully, the new CEO will understand you stance, and all will be well."
-
-    return
-
-label .scene34:
-    scene bg none
-
-    narration "Looks like the international Head Office has faced the same kind of problems before, because they’ve just sent you the dress code they use in PDF format so that you can copy it instead of going all mohawks, and chapals. {p=1}
-    It’s pretty inclusive as well, but better written that what you’ve sent them, and less chaotic. {p=1}
-    Since the email is empty except for the PDF, and comes from the office, and not the CEO, you have no way to determine what they thought of your text, and initiative."
-
-    narration "You copy it into the policy documents, and send it to all, now backed by the full force of the international Headquarters! Priyanka can now wear whatever she wants as long as the customers are fine with it. {p=1}
-    Since the email came with an official document from the global office, there’s nothing Bapat, Donatello, and the others can do except to accept it."
-
-    narration "Days later, not only does Priyanka come to thank you, but Manali starts to dress up more elegantly too. {p=1}
-    Congratulations."
-
-    return
-
-
-
-
-
-
-
-
-
-
-

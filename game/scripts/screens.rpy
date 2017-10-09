@@ -362,6 +362,21 @@ image main_menu background_image:
     "main_menu_white_background"
     "main_menu_background" with Dissolve(2.0)
 
+transform from_horizontal_label(xorigin, xdestination, easein_time=3.0, pause_time=0):
+    subpixel True
+    alpha 0.0 xalign xorigin xanchor 0.0
+    time pause_time
+    xalign xorigin
+    parallel:
+        easein_cubic easein_time alpha 1.0
+    parallel:
+        easein_cubic easein_time xalign xdestination
+    on hide:
+        alpha 1 zoom 1 xanchor xdestination
+        block:
+            linear 0.1 zoom 1.1
+            linear 0.5 zoom 0
+
 screen main_menu():
 
 
@@ -373,7 +388,7 @@ screen main_menu():
     add "main_menu another_day_text"
     # The main menu buttons.
     frame:
-        at elastic_splash(zoom_value=1, rotate_value=-3.0, time_value=6.0)
+        at elastic_splash_rotate(zoom_value=1.0, time_value=6.0, rotate_value=-3.0)
         style_prefix "main_menu"
         xalign .50
         yalign .50
@@ -407,8 +422,8 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                image "closure_label.png" at from_horizontal(pause_time=1.75, easein_time=3.0, xorigin=.3, xdestination=.01)
-                image "closure_checkbox" at elastic_splash(rotate_value=0, time_value=1.15)
+                image "closure_label.png" at from_horizontal_label(pause_time=1.75, easein_time=3.0, xorigin=.3, xdestination=.01)
+                image "closure_checkbox" at elastic_splash(time_value=1.15)
                 if act_1_completed == True:
                     image "closure_checkbox_tick1.png"
                 if act_2_completed == True:
@@ -433,8 +448,8 @@ screen act_menu():
                 xmaximum 1
                 ymaximum 1
                 imagebutton idle "act_1_button.png" action Start("act1") at zoom_on_hover(1, 1.025)
-                image "act_1_label.png" at from_horizontal(pause_time=0.75, easein_time=3.0, xorigin=.5, xdestination=.01)
-                image "act_1_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.75)
+                image "act_1_label.png" at from_horizontal_label(pause_time=0.75, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_1_checkbox.png" at elastic_splash(time_value=0.75)
                 if act_1_completed == True:
                     image "act_1_checkbox_tick.png"
 
@@ -449,8 +464,8 @@ screen act_menu():
                 xmaximum 1
                 ymaximum 1
                 imagebutton idle "act_2_button.png" action Start("act2") at zoom_on_hover(1, 1.025)
-                image "act_2_label.png" at from_horizontal(pause_time=1.0, easein_time=3.0, xorigin=.5, xdestination=.01)
-                image "act_2_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.85)
+                image "act_2_label.png" at from_horizontal_label(pause_time=1.0, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_2_checkbox.png" at elastic_splash(time_value=0.85)
                 if act_2_completed == True:
                     image "act_2_checkbox_tick.png"
 
@@ -465,8 +480,8 @@ screen act_menu():
                 xmaximum 1
                 ymaximum 1
                 imagebutton idle "act_3_button.png" action Start("act3") at zoom_on_hover(1, 1.025)
-                image "act_3_label.png" at from_horizontal(pause_time=1.25, easein_time=3.0, xorigin=.5, xdestination=.01)
-                image "act_3_checkbox.png" at elastic_splash(rotate_value=0, time_value=0.95)
+                image "act_3_label.png" at from_horizontal_label(pause_time=1.25, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_3_checkbox.png" at elastic_splash(time_value=0.95)
                 if act_3_completed == True:
                     image "act_3_checkbox_tick.png"
 
@@ -481,8 +496,8 @@ screen act_menu():
                 xmaximum 1
                 ymaximum 1
                 imagebutton idle "act_4_button.png" action Start("act4") at zoom_on_hover(1, 1.025)
-                image "act_4_checkbox.png" at elastic_splash(rotate_value=0, time_value=1.05)
-                image "act_4_label.png" at from_horizontal(pause_time=1.5, easein_time=3.0, xorigin=.5, xdestination=.01)
+                image "act_4_checkbox.png" at elastic_splash(time_value=1.05)
+                image "act_4_label.png" at from_horizontal_label(pause_time=1.5, easein_time=3.0, xorigin=.5, xdestination=.01)
                 if act_4_completed == True:
                     image "act_4_checkbox_tick.png"
 
