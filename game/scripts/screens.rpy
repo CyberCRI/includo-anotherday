@@ -101,7 +101,6 @@ screen say(who, what):
     style_prefix "say"
 
     window:
-        right_padding 100
         id "window"
 
         if who is not None:
@@ -199,13 +198,29 @@ style input:
 ##
 ## http://www.renpy.org/doc/html/screen_special.html#choice
 
+transform from_horizontal_choice(xorigin, xdestination, easein_time=3.0, pause_time=0):
+    subpixel True
+    alpha 0.0 xalign xorigin xanchor 0.0
+    time pause_time
+    xalign xorigin
+    parallel:
+        easein_cubic easein_time alpha 1.0
+    parallel:
+        easein_cubic easein_time xalign xdestination
+    on selected_idle:
+        linear 1.0 alpha 0.0
+
 screen choice(items):
     style_prefix "choice"
 
     vbox:
+        $nbr = 0.0
         for i in items:
-            textbutton i.caption action i.action
-
+            $nbr = nbr + 1.0
+            if nbr % 2 == 0:
+                textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25)
+            else:
+                textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25) style "choice_button2"
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
@@ -224,10 +239,24 @@ style choice_vbox:
     spacing gui.choice_spacing
 
 style choice_button is default:
-    properties gui.button_properties("choice_button")
+    background "gui/button/choice_idle_background.png"
+    xminimum 745
+    yminimum 76
+
+style choice_button2 is choice_button:
+    background "gui/button/choice_idle_background2.png"
+    xminimum 745
+    yminimum 76
+
 
 style choice_button_text is default:
-    properties gui.button_text_properties("choice_button")
+    font gui.text_font
+    size 28
+    xalign .5
+    yalign .4
+    idle_color "#ffffff"
+
+style choice_button2_text is choice_button_text
 
 
 ## Quick Menu screen ###########################################################

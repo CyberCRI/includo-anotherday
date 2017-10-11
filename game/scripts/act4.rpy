@@ -34,7 +34,7 @@ label act4:
 
     thinking "Nothing like a joyful, and beautiful ceremony to rekindle the bonding."
 
-    narration " Just as you’re imagining the ceremony, smiling to yourself, you notice Giti waiting for you by your office’s door with a grim expression."
+    narration "Just as you’re imagining the ceremony, smiling to yourself, you notice Giti waiting for you by your office’s door with a grim expression."
 
     show giti with dissolve
 
@@ -44,27 +44,25 @@ label act4:
 
     giti "Abhay Sir, this is because of the ceremony."
 
-    "Oh yes, Giti! {w=0.25}It's going to be great!"
+    abhay "Oh yes, Giti! {w=0.25}It's going to be great!"
 
     giti "Abhay Sir, maybe you forgot, I am Muslim."
 
     thinking "{b}Of course{/b}, how could I have forgotten?"
 
-    "My goodness, that's true!{w=0.5} Let's-"
-
-    giti "I cannot participate, Abhay Sir, these are not my beliefs."
+    abhay "My goodness, that's true!{w=0.5} Let's-"
 
     menu:
-        "\"I know exactly what to do, what about this...\"":
+        giti "I cannot participate, Abhay Sir, these are not my beliefs."
+        "\"I KNOW EXACTLY WHAT TO DO, HOW ABOUT THIS...\"":
             jump .scene2
-        "\"Give me today to think about it, and talk with the others.\"":
+        "\"GIVE ME TODAY TO THINK ABOUT THIS, AND TALK WITH THE OTHERS\"":
             jump .scene3
 
 label .scene2:
 
-    thinking "So she doesn't want to participate... {w=0.25}well, {w=0.25}I know exactly what to do."
-
     menu:
+        thinking "So she doesn't want to participate... {w=0.25}well, {w=0.25}I know exactly what to do."
         "Tell her you'll fire her if she doesn't come.":
             jump .scene9
         "Offer her to take a sick leave tomorrow.":
@@ -84,9 +82,8 @@ label .scene3:
 
 label .employees:
 
-    thinking "This is a delicate matter, who will I hear out?"
-
     menu:
+        thinking "This is a delicate matter, who will I hear out?"
         "Bapat." if talk_bapat_act4 == False:
             jump .scene4
         "Priyanka." if talk_priyanka_act4 == False:
@@ -97,7 +94,7 @@ label .employees:
             jump .scene7
         "Write to M. Gopinath instead." if talk_gopinath_act4 == False:
             jump .scene8
-        "I've talked to enough people." if if talk_bapat_act4 == True or talk_priyanka_act4 == True or talk_donatello_act4 == True or talk_manali_act4 == True or talk_gopinath_act4 == True:
+        "I've talked to enough people." if talk_bapat_act4 == True or talk_priyanka_act4 == True or talk_donatello_act4 == True or talk_manali_act4 == True or talk_gopinath_act4 == True:
             jump .advices
 
 label .advices:
@@ -119,25 +116,25 @@ label .scene4:
 
     bapat "It's either all of us, or none of us."
 
-    "But Bapat, she's not Hindu."
+    abhay "But Bapat, she's not Hindu."
 
     bapat "Hindu, or not, Abhay, it's not the point, it's being together for the company."
 
     bapat "How can she exclude herself, and still pretend she's working with us?"
 
-    "Well, technically, Bapat, we also exclude her by having a Hindu ceremony."
+    abhay "Well, technically, Bapat, we also exclude her by having a Hindu ceremony."
 
     bapat "No, no, Abhay, you don't get it, it's not about religion, it's about the team spirit."
 
     bapat "You know how much it matters to me."
 
-    "Indeed."
+    abhay "Indeed."
 
-    "You have proven it {i}quite a lot{/i} these last few days..."
+    abhay "You have proven it {i}quite a lot{/i} these last few days..."
 
     bapat "Yes, Abhay, you know me well."
 
-    "So what would you advise me?"
+    abhay "So what would you advise me?"
 
     bapat "Tell her that she's fired if she doesn't come, it's the only way, Abhay."
 
@@ -155,25 +152,25 @@ label .scene5:
 
     priyanka "We can't have this, Abhay."
 
-    "And why not?"
+    abhay "And why not?"
 
-    "Why not respect her religion?"
+    abhay "Why not respect her religion?"
 
     priyanka "This is India, Abhay, the Motherland, this is a Hindu country."
 
     priyanka "Everyone has to accept, or to leave, Abhay, this is as much a part of being Indian as knowing the language, or the National Anthem."
 
-    "You-{w=0.25}{nw}"
+    abhay "You-{w=0.25}{nw}"
 
     priyanka "She can have her religion of course, but this is a public function, that she has to attend."
 
-    "You know that India is a secular country, don't you?"
+    abhay "You know that India is a secular country, don't you?"
 
     priyanka "This has nothing to do with that, Abhay, this is official business."
 
-    "I've heard you, Priyanka."
+    abhay "I've heard you, Priyanka."
 
-    "*sigh* Let me consider it."
+    abhay "*sigh* Let me consider it."
 
     hide priyanka with dissolve
 
@@ -191,13 +188,13 @@ label .scene6:
 
     donatello "The others won't understand if she won't come, but if you force her, she will snap."
 
-    "Exactly."
+    abhay "Exactly."
 
     donatello "Still, if you want this to be an opportunity to unite the employees, it needs to happen."
 
     donatello "So I really don't know what to advise you."
 
-    "What would you do yourself in my position?"
+    abhay "What would you do yourself in my position?"
 
     donatello "I don't know. She can't just skip it openly."
 
@@ -226,19 +223,19 @@ label .scene7:
 
     manali "Why not let Giti be, she can always come later, why the intolerance?"
 
-    "It's just that the others won't like this, Manali."
+    abhay "It's just that the others won't like this, Manali."
 
     manali "Abhay Sir, let them talk."
 
     manali "why is it that we always hurt the feelings of someone in this company?"
 
-    "I wish this could be as simple as that, Manali."
+    abhay "I wish this could be as simple as that, Manali."
 
     manali "Of course, this would be more simple if we were all Hindus, Abhay Sir, but this isn’t our reality."
 
     manali "This is why we have national holidays for all religions."
 
-    "You may have a point here. I need to think about it."
+    abhay "You may have a point here. I need to think about it."
 
     jump .advices
 
@@ -261,47 +258,46 @@ label .scene9:
 
     show giti with dissolve
 
-    "It's not possible, Giti.{w=0.25} We are like one family here."
+    abhay "It's not possible, Giti.{w=0.25} We are like one family here."
 
-    "Surely you can't go away when your family has a function, can you?"
+    abhay "Surely you can't go away when your family has a function, can you?"
 
     narration "Giti looks at you with anger."
 
     giti "My family would respect my religion, Abhay Sir."
 
-    "As we all do, as we all do,{w=0.25} but it's not only about religion."
+    abhay "As we all do, as we all do,{w=0.25} but it's not only about religion."
 
-    "It's about being together, and participating."
+    abhay "It's about being together, and participating."
 
-    "This is why I can't have you running away at an important time for the company, I'm sure you understand."
+    abhay "This is why I can't have you running away at an important time for the company, I'm sure you understand."
 
     giti "Not really, Abhay Sir, I-"
 
-    "Now come on."
+    abhay "Now come on."
 
-    "I'm sure you want to reassure everybody that you belong here."
+    abhay "I'm sure you want to reassure everybody that you belong here."
 
     giti "I thought I was belonging already, Abhay Sir."
 
-    "Indeed, indeed, all the more reason why you should come then."
+    abhay "Indeed, indeed, all the more reason why you should come then."
 
     giti "I will not, Sir."
 
-    "..."
+    abhay "..."
 
     thinking "She's stubborn, but I will leave her no choice, this is too important."
 
-    "You will, or you will no longer be part of this company."
+    abhay "You will, or you will no longer be part of this company."
 
-    "See you tomorrow."
+    abhay "See you tomorrow."
 
     narration "You leave the office."
 
     hide giti with dissolve
 
-    thinking "That went well."
-
     menu:
+        thinking "That went well."
         "Let's see how well.":
             jump .scene10
 
@@ -329,57 +325,57 @@ label .scene11:
 
     show giti with dissolve
 
-    "I think I have found a solution, Giti."
+    abhay "I think I have found a solution, Giti."
 
     giti "Yes, Abhay Sir?"
 
-    "I understand that you don’t want to participate in the ceremony, but from what I’ve gathered, it’s not so easy for everyone to accept that."
+    abhay "I understand that you don’t want to participate in the ceremony, but from what I’ve gathered, it’s not so easy for everyone to accept that."
 
     giti "What's so difficult to accept, Abhay Sir?"
 
-    "Oh you know very well, Giti, please, let me help you with this."
+    abhay "Oh you know very well, Giti, please, let me help you with this."
 
     giti "I am listening, Abhay Sir."
 
-    "Let’s just say you caught a flu{w=0.25}, or something, you know,{w=0.25} call in sick, and take a leave tomorrow so that you can skip the blessing."
+    abhay "Let’s just say you caught a flu{w=0.25}, or something, you know,{w=0.25} call in sick, and take a leave tomorrow so that you can skip the blessing."
 
     giti "But, Sir, everybody will know that I have no flu, and that I just want to avoid the blessing."
 
-    "Yes, but you can always pretend that you were sick to save face."
+    abhay "Yes, but you can always pretend that you were sick to save face."
 
     giti "But this wouldn’t be the truth, and…"
 
     giti "…"
 
-    giti "I understand, Abhay Sir, I will stay home tomorrow."
-
     menu:
+        giti "I understand, Abhay Sir, I will stay home tomorrow."
         "The aftermath.":
+            hide giti with dissolve
             jump .scene13
 
 label .scene12:
 
     show giti with dissolve
 
-    "You can have the religion you like, Giti, and I respect that."
+    abhay "You can have the religion you like, Giti, and I respect that."
 
     narration "She nods."
 
-    "When the Brahmin will come, just go drink a chai downstairs, or whatever, okay?"
+    abhay "When the Brahmin will come, just go drink a chai downstairs, or whatever, okay?"
 
-    "Let’s not make a big issue of this, there’s nothing to worry about."
+    abhay "Let’s not make a big issue of this, there’s nothing to worry about."
 
     giti "I appreciate it, Abhay Sir."
 
-    "It’s not just me, it’s the Law, Giti, we must abide with the freedom of conscience, and religion."
+    abhay "It’s not just me, it’s the Law, Giti, we must abide with the freedom of conscience, and religion."
 
-    "I don’t even see how that could be a problem for anyone, we’re not an ashram here."
+    abhay "I don’t even see how that could be a problem for anyone, we’re not an ashram here."
 
     narration "She laughs, then seems to ponder something."
 
-    "What's the matter, Giti?"
+    abhay "What's the matter, Giti?"
 
-    "Nothing, it’s nothing Abhay Sir, thank you."
+    abhay "Nothing, it’s nothing Abhay Sir, thank you."
 
     narration "And with that, she salutes you with her hands joined, and leaves your office."
 
@@ -400,19 +396,19 @@ label .scene13:
 
     show giti with dissolve
 
-    "What can I do for you, Giti Madam?"
+    abhay "What can I do for you, Giti Madam?"
 
     giti "Abhay Sir, I was thinking."
 
-    "Good, I approve this, we should be thinking more!"
+    abhay "Good, I approve this, we should be thinking more!"
 
     giti "Yes, Abhay Sir."
 
-    "I was kidding, Giti, please tell me."
+    abhay "I was kidding, Giti, please tell me."
 
     giti "You know, Sir, since we were talking about it the other day, I thought I needed to tell you everything."
 
-    "About what?"
+    abhay "About what?"
 
     giti "About religion{w=0.25}, you see{w=0.25}, Abhay Sir{w=0.25}, I do my prayers during the day."
 
@@ -422,15 +418,14 @@ label .scene13:
 
     thinking "The men's loo could use some refresh{w=0.25}, or a flamethrower maybe."
 
-    "So what do you want, Giti?"
+    abhay "So what do you want, Giti?"
 
     giti "‘I want a room I can use for my prayers, Abhay Sir."
 
     giti "It's not good to pray in the dirt like this."
 
-    thinking "What should I do?"
-
     menu:
+        thinking "What should I do?"
         "Take a decision straight away.":
             jump .scene14
         "Have lunch first":
@@ -439,9 +434,8 @@ label .scene13:
 label .scene14:
     thinking "There can be no compromise on serious issues like religion."
 
-    thinking "I've taken my decision the minute she's started to talk."
-
     menu:
+        thinking "I've taken my decision the minute she's started to talk."
         "Reject her request.":
             jump .scene23
         "Accept immediately.":
@@ -454,7 +448,7 @@ label .scene15:
 
     narration "You open your lunch box, and find delicious paneer fingers inside, with a side of steamed okras."
 
-    "Why did it have to be okras...?"
+    abhay "Why did it have to be okras...?"
 
     giti "You have fried paneer, don't you complain."
 
@@ -462,11 +456,11 @@ label .scene15:
 
     bapat "This is not a man's job!"
 
-    "I'm afraid I don't cook so well."
+    abhay "I'm afraid I don't cook so well."
 
     manali "Then you learn! Hihi!"
 
-    "I will try.{w=0.25} Why not?"
+    abhay "I will try.{w=0.25} Why not?"
 
     manali "See, Bapat, Abhay Sir is ready for new experiences at least."
 
@@ -484,9 +478,8 @@ label .scene15:
 
     scene bg office with dissolve
 
-    thinking "So, what should I do now?"
-
     menu:
+        thinking "So, what should I do now?"
         "Talk to the employees.":
             jump .scene16
 
@@ -494,22 +487,21 @@ label .scene16:
 
     thinking "Let's not change a winning strategy."
 
-    thinking "Which one should I talk to first?"
-
 label .employees2:
 
     menu:
-        "Bapat." if talk_bapat_act4_2 == True:
+        thinking "Which one should I talk to?"
+        "Bapat." if talk_bapat_act4_2 == False:
             jump .scene17
-        "Priyanka." if talk_priyanka_act4_2 == True:
+        "Priyanka." if talk_priyanka_act4_2 == False:
             jump .scene18
-        "Donatello." if talk_donatello_act4_2 == True:
+        "Donatello." if talk_donatello_act4_2 == False:
             jump .scene19
-        "Manali." if talk_manali_act4_2 == True:
+        "Manali." if talk_manali_act4_2 == False:
             jump .scene20
-        "M. Rajkumar, the company's lawyer." if talk_rajkumar_act4_2 == True:
+        "M. Rajkumar, the company's lawyer." if talk_rajkumar_act4_2 == False:
             jump .scene21
-        "M. Gopinath." if talk_gopinath_act4_2 == True:
+        "M. Gopinath." if talk_gopinath_act4_2 == False:
             jump .scene22
         "I've talked to enough people." if talk_bapat_act4_2 == True or talk_priyanka_act4_2 == True or talk_donatello_act4_2 == True or talk_manali_act4_2 == True or talk_rajkumar_act4_2 == True:
             jump .advices2
@@ -533,17 +525,17 @@ label .scene17:
 
     bapat "The nerve of this woman!"
 
-    "Well, Bapat, all that she wants is to be able to pray."
+    abhay "Well, Bapat, all that she wants is to be able to pray."
 
     bapat "She can pray to her God, who am I to say she can't pray?"
 
-    "You know very well that praying in the toilets isn’t very nice, Bapat, she does that!"
+    abhay "You know very well that praying in the toilets isn’t very nice, Bapat, she does that!"
 
-    "It's been three years!"
+    abhay "It's been three years!"
 
     bapat "Oh so she uses our toilets for this as well?{w=0.5} No wonder they’re dirty."
 
-    "What can she do, she has no other spaces in the company for praying!"
+    abhay "What can she do, she has no other spaces in the company for praying!"
 
     bapat "She can go to the mosque!"
 
@@ -551,7 +543,7 @@ label .scene17:
 
     bapat "Do I ask for special rights?"
 
-    "You aren’t exactly a member of a minority in need, Bapat."
+    abhay "You aren’t exactly a member of a minority in need, Bapat."
 
     bapat "This is our country, Abhay, don’t fall prey to their stratagems!"
 
@@ -573,19 +565,19 @@ label .scene18:
 
     priyanka "The minute you decide to give them special treatment, they ask for more, and more, and-"
 
-    "I get it, Priyanka."
+    abhay "I get it, Priyanka."
 
     priyanka "You can’t turn this office into a mosque, Abhay!"
 
-    "We’re talking one room, here, small one, for less than an hour a day in total."
+    abhay "We’re talking one room, here, small one, for less than an hour a day in total."
 
     priyanka "And then what?{w=0.5} What will it be next?{w=0.5} More holidays?{w=0.5} A salary raise?"
 
-    "She never asked for any of this, it’s only decent, Priyanka, she’s been kneeling in the toilets for three years!"
+    abhay "She never asked for any of this, it’s only decent, Priyanka, she’s been kneeling in the toilets for three years!"
 
     priyanka "It makes us all very uncomfortable, Abhay!"
 
-    "Who's \"us\", tell me?"
+    abhay "Who's \"us\", tell me?"
 
     priyanka "{i}All of us!{/i}"
 
@@ -603,23 +595,23 @@ label .scene19:
 
     donatello "This is too much, Abhay"
 
-    "Why?"
+    abhay "Why?"
 
     donatello "Not forcing her to go to Hindu ceremonies is one thing, but this prayer space idea is going too far, it’s not Emirate Airlines here."
 
-    "You do realize she’s praying in the {i}toilet{/i}, Donald?"
+    abhay "You do realize she’s praying in the {i}toilet{/i}, Donald?"
 
     donatello "And what of us all?"
 
     donatello "We don’t have a room either, this is unfair."
 
-    "This is a different religion, that’s why."
+    abhay "This is a different religion, that’s why."
 
-    "We allow sikhs with turbans, and even kukris, don’t we?"
+    abhay "We allow sikhs with turbans, and even kukris, don’t we?"
 
     donatello "It’s not the same thing,{w=0.25} we didn’t build a mandir in here, did we?"
 
-    "But we have a mandir, just over there."
+    abhay "But we have a mandir, just over there."
 
     narration "You point in the general direction of the shrine in the office."
 
@@ -629,7 +621,7 @@ label .scene19:
 
     donatello "How come they have all the benefits, and nothing for us, this is {i}our{/i} country!"
 
-    "You don’t accept her religion, Donald."
+    abhay "You don’t accept her religion, Donald."
 
     donatello "Of course I do."
 
@@ -653,7 +645,7 @@ label .scene20:
 
     manali "Maybe it's about time we do something to change that?"
 
-    "Yes, Manali, but don’t you think that this would be unfair for Hindus since we have no prayer room either?"
+    abhay "Yes, Manali, but don’t you think that this would be unfair for Hindus since we have no prayer room either?"
 
     manali "..."
 
@@ -665,13 +657,13 @@ label .scene20:
 
     manali "We even invite brahmins to bless the office!"
 
-    "Fair enough."
+    abhay "Fair enough."
 
-    "So you think I should agree?"
+    abhay "So you think I should agree?"
 
     manali "I don’t know.{w=0.25} I don’t know how the others will react."
 
-    "*sigh*"
+    abhay "*sigh*"
 
     manali "Maybe you could ask the brahmin who came yesterday?"
 
@@ -721,17 +713,17 @@ label .scene23:
 
     show giti with dissolve
 
-    "I can't do this, Giti."
+    abhay "I can't do this, Giti."
 
     thinking "Better get straight to the point."
 
     giti "Why not, Abhay Sir?"
 
-    "Because the others won’t understand why Muslims would get a special place, when we don't have any such spaces for Hindus, they think it’s unfair."
+    abhay "Because the others won’t understand why Muslims would get a special place, when we don't have any such spaces for Hindus, they think it’s unfair."
 
     giti "Yet they have a shrine in the office itself, and blessing ceremonies."
 
-    "It’s true, Giti, but that’s how it is, there’s nothing I can do. I am sorry."
+    abhay "It’s true, Giti, but that’s how it is, there’s nothing I can do. I am sorry."
 
     giti "We can’t have everything, can we?"
 
@@ -741,7 +733,7 @@ label .scene23:
 
     narration "You stop smiling."
 
-    "Giti, please, don't talk it like this..."
+    abhay "Giti, please, don't talk it like this..."
 
     giti "It’s fine, Abhay Sir, I’ve been praying in the toilets for three years."
 
@@ -749,9 +741,8 @@ label .scene23:
 
     giti "I can do it some more."
 
-    thinking "What now?"
-
     menu:
+        thinking "What now?"
         "What now?":
             jump .scene25
 
@@ -760,19 +751,19 @@ label .scene24:
 
     show giti with dissolve
 
-    "Of course, you'll have it, Giti."
+    abhay "Of course, you'll have it, Giti."
 
     giti "...!"
 
     giti "Sir, Abhay Sir, this is very good of you."
 
-    "Don’t mention it, Giti, it’s nothing."
+    abhay "Don’t mention it, Giti, it’s nothing."
 
-    "We never use the fifth floor storage room anyway so, why not get it cleaned, and prepared for your prayers?"
+    abhay "We never use the fifth floor storage room anyway so, why not get it cleaned, and prepared for your prayers?"
 
     giti "I will never forget, Abhay Sir, and I will pray for you!"
 
-    "You can.{w=0.25} You have the room for this now after all!"
+    abhay "You can.{w=0.25} You have the room for this now after all!"
 
     hide giti with dissolve
 

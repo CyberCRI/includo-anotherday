@@ -66,3 +66,23 @@ transform zoom(zoom_value):
 transform rotate(value):
     rotate_pad True
     rotate value
+
+transform change_transform(old, new):
+    contains:
+        old
+        yalign 1.0
+        xpos 1.0 xanchor 1.0
+        parallel:
+            easein 0.5 xanchor 0.0
+        parallel:
+            easein 0.5 alpha 0.0
+    contains:
+        new
+        yalign 1.0
+        xpos 2.0 xanchor 1.0
+        parallel:
+            easein 0.5 xpos 1.0
+        parallel:
+            easein 0.5 alpha 1.0
+
+define config.side_image_change_transform = change_transform

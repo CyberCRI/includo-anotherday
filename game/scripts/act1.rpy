@@ -270,20 +270,20 @@ label .scene7:
             jump .scene9
 
 label .scene8:
-    "I want you to tell me what happened yesterday."
+    abhay "I want you to tell me what happened yesterday."
 
     donatello "Nothing, why do you bother?"
 
-    "I bother because I’m the HR Manager of this company, Donatello, not you."
+    abhay "I bother because I’m the HR Manager of this company, Donatello, not you."
 
-    "And you called for a public meeting the very same day I find Priyanka in my office,
+    abhay "And you called for a public meeting the very same day I find Priyanka in my office,
     and didn’t even bother to invite her to this meeting."
 
     donatello "This woman is really a problem, you know, Abhay."
 
-    "Well at least she doesn’t raise a ruckus like you and Bapat did…"
+    abhay "Well at least she doesn’t raise a ruckus like you and Bapat did…"
 
-    "Now kindly tell me what happened."
+    abhay "Now kindly tell me what happened."
 
     donatello "Oh well, she came to work like she’s going to party all night."
 
@@ -291,7 +291,7 @@ label .scene8:
 
     donatello "He made noises{w=0.25}, and motions{w=0.25}, and maybe I made a couple of jokes{w=0.25}, and felt her a bit,{w=0.25} and she started to cry, and become angry as if WE were the problem, not her{w=0.25}, and-"
 
-    "So you thought that you both could be in trouble, hence the ruckus you raise this morning."
+    abhay "So you thought that you both could be in trouble, hence the ruckus you raise this morning."
 
     donatello "I only think about the well-being of the company, Abhay."
 
@@ -303,7 +303,7 @@ label .scene8:
 
     donatello "I can’t blame her really because we’re good-looking and all, but she must keep her instincts in control."
 
-    "Thank you, Donatello, I know all I need to know now."
+    abhay "Thank you, Donatello, I know all I need to know now."
 
     menu:
         "Go back to the meeting room":
@@ -316,9 +316,8 @@ label .scene9:
 
     narration "They both look at you with a strange mixture of mistrust, and eagerness."
 
-    bapat "Are you going to do something about it, Abhay?"
-
     menu:
+        bapat "Are you going to do something about it, Abhay?"
         "Yes, I am ready to take a decision.":
             hide donatello with dissolve
             hide bapat with dissolve
@@ -570,9 +569,8 @@ label .scene19:
 
     manali "Just that you should talk to her, so that she can change maybe? {w=0.25}Please?"
 
-    thinking "I feel she's hiding something, but pushing her is maybe a bad idea. What should I do?"
-
     menu:
+        thinking "I feel she's hiding something, but pushing her is maybe a bad idea. What should I do?"
         "Talk to someone else.":
             hide manali
             jump .employees
@@ -610,9 +608,8 @@ label .scene21:
 
     narration "She blushes into a deeper shade of red."
 
-    thinking "What should I do now?"
-
     menu:
+        thinking "What should I do now?"
         "Talk to Bapat privately.":
             hide manali with dissolve
             jump .scene22
@@ -657,9 +654,8 @@ label .scene22:
 
     thinking "Should I ignore the whole situation to keep both Priyanka, and Bapat on my side?"
 
-    thinking "Or should I take a decision with this new piece of information?"
-
     menu:
+        thinking "Or should I take a decision with this new piece of information?"
         "Ignore the situation.":
             jump .scene23
         "Take a decision.":
@@ -674,9 +670,8 @@ label .scene23:
             jump .scene33
 
 label .scene24:
-    thinking "I have a grasp of the whole situation now. What should I do?"
-
     menu:
+        thinking "I have a grasp of the whole situation now. What should I do?"
         "Talk to Bapat again, telling him that you know.":
             jump .scene25
         "Talk to Bapat, and Priyanka together.":
@@ -721,9 +716,8 @@ label .scene25:
 
     abhay "I will give you a warning, Bapat."
 
-    bapat "Do it, so that I can tell everyone how not only she dresses shamelessly, but also dates men all around the place!"
-
     menu:
+        bapat "Do it, so that I can tell everyone how not only she dresses shamelessly, but also dates men all around the place!"
         "Do it.":
             jump .scene31
 

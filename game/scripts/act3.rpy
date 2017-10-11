@@ -180,7 +180,7 @@ label .scene3:
 
     bapat "I can almost hear them already."
 
-    "{i}Ahem.{/i}"
+    abhay "{i}Ahem.{/i}"
 
     bapat "!"
 
@@ -188,7 +188,7 @@ label .scene3:
 
     donatello "!"
 
-    "Knowing {i}what{/i}?"
+    abhay "Knowing {i}what{/i}?"
 
     show bapat with dissolve
 
@@ -196,15 +196,15 @@ label .scene3:
 
     bapat "Professional stuff, corporate stuff, high-level."
 
-    "Indeed."
+    abhay "Indeed."
 
-    "Is there anything you'd like to report to me, Donatello?"
+    abhay "Is there anything you'd like to report to me, Donatello?"
 
     show donatello with dissolve
 
     donatello "No, Abhay, no, it's nothing."
 
-    "We'll see about that."
+    abhay "We'll see about that."
 
     hide donatello with dissolve
 
@@ -234,7 +234,7 @@ label .scene4:
 
     donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "Wait, say what?{w=0.5} What did Bapat do?"
+    abhay "Wait, say what?{w=0.5} What did Bapat do?"
 
     donatello "Doesn't matter, Abhay."
 
@@ -242,31 +242,31 @@ label .scene4:
 
     donatello "And be able to live my life as myself, not the image I give all the time."
 
-    "What on Earth are you talking about?"
+    abhay "What on Earth are you talking about?"
 
 label .gay:
 
     donatello "I am gay, Abhay, that's why I'm not married."
 
-    "W-What?"
+    abhay "W-What?"
 
-    "But it was only yesterday that you groped Priyanka!{w=0.5} Are you insane?"
+    abhay "But it was only yesterday that you groped Priyanka!{w=0.5} Are you insane?"
 
     donatello "That was a mask, Abhay. I was overdoing it on purpose."
 
     thinking "Just wow."
 
-    "Did you even think about how she felt?"
+    abhay "Did you even think about how she felt?"
 
-    "You should have tried to tell her, maybe she would have helped!"
+    abhay "You should have tried to tell her, maybe she would have helped!"
 
     donatello "You don't know Priyanka so well, Abhay, no offense but-"
 
-    "Right. But why the hurry?"
+    abhay "Right. But why the hurry?"
 
-    "Why do you need to shout it to the whole office, Donald?"
+    abhay "Why do you need to shout it to the whole office, Donald?"
 
-    "You're not married with these people, you don't owe them any kind of explanation."
+    abhay "You're not married with these people, you don't owe them any kind of explanation."
 
     donatello "It's not that."
 
@@ -284,9 +284,9 @@ label .gay:
 
     thinking "Or is he going mad somewhat, and just making this all up?"
 
-    "You should think before going ahead like that, Donald."
+    abhay "You should think before going ahead like that, Donald."
 
-    "There will be consequences, and you won't be able to take it back, and-"
+    abhay "There will be consequences, and you won't be able to take it back, and-"
 
     donatello "You, of all people, I thought you would understand, Abhay!"
 
@@ -314,17 +314,17 @@ label .scene5:
     narration "You call Bapat and Donatello together into your office just before the lunch break on the next morning.
                 Neither of them sit down. {w=0.5}Instead they both stand in front of you like naughty college students waiting for their scolding."
 
-    "I heard you threatening Donatello yesterday, Bapat"
+    abhay "I heard you threatening Donatello yesterday, Bapat"
 
     bapat "Oh, Abhay, it's not like that-"
 
     #bapat surprised
 
-    "I've heard it!{w=0.5} Kindly don't insult my intelligence."
+    abhay "I've heard it!{w=0.5} Kindly don't insult my intelligence."
 
     narration "You give him {b}the look{/b}, forehead lowered, eyes looking up straight at him like a bull."
 
-    "I don’t want to know what you’ve threatened him with, Bapat, I just-"
+    abhay "I don’t want to know what you’ve threatened him with, Bapat, I just-"
 
     hide bapat with dissolve
 
@@ -334,13 +334,13 @@ label .scene5:
 
     bapat "...!"
 
-    "I beg your pardon?"
+    abhay "I beg your pardon?"
 
     donatello "You will know because I've had enough."
 
     donatello " I need to tell it to everyone, Abhay, I don’t see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "Wait, say what?"
+    abhay "Wait, say what?"
 
     jump .gay
 
@@ -370,7 +370,7 @@ label .scene6:
 
     donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "Wait, say what?{w=0.5} What did Bapat do?"
+    abhay "Wait, say what?{w=0.5} What did Bapat do?"
 
     donatello "Doesn't matter, Abhay."
 
@@ -378,7 +378,7 @@ label .scene6:
 
     donatello "And be able to live my life as myself, not the image I give all the time."
 
-    "What on Earth are you talking about?"
+    abhay "What on Earth are you talking about?"
 
     jump .gay
 
@@ -429,7 +429,7 @@ label .scene7:
     narration "You push the door, and see Bapat standing, his face contorted with anger.
             Priyanka, and Manali are laughing nervously. Only Giti remains silent, still listening to Donatello, who seems to be holding his own."
 
-    "Did he say he wants you for a boyfriend, Bapat?{w=0.5} {i}Who would?{/i}"
+    abhay "Did he say he wants you for a boyfriend, Bapat?{w=0.5} {i}Who would?{/i}"
 
     show bapat with dissolve
 
@@ -616,19 +616,19 @@ label .scene15:
 
     bapat "Now, he must leave, there's nothing else we can do!"
 
-    "I see. {w=0.5}You would try to hide it if it were you, isn't it, Bapat?"
+    abhay "I see. {w=0.5}You would try to hide it if it were you, isn't it, Bapat?"
 
     bapat "No need, I'm not gay!"
 
     #bapat angry
 
-    "But since that's how you would react yourself, you thought that his orientation would be a good tool to threaten him with."
+    abhay "But since that's how you would react yourself, you thought that his orientation would be a good tool to threaten him with."
 
     bapat "No, no, Abhay, it's not that at all!"
 
     bapat "I was just telling him that I could remain silent about it, the best thing for everybody, honest, and that he should be more grateful to me."
 
-    "Graceful for {i}what{/i}?{w=0.5} For disrespecting him?"
+    abhay "Graceful for {i}what{/i}?{w=0.5} For disrespecting him?"
 
     bapat "Abhay, Abhay, stop getting on your high horses again!"
 
@@ -638,17 +638,17 @@ label .scene15:
 
     narration "You suppress a rising laugh."
 
-    "I must admit that I didn't think about that."
+    abhay "I must admit that I didn't think about that."
 
     bapat "Ah!{w=0.5} Ah!"
 
-    "Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!"
+    abhay "Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!"
 
     bapat "Who knows, Abhay!"
 
     bapat "And now he's spreading propaganda too!"
 
-    "He {i}expressed{/i} himself, Bapat, just you would if you ever had anything interesting to say."
+    abhay "He {i}expressed{/i} himself, Bapat, just you would if you ever had anything interesting to say."
 
     bapat "...!"
 
@@ -669,39 +669,39 @@ label .scene16:
 
     show manali with dissolve
 
-    "Do you have a boyfriend, Manali?"
+    abhay "Do you have a boyfriend, Manali?"
 
     #manali blushing
 
     narration "She blushes."
 
-    "Maybe there was someone you liked in high school, or college, isn't it?"
+    abhay "Maybe there was someone you liked in high school, or college, isn't it?"
 
     manali "...!"
 
     #manali shocked
 
-    "You know in high school when somebody laughs at you because you like someone special, for instance?"
+    abhay "You know in high school when somebody laughs at you because you like someone special, for instance?"
 
     manali "..."
 
     narration "She nods."
 
-    "Well that's a little bit the same thing you're doing to Donatello right this moment, {w=0.25}only worse."
+    abhay "Well that's a little bit the same thing you're doing to Donatello right this moment, {w=0.25}only worse."
 
     manali "!"
 
     manali "Oh."
 
-    "This is not a very mature behaviour, Manali."
+    abhay "This is not a very mature behaviour, Manali."
 
-    "We are all in this together, trying to make this company successful, as well as a nice place to work."
+    abhay "We are all in this together, trying to make this company successful, as well as a nice place to work."
 
-    "Do you think this is a nice place to work for Donatello now?"
+    abhay "Do you think this is a nice place to work for Donatello now?"
 
     manali "No, Sir."
 
-    "And why not?"
+    abhay "And why not?"
 
     #manali embarassed
 
@@ -711,7 +711,7 @@ label .scene16:
 
     manali "That's {i}his{/i} fault."
 
-    "Being gay?"
+    abhay "Being gay?"
 
     #manali blushes
 
@@ -721,15 +721,15 @@ label .scene16:
 
     manali "But telling us, that's his fault."
 
-    "So you prefer lies, or else you mock people?"
+    abhay "So you prefer lies, or else you mock people?"
 
     manali "No, Sir."
 
-    "This needs to stop, Manali, is this clear?"
+    abhay "This needs to stop, Manali, is this clear?"
 
     manali "Yes, Abhay Sir, I will stop."
 
-    "And work with him, in peace and respect."
+    abhay "And work with him, in peace and respect."
 
     manali "I will do my best, Sir."
 
@@ -754,7 +754,7 @@ label .scene17:
 
     #priyanka uninterrested
 
-    "Then why?{w=0.5} Why you hurt someone if you don't care?"
+    abhay "Then why?{w=0.5} Why you hurt someone if you don't care?"
 
     priyanka "..."
 
@@ -764,25 +764,25 @@ label .scene17:
 
     priyanka "He's betrayed us, Abhay{w=0.25}, that's why."
 
-    "You mean you thought he was an abusive man, and now that you find out that he's not what you thought..."
+    abhay "You mean you thought he was an abusive man, and now that you find out that he's not what you thought..."
 
-    "You take this opportunity to bite him back?"
+    abhay "You take this opportunity to bite him back?"
 
     priyanka "No, please, it's not that."
 
     priyanka "Of course he's been an idiot for a long time, that doesn't change the fact, but we thought he was like us, {w=0.25}normal."
 
-    "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
+    abhay "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
 
     priyanka "This is difficult to accept, Abhay, what will I say to my family?{w=0.5} {w=0.25}They will want me to move."
 
-    "So they were happy to let you stay when you stay when you were shamed for the way you dress."
+    abhay "So they were happy to let you stay when you stay when you were shamed for the way you dress."
 
-    "But they will want you to move is someone being honest with you in the company?"
+    abhay "But they will want you to move is someone being honest with you in the company?"
 
     priyanka "Maybe, I don't need to tell them."
 
-    "Maybe yes, Priyanka, and you need to accept him as he is, the way he is."
+    abhay "Maybe yes, Priyanka, and you need to accept him as he is, the way he is."
 
     priyanka "...I will try my best, Abhay."
 
@@ -799,43 +799,43 @@ label .scene18:
 
     show giti with dissolve
 
-    "I must admit I was surprised by what you've done, Giti"
+    abhay "I must admit I was surprised by what you've done, Giti"
 
     giti "No need for surprise, Abhay Sir."
 
-    "I mean, Donatello isn't exactly a nice person, he-"
+    abhay "I mean, Donatello isn't exactly a nice person, he-"
 
     giti "He's not."
 
     giti "But if we are never nice to mean people, that doesn't leave many people to be nice to."
 
-    "Ah! Ah!"
+    abhay "Ah! Ah!"
 
-    "True, very true."
+    abhay "True, very true."
 
     giti "I am not a learned person, Abhay Sir, but I know we are all the same, and all equal."
 
     giti "White{w=0.25}, black{w=0.25}, gay{w=0.25}, not gay{w=0.25}, it is not different, Sir."
 
-    "..."
+    abhay "..."
 
     giti "..."
 
-    "What should I do, Giti?"
+    abhay "What should I do, Giti?"
 
     giti "Last year I had the same problem with the Transportation Department, Abhay Sir."
 
-    "And what did you do?"
+    abhay "And what did you do?"
 
     giti "I talked to them, {w=0.25}I said{w=0.25} \"We need to respect each other\"{w=0.25}, they stopped after that."
 
-    "If only that worked here."
+    abhay "If only that worked here."
 
     giti "It can't, Abhay Sir, here it's too serious, and there's no policy to protect Donatello."
 
     giti "In the office, people won't do anything without a policy, it's not like in the Transportation Department."
 
-    "Would he {i}want{/i} that?"
+    abhay "Would he {i}want{/i} that?"
 
     giti "I will check, Abhay Sir."
 
@@ -864,25 +864,25 @@ label .scene19:
 
     donatello "It doesn't work, Abhay!"
 
-    "What doesn't work?"
+    abhay "What doesn't work?"
 
     donatello "Nothing does, warnings, talking to the people, nothing."
 
     donatello "They simply won’t accept me, and won’t work with me anymore. This is all falling apart!"
 
-    "And what's your solutionm then?"
+    abhay "And what's your solutionm then?"
 
     donatello "You are the HR Manager, Abhay, this is your responsibility."
 
     donatello "But fortunately I spoke with Giti, and she gave me  an idea."
 
-    "Tell me."
+    abhay "Tell me."
 
     donatello "We need a policy, an inclusive policy, which recognizes the rights of homosexual employees when they face discrimination, and gives them equal opportunities."
 
     donatello "If this becomes part of our policy, they will change, Abhay."
 
-    "I'm not sure I can, Donald, because-"
+    abhay "I'm not sure I can, Donald, because-"
 
     donatello "Because {i}what{/i}?!"
 
@@ -945,23 +945,23 @@ label .scene22:
 
     bapat "A {i}policy{/i}?!{w=0.5} And why not a bonus!"
 
-    "It's just to protect him, Bapat"
+    abhay "It's just to protect him, Bapat"
 
     bapat "Oh yes?{w=0.5} Special rights now. A schedule, why not!"
 
-    "You work here, Bapat, right?"
+    abhay "You work here, Bapat, right?"
 
     bapat "I do, Abhay brother."
 
-    "So if a policy is implemented, and approved at the highest level, you will have no choice, will you?"
+    abhay "So if a policy is implemented, and approved at the highest level, you will have no choice, will you?"
 
     bapat "No I won’t, but it won’t happen, you just wait until the new CEO comes!"
 
-    "So you'll stay?"
+    abhay "So you'll stay?"
 
     bapat "Yes of course, why would I leave?{w=0.5} He wants my job now, this Donaldino?"
 
-    "See, the way you talk convinces me even more to draft it."
+    abhay "See, the way you talk convinces me even more to draft it."
 
     bapat "Do whatever you want, Abhay, it won’t pass."
 
@@ -984,13 +984,13 @@ label .scene23:
     else:
         manali "I thought a lot about all the situation with Donatello, Abhay Sir."
 
-    "Oh yes?"
+    abhay "Oh yes?"
 
     manali "Yes, and I think I want to change now, I have not been very nice."
 
-    "Yes, Manali, and thank you for this."
+    abhay "Yes, Manali, and thank you for this."
 
-    "You would be OK with a policy protecting our employees from this kind of discrimination, then?"
+    abhay "You would be OK with a policy protecting our employees from this kind of discrimination, then?"
 
     manali "Yes, I would, Sir, since I'm doing it already."
 
@@ -1008,35 +1008,35 @@ label .scene24:
     scene bg office with dissolve
     show priyanka with dissolve
 
-    "So here’s what I’m thinking, Priyanka."
+    abhay "So here’s what I’m thinking, Priyanka."
 
-    "I could add an inclusivity clause to our policy to see that everyone is putting their best efforts into accepting each other, as they are."
+    abhay "I could add an inclusivity clause to our policy to see that everyone is putting their best efforts into accepting each other, as they are."
 
     priyanka "But we already do, Abhay, as long as they’re not too-"
 
-    "No you don’t, Priyanka, think about Donatello."
+    abhay "No you don’t, Priyanka, think about Donatello."
 
     priyanka "But he’s mean anyway, why protect him?"
 
-    "Because it’s not about him."
+    abhay "Because it’s not about him."
 
     priyanka "!"
 
-    "It’s about everybody, people we don’t know yet, who will come in the future, and that the likes of Bapat will harass, and it’s about the image of our company."
+    abhay "It’s about everybody, people we don’t know yet, who will come in the future, and that the likes of Bapat will harass, and it’s about the image of our company."
 
     priyanka "But precisely, Abhay, the company’s image will suffer."
 
-    "From {i}whom{/i}?"
+    abhay "From {i}whom{/i}?"
 
-    "We sell to the younger generations, don’t you think this can convey a positive message, I don’t know, like we’re Apple or something?"
+    abhay "We sell to the younger generations, don’t you think this can convey a positive message, I don’t know, like we’re Apple or something?"
 
     priyanka "Apple works with China, Abhay, and I am representative of the young generation."
 
-    "All harassment is connected, Priyanka, you don’t get it."
+    abhay "All harassment is connected, Priyanka, you don’t get it."
 
-    "Gay-shaming{w=0.25}, slut-shaming,{w=0.25} it’s the same!"
+    abhay "Gay-shaming{w=0.25}, slut-shaming,{w=0.25} it’s the same!"
 
-    "You, of all people, are a victim of this frame of mind already, don’t you see it?"
+    abhay "You, of all people, are a victim of this frame of mind already, don’t you see it?"
 
     priyanka "I will think about it, Abhay."
 
@@ -1057,17 +1057,17 @@ label .scene25:
 
     giti "I have done my research, Abhay."
 
-    "What research, tell me?"
+    abhay "What research, tell me?"
 
     giti "The Penal Code says that homosexual sexual intercourse is illegal, not that being homosexual is criminal."
 
-    "But-"
+    abhay "But-"
 
     giti "Wait, Abhay, wait. {w=0.25}Also I have seen that nowhere since 2013 this has been applied. {w=0.25}A policy is possible."
 
     giti "In fact, own own company CRYPTALOO, already has this policy  in the USA, and for Europe too. Such a policy isn’t illegal, after all. You can make one, Abhay."
 
-    "And if I decide to make  it, maybe I can just copy the international policy, and-"
+    abhay "And if I decide to make  it, maybe I can just copy the international policy, and-"
 
     giti "Yes, Abhay, that’s a good idea."
 

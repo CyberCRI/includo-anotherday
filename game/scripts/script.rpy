@@ -12,14 +12,14 @@ image side placeholder:
         linear .5 alpha 0.0
 
 define employee = Character(None, image="placeholder")
-define priyanka = Character("Priyanka", kind=employee, who_color="#FFFFFF", image="placeholder")
-define bapat = Character("Bapat", kind=employee, who_color="#FFFFFF")
-define donatello = Character("Donatello", kind=employee, who_color="#FFFFFF")
-define giti = Character("Giti", kind=employee, who_color="#FFFFFF")
-define manali = Character("Manali", kind=employee, who_color="#FFFFFF")
-define ashwini = Character("Ashwini", kind=employee, who_color="#FFFFFF")
-define abhay = Character("Abhay", who_color="#FFFFFF")
-define thinking = Character("Abhay", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}")
+define priyanka = Character("PRIYANKA", kind=employee, who_color="#FFFFFF", image="placeholder")
+define bapat = Character("BAPAT", kind=employee, who_color="#FFFFFF")
+define donatello = Character("DONATELLO", kind=employee, who_color="#FFFFFF")
+define giti = Character("GITI", kind=employee, who_color="#FFFFFF")
+define manali = Character("MANALI", kind=employee, who_color="#FFFFFF")
+define ashwini = Character("ASHWINI", kind=employee, who_color="#FFFFFF")
+define abhay = Character("ABHAY", who_color="#FFFFFF")
+define thinking = Character("ABHAY", who_color="#FFFFFF", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}")
 
 label start:
     $act_1_completed = False
