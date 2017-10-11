@@ -50,7 +50,7 @@ label act4:
 
     thinking "{b}Of course{/b}, how could I have forgotten?"
 
-    "My goodness, that's true! {w=0.25}Let's-"
+    "My goodness, that's true!{w=0.5} Let's-"
 
     giti "I cannot participate, Abhay Sir, these are not my beliefs."
 
@@ -201,7 +201,7 @@ label .scene6:
 
     donatello "I don't know. She can't just skip it openly."
 
-    donatello "Either you force her, and see what happens{w=0.25}, or you let her call in sick, maybe?"
+    donatello "Either you force her, and see what happens,{w=0.25} or you let her call in sick, maybe?"
 
     donatello "She could take a sick leave, and you would tell she's got a flu, or something?"
 
@@ -269,7 +269,7 @@ label .scene9:
 
     giti "My family would respect my religion, Abhay Sir."
 
-    "As we all do, as we all do{w=0.25}, but it's not only about religion."
+    "As we all do, as we all do,{w=0.25} but it's not only about religion."
 
     "It's about being together, and participating."
 
@@ -541,7 +541,7 @@ label .scene17:
 
     "It's been three years!"
 
-    bapat "Oh so she uses our toilets for this as well? {w=0.25}No wonder they’re dirty."
+    bapat "Oh so she uses our toilets for this as well?{w=0.5} No wonder they’re dirty."
 
     "What can she do, she has no other spaces in the company for praying!"
 
@@ -579,7 +579,7 @@ label .scene18:
 
     "We’re talking one room, here, small one, for less than an hour a day in total."
 
-    priyanka "And then what? What will it be next? More holidays? A salary raise?"
+    priyanka "And then what?{w=0.5} What will it be next?{w=0.5} More holidays?{w=0.5} A salary raise?"
 
     "She never asked for any of this, it’s only decent, Priyanka, she’s been kneeling in the toilets for three years!"
 
@@ -617,7 +617,7 @@ label .scene19:
 
     "We allow sikhs with turbans, and even kukris, don’t we?"
 
-    donatello "It’s not the same thing{w=0.25}, we didn’t build a mandir in here, did we?"
+    donatello "It’s not the same thing,{w=0.25} we didn’t build a mandir in here, did we?"
 
     "But we have a mandir, just over there."
 
@@ -790,7 +790,6 @@ label .scene25:
 
     $act_4_ending_25 = True
     $act_4_completed = True
-
     return
 
 label .scene26:
@@ -826,3 +825,9 @@ label .scene28:
     $act_4_completed = True
     return
 
+label .end:
+    narration "Act 4 End."
+    $act_4_completed = True
+    $renpy.call_screen("act_menu")
+
+    return

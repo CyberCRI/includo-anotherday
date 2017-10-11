@@ -101,6 +101,7 @@ screen say(who, what):
     style_prefix "say"
 
     window:
+        right_padding 100
         id "window"
 
         if who is not None:
@@ -111,11 +112,8 @@ screen say(who, what):
 
         text what id "what"
 
-
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
     if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
+        add SideImage() xalign 1.0 yalign 1.0
 
 
 style window is default
@@ -398,7 +396,7 @@ screen main_menu():
 
         spacing 100
 
-        textbutton _("START") action ShowMenu("act_menu")
+        textbutton _("START") action Start()
         textbutton _("LOAD") action ShowMenu("load")
         textbutton _("QUIT") action Quit(confirm=False)
 
@@ -433,7 +431,7 @@ screen act_menu():
                 if act_4_completed == True:
                     image "closure_checkbox_tick4.png"
                 if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
-                    imagebutton idle "closure_unlocked" action Start("closure")
+                    imagebutton idle "closure_unlocked" action Jump("closure")
                 else:
                     image "closure_locked"
 
@@ -447,7 +445,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_1_button.png" action Start("act1") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_1_button.png" action Jump("act1") at zoom_on_hover(1, 1.025)
                 image "act_1_label.png" at from_horizontal_label(pause_time=0.75, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_1_checkbox.png" at elastic_splash(time_value=0.75)
                 if act_1_completed == True:
@@ -463,7 +461,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_2_button.png" action Start("act2") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_2_button.png" action Jump("act2") at zoom_on_hover(1, 1.025)
                 image "act_2_label.png" at from_horizontal_label(pause_time=1.0, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_2_checkbox.png" at elastic_splash(time_value=0.85)
                 if act_2_completed == True:
@@ -479,7 +477,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_3_button.png" action Start("act3") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_3_button.png" action Jump("act3") at zoom_on_hover(1, 1.025)
                 image "act_3_label.png" at from_horizontal_label(pause_time=1.25, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_3_checkbox.png" at elastic_splash(time_value=0.95)
                 if act_3_completed == True:
@@ -495,7 +493,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_4_button.png" action Start("act4") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_4_button.png" action Jump("act4") at zoom_on_hover(1, 1.025)
                 image "act_4_checkbox.png" at elastic_splash(time_value=1.05)
                 image "act_4_label.png" at from_horizontal_label(pause_time=1.5, easein_time=3.0, xorigin=.5, xdestination=.01)
                 if act_4_completed == True:

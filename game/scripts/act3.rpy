@@ -88,7 +88,7 @@ label act3:
 
     #priyanka annoyed
 
-    bapat "I am joking too! {i}Hahaha!{/i}"
+    bapat "I am joking too!{w=0.5} {i}Hahaha!{/i}"
 
     #bapat forced laugher
 
@@ -234,7 +234,7 @@ label .scene4:
 
     donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "Wait, say what? What did Bapat do?"
+    "Wait, say what?{w=0.5} What did Bapat do?"
 
     donatello "Doesn't matter, Abhay."
 
@@ -250,7 +250,7 @@ label .gay:
 
     "W-What?"
 
-    "But it was only yesterday that you groped Priyanka! Are you insane?"
+    "But it was only yesterday that you groped Priyanka!{w=0.5} Are you insane?"
 
     donatello "That was a mask, Abhay. I was overdoing it on purpose."
 
@@ -320,7 +320,7 @@ label .scene5:
 
     #bapat surprised
 
-    "I've heard it! {w=0.5}Kindly don't insult my intelligence."
+    "I've heard it!{w=0.5} Kindly don't insult my intelligence."
 
     narration "You give him {b}the look{/b}, forehead lowered, eyes looking up straight at him like a bull."
 
@@ -370,7 +370,7 @@ label .scene6:
 
     donatello "I don't see why I should hide, and let people like Bapat try to take advantage of me."
 
-    "Wait, say what? What did Bapat do?"
+    "Wait, say what?{w=0.5} What did Bapat do?"
 
     donatello "Doesn't matter, Abhay."
 
@@ -418,7 +418,7 @@ label .scene7:
 
     thinking "Everyone has fifteen minutes of glory in life, or so I've heard, maybe this is Bapat's moment of fame."
 
-    bapat "Are we supposed to accept this indecency ?!"
+    bapat "Are we supposed to accept this indecency?!"
 
     giti "..."
 
@@ -429,7 +429,7 @@ label .scene7:
     narration "You push the door, and see Bapat standing, his face contorted with anger.
             Priyanka, and Manali are laughing nervously. Only Giti remains silent, still listening to Donatello, who seems to be holding his own."
 
-    "Did he say he wants you for a boyfriend, Bapat? {i}Who would?{/i}"
+    "Did he say he wants you for a boyfriend, Bapat?{w=0.5} {i}Who would?{/i}"
 
     show bapat with dissolve
 
@@ -459,7 +459,7 @@ label .scene7:
 
     narration "He releases her hands as he leaves the room."
 
-    thinking "Do I need to do something? And if yes, what?"
+    thinking "Do I need to do something?{w=0.5} And if yes, what?"
 
     menu:
         "Think about it":
@@ -509,8 +509,7 @@ label .scene10:
     narration "There’s nothing you can do now, except to wait for the new CEO to step in, hoping that they can resolve the situation, and maybe even help Donatello."
 
     $act_3_ending_10 = True
-    $act_3_completed = True
-    return
+    jump .end
 
 label .scene11:
     narration "You write to M. Rajkumar, You write to M. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
@@ -554,7 +553,7 @@ label .scene12:
 
     thinking "Why is everyone wanting some special status in this company?"
 
-    thinking "Is this because there's no CEO yet? Well, they sure will sing a different kind of song when the CEO will come!"
+    thinking "Is this because there's no CEO yet?{w=0.5} Well, they sure will sing a different kind of song when the CEO will come!"
 
     menu:
         "The next weeks.":
@@ -576,14 +575,14 @@ label .scene13:
     thinking "No matter, I'll explain everything, and all will be well."
 
     $act_3_ending_13 = True
-    $act_3_completed = True
-    return
+    jump .end
+    
 
 label .scene14:
 
     thinking "The situation has gone beyond what lawyers and warnings could help with."
 
-    thinking "What am I going to write in the warning ?"
+    thinking "What am I going to write in the warning?"
 
     thinking "\"Don't be yourself\"?"
 
@@ -629,7 +628,7 @@ label .scene15:
 
     bapat "I was just telling him that I could remain silent about it, the best thing for everybody, honest, and that he should be more grateful to me."
 
-    "Graceful for {i}what{/i}? For disrespecting him?"
+    "Graceful for {i}what{/i}?{w=0.5} For disrespecting him?"
 
     bapat "Abhay, Abhay, stop getting on your high horses again!"
 
@@ -641,7 +640,7 @@ label .scene15:
 
     "I must admit that I didn't think about that."
 
-    bapat "Ah! Ah!"
+    bapat "Ah!{w=0.5} Ah!"
 
     "Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!"
 
@@ -718,7 +717,7 @@ label .scene16:
 
     narration "She blushes again."
 
-    manali "No, Sir, not that! {w=0.5}Maybe. {w=0.5}I don't know."
+    manali "No, Sir, not that!{w=0.5} Maybe.{w=0.5}I don't know."
 
     manali "But telling us, that's his fault."
 
@@ -755,7 +754,7 @@ label .scene17:
 
     #priyanka uninterrested
 
-    "Then why? {w=0.25}Why you hurt someone if you don't care?"
+    "Then why?{w=0.5} Why you hurt someone if you don't care?"
 
     priyanka "..."
 
@@ -775,7 +774,7 @@ label .scene17:
 
     "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
 
-    priyanka "This is difficult to accept, Abhay, what will I say to my family? {w=0.25}They will want me to move."
+    priyanka "This is difficult to accept, Abhay, what will I say to my family?{w=0.5} {w=0.25}They will want me to move."
 
     "So they were happy to let you stay when you stay when you were shamed for the way you dress."
 
@@ -889,7 +888,7 @@ label .scene19:
 
     donatello "I will request it officially to the company headquarters."
 
-    thinking "Would that be a solution ?"
+    thinking "Would that be a solution?"
 
     thinking "How will the others react to that?"
 
@@ -944,11 +943,11 @@ label .scene22:
 
     bapat "A policy?"
 
-    bapat "A {i}policy{/i}?! And why not a bonus!"
+    bapat "A {i}policy{/i}?!{w=0.5} And why not a bonus!"
 
     "It's just to protect him, Bapat"
 
-    bapat "Oh yes? {w=0.25}Special rights now. A schedule, why not!"
+    bapat "Oh yes?{w=0.5} Special rights now. A schedule, why not!"
 
     "You work here, Bapat, right?"
 
@@ -960,7 +959,7 @@ label .scene22:
 
     "So you'll stay?"
 
-    bapat "Yes of course, why would I leave? He wants my job now, this Donaldino?"
+    bapat "Yes of course, why would I leave?{w=0.5} He wants my job now, this Donaldino?"
 
     "See, the way you talk convinces me even more to draft it."
 
@@ -1128,6 +1127,11 @@ label .scene28:
                 They’ve even found the new CEO’s email, and forwarded their complaints there. Let’s hope this move will be appreciated. Else you’re in big, big trouble."
 
     $act_3_ending_28 = True
+    jump .end
+
+label .end:
+    narration "Act 3 End."
     $act_3_completed = True
+    $renpy.call_screen("act_menu")
 
     return

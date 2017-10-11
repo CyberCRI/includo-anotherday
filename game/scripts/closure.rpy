@@ -22,7 +22,7 @@ label closure:
 
     thinking "{i}Ashwini{/i}, of course!"
 
-    thinking "Ashwini, why on Earth did I think the CEO was a man ?!"
+    thinking "Ashwini, why on Earth did I think the CEO was a man?!"
 
     ashwini "Good morning everybody. My name is Ashwini Baghyashree."
 
@@ -161,7 +161,7 @@ label .ending:
 
     narration "M. Gopinath seems surprised, and moves forward."
 
-    ashwini "Where were you all this time? {w=0.25}Why didn't you answer your emails?"
+    ashwini "Where were you all this time?{w=0.5} Why didn't you answer your emails?"
 
     ashwini "You know that you were supposed to be back last week, didn't you?"
 
@@ -212,7 +212,7 @@ label .bad_ending:
     narration "You redden with anger, and prepare yourself to answer this infamy when the thought hits you like a bullet:{p}
     {\i}What if she has a point?{w=0.5} What if you stayed indeed?{w=0.5} That would be a whole new story, yet to be written."
 
-    return
+    jump .end
 
 label .good_ending:
     ashwini "With M. Gopinath away, and myself still abroad, the fate of the whole Indian branch was lying upon your shoulders, M. Chandrakant."
@@ -231,7 +231,7 @@ label .good_ending:
 
     narration "You feel a bit tipsy, and a bit proud. Just a week ago, you were reaching the office with a pang of anxiety, knowing that you would be the one in charge, and now it seems that you’ve been successful all the way."
 
-    thinking "{i}Administrative Director? Me?{/i}"
+    thinking "{i}Administrative Director?{w=1} Me?{/i}"
 
     ashwini "M. Chandrakant?"
 
@@ -246,6 +246,8 @@ label .good_ending:
     "YES, MADAM!"
 
     narration "And everybody laughs."
+
+    jump .end
 
 label .mixed_ending:
     ashwini "You did what you could, M. Chandrakant."
@@ -269,6 +271,13 @@ label .mixed_ending:
     "I will, Madam, I promise, you'll see-"
 
     ashwini "This is a story that remains to be written. M. Chandrakant."
+
+    jump .end
+
+label .end:
+    narration "CRYPTALOO - Another Day End"
+
+    return
 
 
 

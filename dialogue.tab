@@ -1,0 +1,1211 @@
+Identifier	Character	Dialogue	Filename	Line Number
+act1_6c9db306	narration	You reach the office early as usual.	game/scripts/act1.rpy	17
+act1_97243d6f	narration	You like taking your time, and sipping on your first tea in the open space, trying to take the pulse of the day before it starts, and people shuffle in one by one.	game/scripts/act1.rpy	19
+act1_6b5acb7d	narration	Your office feels homely in a way. It’s a box, really, but you like to think you’ve made the most of it though you took great care in stripping it of anything too personal, you’re the Human Resources Manager after all.{p} With the CEO still abroad, and M. Gopinath, the Administrative Director, on leave, you’re the one in charge of the whole office this week.	game/scripts/act1.rpy	22
+act1_7a115abc	narration	You sigh, and wish silently that you won’t have to take too many decisions. Your cup in hand, you walk slowly to your office, and find the door already open, and the lights on. When you hear muffled cries from within, you realize that your wish for a peaceful, and uneventful day, might have been lost.	game/scripts/act1.rpy	28
+act1_scene2_2e469eed	narration	Priyanka was sitting inside, facing your desk. You wonder how long she’s been waiting here.	game/scripts/act1.rpy	40
+act1_scene2_8611bdba	narration	When she sees you, she stands up clumsily, tries to wipe her tears away, then sits back again. 	game/scripts/act1.rpy	44
+act1_scene2_88f2e872	narration	Puzzled, you speed up onto your chair.	game/scripts/act1.rpy	46
+act1_scene2_fe76015f		What’s the matter, Priyanka? It’s very early.	game/scripts/act1.rpy	48
+act1_scene2_447ff72b	priyanka	I can’t stand it anymore, M. Chandrakant, I just can’t.	game/scripts/act1.rpy	50
+act1_scene2_0407ace9	priyanka	Every day… Every day I come in, and it’s the same, they just won’t stop-	game/scripts/act1.rpy	52
+act1_scene2_01eaab48		Wait, who? Who won’t stop? Stop doing what?	game/scripts/act1.rpy	54
+act1_scene2_3f28687c	priyanka	They talk about the way I dress, my makeup, everything.	game/scripts/act1.rpy	56
+act1_scene2_c91aae30	priyanka	Sometimes they whistle, or they make gestures to me.	game/scripts/act1.rpy	58
+act1_scene2_651b8ec1	priyanka	You know, {w=0.25}bad gestures.	game/scripts/act1.rpy	60
+act1_scene2_22e0d478	priyanka	Yesterday afternoon, I heard Bapat call me a westernized slut, and the whole office was laughing.	game/scripts/act1.rpy	62
+act1_scene2_f86f9e82	priyanka	They crack lewd jokes with Donatello, and now they say I can’t come to work wearing a skirt, heels, or even makeup.	game/scripts/act1.rpy	64
+act1_scene2_03872b09	priyanka	Maybe they’re not used to well-groomed women, but{w=0.25} this is important to me.	game/scripts/act1.rpy	66
+act1_scene2_c44e87f1		Why don’t you change the way you dress?	game/scripts/act1.rpy	68
+act1_scene2_a1e73e5f	priyanka	Why is it to me to change my ways? Why can’t I be myself?	game/scripts/act1.rpy	70
+act1_scene2_22d47c4d	priyanka	Am I supposed to come in a sari with flowers every day?	game/scripts/act1.rpy	72
+act1_scene2_11ec82b0	thinking	I’m in a bit of a pickle now.	game/scripts/act1.rpy	74
+act1_scene2_27bbea80	thinking	Bapat is the Marketing Executive, and Donatello is the Senior Commercial Assistant.	game/scripts/act1.rpy	76
+act1_scene2_80d720dc	thinking	Two Very Important Persons, that you don’t want for enemies.	game/scripts/act1.rpy	78
+act1_scene2_50aa62ae	thinking	Yet, if what Priyanka says is true, something must be done.	game/scripts/act1.rpy	80
+act1_scene2_e6fd188c	thinking	Maybe there’s some truth in what she says?	game/scripts/act1.rpy	82
+act1_scene2_b766c859	thinking	Or maybe she’s plain wrong?	game/scripts/act1.rpy	84
+act1_scene2_42c511df	thinking	What should I do ?	game/scripts/act1.rpy	87
+act1_scene3_356d3afe	narration	As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen.	game/scripts/act1.rpy	98
+act1_scene3_285e93ce	narration	Looks like the whole team has decided to get up early today.	game/scripts/act1.rpy	103
+act1_scene3_e83f4fbf		Did you two fall out of your beds?	game/scripts/act1.rpy	105
+act1_scene3_0765de2a	bapat	We were waiting for you, Abhay	game/scripts/act1.rpy	107
+act1_scene3_015a3297		That’s interesting because I was looking for the two of you myself	game/scripts/act1.rpy	111
+act1_scene3_40301c20	narration	They both look at each other smugly.	game/scripts/act1.rpy	113
+act1_scene3_f74640bd	thinking	Something must have happened yesterday, you think, else they wouldn’t all be gathered around me this morning like they are now.	game/scripts/act1.rpy	115
+act1_scene3_9035bade	narration	You decide to bet on it:	game/scripts/act1.rpy	117
+act1_scene3_2d186212		So who’s going to tell me about what happened yesterday?	game/scripts/act1.rpy	119
+act1_scene3_f2bd98a1	bapat	It’s the same as usual, Abhay, this Priyanka she walks around half-naked, it’s not decent.	game/scripts/act1.rpy	121
+act1_scene3_56802af3	donatello	And because of this, people cannot work properly, what is she looking for?	game/scripts/act1.rpy	123
+act1_scene3_8e22bb5c		So nothing happened?	game/scripts/act1.rpy	125
+act1_scene3_3c1d906c	donatello	Of course, we tried to tell her with humour, but she doesn’t get it	game/scripts/act1.rpy	127
+act1_scene3_d48756a9	donatello	 and she has the nerve to pretend to be angry at us now!	game/scripts/act1.rpy	129
+act1_scene3_096120b1	bapat	And pretending to cry with that! Like we’re the bad guys now!	game/scripts/act1.rpy	131
+act1_scene3_dbdb2a27		Hold on a second	game/scripts/act1.rpy	133
+act1_scene3_d9e8ae39		I’ve heard enough, guys, let me decide about this.	game/scripts/act1.rpy	135
+act1_scene4_b19941bf	narration	Bapat and Donatello have left, leaving you alone in the canteen.	game/scripts/act1.rpy	148
+act1_scene4_d33025ce	narration	You hesitate between gathering everyone, and making a public inquiry, or meeting with all the others individually in your office.	game/scripts/act1.rpy	150
+act1_scene4_c662b5ab	narration	While you ponder, you receive an email from Bapat on your phone asking all employees to come and meet him and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a rebellion.	game/scripts/act1.rpy	152
+act1_scene5_b19941bf	narration	Bapat and Donatello have left, leaving you alone in the canteen.	game/scripts/act1.rpy	162
+act1_scene5_7f116f8d	thinking	That was a close one.	game/scripts/act1.rpy	164
+act1_scene5_38e6679b	narration	Since you want everyone on board, and can’t afford to lose either Priyanka, Bapat, or Donatello before the new CEO comes in, you’ve chosen the path of least resistance: doing nothing.	game/scripts/act1.rpy	166
+act1_scene5_04adcaaf	narration	While you congratulate yourself for your wisdom, you receive an email from Bapat on your phone asking all employees to come meet him, and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a revolution.	game/scripts/act1.rpy	168
+act1_scene6_28ccf897	narration	It looks like you won’t get away with Bapat, and Donatello so easily.	game/scripts/act1.rpy	176
+act1_scene6_981e6fe2	narration	Before you could take a decision about the situation yourself—if you had any intention of taking one—they’ve gathered everyone for a meeting to address what they describe as “decency issues”.	game/scripts/act1.rpy	178
+act1_scene6_a23c26bb	thinking	Why the haste?	game/scripts/act1.rpy	180
+act1_scene6_8610ed88	thinking	Are they afraid of the decision I might take?	game/scripts/act1.rpy	182
+act1_scene6_30daac2c	thinking	Do they feel guilty in any way?	game/scripts/act1.rpy	184
+act1_scene6_1941fb70	thinking	And if so, of what exactly?	game/scripts/act1.rpy	186
+act1_scene6_6a5a9a7e	thinking	Is it possible that they’re pushing hard because they genuinely feel offended?	game/scripts/act1.rpy	188
+act1_scene6_1c92e99a	narration	Whatever the case, you now find yourself in the meeting room with everyone but Priyanka. You double-check your emails to verify that she’s been invited as well, and find that she wasn’t.	game/scripts/act1.rpy	193
+act1_scene6_a3debdfa	narration	Bapat, and Donatello, are talking loud, and fast. Everybody else listens, scolds, or nod in agreement with them as statements go. This sure seems like a there’s a situation, and that the situation needs to be addressed. Still, you can’t ignore the feeling that something unusual happened yesterday, and that the reason of all this ruckus escapes you.	game/scripts/act1.rpy	195
+act1_scene6_5cf36e02		I am sorry to interrupt,	game/scripts/act1.rpy	200
+act1_scene6_c8720e49		but this isn’t how it works.	game/scripts/act1.rpy	202
+act1_scene6_91d06479	narration	Everybody looks at you now, you carry on:	game/scripts/act1.rpy	208
+act1_scene6_aff9e54f		You can’t call for a public meeting, especially when you exclude another employee from this meeting,	game/scripts/act1.rpy	210
+act1_scene6_5cee878f		I am the one in charge of Human Resources here, and with M. Gopinath away, and the new CEO on the way, of the whole company at the moment.	game/scripts/act1.rpy	212
+act1_scene6_b3795e81		If I wanted to call for a public meeting I would have done it.	game/scripts/act1.rpy	214
+act1_scene6_2190bd90	narration	There’s a lot of shoegazing as everybody falls silent.	game/scripts/act1.rpy	216
+act1_scene6_fe0f72a6		I’d rather we stop this, and get back to work, we all have more important matters on our plates	game/scripts/act1.rpy	218
+act1_scene6_10d5f4ac		Don’t forget that we need to handle the deliveries for next week.	game/scripts/act1.rpy	220
+act1_scene6_89cf66f4		As employees leave the meeting room one by one, you halt one of the culprits to speak with him privately.	game/scripts/act1.rpy	224
+act1_scene6_9ef31a39	thinking	Who should I talk to ?	game/scripts/act1.rpy	226
+act1_scene7_c4a22240		I want you to tell me what happened yesterday.	game/scripts/act1.rpy	236
+act1_scene7_63a2082d	bapat	Ah, it’s nothing, Abhay, don’t get all wrangled up,	game/scripts/act1.rpy	238
+act1_scene7_cd81639d		So, something happened indeed.	game/scripts/act1.rpy	240
+act1_scene7_36ab1206		I need to know it before I decide what to do with all this fuss.	game/scripts/act1.rpy	242
+act1_scene7_1f0b78cf		Bapat, I can’t follow whatever it is you’re doing without being aware of the background.	game/scripts/act1.rpy	244
+act1_scene7_337ee2e6	bapat	Ah okay, this Priyanka you know, she came in a mini-skirt like she does sometimes,	game/scripts/act1.rpy	246
+act1_scene7_b269c703	bapat	All provocation, no shame.	game/scripts/act1.rpy	248
+act1_scene7_61db64ee	bapat	And there are many men in the office	game/scripts/act1.rpy	250
+act1_scene7_a7acc6fd	bapat	Even Giti was shocked.	game/scripts/act1.rpy	252
+act1_scene7_0d8427df		And?	game/scripts/act1.rpy	254
+act1_scene7_e794e9ef	bapat	And The Donald, Donatello I mean, well, he’s a man, Abhay.	game/scripts/act1.rpy	256
+act1_scene7_87a3b37b	bapat	He made some noises, and maybe a couple of jokes, and there she went, crying all over like a baby girl, and-	game/scripts/act1.rpy	258
+act1_scene7_bffbb01f		So you thought that he could be in trouble, hence the ruckus you raise this morning.	game/scripts/act1.rpy	260
+act1_scene7_862ac58d	bapat	You don’t get it, Abhay, not at all.	game/scripts/act1.rpy	262
+act1_scene7_a140f35c	bapat	We just want to work peacefully, this is interfering with productivity.	game/scripts/act1.rpy	264
+act1_scene7_cdd02927		Thank you, Bapat, I know all I need to know now.	game/scripts/act1.rpy	266
+act1_scene8_c4a22240		I want you to tell me what happened yesterday.	game/scripts/act1.rpy	274
+act1_scene8_a6775b19	donatello	Nothing, why do you bother?	game/scripts/act1.rpy	276
+act1_scene8_db28b693		I bother because I’m the HR Manager of this company, Donatello, not you,	game/scripts/act1.rpy	278
+act1_scene8_ad279397		and you called for a public meeting the very same day I find Priyanka in my office, and didn’t even bother to invite her to this meeting.	game/scripts/act1.rpy	280
+act1_scene8_134d833e	donatello	‘This woman is really a problem, you know, Abhay.	game/scripts/act1.rpy	283
+act1_scene8_70906e29		Well at least she doesn’t raise a ruckus like you and Bapat did…	game/scripts/act1.rpy	285
+act1_scene8_2a744273		Now kindly tell me what happened.	game/scripts/act1.rpy	287
+act1_scene8_f27817a8	donatello	Oh well, she came to work like she’s going to party all night	game/scripts/act1.rpy	289
+act1_scene8_4ef00fe3	donatello	and Bapat, well, he’s just a man, Abhay.	game/scripts/act1.rpy	291
+act1_scene8_b109ab89	donatello	He made noises, and motions, and maybe I made a couple of jokes, and felt her a bit, and she started to cry, and become angry as if WE were the problem, not her, and-	game/scripts/act1.rpy	293
+act1_scene8_074561d2		So you thought that you both could be in trouble, hence the ruckus you raise this morning.	game/scripts/act1.rpy	295
+act1_scene8_89d6199c	donatello	I only think about the well-being of the company, Abhay,	game/scripts/act1.rpy	297
+act1_scene8_f07520f6	donatello	customers come in here sometimes, what impression do we give to them by having Priyanka dressed up like this?	game/scripts/act1.rpy	299
+act1_scene8_f0a623c5	donatello	This isn’t a massage parlor, and what if the others, like Manali, start to copy her?	game/scripts/act1.rpy	301
+act1_scene8_e90597f8	donatello	Men have drives, Abhay, she’s asking for it,	game/scripts/act1.rpy	303
+act1_scene8_0569962f	donatello	I can’t blame her really because we’re good-looking and all, but she must keep her instincts in control.	game/scripts/act1.rpy	305
+act1_scene8_1df2a81a		Thank you, Donatello, I know all I need to know now.	game/scripts/act1.rpy	307
+act1_scene9_9cec15df	narration	Before he leaves, his accomplice steps in as you are about to alight.	game/scripts/act1.rpy	316
+act1_scene9_b2e71c7d	narration	They both look at you with a strange mixture of mistrust, and eagerness.	game/scripts/act1.rpy	318
+act1_scene9_22759a01	bapat	Are you going to do something about it, Abhay?	game/scripts/act1.rpy	320
+act1_scene10_e29e6ca6	narration	You’ve heard their explanations, and have gathered enough information to take a decision, and solve this problem now.	game/scripts/act1.rpy	335
+act1_scene10_eb90856e	narration	You could draft a dress code for all the employees of the office, so that Priyanka wouldn’t feel targeted, and that good work conditions can be maintained for everyone.	game/scripts/act1.rpy	337
+act1_scene10_94ee8c66	narration	You could also take even less risks by calling for a public poll in the meeting room, so that everybody will have the opportunity to give one’s advice, and if anything goes wrong, you won’t be held responsible for it.	game/scripts/act1.rpy	339
+act1_scene10_783b94f4	narration	Or maybe you think that sometimes, a HR Manager has to take difficult decisions, and since Priyanka is the root of this trouble, you will issue her a warning to have her start dressing more appropriately, after all, she’s the only troublesome one as nobody ever complains about the other women.	game/scripts/act1.rpy	341
+act1_scene11_f04601f1	narration	You draft a dress code forbidding short dresses, heels, and skirts, and requesting decency from the employees	game/scripts/act1.rpy	355
+act1_scene11_487cf72c	narration	Later this day, you send it to all, and forward your email to M. GOPINATH, the Administrative Director, and to the new CEO. Better safe than sorry.	game/scripts/act1.rpy	357
+act1_scene12_a406cb39	narration	You’ve decided to call for a public poll, and gather everyone once again in the meeting room.	game/scripts/act1.rpy	364
+act1_scene12_ed9e4c30	narration	Priyanka joined you, eager to find a solution, but when you describe the situation to the people, Bapat, and Donatello are very vocal, and slowly get everyone on board with their agenda.	game/scripts/act1.rpy	366
+act1_scene12_9b04b973	bapat	Why does she have to dress like this? This isn’t a party!	game/scripts/act1.rpy	370
+act1_scene12_8b74e435	priyanka	And how do I dress exactly, Bapat, do tell me? Is this because I’m not wrapped head to toe in a sari?	game/scripts/act1.rpy	374
+act1_scene12_ed3398d9	donatello	It’s either sari, or panties with you.	game/scripts/act1.rpy	378
+act1_scene12_dc464097	narration	The other women blush, and laugh with him.	game/scripts/act1.rpy	380
+act1_scene12_e3e4a6a6	priyanka	How can you-	game/scripts/act1.rpy	384
+act1_scene12_8c49c737	bapat	Look at Giti Madam, Priyanka, or sweet Manali, they dress with de-{w=0.25}cen-{w=0.25}cy.	game/scripts/act1.rpy	388
+act1_scene12_25d4eb57	priyanka	What’s your prob-	game/scripts/act1.rpy	392
+act1_scene12_c4d7a04d	bapat	When you dress like this, like western people trying to find a partner, of course we’re just men, 	game/scripts/act1.rpy	396
+act1_scene12_6a4dbb9c	bapat	it’s difficult to concentrate, and ignore you, and the same goes for the customers, you’re ask-	game/scripts/act1.rpy	398
+act1_scene12_6def2e58		Bapat!	game/scripts/act1.rpy	400
+act1_scene12_a3bc90c6		Stop this now, you need to keep your speech under control !	game/scripts/act1.rpy	402
+act1_scene12_7bccb195		The same goes for you, {w=0.25}{nw}	game/scripts/act1.rpy	404
+act1_scene12_c522ad7c	extend	Donatello.	game/scripts/act1.rpy	408
+act1_scene12_cd9d49c7	donatello	Then she needs to help us being in control, this shameless woman!	game/scripts/act1.rpy	410
+act1_scene12_e111aa50	narration	With this, Priyanka leaves the meeting room in tears while the others whistle, and laugh. {p} Since the public meeting has turned into a nightmare, and added to Priyanka’s shaming, you regret this idea, but it’s a little too late.	game/scripts/act1.rpy	412
+act1_scene13_1d70f0e2	narration	Since Priyanka is the only one causing trouble, you see no need to bother everyone with a dress code, or a public poll.	game/scripts/act1.rpy	420
+act1_scene13_b5345877	narration	After all, Bapat, and Donatello have both explained the situation to you, and though you dislike doing it, you decide to issue Priyanka a warning.{p} It’s not your problem whether she accepts it peacefully or not, she has to be professional. Since the new CEO is said to be tough, this could be your chance to prove yourself worthwhile, and who knows, to be promoted.	game/scripts/act1.rpy	422
+act1_scene14_5d25cac4	narration	Following your decision, and the events of the day, Priyanka gives you her resignation letter the next morning.{p=1} Bapat and Donatello gloat in the open space, and start making jokes about Manali, the Secretary, as well.{p=1} Given the terms of her contract, Priyanka has to stay for a month, now wearing an oversized sweater, and trousers, and will be there when the new CEO comes.{p=1} Let’s hope you made the right choice.	game/scripts/act1.rpy	430
+act1_scene15_2b2c8d36	narration	You unpack your lunch box in the canteen. It’s a most welcomed time of the day as everybody blows off some steam, and engage in small talk.	game/scripts/act1.rpy	444
+act1_scene15_414fd707	donatello	...can you believe this ?	game/scripts/act1.rpy	448
+act1_scene15_e2752539	giti	Well, you know, my community’s just off the main road, so I’m rather happy with this decision.	game/scripts/act1.rpy	452
+act1_scene15_c3128282	bapat	‘But it’s a festival, Giti, how are we supposed to celebrate without fireworks, or sound system?	game/scripts/act1.rpy	456
+act1_scene15_44bc6a8f	manali	And it’s dry day as well.	game/scripts/act1.rpy	460
+act1_scene15_ba51af59	bapat	That is normal, it’s different!	game/scripts/act1.rpy	464
+act1_scene15_df2b846e	priyanka	How come the High Court decides about religion anyway?	game/scripts/act1.rpy	468
+act1_scene15_fa2c5044	donatello	Come on, religion? {w=0.25}How are fireworks, and techno music connected with religion in any way?	game/scripts/act1.rpy	472
+act1_scene15_6c127b44	bapat	It’s like that, it’s what we do.	game/scripts/act1.rpy	476
+act1_scene15_c598f100	bapat	What we’ve always done!	game/scripts/act1.rpy	478
+act1_scene15_2d56c6c2	thinking	Gossips, and issues all the time.	game/scripts/act1.rpy	480
+act1_scene15_5ffe6a01	narration	The conversation then trails off on the subject of the new CEO.{p=1} M. BAJU, the former, wasn’t proactive, to put it mildly, but he maintained a peaceful if a bit droning work environment.{p=1} . We are creatures of habit, and don’t like to be shaken off them, and BAJU was our habit of a CEO, aloof, quiet, almost jaded.{p=1} You all got used to this. That was relaxing in a way.{p=1} Now that he’s gone, people are excited, and the bad stuff surfaces in this ungoverned space.	game/scripts/act1.rpy	482
+act1_scene15_4ef53e29	narration	This is usually where you fall back on M. GOPINATH, the Administrative Director, but he’s taken his annual leave, and has left you alone to deal with everything.	game/scripts/act1.rpy	488
+act1_scene15_2276cf00	narration	Without active CEO, and M. GOPINATH being away, you are the highest ranking employee in the company right now, a company in turmoil with Priyanka’s issue this morning.	game/scripts/act1.rpy	490
+act1_scene15_eccd27d8	thinking	I need to solve it, and to gather everyone's opinion.	game/scripts/act1.rpy	492
+act1_scene16_66e4ca29	narration	If all you do to find the truth about people harassing women is talk with the harassers, you won’t go very far, you think. You need to gather the opinion of other employees, and maybe to ask the lawyer, M. RAJKUMAR, to give you his opinion.	game/scripts/act1.rpy	501
+act1_scene17_7e7c5037	narration	You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later:	game/scripts/act1.rpy	524
+act1_scene17_2e000175	narration	<INSERT MAIL HERE>	game/scripts/act1.rpy	527
+act1_scene18_89a8412c	narration	Giti smiles intently while you explain her the situation, trying to offer both points of views as you do so. She cuts you off as you’re about to ask for her opinion.	game/scripts/act1.rpy	538
+act1_scene18_fac85da7	giti	I know very well everything you’re talking about, Abhay Sir.	game/scripts/act1.rpy	540
+act1_scene18_c8523f01	giti	It is true that Bapat, and Donald Sir, have been making very bad jokes on Priyanka, and calling her names, 	game/scripts/act1.rpy	542
+act1_scene18_2ffb92d4	giti	But the way she dresses pushes them to-	game/scripts/act1.rpy	544
+act1_scene18_43aac7bc		You mean that she’s asking for it?	game/scripts/act1.rpy	546
+act1_scene18_1def7822		Why would she? Are they so gorgeous?	game/scripts/act1.rpy	548
+act1_scene18_e08eae67	giti	Women should have a sense of decency, we’re not in New York Miami USA here.	game/scripts/act1.rpy	550
+act1_scene18_a5a6dbd2	giti	I would be very ashamed if I went around dressed like she does.	game/scripts/act1.rpy	552
+act1_scene18_aeee62b1	narration	You try to imagine Giti with Priyanka’s clothes on, but somewhat, you can’t.	game/scripts/act1.rpy	554
+act1_scene18_9a000c00		*sigh* {w=0.25}Carry on.	game/scripts/act1.rpy	556
+act1_scene18_03499cb1	giti	I have said what I needed to, Abhay Sir.	game/scripts/act1.rpy	558
+act1_scene18_23c25214		What should I do then? Should I punish Priyanka, and leave the guys alone?	game/scripts/act1.rpy	560
+act1_scene18_657d998f	giti	Maybe you should give them all a warning, then decide on a dress code, or give Priyanka more warnings if she doesn’t change her ways.	game/scripts/act1.rpy	562
+act1_scene18_caef137a		By company policy, I have to fire her after three warnings have been issued, Giti, did you know that?	game/scripts/act1.rpy	564
+act1_scene18_22b011ca	giti	I did not know, Abhay Sir.	game/scripts/act1.rpy	566
+act1_scene18_9cc9fe31		But you still advise me to do it?	game/scripts/act1.rpy	568
+act1_scene18_ff1aa49f	giti	No Sir, I have no solution.	game/scripts/act1.rpy	570
+act1_scene18_e18fb091	narration	This being said, Giti leaves your office.	game/scripts/act1.rpy	574
+act1_scene19_51a861bf	narration	When Manali sits down in your office, you feel like a police officer conducting an interrogation. {p=1} She gazes at her shoes, and blushes a lot, twisting her fingers as she does.	game/scripts/act1.rpy	583
+act1_scene19_e4587852		You know why I have called you, right?	game/scripts/act1.rpy	588
+act1_scene19_baa0b2b2	manali	Maybe because it’s about Priyanka and the management, Sir?	game/scripts/act1.rpy	590
+act1_scene19_7bf6ec8d		Yes, it’s about that. Her, and Bapat, and Donatello, and whatever happened between them. {w=1}*sigh*	game/scripts/act1.rpy	592
+act1_scene19_9067dd40		Do you think she dresses too provocatively for work, Manali? That I should do something?	game/scripts/act1.rpy	594
+act1_scene19_9f3b8a30	manali	I can’t say, Abhay Sir, I am not in a position to say.	game/scripts/act1.rpy	596
+act1_scene19_dbb4eed4		Because you’re a woman? {w=0.25}Or a Secretary? {w=0.25}Nonsense. Please tell me.	game/scripts/act1.rpy	598
+act1_scene19_00639e2d	narration	Manali clears her throat, looks at the ceiling, clears her throat again, and speaks	game/scripts/act1.rpy	600
+act1_scene19_202cb77a	manali	Well. Well, I don’t think so too much, Abhay Sir. It’s just…	game/scripts/act1.rpy	602
+act1_scene19_04d12ec0	narration	And with that, she stops speaking, and looks at the ceiling again.	game/scripts/act1.rpy	604
+act1_scene19_60af0453		Just what?	game/scripts/act1.rpy	606
+act1_scene19_3b4780a2	manali	Just that you should talk to her, so that she can change maybe? {w=0.25}Please?	game/scripts/act1.rpy	608
+act1_scene19_0bf5b457	thinking	I feel she's hiding something, but pushing her is maybe a bad idea. What should I do ?	game/scripts/act1.rpy	610
+act1_scene20_320db272	narration	The idea that Manali has not told you everything lingers in your mind, but you cast it off, you’re not supposed to make people uncomfortable, or to get the details of their private life, you keep the workplace productive, that’s your job.{p=1} You’ve talked to people enough anyway, it’s about time you take a decision. Who knows, maybe you’ll get another chance to talk to her.	game/scripts/act1.rpy	620
+act1_scene21_4e9cc639		I need to know, Manali, I am the HR Manager here, I can’t take decisions blindly. {p=0.5}You understand that?	game/scripts/act1.rpy	628
+act1_scene21_a0fd72b3	narration	She nods.	game/scripts/act1.rpy	630
+act1_scene21_c1ca62bd		If whatever it is that you’re hiding is connected to this situation, and can change the way it is for either Priyanka, Bapat, or Donatello,	game/scripts/act1.rpy	632
+act1_scene21_24d39d68		you need to tell me so that I don’t treat them unfairly.	game/scripts/act1.rpy	634
+act1_scene21_6213c888	narration	She nods again.	game/scripts/act1.rpy	636
+act1_scene21_81a61a0a		You know something else, don’t you?	game/scripts/act1.rpy	638
+act1_scene21_a0fd72b3_1	narration	She nods.	game/scripts/act1.rpy	640
+act1_scene21_5fd426d1		Then tell!	game/scripts/act1.rpy	642
+act1_scene21_958e3d57	manali	It’s Priyanka, Abhay Sir, she was dating Bapat’s son last year.	game/scripts/act1.rpy	644
+act1_scene21_27cfc856	manali	They went on holidays together with Bapat even, and he never complained about her before, but since she’s left his son, he’s mad at her now.	game/scripts/act1.rpy	646
+act1_scene21_51014dcc	narration	She blushes into a deeper shade of red.	game/scripts/act1.rpy	648
+act1_scene21_578f2530	thinking	What should I do now ?	game/scripts/act1.rpy	650
+act1_scene22_549e22d4	narration	Given the new piece of information you’ve collected from Manali, you decide to talk to Bapat privately.	game/scripts/act1.rpy	661
+act1_scene22_8fab2ff0		I need to talk to you, Bapat.	game/scripts/act1.rpy	665
+act1_scene22_e200ac90	bapat	Sure, what’s the matter?	game/scripts/act1.rpy	667
+act1_scene22_0c4ef3a5	narration	Bapat moves nervously on the chair.	game/scripts/act1.rpy	669
+act1_scene22_00e0837b		Is there something I should know about Priyanka that you didn’t tell me yet?	game/scripts/act1.rpy	671
+act1_scene22_c265feb7	bapat	What is this nonsense?	game/scripts/act1.rpy	673
+act1_scene22_935a8c3d		You tell me.	game/scripts/act1.rpy	675
+act1_scene22_aae6e2b4	narration	Bapat stutters as he reddens with anger.	game/scripts/act1.rpy	677
+act1_scene22_90477577	bapat	What did she tell you?!	game/scripts/act1.rpy	679
+act1_scene22_6db5f687		She told me nothing, Bapat, I’m fumbling in the dark here.	game/scripts/act1.rpy	681
+act1_scene22_c0479367	narration	Bapat sighs with obvious relief	game/scripts/act1.rpy	683
+act1_scene22_39dec2c1	bapat	There’s nothing, Abhay, nothing.	game/scripts/act1.rpy	685
+act1_scene22_9c88dbb0	bapat	You should know better, and ignore the gossip.	game/scripts/act1.rpy	687
+act1_scene22_a243e596	bapat	You’re the HR Manager, and I will make sure that the new CEO recognizes your merits, and value.	game/scripts/act1.rpy	689
+act1_scene22_6611f919	narration	With that, Bapat shakes your hand, {nw}	game/scripts/act1.rpy	691
+act1_scene22_09edbf24	extend	and leaves your office. 	game/scripts/act1.rpy	695
+act1_scene22_849ec428	thinking	Given his reaction, Manali was obviously right, something’s amiss, and Priyanka having had an affair with his son would explain it all.	game/scripts/act1.rpy	697
+act1_scene22_e7b8cec4	thinking	Should I ignore the whole situation to keep both Priyanka, and Bapat on my side ?	game/scripts/act1.rpy	699
+act1_scene22_f5124c44	thinking	Or should I take a decision with this new piece of information?	game/scripts/act1.rpy	701
+act1_scene23_75fab0b8	narration	Since Bapat knows that you know, even though nothing has been said openly, it’s now easy to ignore the whole situation. {p=1} Maybe he, and Donatello will calm down now, and stop shaming Priyanka. Regardless, the situation has become too complicated for you, a mere HR Manager, to dabble in.	game/scripts/act1.rpy	710
+act1_scene24_912727e2	thinking	I have a grasp of the whole situation now. What should I do ?	game/scripts/act1.rpy	718
+act1_scene25_3554ddd4	bapat	What is it again, Abhay?	game/scripts/act1.rpy	737
+act1_scene25_f4e114f0		I know everything, Bapat, about your son.	game/scripts/act1.rpy	739
+act1_scene25_5455194d	bapat	Ah now she decided to tell you, she really has no shame, this woman!	game/scripts/act1.rpy	741
+act1_scene25_420933c3		So it is true.	game/scripts/act1.rpy	743
+act1_scene25_d0a6ffa1	bapat	Yes, it is true, this is how I found out how shameless she is!	game/scripts/act1.rpy	745
+act1_scene25_8c358de9	bapat	She dresses like this because she’s a tease! No other reason.	game/scripts/act1.rpy	747
+act1_scene25_d05936e4		She didn’t tell me, Bapat. I don’t think she would have.	game/scripts/act1.rpy	749
+act1_scene25_ce060e25	bapat	Yet something must be done about this woman, Abhay Sir.	game/scripts/act1.rpy	751
+act1_scene25_ff1ed958	bapat	We can’t have women like this going around the office, breaking hearts and all.	game/scripts/act1.rpy	753
+act1_scene25_98b5b922		You never did anything against her before she left your son. This needs to stop!	game/scripts/act1.rpy	755
+act1_scene25_662c83d7	bapat	What’s the difference? People are with me!	game/scripts/act1.rpy	757
+act1_scene25_c7049c4a	bapat	They think the same, we can’t have <b>sluts</b> around!	game/scripts/act1.rpy	759
+act1_scene25_69505489		Okay, this breaks the camel’s back.	game/scripts/act1.rpy	761
+act1_scene25_3e3ce8df		I will give you a warning, Bapat.	game/scripts/act1.rpy	763
+act1_scene25_482d9cbd	bapat	Do it, so that I can tell everyone how not only she dresses shamelessly, but also dates men all around the place !	game/scripts/act1.rpy	765
+act1_scene26_1241eddf	narration	Once both Bapat and Priyanka, are seated in your office, you expose them what you know. {p=1} Bapat erupts at once, shouting in the office, while Priyanka remains silent, her gaze set upon the postcards on your walls. {p=1} As you’re trying to calm Bapat down, the other employees gather around, watching the scene with a keen interest, overhearing too many things to keep the meeting as private as it should.	game/scripts/act1.rpy	775
+act1_scene26_18718b83	priyanka	How can I stay now?	game/scripts/act1.rpy	783
+act1_scene27_c43991e0	narration	You gather everyone in the meeting room to expose them what you know, and put the shaming to a stop. {p=1} When you talk about the affair Priyanka had with Bapat’s son, and explain that it’s the reason why Bapat is now harassing her, things don’t go as you expected as you see them side with Bapat, and accuse Priyanka. {p=1} Not only have you failed to defend her, but you have added to her plight as everyone sympathizes with Bapat.	game/scripts/act1.rpy	791
+act1_scene28_4f161be8	thinking	This is tricky.	game/scripts/act1.rpy	801
+act1_scene28_8b0fb306	thinking	On one side, Bapat harasses Priyanka with vengeance, and bitterness in mind.	game/scripts/act1.rpy	803
+act1_scene28_b8ad2da5	thinking	On the other, this is all rooted in their private life, that I can’t expose at the office.	game/scripts/act1.rpy	805
+act1_scene28_7457d4fa	thinking	Now that I know the full extent of the situation, I can’t possibly take decisions that would shame Priyanka, or punish her...	game/scripts/act1.rpy	807
+act1_scene28_2c5db234	thinking	But I can’t expose Bapat either because this all would eventually bounce back on her.	game/scripts/act1.rpy	809
+act1_scene28_d528147e	thinking	So what's left to do ?	game/scripts/act1.rpy	811
+act1_scene29_6956428a	narration	You need to do something, clearly, but you can’t accuse anyone, or try to solve interpersonal difficulties all by yourself, that’s not your job. {p=1} Deep down, you don’t want Bapat to get away with his vengeance either, but you can’t issue him a warning because this will eventually bounce back on Priyanka, and you’re not in a capacity to fire anyone, especially not a manager as the new CEO hasn’t arrived yet.	game/scripts/act1.rpy	818
+act1_scene29_e3b8d126	thinking	They want a dress code ?	game/scripts/act1.rpy	821
+act1_scene29_52119ca8	thinking	Let's give them a dress code.	game/scripts/act1.rpy	823
+act1_scene29_a64cfbf0	narration	So you do it, and write down the most inclusive dress code ever. Blue hair? Allowed. Mini-skirts? Allowed. Chapals? Allowed. No chapals? Allowed. Mohawks, and Black Metal tees? Allowed. {p=1} Of course, when the job requires a contact with clients, the dress code details a professional attire, a tailored skirt maybe, of whatever length, closed shoes, ties, etc. {p=1} Once you’ve finished with your draft, you send it to the new CEO’s email. After all, you don’t want to stay in a company who doesn’t understand this.	game/scripts/act1.rpy	825
+act1_scene30_044a16ee	narration	You write an email to the international Head Office, but they never answer you back.	game/scripts/act1.rpy	834
+act1_scene31_679f8d0a	narration	Instead of helping her, exposing Priyanka’s former relationship with Bapat’s son has fuelled the attacks against her. {p=1} For most people at the office, this is a proof that Bapat is a bad person, but also that Priyanka has no decency, and that Bapat was right in shaming her.	game/scripts/act1.rpy	843
+act1_scene31_5c447ac5	narration	A week later, Priyanka gives you her resignation letter. {p=1} Given the terms of her contract, she has to stay for a month, now wearing an oversized sweater, and trousers, not talking to anyone anymore.	game/scripts/act1.rpy	846
+act1_scene32_e46751a9	narration	Given the way the last meeting went, the situation becomes unbearable for Priyanka. {p=1} Since you don’t want her to be punished, you need to find a way to offer her another position in another Indian branch of the company. {p=1} You write the new CEO an email to request it, and manage to convince Priyanka to stay meanwhile.	game/scripts/act1.rpy	857
+act1_scene33_2bcb65b8	narration	You simply ignore the situation, forgetting that this all started with Priyanka crying in your office this very morning. {p=1} Sure, you’ve managed to escape the most immediate threats, but nothing is solved, and Priyanka is shamed, and harassed every day by the same gang during the next week. {p=1} At the end of the week, the new CEO will step in. Hopefully, the new CEO will understand you stance, and all will be well.	game/scripts/act1.rpy	868
+act1_scene34_a89681ac	narration	Looks like the international Head Office has faced the same kind of problems before, because they’ve just sent you the dress code they use in PDF format so that you can copy it instead of going all mohawks, and chapals. {p=1} It’s pretty inclusive as well, but better written that what you’ve sent them, and less chaotic. {p=1} Since the email is empty except for the PDF, and comes from the office, and not the CEO, you have no way to determine what they thought of your text, and initiative.	game/scripts/act1.rpy	879
+act1_scene34_c2690a95	narration	You copy it into the policy documents, and send it to all, now backed by the full force of the international Headquarters! Priyanka can now wear whatever she wants as long as the customers are fine with it. {p=1} Since the email came with an official document from the global office, there’s nothing Bapat, Donatello, and the others can do except to accept it.	game/scripts/act1.rpy	883
+act1_scene34_f0b69fd7	narration	Days later, not only does Priyanka come to thank you, but Manali starts to dress up more elegantly too. {p=1} Congratulations.	game/scripts/act1.rpy	886
+act2_86160cc3	narration	You are in a fool mood today.{p} The traffic was a nightmare to begin with, car after after car for miles under the flyover they’ve started to build in 2008, and never finished.	game/scripts/act2.rpy	21
+act2_27942567	narration	You’re supposed to be of the serene kind, always in control of your emotions, always poker-faced, but truth is this is all just a mask.	game/scripts/act2.rpy	26
+act2_848cabea	narration	You’re no different from them, but you know how to pretend better.{p} Maybe being the Human Resources Manager is all about knowing what to hide, and how to hide it well.	game/scripts/act2.rpy	28
+act2_8f8181ce	thinking	I should have worked in a casino. At least, I would have made some big bucks.	game/scripts/act2.rpy	31
+act2_c99540a2	narration	When you reach the office, you’re a little bit late, and spill your tea as you hurry to your desk.{p} You swear under your breath, and keep striding to your place, where you find Giti waiting for you.	game/scripts/act2.rpy	33
+act2_4c21a608		What can I do for you, Giti Madam?	game/scripts/act2.rpy	38
+act2_45529f39	giti	I need to talk to you, Abhay Sir. I have been thinking a long time about this.	game/scripts/act2.rpy	40
+act2_fd519e0e		Is this urgent?	game/scripts/act2.rpy	42
+act2_cda43820	giti	It is not, Abhay Sir, but now is as much a good time as another.	game/scripts/act2.rpy	44
+act2_ccd0399b	thinking	What do I answer her?	game/scripts/act2.rpy	46
+act2_scene2_dd3603a7	giti	Abhay Sir, I have been working hard for M. Gopinath for the last three yea-	game/scripts/act2.rpy	55
+act2_scene2_5c1f227f		I know that.	game/scripts/act2.rpy	57
+act2_scene2_4f3153c8		Your efforts are very appreciated, Giti.	game/scripts/act2.rpy	59
+act2_scene2_28fb7615	giti	Yes, Abhay Sir, also I have been working overtime in the evenings, and during weekends without even asking for compensatory leaves.	game/scripts/act2.rpy	61
+act2_scene2_27364085		You could have asked, I would have approved them, you know. Is this what-	game/scripts/act2.rpy	63
+act2_scene2_606ebd40	giti	No, Sir, please hear me out.	game/scripts/act2.rpy	65
+act2_scene2_cc6d7594	giti	Not only have I worked hard, but I have accepted more and more responsibilities, 	game/scripts/act2.rpy	67
+act2_scene2_a2ea37da	giti	like taking care of the transportation department, or of the security shift...	game/scripts/act2.rpy	69
+act2_scene2_3f2cf584	thinking	What could she want? Compensation holidays?	game/scripts/act2.rpy	71
+act2_scene2_f228e28d	thinking	Gopinath isn't looking over my shoulder so I could give them.	game/scripts/act2.rpy	73
+act2_scene2_278cec4b	thinking	Or maybe it's a promotion?	game/scripts/act2.rpy	75
+act2_scene2_6abc6163	thinking	Wait, is she going to resign? Is that what this is about?	game/scripts/act2.rpy	77
+act2_scene2_af777ef4	giti	Sir, are you listening to me ?	game/scripts/act2.rpy	79
+act2_scene2_0f7da4dc		Y-{w=0.5}yes of course, carry on.	game/scripts/act2.rpy	81
+act2_scene2_6cd34046	giti	So I was saying I didn't know why I never got the promotion while Bapat had one in just one year,	game/scripts/act2.rpy	83
+act2_scene2_c486c696	giti	but when I heard them, it all became clear.	game/scripts/act2.rpy	85
+act2_scene2_6d2461c0	giti	They said that they made sure that no women gets promoted, that only men can reach the top positions.	game/scripts/act2.rpy	87
+act2_scene2_5456df42		Who?	game/scripts/act2.rpy	89
+act2_scene2_1b52e445	giti	I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-	game/scripts/act2.rpy	91
+act2_scene2_7f08ccd8	thinking	{b}Them again...{/b}	game/scripts/act2.rpy	93
+act2_scene2_2d7ea389	thinking	Or is she playing me, bouncing on the opportunity because of what happened with Priyanka ?	game/scripts/act2.rpy	95
+act2_scene2_ca3b3082		So what do you want me to do, Giti?	game/scripts/act2.rpy	97
+act2_scene2_ea0e87bc	giti	I want to request a promotion, Abhay Sir, and your official answer.	game/scripts/act2.rpy	99
+act2_scene2_eb7aeaff	thinking	Really, {w=0.25}just like that.	game/scripts/act2.rpy	101
+act2_scene2_94af3e6b	thinking	Can I trust her ?	game/scripts/act2.rpy	103
+act2_scene2_1ad48884	thinking	This, the day after the Priyanka affair? She's trying to take advantage of the situation. I should reject her request.	game/scripts/act2.rpy	109
+act2_scene3_b806ad32	narration	Giti left with a harsh face.	game/scripts/act2.rpy	117
+act2_scene3_afb981d7	thinking	She can make all the faces she wants, I couldn't care less.	game/scripts/act2.rpy	119
+act2_scene3_00960c9a	narration	You slouch into your chair, watching YouTube videos about dancing parrots.	game/scripts/act2.rpy	123
+act2_scene3_61c93312	narration	No CEO, no Administrative Direction, nothing, and you need to relax a bit after the worrisome dress code affair.	game/scripts/act2.rpy	125
+act2_scene3_c469d342	thinking	Hey, whatever works.	game/scripts/act2.rpy	127
+act2_scene3_3679560d	thinking	Some people do yoga, others run on the side of the road in the morning.	game/scripts/act2.rpy	129
+act2_scene3_0eb8f1e2	thinking	I watch stupid videos.	game/scripts/act2.rpy	131
+act2_scene3_18de8645	narration	After a particulary exalted dance sequence on {b}Tu Meri Bang Bang!{/b} featuring no less than a blue parrot, you open your email, and find a message from Giti formally requesting a promotion.	game/scripts/act2.rpy	133
+act2_scene3_4dfcea7b	narration	She stresses on all the overtime she did during the last three years, and all the new responsibilities she's been given by M. Gopinath, and requests your formal answer at the earnest.	game/scripts/act2.rpy	136
+act2_scene3_1abe3da0	thinking	Now, that sound ominous, almost a threat, what's the hurry?	game/scripts/act2.rpy	140
+act2_scene3_b2c018c3	thinking	Looks like I need to answer her now.	game/scripts/act2.rpy	142
+act2_scene4_a6823e69	thinking	Wait, is this the right thing to do ?	game/scripts/act2.rpy	151
+act2_scene4_3bdd4c09	thinking	I should take the time to think about the situation a little.	game/scripts/act2.rpy	153
+act2_scene4_9e6431dd	thinking	Gopinath's away, the CEO's not here yet.	game/scripts/act2.rpy	155
+act2_scene4_71469bbe	thinking	This basically means I can do whatever I want but I'll still need to report to them and explain my decision afterwards.	game/scripts/act2.rpy	157
+act2_scene4_ef28f184	thinking	What about the team dynamics at the office? Won't this disrupt it?	game/scripts/act2.rpy	159
+act2_scene4_0594494c	narration	You take some time to weight all the pros and cons and you answer her.	game/scripts/act2.rpy	161
+act2_scene5_3617e5e7	narration	This is the expected decision, and you’re pretty confident that everyone at the office will understand it. This way, you preserve the balance of power, and make sure you won’t be bothered when the new CEO will come, and M. Gopinath will return.	game/scripts/act2.rpy	170
+act2_scene5_b75dc795	narration	You sigh.	game/scripts/act2.rpy	172
+act2_scene5_e31aca30	thinking	There are maybe other aspect to deal with.	game/scripts/act2.rpy	174
+act2_scene5_ef28f184	thinking	What about the team dynamics at the office? Won't this disrupt it?	game/scripts/act2.rpy	176
+act2_scene5_0594494c	narration	You take some time to weight all the pros and cons and you answer her.	game/scripts/act2.rpy	178
+act2_scene6_a978d369	narration	You walk to the meeting room, pour yourself another tea, and weigh your options.{p} You could meet with Bapat or Donatello to get to the heart of it, and find out whether they’ve been actually pushing a sexist agenda as Giti says,{p} or you could start with the other women to find out whether Giti is alone in this, or if they will support her.	game/scripts/act2.rpy	187
+act2_scene6_96fd15dd	narration	Since the promotion has to be approved by Giti’s manager, M. Gopinath, you could also write him an email to ask whether he would approve, or reject it.{p} On the other hand, if Giti has told you the truth about the conversation she has overheard, it is possible that Bapat, and Donatello have influenced him, and writing him will lead to Giti’s rejection.{p} Still, you can’t bypass him, or can you?	game/scripts/act2.rpy	191
+act2_scene6_ad0c2d66	thinking	I have many options here.	game/scripts/act2.rpy	195
+act2_scene7_0d75a59f	narration	You don't want to make it too formal, and wait until the lunch break to get a chance to catch up with them.	game/scripts/act2.rpy	211
+act2_scene7_3a3170d6	narration	When you enter the canteen, both Priyanka, and Manali are present, each in a different corner of the room. The other employees are gathered together in the middle, and have started to eat, and talk.	game/scripts/act2.rpy	215
+act2_scene7_518d9861	donatello	So that there are potholes everywhere.	game/scripts/act2.rpy	218
+act2_scene7_07077315	bapat	Ah, you just wait until the next elections, they will repair the roads then.	game/scripts/act2.rpy	220
+act2_scene7_02a6c619	donatello	Superpower in 2020.	game/scripts/act2.rpy	222
+act2_scene7_1e47e75c	giti	I can't believe this, did you know they've found a crocodile in a hole of the road!	game/scripts/act2.rpy	224
+act2_scene7_dd5d8658	bapat	This is fake news, Giti! I can't believe you fell for it.	game/scripts/act2.rpy	226
+act2_scene7_d7ff788d	donatello	It's not fake, Bapat. It's something concerned citizen have done, it's a plastic crocodile.	game/scripts/act2.rpy	228
+act2_scene7_35eb80b2	giti	No, no, it was a real crocodile, Donald Sir! It has even attacked a child!	game/scripts/act2.rpy	230
+act2_scene7_01508888	bapat	A {i}crocodile child molester{/i} now, Giti, please think!	game/scripts/act2.rpy	232
+act2_scene7_4c849a9c	narration	With that, the conversation trails off, and you remember that you wanted to talk to the women.	game/scripts/act2.rpy	234
+act2_scene7_1f24ab07	thinking	Ok, which one first?	game/scripts/act2.rpy	236
+act2_scene8_b43390bf	narration	You have summoned Bapat to the meeting room, not as relaxed as the canteen, but not as formal as your office. You don’t want him to feel like he’s being under scrutiny, but you need to keep this conversation private.	game/scripts/act2.rpy	250
+act2_scene8_4d84aff7	narration	You decide to play it clever.	game/scripts/act2.rpy	253
+act2_scene8_54e9b614		I need your advice Bapat.	game/scripts/act2.rpy	255
+act2_scene8_dc3ce405	bapat	Of course, Abhay, whatever you need.	game/scripts/act2.rpy	257
+act2_scene8_9a1a16c7		I’m going through the evaluation files today, and planning internal evolutions for the staff, 	game/scripts/act2.rpy	259
+act2_scene8_ef325780		Would you help me?	game/scripts/act2.rpy	261
+act2_scene8_e9f33e47	narration	Bapat nods, happy to be considered.	game/scripts/act2.rpy	263
+act2_scene8_c5fa6fdf		Good.	game/scripts/act2.rpy	265
+act2_scene8_6e0e6b59		My first problem is that, judging from the efforts, and responsibilities taken this year,	game/scripts/act2.rpy	267
+act2_scene8_e5411cac		The three employees which stand out are {w=0.25}Manali, {w=0.25}Priyanka, {w=0.25}and Giti.	game/scripts/act2.rpy	269
+act2_scene8_ac05c6a3		I'm not talking about your department of course.	game/scripts/act2.rpy	271
+act2_scene8_77e594cd	narration	Bapat grunts.	game/scripts/act2.rpy	273
+act2_scene8_417502f0		Obviously, I can't offer to promote all three, but I need to reward their efforts.	game/scripts/act2.rpy	275
+act2_scene8_13168f6e	bapat	Maybe you can promote Manali, Abhay?	game/scripts/act2.rpy	277
+act2_scene8_18ddef1b		Why only her	game/scripts/act2.rpy	279
+act2_scene8_d3550877	bapat	Abhay, if you promote the others, you will push women into the head management.	game/scripts/act2.rpy	281
+act2_scene8_3bf89821	bapat	We have enough problems right now.	game/scripts/act2.rpy	283
+act2_scene8_124b3ca5		Why is that a problem?	game/scripts/act2.rpy	285
+act2_scene8_fb1200e4	bapat	Ah, they’re not like us, Abhay, 	game/scripts/act2.rpy	287
+act2_scene8_de1ea5a4	bapat	They’re full of gossip, and all, 	game/scripts/act2.rpy	289
+act2_scene8_ad535408	bapat	They’re good housewife material, but none of us will accept being commanded by a woman.	game/scripts/act2.rpy	291
+act2_scene8_5ef7887e		I see.{w=0.5} Thank you, Bapat.	game/scripts/act2.rpy	293
+act2_scene8_a2e4450d		Now will you help me with the network?	game/scripts/act2.rpy	295
+act2_scene8_060bfc53	narration	With that, you talk, and talk for long enough for Bapat to forget that you've asked about the women.	game/scripts/act2.rpy	297
+act2_scene8_d9a40ae9	thinking	He's gone now.	game/scripts/act2.rpy	301
+act2_scene8_a0e8a7d7	thinking	I could take a decision right now or keep investigating.	game/scripts/act2.rpy	304
+act2_scene8_0eae8062	thinking	I have done enough investigating, it's time to take a decision.	game/scripts/act2.rpy	306
+act2_scene9_5fcc0e45	narration	Obviously, Donatello doesn't know what to expect from this meeting. He looks a bit confused, and wary. You have to play it cautious, and beat about the bush a little	game/scripts/act2.rpy	320
+act2_scene9_bca1982e		I need your advice, Donatello.	game/scripts/act2.rpy	323
+act2_scene9_34d52411	donatello	Yes, of course, what is it?	game/scripts/act2.rpy	325
+act2_scene9_f6312666		I have a lot of paperwork to do for the next review of the sales department’s employees, and I don’t understand the sales figures.	game/scripts/act2.rpy	327
+act2_scene9_549f8b4e	donatello	Show me that.	game/scripts/act2.rpy	329
+act2_scene9_e35693d9	narration	You hand him the sale reports.	game/scripts/act2.rpy	331
+act2_scene9_d5baccf4		That's a lot of work, maybe Giti, or Priyanka can help you?	game/scripts/act2.rpy	333
+act2_scene9_e5ea0cc0	narration	You see him hesitating.	game/scripts/act2.rpy	335
+act2_scene9_44037f46		What's the matter, Donatello?	game/scripts/act2.rpy	337
+act2_scene9_ecd0364d	donatello	Well, {w=0.25}Abhay, {w=0.25}you know I would rather trust my own analysis.	game/scripts/act2.rpy	339
+act2_scene9_daa14858	donatello	Sales reviews are complex, and require a lot of experience.	game/scripts/act2.rpy	341
+act2_scene9_63fb494c		But Priyanka has been here longer than you, Donatello, why can’t she help?	game/scripts/act2.rpy	343
+act2_scene9_7940593c	donatello	Abhay, talking to clients is one thing, but this is high level managerial stuff-	game/scripts/act2.rpy	345
+act2_scene9_82e5c8da		And you think she can't do it?	game/scripts/act2.rpy	347
+act2_scene9_9846a3dd	donatello	She can’t, Abhay.	game/scripts/act2.rpy	349
+act2_scene9_042120ec	donatello	She’s not fit for this level of responsibility.	game/scripts/act2.rpy	351
+act2_scene9_9bb58801	donatello	She may have received the same education, but she’s a woman,	game/scripts/act2.rpy	353
+act2_scene9_80685101	donatello	It's a very different situation.	game/scripts/act2.rpy	355
+act2_scene9_cbb5e5f8		I see.	game/scripts/act2.rpy	357
+act2_scene9_9c1e82d3		Thank you, Donatello.	game/scripts/act2.rpy	359
+act2_scene9_e54b8dd6		Can you get back to me with your analysis by tomorrow?	game/scripts/act2.rpy	361
+act2_scene9_5cf53a89	narration	With that, you talk, and talk for long enough for Donatello to forget what you just asked.	game/scripts/act2.rpy	363
+act2_scene9_578f2530	thinking	What should I do now ?	game/scripts/act2.rpy	367
+act2_scene9_a0e8a7d7	thinking	I could take a decision right now or keep investigating.	game/scripts/act2.rpy	370
+act2_scene9_0eae8062	thinking	I have done enough investigating, it's time to take a decision.	game/scripts/act2.rpy	372
+act2_scene10_a7d2d3df	narration	You decide to write to M. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone.	game/scripts/act2.rpy	383
+act2_scene10_34f4aa55	narration	There’s a chance that Bapat, and Donatello have influenced him, though, and you need to write this email in such a way that he will answer this issue without being offended, quite a feat in itself.	game/scripts/act2.rpy	385
+act2_scene10_928223d1	narration	You take your time, and rewrite your email several times to find the correct tone, and to get to the point with tact.	game/scripts/act2.rpy	387
+act2_scene10_96862df1	narration	You receive an automatic out-of-the-office answer minutes later, and never hear about it again	game/scripts/act2.rpy	389
+act2_scene10_5badb5ff	email	adnan.gopinath@cryptaloo.com To: abhay.chandrakant@cryptaloo.in Out of the Office I am currently on leave, enjoying the warm beaches of Diu Island. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in. Best regards, M. Gopinath	game/scripts/act2.rpy	391
+act2_scene10_234af237	thinking	What now?	game/scripts/act2.rpy	399
+act2_scene10_a0e8a7d7	thinking	I could take a decision right now or keep investigating.	game/scripts/act2.rpy	402
+act2_scene10_0eae8062	thinking	I have done enough investigating, it's time to take a decision.	game/scripts/act2.rpy	404
+act2_scene11_7b4e1d65	narration	You sit next to Priyanka and engage in a small talk with her.{p} After a while, you decide to jump in.	game/scripts/act2.rpy	416
+act2_scene11_ffb2143f		How come you've been working here for 2 years, and never asked for a promotion, Priyanka?	game/scripts/act2.rpy	419
+act2_scene11_27fa841e	priyanka	Because promotions have to be approved by the higher management, Abhay	game/scripts/act2.rpy	421
+act2_scene11_b5717c97	priyanka	And they clearly told everyone that there won’t be any in my department for the next three years…	game/scripts/act2.rpy	423
+act2_scene11_3ebed618		But Bapat is in your department, and has been promoted, hasn't he?	game/scripts/act2.rpy	425
+act2_scene11_b96d2510	priyanka	It's not the same.	game/scripts/act2.rpy	427
+act2_scene11_9915ef4f		How so ?	game/scripts/act2.rpy	429
+act2_scene11_d4bffa16	priyanka	...	game/scripts/act2.rpy	431
+act2_scene11_3ab0b9b6		How so, Priyanka ?	game/scripts/act2.rpy	433
+act2_scene11_49d0b846	priyanka	He’s friends with The Gopi, and The Donald—{w=0.5}Gopinath, and Donatello Sirs, I mean, and-	game/scripts/act2.rpy	435
+act2_scene11_1c166c53		That shouldn't matter, this is a {i}company{/i}, not a club!	game/scripts/act2.rpy	437
+act2_scene11_918c37b4	priyanka	Yes, Abhay, but it’s like that, and I’m a woman.	game/scripts/act2.rpy	439
+act2_scene11_94dde2d1	priyanka	Have you ever seen a woman being promoted here?	game/scripts/act2.rpy	441
+act2_scene11_5d1f6a7d		Many of them.	game/scripts/act2.rpy	443
+act2_scene11_5c07328e		There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-	game/scripts/act2.rpy	445
+act2_scene11_2b614e7f	priyanka	But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you.	game/scripts/act2.rpy	447
+act2_scene11_5d26b811	thinking	I have heard enough.	game/scripts/act2.rpy	449
+act2_scene11_6e6f7408	thinking	I could talke to Manali, keep investigating or take a decision.	game/scripts/act2.rpy	455
+act2_scene11_11052e3a	thinking	Manali's the only one left.	game/scripts/act2.rpy	457
+act2_scene11_a4fb5f95	thinking	I have talked to both Manali and Priyanka.	game/scripts/act2.rpy	459
+act2_scene11_a0e8a7d7	thinking	I could take a decision right now or keep investigating.	game/scripts/act2.rpy	462
+act2_scene11_0eae8062	thinking	I have done enough investigating, it's time to take a decision.	game/scripts/act2.rpy	464
+act2_scene12_4205d1a0	narration	You catch up with Manali as she’s about to finish her lunch.{p} You take the time to grab a tray, pour yourself some spinach soup, sit next to her, and start talking about her department.	game/scripts/act2.rpy	478
+act2_scene12_6cf7cc86		I’ve heard it’s going well, congratulations.	game/scripts/act2.rpy	481
+act2_scene12_ec6dcc45		You’re doing a great job, handling the secretary, the security, and the transportation all together!	game/scripts/act2.rpy	483
+act2_scene12_fedebaca	manali	It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient.	game/scripts/act2.rpy	485
+act2_scene12_d5b76d34		It’s been what? Three years now that she’s doing that?	game/scripts/act2.rpy	487
+act2_scene12_774e87f3	narration	You drink a mouthful of soup, it’s cold already.	game/scripts/act2.rpy	489
+act2_scene12_2eccae5e	manali	Three years, Abhay Sir, and she never complains.	game/scripts/act2.rpy	491
+act2_scene12_48ed0b7d		Yet she’s never been promoted	game/scripts/act2.rpy	493
+act2_scene12_fc45e500		Manali, I will talk to M. Gopinath about it.	game/scripts/act2.rpy	495
+act2_scene12_386b77f8	narration	You take another spoon of soup, still looking at her, drink it with a grimace, and push the bowl aside on your tray.	game/scripts/act2.rpy	497
+act2_scene12_d326c4e2	manali	You should, Sir, but he probably will not listen.	game/scripts/act2.rpy	499
+act2_scene12_977716b0		And why is that?	game/scripts/act2.rpy	501
+act2_scene12_e3100def	manali	I don’t know, Sir, I just said that for no reason.	game/scripts/act2.rpy	503
+act2_scene12_869d79b9		Of course there's a reason, please tell me.	game/scripts/act2.rpy	505
+act2_scene12_8319e41c	manali	She’s got a very good position already, and maybe they don’t want to give her too much responsibilities because-	game/scripts/act2.rpy	507
+act2_scene12_fd0cbcdf		Because she's a woman?	game/scripts/act2.rpy	509
+act2_scene12_b965aa63	manali	I didn’t say that, Sir!	game/scripts/act2.rpy	511
+act2_scene12_3fbe2881		But you meant that.	game/scripts/act2.rpy	513
+act2_scene12_9df23947	thinking	She did mean that.	game/scripts/act2.rpy	519
+act2_scene12_5d26b811	thinking	I have heard enough.	game/scripts/act2.rpy	521
+act2_scene12_8b7f9e41	thinking	I could talke to Priyanka, keep investigating or take a decision.	game/scripts/act2.rpy	527
+act2_scene12_9a0a8de7	thinking	Priyanka's the only one left.	game/scripts/act2.rpy	529
+act2_scene12_a4fb5f95	thinking	I have talked to both Manali and Priyanka.	game/scripts/act2.rpy	531
+act2_scene12_a0e8a7d7	thinking	I could take a decision right now or keep investigating.	game/scripts/act2.rpy	534
+act2_scene12_0eae8062	thinking	I have done enough investigating, it's time to take a decision.	game/scripts/act2.rpy	536
+act2_scene13_bafc5ed0	thinking	I guess I know enough by now.	game/scripts/act2.rpy	547
+act2_scene13_e986871d	thinking	Since Giti sounded very eager to receive an answer in earnest, I need to take a decision.	game/scripts/act2.rpy	549
+act2_scene13_f8bb4326	thinking	I could approve her promotion, or reject it myself...	game/scripts/act2.rpy	551
+act2_scene13_1ccc6dec	thinking	I could try to write to M. Gopinath and ask him to decide instead.	game/scripts/act2.rpy	553
+act2_scene13_0e5efd69	thinking	Or maybe I should ask M. Rajkumar. He's the company lawyer, he may have some advice.	game/scripts/act2.rpy	555
+act2_scene13_e0d8f3d5	thinking	Decisions, decisions...	game/scripts/act2.rpy	557
+act2_scene14_fd82f1b1	narration	You call Giti to your office.	game/scripts/act2.rpy	574
+act2_scene14_f1f2ba57	narration	Once she's sat, you begin.	game/scripts/act2.rpy	578
+act2_scene14_afa611d3		I have decided to approve your promotion request, Giti.	game/scripts/act2.rpy	580
+act2_scene14_21b4fa7d	giti	T-Thank you, Abhay Sir.	game/scripts/act2.rpy	584
+act2_scene14_fc5749fb	giti	Thank you, Abhay Sir, {b}thank you{/b}.	game/scripts/act2.rpy	588
+act2_scene14_fb9a471f		Hahaha !	game/scripts/act2.rpy	590
+act2_scene14_26d81ee8		About time, isn't it? Things should change around here.	game/scripts/act2.rpy	592
+act2_scene14_50ef0dc6	giti	About time, Abhay Sir, about time, thank you.	game/scripts/act2.rpy	594
+act2_scene14_2f8c85d8	narration	When she leaves, you fall back into your chair, resting your head upon your hands above your neck.	game/scripts/act2.rpy	596
+act2_scene14_68670510	narration	Now, you’ll have to deal with the aftermath.	game/scripts/act2.rpy	598
+act2_scene15_0552ca8d	narration	You write to M. Gopinath, asking him clearly and directly to take the matter into his hands so that you can escape the storm that will follow either decision you might take, receive an automatic out-of-the-office answer minutes later, and never hear about it again.	game/scripts/act2.rpy	606
+act2_scene15_c377de99	email	adnan.gopinath@cryptaloo.com To: abhay.chandrakant@cryptaloo.in Out of the Office I am currently on a pilgrimage to Kailash Mountain. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in. Best regards, M. Gopinath	game/scripts/act2.rpy	609
+act2_scene16_2d61acfc	narration	You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice.	game/scripts/act2.rpy	624
+act2_scene16_739e19c1	narration	He answers a few hours later.	game/scripts/act2.rpy	626
+act2_scene16_1ec0299e	email	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Promotion and Discrimination Dear M. Chandrakant, If your Mrs. Shaikh Giti can prove the alleged discrimination she suffers mutatis mutandis, the situation could lead to a case in court indeed, and involve liabilities, and damages as per the accessory of the main article to be continued habeas corpus. In all actuality (Ibid.), discrimination is very difficult to prove as she would require either written proofs, several witnesses, or written proof of a constant pattern from the company’s side to support her claim. Since she will find deprived of these proofs, it is most probable that she will not escalate as fees will discourage her from doing so as well. Unless you are certain that she has gathered said means of proof, I would advise to reject her plea, and act on the sole base of her professional merit and quality. Yours truly, M. Rajkumar Rajkumar & Rajkumar Ltd.	game/scripts/act2.rpy	628
+act2_scene17_05133f20	narration	If you had promoted everyone who threatened you, everybody would be CEO by now.{p} This is not how it works.	game/scripts/act2.rpy	644
+act2_scene17_ac214c9e	narration	Further, a promotion is not only a matter of doing overtime, and taking responsibilities, it’s about the person’s capacity to do take up complex challenges.	game/scripts/act2.rpy	647
+act2_scene17_79623015	narration	The least you can say is that Giti is not showing this capacity by trying to accuse Bapat and Donatello, and giving you ultimatums to promote her while her manager is away.	game/scripts/act2.rpy	649
+act2_scene17_ebcf5969	narration	You write her an email, telling her dryly that her request is rejected.	game/scripts/act2.rpy	651
+act2_scene17_dbb452dd	thinking	What a terrible day	game/scripts/act2.rpy	653
+act2_scene18_e246da7b	narration	You’ve sent an email to inform everyone about Giti’s promotion, not forgetting to send a copy to M. Gopinath.{p} Bapat and Donatello, have stormed into your office several times since then, trying to prove their point, but you’re the HR Manager, and with M. Gopinath, and the new CEO away, there’s nothing they can do.{p} You surmise that M. Gopinath won’t be happy, and hope that the new CEO will understand your position. Time will tell.	game/scripts/act2.rpy	660
+act2_scene19_684f632f	narration	A few hours later, someone knocks at your door, and hands you a piece of paper before leaving.{p} The paper bears several stamps, and signs, a subpoena.	game/scripts/act2.rpy	669
+act2_scene19_dd86dbd0	narration	Giti has decided to sue on the basis of Denial of Equal Opportunity, which has the same legal consequences as harassment.{p} The subpoena mentions a constant pattern of exclusion, and several witnesses.{p} Further, she asks for damages for the last three years’ overtime, and increased responsibilities without compensation, and requests the court to enforce the promotion she’s been asking in vain.	game/scripts/act2.rpy	672
+act2_scene19_4e811c7b	thinking	Looks like she's been prepared all along.	game/scripts/act2.rpy	676
+act2_scene20_fd82f1b1	narration	You call Giti to your office.	game/scripts/act2.rpy	689
+act2_scene20_f1f2ba57	narration	Once she's sat, you begin.	game/scripts/act2.rpy	693
+act2_scene20_afa611d3		I have decided to approve your promotion request, Giti.	game/scripts/act2.rpy	695
+act2_scene20_899c15bc	giti	It's only fair, Abhay Sir.	game/scripts/act2.rpy	697
+act2_scene20_7bd2b1a4		So you will drop this case, won’t you?	game/scripts/act2.rpy	699
+act2_scene20_0152a85c	giti	Yes, Sir, I only want the promotion I should have had long ago.	game/scripts/act2.rpy	701
+act2_scene20_eddd2465		Well, you have it.	game/scripts/act2.rpy	703
+act2_scene20_210b4822		Please send me the acknowledgement of cancellation for the case, and I will promote you as I said.	game/scripts/act2.rpy	705
+act2_scene20_e0945cc3	giti	No, Abhay Sir, {nw=0.5}{nw}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered.	game/scripts/act2.rpy	707
+act2_scene20_e5210aab	giti	At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement.	game/scripts/act2.rpy	709
+act2_scene20_d49567bf	thinking	She has obviously studied this.	game/scripts/act2.rpy	711
+act2_scene20_04d259f7		Okay, okay, kindly plan this meeting after working hours, and make it happen quick.	game/scripts/act2.rpy	713
+act2_scene21_77afa3f4	narration	If there’s something the company’s Lawyer should be able to help you with, it’s dealing with a subpoena.	game/scripts/act2.rpy	720
+act2_scene21_a5ffcd16	narration	If you go to the court, he will be the one defending you after all.	game/scripts/act2.rpy	722
+act2_scene21_f2a8124f	narration	You write him, explaining the situation, and joining a scanned copy of the subpoena. He answers almost immediately.	game/scripts/act2.rpy	724
+act2_scene21_5f5d01e7	email	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Subpoena/Giti Shaikh Dear M. Chandrakant, So far, all that we know is that Mrs. Shaikh Giti is suing the company on the basis of the Denial of Equal Opportunity. She says that she has collected proofs, but we have not seen these proofs as yet, and we might be in a position to challenge them if they seem weak. Only then will I know what our chances to win the trial are, and if they seem low, to open negotiations with her. If, from your position you can gather already that she will have a decent amount of solid proof, I advise you to promote her so that you can avoid paying for the damages she requests. If this isn’t the case, I advise you to proceed so that we can see what she has, and take appropriate action. Yours truly, M. Rajkumar Rajkumar & Rajkumar Ltd.	game/scripts/act2.rpy	726
+act2_scene21_ab9a3b5a	thinking	It's time to take my decision.	game/scripts/act2.rpy	735
+act2_scene22_1f9f3294	narration	You don’t even answer her. One simply doesn’t threaten the HR Manager.	game/scripts/act2.rpy	744
+act2_scene23_938fbf67	narration	You can’t fire Giti because she sues the company, that in itself would open a whole new case against you so she stays, brooding, waiting for the trial.{p} he atmosphere of the office changes, there’s no more friendly banter now.{p} Bapat and Donatello are obviously on your side, you’re part of their gang now.{p}	game/scripts/act2.rpy	747
+act2_scene23_9e8be2d9	narration	Surely, the new CEO will surely know how to handle a court case better than you, and everything will be fine again.	game/scripts/act2.rpy	751
+act3_67e4e6b2	narration	Everybody’s at lunch, gathered together in the small canteen.	game/scripts/act3.rpy	22
+act3_de875fd2	narration	You unpack your lunchbox, and share around the delicious parathas you find inside before starting to eat.{p} The last events have taken their toll, and the atmosphere is rather uneasy.	game/scripts/act3.rpy	24
+act3_cb7437f3	thinking	People don't like change.	game/scripts/act3.rpy	27
+act3_999ccaef	narration	Priyanka and Manali’s jokes are most welcome today, lifting up the mood a bit.	game/scripts/act3.rpy	29
+act3_071bf5af	priyanka	...And then, he turned around and said, “Are you sure these are your trousers?”	game/scripts/act3.rpy	31
+act3_b4ed96f6	narration	Manali bursts into laughter, almost tipping her glass over.	game/scripts/act3.rpy	33
+act3_b6250660	manali	So he's not the one, I gues, Priyanka?	game/scripts/act3.rpy	35
+act3_e81e86d7	priyanka	Definitely not the one.	game/scripts/act3.rpy	37
+act3_ba03c2be	manali	Well, he sounds funny at least. Is your husband funny, Giti?	game/scripts/act3.rpy	39
+act3_107d1768	narration	They both laugh.	game/scripts/act3.rpy	41
+act3_f425a8aa	giti	Shoo, you girls, what a racket you're making today!	game/scripts/act3.rpy	43
+act3_fb712527	priyanka	Come one, Giti, everybody’s married except us, we are entitled to our fun!	game/scripts/act3.rpy	45
+act3_4939225c	bapat	Not everyone!	game/scripts/act3.rpy	47
+act3_a2b0ac95	priyanka	!	game/scripts/act3.rpy	49
+act3_145dc212	giti	!	game/scripts/act3.rpy	51
+act3_cc0e9bdc	manali	!	game/scripts/act3.rpy	53
+act3_bbee5e14	bapat	Donatello is a bachelor as well!	game/scripts/act3.rpy	55
+act3_8913f4a4	donatello	...!	game/scripts/act3.rpy	57
+act3_b2144e25	manali	Is it true, Donald?	game/scripts/act3.rpy	59
+act3_354dced6	donatello	...	game/scripts/act3.rpy	61
+act3_209fbbc5	narration	Donatello wipes his mouth with a napkin, and stares into the void a little too long before answering.	game/scripts/act3.rpy	63
+act3_1244e757	donatello	I am a bachelor, yes.	game/scripts/act3.rpy	65
+act3_af738631	priyanka	How come?!	game/scripts/act3.rpy	67
+act3_281c6549	priyanka	You have a good job and all, why aren't you married?	game/scripts/act3.rpy	69
+act3_6774a8cf	bapat	Yes, {i}why{/i}?	game/scripts/act3.rpy	71
+act3_354dced6_1	donatello	...	game/scripts/act3.rpy	75
+act3_bf9ca5a7	manali	Maybe he hasn't found the one true love?	game/scripts/act3.rpy	79
+act3_23ee0039	bapat	Or maybe he can't tell...	game/scripts/act3.rpy	83
+act3_28d0d428	priyanka	We were joking, Bapat, don't be your usual downer!	game/scripts/act3.rpy	87
+act3_1d343ff9	bapat	I am joking too! {i}Hahaha!{/i}	game/scripts/act3.rpy	91
+act3_354dced6_2	donatello	...	game/scripts/act3.rpy	95
+act3_7c1ea086	narration	Donatello leaves the table, heading to the sink with his plate, shortly followed by Bapat.	game/scripts/act3.rpy	97
+act3_de3102a3	thinking	Here comes trouble...	game/scripts/act3.rpy	99
+act3_scene2_56c695c6	narration	You see Bapat and Donatello whispering furiously to each other near the sink. From the sound of it, their conversation doesn't seem especially friendly.	game/scripts/act3.rpy	106
+act3_scene2_e5e1c442	thinking	Maybe I should let them be...	game/scripts/act3.rpy	108
+act3_scene3_c60ffbcf	bapat	I was going to pay, yes.	game/scripts/act3.rpy	119
+act3_scene3_1bf4ad9a	bapat	But no longer.	game/scripts/act3.rpy	121
+act3_scene3_b020eeb7	donatello	What are you talking about?	game/scripts/act3.rpy	127
+act3_scene3_f4115bba	donatello	Of course you will give me the money back, Bapat, or I will-	game/scripts/act3.rpy	129
+act3_scene3_660dce20	bapat	You will nothing.	game/scripts/act3.rpy	133
+act3_scene3_0fecef7a	narration	Bapat takes his cell phone out of his pocket.	game/scripts/act3.rpy	135
+act3_scene3_f8309d28	donatello	And why is that?	game/scripts/act3.rpy	139
+act3_scene3_7c7bce81	bapat	You just look at this.	game/scripts/act3.rpy	143
+act3_scene3_b72d9e5b	narration	Bapat shows his phone to Donatello.	game/scripts/act3.rpy	145
+act3_scene3_07ac2df6	donatello	...{b}!{/b}	game/scripts/act3.rpy	149
+act3_scene3_ac28f6de	donatello	Where did you get this?!	game/scripts/act3.rpy	153
+act3_scene3_9b7e88c2	bapat	Ah, ah, interested now?	game/scripts/act3.rpy	161
+act3_scene3_ec1bb79f	bapat	I've taken a picture of your computer, you've left your email open, Donald.	game/scripts/act3.rpy	163
+act3_scene3_03990b63	bapat	or should I say... {i}Daisy{/}?	game/scripts/act3.rpy	165
+act3_scene3_075eabc3	donatello	Are you threatening me for real?	game/scripts/act3.rpy	169
+act3_scene3_85849f95	bapat	Oh I am{w=0.5}, yes I am, either you support my decisions, or I tell everyone.	game/scripts/act3.rpy	175
+act3_scene3_585557a6	bapat	How would you like it, the whole office knowing?	game/scripts/act3.rpy	177
+act3_scene3_0cccfeb2	bapat	I can almost hear them already.	game/scripts/act3.rpy	181
+act3_scene3_d2ca9bf8		{i}Ahem.{/i}	game/scripts/act3.rpy	183
+act3_scene3_c6ebf4af	bapat	!	game/scripts/act3.rpy	185
+act3_scene3_369c0148	donatello	!	game/scripts/act3.rpy	189
+act3_scene3_d1a12cbb		Knowing {i}what{/i}?	game/scripts/act3.rpy	191
+act3_scene3_de4f5c6e	bapat	Nothing, Abhay, it's nothing.	game/scripts/act3.rpy	195
+act3_scene3_8536947a	bapat	Professional stuff, corporate stuff, high-level.	game/scripts/act3.rpy	197
+act3_scene3_3facd64b		Indeed.	game/scripts/act3.rpy	199
+act3_scene3_7311b94a		Is there anything you'd like to report to me, Donatello?	game/scripts/act3.rpy	201
+act3_scene3_bc6e55ac	donatello	No, Abhay, no, it's nothing.	game/scripts/act3.rpy	205
+act3_scene3_998ae948		We'll see about that.	game/scripts/act3.rpy	207
+act3_scene3_cc4fd078	narration	You leave the room.	game/scripts/act3.rpy	211
+act3_scene3_e9c5f8dc	thinking	This is definitely suspicious to say the least.	game/scripts/act3.rpy	213
+act3_scene4_0fe0e735	narration	You’re not supposed to be spying on the employees, so you walk away, and let them sort out whatever it is they need to sort out among themselves.{p} The rest of the day is uneventful though you can’t dismiss the feeling that you’ve missed something important no matter how hard you try to shrug it off.	game/scripts/act3.rpy	222
+act3_scene4_683abf9c	narration	The next day, just before lunch break, Donatello asks to see you.	game/scripts/act3.rpy	227
+act3_scene4_e7b203d7	narration	Since you remember the last team lunch vividly enough, you let him come into your office, and talk.	game/scripts/act3.rpy	229
+act3_scene4_ccca5682	donatello	I need to tell it to everyone, Abhay.	game/scripts/act3.rpy	233
+act3_scene4_fff1ff32	donatello	I don't see why I should hide, and let people like Bapat try to take advantage of me.	game/scripts/act3.rpy	235
+act3_scene4_3e065365		Wait, say what? What did Bapat do?	game/scripts/act3.rpy	237
+act3_scene4_497c3393	donatello	Doesn't matter, Abhay.	game/scripts/act3.rpy	239
+act3_scene4_4c3ec3c0	donatello	What matters is that I need to say it, I really need.	game/scripts/act3.rpy	241
+act3_scene4_73030cd6	donatello	And be able to live my life as myself, not the image I give all the time.	game/scripts/act3.rpy	243
+act3_scene4_4b38d2b7		What on Earth are you talking about?	game/scripts/act3.rpy	245
+act3_gay_18dd037b	donatello	I am gay, Abhay, that's why I'm not married.	game/scripts/act3.rpy	249
+act3_gay_03ccc9ed		W-What?	game/scripts/act3.rpy	251
+act3_gay_68a67d19		But it was only yesterday that you groped Priyanka! Are you insane?	game/scripts/act3.rpy	253
+act3_gay_afab238b	donatello	That was a mask, Abhay. I was overdoing it on purpose.	game/scripts/act3.rpy	255
+act3_gay_31acf36b	thinking	Just wow.	game/scripts/act3.rpy	257
+act3_gay_102ceeb4		Did you even think about how she felt?	game/scripts/act3.rpy	259
+act3_gay_3847ca87		You should have tried to tell her, maybe she would have helped!	game/scripts/act3.rpy	261
+act3_gay_5de32bbe	donatello	You don't know Priyanka so well, Abhay, no offense but-	game/scripts/act3.rpy	263
+act3_gay_7eafa853		Right. But why the hurry?	game/scripts/act3.rpy	265
+act3_gay_38e3d0eb		Why do you need to shout it to the whole office, Donald?	game/scripts/act3.rpy	267
+act3_gay_b8e7baf1		You're not married with these people, you don't owe them any kind of explanation.	game/scripts/act3.rpy	269
+act3_gay_a51cdefa	donatello	It's not that.	game/scripts/act3.rpy	271
+act3_gay_5b782b59	donatello	I feel like I'm lying to them- all the time, and to myself!	game/scripts/act3.rpy	273
+act3_gay_f21eac71	donatello	Plus they already know, Abhay, it's too late for hiding.	game/scripts/act3.rpy	275
+act3_gay_4fdad994	donatello	Bapat tried to use it against me, they all will, and it will be worse, better say it now!	game/scripts/act3.rpy	277
+act3_gay_c69119b7	thinking	He's awfully nervous, even out of his mind.	game/scripts/act3.rpy	281
+act3_gay_a6b585f7	thinking	Is this because what he's doing right now takes a lot of courage...	game/scripts/act3.rpy	283
+act3_gay_c4acfa61	thinking	Or is he going mad somewhat, and just making this all up?	game/scripts/act3.rpy	285
+act3_gay_4cd9354f		You should think before going ahead like that, Donald.	game/scripts/act3.rpy	287
+act3_gay_7a89e505		There will be consequences, and you won't be able to take it back, and-	game/scripts/act3.rpy	289
+act3_gay_13794c2a	donatello	You, of all people, I thought you would understand, Abhay!	game/scripts/act3.rpy	291
+act3_gay_78dabe0b	narration	Donatello strides away in a whirlwind.	game/scripts/act3.rpy	297
+act3_gay_ad69fb9f	thinking	Wait, no!	game/scripts/act3.rpy	299
+act3_scene5_d112aab6	narration	You call Bapat and Donatello together into your office just before the lunch break on the next morning. Neither of them sit down. {w=0.5}Instead they both stand in front of you like naughty college students waiting for their scolding.	game/scripts/act3.rpy	314
+act3_scene5_b5f940c6		I heard you threatening Donatello yesterday, Bapat	game/scripts/act3.rpy	317
+act3_scene5_3523723f	bapat	Oh, Abhay, it's not like that-	game/scripts/act3.rpy	319
+act3_scene5_b20aa54f		I've heard it! {w=0.5}Kindly don't insult my intelligence.	game/scripts/act3.rpy	323
+act3_scene5_72992776	narration	You give him {b}the look{/b}, forehead lowered, eyes looking up straight at him like a bull.	game/scripts/act3.rpy	325
+act3_scene5_0e1cd360		I don’t want to know what you’ve threatened him with, Bapat, I just-	game/scripts/act3.rpy	327
+act3_scene5_8896ed45	donatello	But you will.	game/scripts/act3.rpy	333
+act3_scene5_3cec61e1	bapat	...!	game/scripts/act3.rpy	335
+act3_scene5_b10b614f		I beg your pardon?	game/scripts/act3.rpy	337
+act3_scene5_0fa28a18	donatello	You will know because I've had enough.	game/scripts/act3.rpy	339
+act3_scene5_67729e4f	donatello	 I need to tell it to everyone, Abhay, I don’t see why I should hide, and let people like Bapat try to take advantage of me.	game/scripts/act3.rpy	341
+act3_scene5_555df3d4		Wait, say what?	game/scripts/act3.rpy	343
+act3_scene6_242dc775	thinking	Something's not right, I can feel it in my bones.	game/scripts/act3.rpy	349
+act3_scene6_a302c8ce	thinking	After all those years as a HR Manager, I've developed some kind of special sense when it comes to trouble, and trouble there is.	game/scripts/act3.rpy	351
+act3_scene6_99a8d6bc	thinking	Yet, I can't really accuse Bapat without more proof than something I've overheard at the canteen.	game/scripts/act3.rpy	353
+act3_scene6_62818af5	thinking	Plus, I'm not supposed to listen in on private conversations.	game/scripts/act3.rpy	355
+act3_scene6_b5bda957	thinking	It's better to let it slip.	game/scripts/act3.rpy	357
+act3_scene6_683abf9c	narration	The next day, just before lunch break, Donatello asks to see you.	game/scripts/act3.rpy	363
+act3_scene6_e7b203d7	narration	Since you remember the last team lunch vividly enough, you let him come into your office, and talk.	game/scripts/act3.rpy	365
+act3_scene6_ccca5682	donatello	I need to tell it to everyone, Abhay.	game/scripts/act3.rpy	369
+act3_scene6_fff1ff32	donatello	I don't see why I should hide, and let people like Bapat try to take advantage of me.	game/scripts/act3.rpy	371
+act3_scene6_3e065365		Wait, say what? What did Bapat do?	game/scripts/act3.rpy	373
+act3_scene6_497c3393	donatello	Doesn't matter, Abhay.	game/scripts/act3.rpy	375
+act3_scene6_4c3ec3c0	donatello	What matters is that I need to say it, I really need.	game/scripts/act3.rpy	377
+act3_scene6_73030cd6	donatello	And be able to live my life as myself, not the image I give all the time.	game/scripts/act3.rpy	379
+act3_scene6_4b38d2b7		What on Earth are you talking about?	game/scripts/act3.rpy	381
+act3_scene7_04c53590	narration	You lean back into your chair, surprised by the turn the events have taken.	game/scripts/act3.rpy	387
+act3_scene7_6f64c758	narration	A few minutes later, you start wondering where Donatello might have gone after storming out of your office, and you head to the canteen.	game/scripts/act3.rpy	389
+act3_scene7_712e633c	narration	When you reach it, you hear Donatello’s shaky voice echoing in a dead silence before you open the door.	game/scripts/act3.rpy	393
+act3_scene7_d682959a	donatello	... So no, I'm not married, and never will be, {w=0.5}or not to a woman.	game/scripts/act3.rpy	395
+act3_scene7_649f281e	thinking	So he did it.	game/scripts/act3.rpy	397
+act3_scene7_7970acc5	thinking	There's no way to predict how people will react to this.	game/scripts/act3.rpy	399
+act3_scene7_79758afd	thinking	And I can't help feeling afraid of the consequences...	game/scripts/act3.rpy	401
+act3_scene7_065312ff	thinking	He must be feeling the same way.	game/scripts/act3.rpy	403
+act3_scene7_764302fa	bapat	You should move to the US if you want to marry a man, there will none of it here!	game/scripts/act3.rpy	405
+act3_scene7_354dced6	donatello	...	game/scripts/act3.rpy	407
+act3_scene7_ebe5f601	narration	You hear a couple of people clapping, cheering, and whistling.	game/scripts/act3.rpy	409
+act3_scene7_5278569b	bapat	How can I work with you now that I know?	game/scripts/act3.rpy	411
+act3_scene7_d3005436	bapat	I'm not going to be your girlfriend, you need to move to another office!	game/scripts/act3.rpy	413
+act3_scene7_fd124300	thinking	Just look at him, excited by his own success.	game/scripts/act3.rpy	417
+act3_scene7_e12f827e	thinking	Everyone has fifteen minutes of glory in life, or so I've heard, maybe this is Bapat's moment of fame.	game/scripts/act3.rpy	419
+act3_scene7_48759def	bapat	Are we supposed to accept this indecency ?!	game/scripts/act3.rpy	421
+act3_scene7_03e68113	giti	...	game/scripts/act3.rpy	423
+act3_scene7_d8ce9f6f	thinking	Ok, time to step in.	game/scripts/act3.rpy	427
+act3_scene7_959fa26d	narration	You push the door, and see Bapat standing, his face contorted with anger. Priyanka, and Manali are laughing nervously. Only Giti remains silent, still listening to Donatello, who seems to be holding his own.	game/scripts/act3.rpy	429
+act3_scene7_578daef5		Did he say he wants you for a boyfriend, Bapat? {i}Who would?{/i}	game/scripts/act3.rpy	432
+act3_scene7_d923cf81	bapat	He should offer his services elsewhere, Abhay, we can't sork like this!	game/scripts/act3.rpy	436
+act3_scene7_21d12413	giti	That's enough.	game/scripts/act3.rpy	440
+act3_scene7_3cec61e1	bapat	...!	game/scripts/act3.rpy	444
+act3_scene7_8913f4a4	donatello	...!	game/scripts/act3.rpy	446
+act3_scene7_95eec5ee	narration	Giti stands up, and takes Donatello’s hands in hers, and for a magic moment, everybody stops, and just watches.	game/scripts/act3.rpy	450
+act3_scene7_c55db86a	giti	He is who he is, Bapat Sir, why can’t we just accept it?	game/scripts/act3.rpy	454
+act3_scene7_c3bd5ec1	narration	Bapat sits back into his chair, and the laughter stops.	game/scripts/act3.rpy	456
+act3_scene7_9f058a69	donatello	Thank you for understanding, Giti	game/scripts/act3.rpy	458
+act3_scene7_a3b7ec0b	narration	He releases her hands as he leaves the room.	game/scripts/act3.rpy	460
+act3_scene7_83787f02	thinking	Do I need to do something? And if yes, what?	game/scripts/act3.rpy	462
+act3_scene8_40ba0bdb	narration	Giti’s magic moment didn’t last long.	game/scripts/act3.rpy	472
+act3_scene8_4eb3d91c	narration	During the next days, you hear a lot of homophobic “jokes”, and notice that there has been no meeting of the Sales & Marketing Department where Bapat and Donatello are supposed to work together.{p} Every time you’ve walked past his office, or his seat at lunch, Donatello was alone, and staring off into the distance.	game/scripts/act3.rpy	474
+act3_scene8_156ed59f	thinking	The situation festers.	game/scripts/act3.rpy	477
+act3_scene9_ce88417f	narration	It’s your duty to preserve a safe and welcoming workspace for all your employees.	game/scripts/act3.rpy	490
+act3_scene9_cc5d1872	narration	You need to keep the team together, and to make sure they can work without harassment because of their orientation, gender, religion, caste, or origin.	game/scripts/act3.rpy	492
+act3_scene9_1d54c040	narration	Now that Donatello has come out in the open, it is your responsibility to protect him from the rampant homophobia you’ve seen for a few days.	game/scripts/act3.rpy	494
+act3_scene9_6ccd1f6e	narration	Since everyone but Giti has been contributing to his lynching, you decide to give them all a warning.	game/scripts/act3.rpy	496
+act3_scene10_2eeea022	narration	You assumed that giving them a warning would make them reconsider their actions and attitudes, and eventually stop harassing him, but instead the opposite happened.	game/scripts/act3.rpy	503
+act3_scene10_2e8b9083	narration	You’ve just made it worse for Donatello since everyone now resents him for the warning they’ve got as well.	game/scripts/act3.rpy	505
+act3_scene10_296cc114	narration	In the next few days, the harassment reaches a whole new level as people stop talking to him altogether, and leave the room when he comes in.	game/scripts/act3.rpy	507
+act3_scene10_2b9c3da9	narration	There’s nothing you can do now, except to wait for the new CEO to step in, hoping that they can resolve the situation, and maybe even help Donatello.	game/scripts/act3.rpy	509
+act3_scene11_e6c7ebf4	narration	You write to M. Rajkumar, You write to M. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p} He answers a few hours later.	game/scripts/act3.rpy	516
+act3_scene11_181e5f21	mail	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Homosexuality and Discrimination Respected M. Chandrakant, It will be very difficult to protect your employee since homosexual intercourse is still considered a criminal offence under the Indian Law, section 377 of the Indian Penal Code. Hence and hereby, he cannot be protected against discrimination where the fact discriminated hitherto would fall under penal Law, and Nemo auditur propriam turpitudinem allegans would apply so that his arguing on the basis of his homosexuality would ipso facto disqualify him from the protections the Law normally applies for discrimination. With my very best regards, M. Rajkumar	game/scripts/act3.rpy	519
+act3_scene11_74282c3b	narration	After you’ve googled the sentences in Latin to decode this legal talk, you lay back into your chair.	game/scripts/act3.rpy	527
+act3_scene11_b858d11f	thinking	{b}Ipso facto{/b} indeed.	game/scripts/act3.rpy	529
+act3_scene11_6fe96a06	thinking	{b}Ipso facto{/b} there's nothing I can do.	game/scripts/act3.rpy	531
+act3_scene11_5da9e49e	thinking	{b}Ipso facto{/b}, Donatello is harassed, and you I do nothing but watch.	game/scripts/act3.rpy	533
+act3_scene11_e072d965	thinking	So much for the work atmosphere.	game/scripts/act3.rpy	535
+act3_scene12_5724fae9	thinking	I can't spend my whole work day roaming in the office like a traffic cop, handing out warnings to everyone making jokes.	game/scripts/act3.rpy	543
+act3_scene12_e37885a2	thinking	Furthermore, doing so will only just turn them all against Donatello.	game/scripts/act3.rpy	545
+act3_scene12_b5cfdc08	thinking	After all, {i}he{/i}'s the one who's decided to come out of the closed, why did he need to do that?	game/scripts/act3.rpy	547
+act3_scene12_585997e3	thinking	I could have scolded Bapat, and that would have been the end of it!	game/scripts/act3.rpy	549
+act3_scene12_eaf756c9	thinking	Wasn't Donatello the first to harass Priyanka a few days ago?	game/scripts/act3.rpy	551
+act3_scene12_0bd8f567	thinking	Wasn't he discriminating against Giti himself?	game/scripts/act3.rpy	553
+act3_scene12_cc1a2678	thinking	Why is everyone wanting some special status in this company?	game/scripts/act3.rpy	555
+act3_scene12_aa517c5c	thinking	Is this because there's no CEO yet? Well, they sure will sing a different kind of song when the CEO will come!	game/scripts/act3.rpy	557
+act3_scene13_bfe95531	narration	Since you did nothing, the situation escalates quickly. Every day, you receive a new formal complaint from an employee, or another, telling you how Donatello leaned too close to them, or was looking at them suggestively.	game/scripts/act3.rpy	566
+act3_scene13_a37db123	narration	Every day, you hear new cruel jokes made at his expense.	game/scripts/act3.rpy	568
+act3_scene13_1cb1343b	narration	Eventually, he stops to speak to anyone, and stays on his own.	game/scripts/act3.rpy	570
+act3_scene13_c57b3c2e	thinking	If only he could leave before the new CEO comes in...	game/scripts/act3.rpy	572
+act3_scene13_261e247e	thinking	Chances are he wont.	game/scripts/act3.rpy	574
+act3_scene13_008dc466	thinking	No matter, I'll explain everything, and all will be well.	game/scripts/act3.rpy	576
+act3_scene14_e82575f5	thinking	The situation has gone beyond what lawyers and warnings could help with.	game/scripts/act3.rpy	584
+act3_scene14_79edeb3a	thinking	What am I going to write in the warning ?	game/scripts/act3.rpy	586
+act3_scene14_5edd4c82	thinking	"Don't be yourself"?	game/scripts/act3.rpy	588
+act3_scene14_3e41ba3b	thinking	"Stop making bad jokes, it's cruel, and useless?"	game/scripts/act3.rpy	590
+act3_scene14_d1e2c2bf	thinking	It doesn't work like this, I should talk to the other employees instead.	game/scripts/act3.rpy	592
+act3_scene14_976dc020	thinking	But which one first?	game/scripts/act3.rpy	594
+act3_scene15_382b1a13	bapat	Have you heard that, Abhay?	game/scripts/act3.rpy	614
+act3_scene15_153ae780	bapat	The guy has the nerve to tell everyone!	game/scripts/act3.rpy	616
+act3_scene15_fad2d2d5	bapat	Now, he must leave, there's nothing else we can do!	game/scripts/act3.rpy	618
+act3_scene15_df3d0c2a		I see. {w=0.5}You would try to hide it if it were you, isn't it, Bapat?	game/scripts/act3.rpy	620
+act3_scene15_a6f9516b	bapat	No need, I'm not gay!	game/scripts/act3.rpy	622
+act3_scene15_c6a64517		But since that's how you would react yourself, you thought that his orientation would be a good tool to threaten him with.	game/scripts/act3.rpy	626
+act3_scene15_f453dc2b	bapat	No, no, Abhay, it's not that at all!	game/scripts/act3.rpy	628
+act3_scene15_2d760fc7	bapat	I was just telling him that I could remain silent about it, the best thing for everybody, honest, and that he should be more grateful to me.	game/scripts/act3.rpy	630
+act3_scene15_e1238bf5		Graceful for {i}what{/i}? For disrespecting him?	game/scripts/act3.rpy	632
+act3_scene15_45f7905c	bapat	Abhay, Abhay, stop getting on your high horses again!	game/scripts/act3.rpy	634
+act3_scene15_c8afc116	bapat	I'm {i}protecting this company{/i}, it's against the Law, do you know that?	game/scripts/act3.rpy	636
+act3_scene15_2850c488	bapat	And what if we become gay too?!	game/scripts/act3.rpy	638
+act3_scene15_257ab31f	narration	You suppress a rising laugh.	game/scripts/act3.rpy	640
+act3_scene15_7469cfd3		I must admit that I didn't think about that.	game/scripts/act3.rpy	642
+act3_scene15_20e70d24	bapat	Ah! Ah!	game/scripts/act3.rpy	644
+act3_scene15_e5a89071		Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!	game/scripts/act3.rpy	646
+act3_scene15_b0cd1f21	bapat	Who knows, Abhay!	game/scripts/act3.rpy	648
+act3_scene15_357933d6	bapat	And now he's spreading propaganda too!	game/scripts/act3.rpy	650
+act3_scene15_5fa5230d		He {i}expressed{/i} himself, Bapat, just you would if you ever had anything interesting to say.	game/scripts/act3.rpy	652
+act3_scene15_3cec61e1	bapat	...!	game/scripts/act3.rpy	654
+act3_scene15_83d5f769	narration	You sigh and dismiss him.	game/scripts/act3.rpy	656
+act3_scene15_cbb21dbb	thinking	It's worthless. Nothing I can say will change his mind.	game/scripts/act3.rpy	660
+act3_scene16_daba45da		Do you have a boyfriend, Manali?	game/scripts/act3.rpy	673
+act3_scene16_e6b2e728	narration	She blushes.	game/scripts/act3.rpy	677
+act3_scene16_62e2f5a6		Maybe there was someone you liked in high school, or college, isn't it?	game/scripts/act3.rpy	679
+act3_scene16_5a58e841	manali	...!	game/scripts/act3.rpy	681
+act3_scene16_9d373a0f		You know in high school when somebody laughs at you because you like someone special, for instance?	game/scripts/act3.rpy	685
+act3_scene16_ee523262	manali	...	game/scripts/act3.rpy	687
+act3_scene16_a0fd72b3	narration	She nods.	game/scripts/act3.rpy	689
+act3_scene16_6fe12104		Well that's a little bit the same thing you're doing to Donatello right this moment, {w=0.25}only worse.	game/scripts/act3.rpy	691
+act3_scene16_cc0e9bdc	manali	!	game/scripts/act3.rpy	693
+act3_scene16_719eaf32	manali	Oh.	game/scripts/act3.rpy	695
+act3_scene16_e55e7464		This is not a very mature behaviour, Manali.	game/scripts/act3.rpy	697
+act3_scene16_87131e23		We are all in this together, trying to make this company successful, as well as a nice place to work.	game/scripts/act3.rpy	699
+act3_scene16_3aad4bff		Do you think this is a nice place to work for Donatello now?	game/scripts/act3.rpy	701
+act3_scene16_3199f08d	manali	No, Sir.	game/scripts/act3.rpy	703
+act3_scene16_8ed8db29		And why not?	game/scripts/act3.rpy	705
+act3_scene16_f76a9b30	manali	But why did he have to say it, Sir?	game/scripts/act3.rpy	709
+act3_scene16_720fbf83	manali	He could just say he's not married, that's all, there was no need to talk about this...{w=0.5}thing.	game/scripts/act3.rpy	711
+act3_scene16_755e06eb	manali	That's {i}his{/i} fault.	game/scripts/act3.rpy	713
+act3_scene16_a38807e2		Being gay?	game/scripts/act3.rpy	715
+act3_scene16_5c24d7d1	narration	She blushes again.	game/scripts/act3.rpy	719
+act3_scene16_407c0038	manali	No, Sir, not that! {w=0.5}Maybe. {w=0.5}I don't know.	game/scripts/act3.rpy	721
+act3_scene16_a6448d4a	manali	But telling us, that's his fault.	game/scripts/act3.rpy	723
+act3_scene16_6314cf17		So you prefer lies, or else you mock people?	game/scripts/act3.rpy	725
+act3_scene16_3199f08d_1	manali	No, Sir.	game/scripts/act3.rpy	727
+act3_scene16_0e7b4d24		This needs to stop, Manali, is this clear?	game/scripts/act3.rpy	729
+act3_scene16_9864f270	manali	Yes, Abhay Sir, I will stop.	game/scripts/act3.rpy	731
+act3_scene16_02b77d0e		And work with him, in peace and respect.	game/scripts/act3.rpy	733
+act3_scene16_d7119da7	manali	I will do my best, Sir.	game/scripts/act3.rpy	735
+act3_scene16_8c7bb342	thinking	She'll do it, I'm confident about it.	game/scripts/act3.rpy	737
+act3_scene16_f14b43a2	thinking	But things won't ever be the same with Donatello...	game/scripts/act3.rpy	741
+act3_scene17_13f72f8a	priyanka	I don't care much, Abhay	game/scripts/act3.rpy	754
+act3_scene17_f3f4bf9f		Then why? {w=0.25}Why you hurt someone if you don't care?	game/scripts/act3.rpy	758
+act3_scene17_d4bffa16	priyanka	...	game/scripts/act3.rpy	760
+act3_scene17_d4bffa16_1	priyanka	...	game/scripts/act3.rpy	762
+act3_scene17_faf4b423	priyanka	He's betrayed us, Abhay{w=0.25}, that's why.	game/scripts/act3.rpy	766
+act3_scene17_c710b930		You mean you thought he was an abusive man, and now that you find out that he's not what you thought...	game/scripts/act3.rpy	768
+act3_scene17_580a28f6		You take this opportunity to bite him back?	game/scripts/act3.rpy	770
+act3_scene17_f39dd675	priyanka	No, please, it's not that.	game/scripts/act3.rpy	772
+act3_scene17_8a96f97e	priyanka	Of course he's been an idiot for a long time, that doesn't change the fact, but we thought he was like us, {w=0.25}normal.	game/scripts/act3.rpy	774
+act3_scene17_16210638		My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is.	game/scripts/act3.rpy	776
+act3_scene17_00d7e5f6	priyanka	This is difficult to accept, Abhay, what will I say to my family? {w=0.25}They will want me to move.	game/scripts/act3.rpy	778
+act3_scene17_72c98384		So they were happy to let you stay when you stay when you were shamed for the way you dress.	game/scripts/act3.rpy	780
+act3_scene17_b6d8eaa1		But they will want you to move is someone being honest with you in the company?	game/scripts/act3.rpy	782
+act3_scene17_d0fdfb51	priyanka	Maybe, I don't need to tell them.	game/scripts/act3.rpy	784
+act3_scene17_1b208b04		Maybe yes, Priyanka, and you need to accept him as he is, the way he is.	game/scripts/act3.rpy	786
+act3_scene17_b96e955a	priyanka	...I will try my best, Abhay.	game/scripts/act3.rpy	788
+act3_scene18_fa559f93		I must admit I was surprised by what you've done, Giti	game/scripts/act3.rpy	803
+act3_scene18_7cb54b28	giti	No need for surprise, Abhay Sir.	game/scripts/act3.rpy	805
+act3_scene18_afb80b8d		I mean, Donatello isn't exactly a nice person, he-	game/scripts/act3.rpy	807
+act3_scene18_11bfb6a0	giti	He's not.	game/scripts/act3.rpy	809
+act3_scene18_3ca55302	giti	But if we are never nice to mean people, that doesn't leave many people to be nice to.	game/scripts/act3.rpy	811
+act3_scene18_85a6aca8		Ah! Ah!	game/scripts/act3.rpy	813
+act3_scene18_7913da67		True, very true.	game/scripts/act3.rpy	815
+act3_scene18_e99d6062	giti	I am not a learned person, Abhay Sir, but I know we are all the same, and all equal.	game/scripts/act3.rpy	817
+act3_scene18_a6dc9335	giti	White{w=0.25}, black{w=0.25}, gay{w=0.25}, not gay{w=0.25}, it is not different, Sir.	game/scripts/act3.rpy	819
+act3_scene18_a20cefa7		...	game/scripts/act3.rpy	821
+act3_scene18_03e68113	giti	...	game/scripts/act3.rpy	823
+act3_scene18_e291a6f6		What should I do, Giti?	game/scripts/act3.rpy	825
+act3_scene18_6ea1656b	giti	Last year I had the same problem with the Transportation Department, Abhay Sir.	game/scripts/act3.rpy	827
+act3_scene18_b9d9b808		And what did you do?	game/scripts/act3.rpy	829
+act3_scene18_212e6b66	giti	I talked to them, {w=0.25}I said{w=0.25} "We need to respect each other"{w=0.25}, they stopped after that.	game/scripts/act3.rpy	831
+act3_scene18_9988c0cc		If only that worked here.	game/scripts/act3.rpy	833
+act3_scene18_205c9d69	giti	It can't, Abhay Sir, here it's too serious, and there's no policy to protect Donatello.	game/scripts/act3.rpy	835
+act3_scene18_702580bc	giti	In the office, people won't do anything without a policy, it's not like in the Transportation Department.	game/scripts/act3.rpy	837
+act3_scene18_856d0dac		Would he {i}want{/i} that?	game/scripts/act3.rpy	839
+act3_scene18_0f914c90	giti	I will check, Abhay Sir.	game/scripts/act3.rpy	841
+act3_scene19_ed227b4c	narration	The sound of the printer is relaxing sometimes, you think. You hear the sheets shuffle back and forth, as if the machine were purring. It smells of fresh ink, and of warm paper, lulling you to sleep.	game/scripts/act3.rpy	854
+act3_scene19_824601cd	narration	You fight it to keep up with the day, drinking yet another cup of tea, surveilling the corridor through your open door.	game/scripts/act3.rpy	856
+act3_scene19_67e1177e	narration	Seeing Donatello walk straight to your office wakes you up instantly.	game/scripts/act3.rpy	858
+act3_scene19_0d27dd2f	thinking	Up to something again.	game/scripts/act3.rpy	862
+act3_scene19_9f1ab0d3	thinking	I hope it's good...	game/scripts/act3.rpy	864
+act3_scene19_f5fe16e3	donatello	It doesn't work, Abhay!	game/scripts/act3.rpy	866
+act3_scene19_67a40433		What doesn't work?	game/scripts/act3.rpy	868
+act3_scene19_6d93032b	donatello	Nothing does, warnings, talking to the people, nothing.	game/scripts/act3.rpy	870
+act3_scene19_6f5d3403	donatello	They simply won’t accept me, and won’t work with me anymore. This is all falling apart!	game/scripts/act3.rpy	872
+act3_scene19_ac2d78d9		And what's your solutionm then?	game/scripts/act3.rpy	874
+act3_scene19_0c2674f6	donatello	You are the HR Manager, Abhay, this is your responsibility.	game/scripts/act3.rpy	876
+act3_scene19_24be2b7e	donatello	But fortunately I spoke with Giti, and she gave me an idea.	game/scripts/act3.rpy	878
+act3_scene19_bf5bb819		Tell me.	game/scripts/act3.rpy	880
+act3_scene19_e7a00e41	donatello	We need a policy, an inclusive policy, which recognizes the rights of homosexual employees when they face discrimination, and gives them equal opportunities.	game/scripts/act3.rpy	882
+act3_scene19_6cf30c44	donatello	If this becomes part of our policy, they will change, Abhay.	game/scripts/act3.rpy	884
+act3_scene19_36db7e4c		I'm not sure I can, Donald, because-	game/scripts/act3.rpy	886
+act3_scene19_4b58ab41	donatello	Because {i}what{/i}?!	game/scripts/act3.rpy	888
+act3_scene19_c30fa8be	donatello	I will request it officially to the company headquarters.	game/scripts/act3.rpy	890
+act3_scene19_265f9550	thinking	Would that be a solution ?	game/scripts/act3.rpy	892
+act3_scene19_b2a32c0e	thinking	How will the others react to that?	game/scripts/act3.rpy	894
+act3_scene19_010ceed5	thinking	Is that even legally possible?	game/scripts/act3.rpy	896
+act3_scene20_e463cae0	narration	You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later.	game/scripts/act3.rpy	907
+act3_scene20_98b920dd	mail	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Inclusive Policy Dear M. Chandrakant, Since homosexuality is criminal in India, it is not possible to implement a policy protecting it at the office, cadit quaestio, and casus belli henceforthwith. With my very best regards, M. Rajkumar	game/scripts/act3.rpy	909
+act3_scene20_bf0cba1f	thinking	A tricky situation.	game/scripts/act3.rpy	917
+act3_scene21_146554a2	thinking	Who do I want to talk to?	game/scripts/act3.rpy	929
+act3_scene22_f9dabfeb	bapat	A policy?	game/scripts/act3.rpy	945
+act3_scene22_c35b49ee	bapat	A {i}policy{/i}?! And why not a bonus!	game/scripts/act3.rpy	947
+act3_scene22_1a100243		It's just to protect him, Bapat	game/scripts/act3.rpy	949
+act3_scene22_ea2e8d66	bapat	Oh yes? {w=0.25}Special rights now. A schedule, why not!	game/scripts/act3.rpy	951
+act3_scene22_fa97241f		You work here, Bapat, right?	game/scripts/act3.rpy	953
+act3_scene22_c523f8de	bapat	I do, Abhay brother.	game/scripts/act3.rpy	955
+act3_scene22_ff876115		So if a policy is implemented, and approved at the highest level, you will have no choice, will you?	game/scripts/act3.rpy	957
+act3_scene22_70e4f682	bapat	No I won’t, but it won’t happen, you just wait until the new CEO comes!	game/scripts/act3.rpy	959
+act3_scene22_ad338f4e		So you'll stay?	game/scripts/act3.rpy	961
+act3_scene22_86a402ff	bapat	Yes of course, why would I leave? He wants my job now, this Donaldino?	game/scripts/act3.rpy	963
+act3_scene22_39d007c3		See, the way you talk convinces me even more to draft it.	game/scripts/act3.rpy	965
+act3_scene22_0ffe2a0c	bapat	Do whatever you want, Abhay, it won’t pass.	game/scripts/act3.rpy	967
+act3_scene23_918f1ba1	manali	I thought about what you've said to me the other day, Abhay Sir.	game/scripts/act3.rpy	984
+act3_scene23_30ef046b	manali	I thought a lot about all the situation with Donatello, Abhay Sir.	game/scripts/act3.rpy	986
+act3_scene23_2a48282b		Oh yes?	game/scripts/act3.rpy	988
+act3_scene23_b4d1659a	manali	Yes, and I think I want to change now, I have not been very nice.	game/scripts/act3.rpy	990
+act3_scene23_1dbf6119		Yes, Manali, and thank you for this.	game/scripts/act3.rpy	992
+act3_scene23_f71cb147		You would be OK with a policy protecting our employees from this kind of discrimination, then?	game/scripts/act3.rpy	994
+act3_scene23_d32dabc3	manali	Yes, I would, Sir, since I'm doing it already.	game/scripts/act3.rpy	996
+act3_scene24_d8a3c114		So here’s what I’m thinking, Priyanka.	game/scripts/act3.rpy	1012
+act3_scene24_d2dc4d84		I could add an inclusivity clause to our policy to see that everyone is putting their best efforts into accepting each other, as they are.	game/scripts/act3.rpy	1014
+act3_scene24_42953fc5	priyanka	But we already do, Abhay, as long as they’re not too-	game/scripts/act3.rpy	1016
+act3_scene24_551bc44a		No you don’t, Priyanka, think about Donatello.	game/scripts/act3.rpy	1018
+act3_scene24_41433419	priyanka	But he’s mean anyway, why protect him?	game/scripts/act3.rpy	1020
+act3_scene24_fe0e7ee5		Because it’s not about him.	game/scripts/act3.rpy	1022
+act3_scene24_a2b0ac95	priyanka	!	game/scripts/act3.rpy	1024
+act3_scene24_06e43da2		It’s about everybody, people we don’t know yet, who will come in the future, and that the likes of Bapat will harass, and it’s about the image of our company.	game/scripts/act3.rpy	1026
+act3_scene24_765dff8e	priyanka	But precisely, Abhay, the company’s image will suffer.	game/scripts/act3.rpy	1028
+act3_scene24_306eaf1b		From {i}whom{/i}?	game/scripts/act3.rpy	1030
+act3_scene24_3ae4fd27		We sell to the younger generations, don’t you think this can convey a positive message, I don’t know, like we’re Apple or something?	game/scripts/act3.rpy	1032
+act3_scene24_577601d5	priyanka	Apple works with China, Abhay, and I am representative of the young generation.	game/scripts/act3.rpy	1034
+act3_scene24_9064536b		All harassment is connected, Priyanka, you don’t get it.	game/scripts/act3.rpy	1036
+act3_scene24_662100d6		Gay-shaming{w=0.25}, slut-shaming,{w=0.25} it’s the same!	game/scripts/act3.rpy	1038
+act3_scene24_3fbfe956		You, of all people, are a victim of this frame of mind already, don’t you see it?	game/scripts/act3.rpy	1040
+act3_scene24_f68613ac	priyanka	I will think about it, Abhay.	game/scripts/act3.rpy	1042
+act3_scene25_fd6d7ace	giti	I have done my research, Abhay.	game/scripts/act3.rpy	1059
+act3_scene25_4cf8d16e		What research, tell me?	game/scripts/act3.rpy	1061
+act3_scene25_d24869f3	giti	The Penal Code says that homosexual sexual intercourse is illegal, not that being homosexual is criminal.	game/scripts/act3.rpy	1063
+act3_scene25_b3f43ac7		But-	game/scripts/act3.rpy	1065
+act3_scene25_79b0c864	giti	Wait, Abhay, wait. {w=0.25}Also I have seen that nowhere since 2013 this has been applied. {w=0.25}A policy is possible.	game/scripts/act3.rpy	1067
+act3_scene25_9a4d4af3	giti	In fact, own own company CRYPTALOO, already has this policy in the USA, and for Europe too. Such a policy isn’t illegal, after all. You can make one, Abhay.	game/scripts/act3.rpy	1069
+act3_scene25_2e47b272		And if I decide to make it, maybe I can just copy the international policy, and-	game/scripts/act3.rpy	1071
+act3_scene25_b1eeb549	giti	Yes, Abhay, that’s a good idea.	game/scripts/act3.rpy	1073
+act3_scene25_8061fc5b	thinking	Still, this is Giti talking, and she could be wrong in her interpretation of the law.	game/scripts/act3.rpy	1075
+act3_scene25_10f15053	thinking	Should I check CRYPTALOO's international policy, or ask M. Rajkumar for his advice?	game/scripts/act3.rpy	1077
+act3_scene26_3607d088	narration	You write to M. Rajkumar, the company’s Lawyer, and tell him what Giti’s just told you, asking for his advice.	game/scripts/act3.rpy	1091
+act3_scene26_1ebb43d1	mail	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Re: Inclusive Policy Dear M. Chandrakant, Technically, your colleague is right, the Indian Penal Code only forbids the sexual intercourse de jure, not the fact of declaring oneself homosexual, which would be doli incapax, but we all know that there cannot be one without the other. Further, it is not because a Law hasn’t been applied that it is invalid, a vote must first happen to change, or cancel the Law accordingly so that you would always take a risk for the future of the company by drafting, and implementing this policy, which I don’t recommend. With my very best regards, M. Rajkumar	game/scripts/act3.rpy	1093
+act3_scene26_bf8178ba	thinking	What should I do?	game/scripts/act3.rpy	1101
+act3_scene27_53c53f8a	narration	You can’t believe what you find when you finally receive the international inclusivity policy from CRYPTALOO’s headquarters.{p} Not only is discrimination on the basis of sexual orientation forbidden, but it is severely punished as well, a rightful cause of the work contract’s termination, as is the protection of the person’s privacy.	game/scripts/act3.rpy	1112
+act3_scene27_b96819ec	narration	There’s a lot more in this document, but you prefer to take one step at a time. You copy the international policy into the branch’s policy, and send it off to the whole comapny by email. Later, you forward this email to the new CEO.	game/scripts/act3.rpy	1115
+act3_scene27_2bdcdf4d	narration		game/scripts/act3.rpy	1117
+act3_scene28_a4125c59	narration	Now that a policy has been passed, effective immediately, nobody dares harass Donatello anymore.{p} Some employees have sent emails to complain about you, and threatened to leave.{p} They’ve even found the new CEO’s email, and forwarded their complaints there. Let’s hope this move will be appreciated. Else you’re in big, big trouble.	game/scripts/act3.rpy	1126
+act4_ed6c8130	thinking	The issues have been piling up lately, forcing me to take difficult decisions.	game/scripts/act4.rpy	25
+act4_be18a52b	thinking	It's maybe for the best, as all these decisions are slowly shaping a new work environment for everyone.	game/scripts/act4.rpy	27
+act4_8591376b	thinking	An environment that I've chosen.	game/scripts/act4.rpy	29
+act4_8eb62f02	thinking	Of course, I've pushed the employees one way or another, and the atmosphere is now tenser than before.	game/scripts/act4.rpy	31
+act4_edf9b928	thinking	Which is why I thought it would be a good idea to copy our competitor BUNGALOO and invite a Brahmin to bless the office.	game/scripts/act4.rpy	33
+act4_04260de7	thinking	Nothing like a joyful, and beautiful ceremony to rekindle the bonding.	game/scripts/act4.rpy	35
+act4_c34de379	narration	 Just as you’re imagining the ceremony, smiling to yourself, you notice Giti waiting for you by your office’s door with a grim expression.	game/scripts/act4.rpy	37
+act4_234af237	thinking	What now?	game/scripts/act4.rpy	41
+act4_2ceb3592	narration	You let her in, and she starts talking straight away.	game/scripts/act4.rpy	43
+act4_3d6a3056	giti	Abhay Sir, this is because of the ceremony.	game/scripts/act4.rpy	45
+act4_c6f4c5b2		Oh yes, Giti! {w=0.25}It's going to be great!	game/scripts/act4.rpy	47
+act4_fc74609c	giti	Abhay Sir, maybe you forgot, I am Muslim.	game/scripts/act4.rpy	49
+act4_6b406400	thinking	{b}Of course{/b}, how could I have forgotten?	game/scripts/act4.rpy	51
+act4_cf860d52		My goodness, that's true! {w=0.25}Let's-	game/scripts/act4.rpy	53
+act4_faad91b8	giti	I cannot participate, Abhay Sir, these are not my beliefs.	game/scripts/act4.rpy	55
+act4_scene2_2802707f	thinking	So she doesn't want to participate... {w=0.25}well, {w=0.25}I know exactly what to do.	game/scripts/act4.rpy	65
+act4_scene3_14a20ea0	narration	To find the true feelings of your employees on such a delicate matter, you don't think that calling people to your office is the best idea.	game/scripts/act4.rpy	79
+act4_scene3_2b612ad5	narration	You decide to use the meeting room as a more neutral place for informal discussions.	game/scripts/act4.rpy	81
+act4_scene3_d686431d	narration	You move to the meeting room with a pen, and a piece of paper, you want this to be as informal as possible, but you need to hear what they think about the situation.	game/scripts/act4.rpy	83
+act4_employees_9f4b779c	thinking	This is a delicate matter, who will I hear out?	game/scripts/act4.rpy	87
+act4_scene4_a7c31b69	bapat	Abhay, it will ruin the ceremony if she doesn’t come!	game/scripts/act4.rpy	118
+act4_scene4_6815f5d1	bapat	It's either all of us, or none of us.	game/scripts/act4.rpy	120
+act4_scene4_e050ffd6		But Bapat, she's not Hindu.	game/scripts/act4.rpy	122
+act4_scene4_5ba66200	bapat	Hindu, or not, Abhay, it's not the point, it's being together for the company.	game/scripts/act4.rpy	124
+act4_scene4_3b443a7e	bapat	How can she exclude herself, and still pretend she's working with us?	game/scripts/act4.rpy	126
+act4_scene4_ec87e755		Well, technically, Bapat, we also exclude her by having a Hindu ceremony.	game/scripts/act4.rpy	128
+act4_scene4_1480c166	bapat	No, no, Abhay, you don't get it, it's not about religion, it's about the team spirit.	game/scripts/act4.rpy	130
+act4_scene4_b60d77b7	bapat	You know how much it matters to me.	game/scripts/act4.rpy	132
+act4_scene4_3facd64b		Indeed.	game/scripts/act4.rpy	134
+act4_scene4_5d893d49		You have proven it {i}quite a lot{/i} these last few days...	game/scripts/act4.rpy	136
+act4_scene4_bf43f061	bapat	Yes, Abhay, you know me well.	game/scripts/act4.rpy	138
+act4_scene4_3d3ba6b5		So what would you advise me?	game/scripts/act4.rpy	140
+act4_scene4_e3601b9d	bapat	Tell her that she's fired if she doesn't come, it's the only way, Abhay.	game/scripts/act4.rpy	142
+act4_scene4_e1decec1	thinking	Should I listen to his advice?	game/scripts/act4.rpy	144
+act4_scene5_404e8e32	priyanka	We can't have this, Abhay.	game/scripts/act4.rpy	156
+act4_scene5_8ed8db29		And why not?	game/scripts/act4.rpy	158
+act4_scene5_bb3b6562		Why not respect her religion?	game/scripts/act4.rpy	160
+act4_scene5_25ca4548	priyanka	This is India, Abhay, the Motherland, this is a Hindu country.	game/scripts/act4.rpy	162
+act4_scene5_7b18b96c	priyanka	Everyone has to accept, or to leave, Abhay, this is as much a part of being Indian as knowing the language, or the National Anthem.	game/scripts/act4.rpy	164
+act4_scene5_f8a9a7b9		You-{w=0.25}{nw}	game/scripts/act4.rpy	166
+act4_scene5_8395ecb7	priyanka	She can have her religion of course, but this is a public function, that she has to attend.	game/scripts/act4.rpy	168
+act4_scene5_1a90801a		You know that India is a secular country, don't you?	game/scripts/act4.rpy	170
+act4_scene5_83b7042f	priyanka	This has nothing to do with that, Abhay, this is official business.	game/scripts/act4.rpy	172
+act4_scene5_0df5e35a		I've heard you, Priyanka.	game/scripts/act4.rpy	174
+act4_scene5_8669e386		*sigh* Let me consider it.	game/scripts/act4.rpy	176
+act4_scene5_921e49e4	thinking	Should I listen to her advice?	game/scripts/act4.rpy	180
+act4_scene6_d5fc4a7f	donatello	This is tricky, Abhay.	game/scripts/act4.rpy	190
+act4_scene6_d4bee50f	donatello	The others won't understand if she won't come, but if you force her, she will snap.	game/scripts/act4.rpy	192
+act4_scene6_77ee0e82		Exactly.	game/scripts/act4.rpy	194
+act4_scene6_dae338e8	donatello	Still, if you want this to be an opportunity to unite the employees, it needs to happen.	game/scripts/act4.rpy	196
+act4_scene6_2efaa284	donatello	So I really don't know what to advise you.	game/scripts/act4.rpy	198
+act4_scene6_504996b5		What would you do yourself in my position?	game/scripts/act4.rpy	200
+act4_scene6_964f7520	donatello	I don't know. She can't just skip it openly.	game/scripts/act4.rpy	202
+act4_scene6_be79d1f3	donatello	Either you force her, and see what happens{w=0.25}, or you let her call in sick, maybe?	game/scripts/act4.rpy	204
+act4_scene6_0b0902ed	donatello	She could take a sick leave, and you would tell she's got a flu, or something?	game/scripts/act4.rpy	206
+act4_scene6_e1decec1	thinking	Should I listen to his advice?	game/scripts/act4.rpy	208
+act4_scene7_ad1a5eae	manali	Oh why bother, respected Sir?	game/scripts/act4.rpy	219
+act4_scene7_524a1813	manali	One India, many religions.	game/scripts/act4.rpy	221
+act4_scene7_c4458800	thinking	I-I didn't expect this. She's surprising me this time.	game/scripts/act4.rpy	223
+act4_scene7_6427cc5d	thinking	So this is where she takes a stand?	game/scripts/act4.rpy	225
+act4_scene7_0352e404	manali	Why not let Giti be, she can always come later, why the intolerance?	game/scripts/act4.rpy	227
+act4_scene7_33568159		It's just that the others won't like this, Manali.	game/scripts/act4.rpy	229
+act4_scene7_9d0fa6e8	manali	Abhay Sir, let them talk.	game/scripts/act4.rpy	231
+act4_scene7_65bab86a	manali	why is it that we always hurt the feelings of someone in this company?	game/scripts/act4.rpy	233
+act4_scene7_382f802b		I wish this could be as simple as that, Manali.	game/scripts/act4.rpy	235
+act4_scene7_b0b10b42	manali	Of course, this would be more simple if we were all Hindus, Abhay Sir, but this isn’t our reality.	game/scripts/act4.rpy	237
+act4_scene7_a27fffd4	manali	This is why we have national holidays for all religions.	game/scripts/act4.rpy	239
+act4_scene7_93a3197e		You may have a point here. I need to think about it.	game/scripts/act4.rpy	241
+act4_scene8_618c9f67	narration	You decide to write to M. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again.	game/scripts/act4.rpy	247
+act4_scene8_bd7fc6ba	mail	adnan.gopinath@cryptaloo.com To: abhay.chandrakant@cryptaloo.in Out of the Office I am currently on leave, visiting the jungles of Angkor Wat. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in. Best regards, M. Gopinath	game/scripts/act4.rpy	249
+act4_scene9_75adec53		It's not possible, Giti.{w=0.25} We are like one family here.	game/scripts/act4.rpy	264
+act4_scene9_2a366557		Surely you can't go away when your family has a function, can you?	game/scripts/act4.rpy	266
+act4_scene9_cf88860b	narration	Giti looks at you with anger.	game/scripts/act4.rpy	268
+act4_scene9_b15d41b0	giti	My family would respect my religion, Abhay Sir.	game/scripts/act4.rpy	270
+act4_scene9_117d957f		As we all do, as we all do{w=0.25}, but it's not only about religion.	game/scripts/act4.rpy	272
+act4_scene9_49ea7b81		It's about being together, and participating.	game/scripts/act4.rpy	274
+act4_scene9_a53f54ef		This is why I can't have you running away at an important time for the company, I'm sure you understand.	game/scripts/act4.rpy	276
+act4_scene9_55249118	giti	Not really, Abhay Sir, I-	game/scripts/act4.rpy	278
+act4_scene9_40a35650		Now come on.	game/scripts/act4.rpy	280
+act4_scene9_5bc9a048		I'm sure you want to reassure everybody that you belong here.	game/scripts/act4.rpy	282
+act4_scene9_85fb4cee	giti	I thought I was belonging already, Abhay Sir.	game/scripts/act4.rpy	284
+act4_scene9_0a6bb576		Indeed, indeed, all the more reason why you should come then.	game/scripts/act4.rpy	286
+act4_scene9_08238c71	giti	I will not, Sir.	game/scripts/act4.rpy	288
+act4_scene9_a20cefa7		...	game/scripts/act4.rpy	290
+act4_scene9_163a6604	thinking	She's stubborn, but I will leave her no choice, this is too important.	game/scripts/act4.rpy	292
+act4_scene9_d84f10e7		You will, or you will no longer be part of this company.	game/scripts/act4.rpy	294
+act4_scene9_46e8ffb3		See you tomorrow.	game/scripts/act4.rpy	296
+act4_scene9_5b6110b0	narration	You leave the office.	game/scripts/act4.rpy	298
+act4_scene9_72fe5010	thinking	That went well.	game/scripts/act4.rpy	302
+act4_scene10_3d4ecb2a	narration	You left her no choice.	game/scripts/act4.rpy	312
+act4_scene10_092a8f9e	narration	The next day, Giti doesn’t show up at work.{p} You decide to let it slip, and to welcome her when she finally comes back, but she doesn’t—ever.	game/scripts/act4.rpy	314
+act4_scene10_9cd8bd34	narration	Since she was handling just about everything while M. Gopinath’s away, and left without a notice, or a word, her sudden departure threatens your core business, and no one is ready to replace her.	game/scripts/act4.rpy	317
+act4_scene10_ae172ba1	narration	 You start looking for a new Chief Secretary, but whoever comes next will need at least six months before he or she can handle Giti’s work efficiently. Let’s hope you can paper over the problems until the new CEO arrives, you want to make a good impression.	game/scripts/act4.rpy	319
+act4_scene11_ff53b654		I think I have found a solution, Giti.	game/scripts/act4.rpy	332
+act4_scene11_d89cc2a3	giti	Yes, Abhay Sir?	game/scripts/act4.rpy	334
+act4_scene11_326212fd		I understand that you don’t want to participate in the ceremony, but from what I’ve gathered, it’s not so easy for everyone to accept that.	game/scripts/act4.rpy	336
+act4_scene11_636adae8	giti	What's so difficult to accept, Abhay Sir?	game/scripts/act4.rpy	338
+act4_scene11_305152ef		Oh you know very well, Giti, please, let me help you with this.	game/scripts/act4.rpy	340
+act4_scene11_609749df	giti	I am listening, Abhay Sir.	game/scripts/act4.rpy	342
+act4_scene11_9264ad94		Let’s just say you caught a flu{w=0.25}, or something, you know,{w=0.25} call in sick, and take a leave tomorrow so that you can skip the blessing.	game/scripts/act4.rpy	344
+act4_scene11_fcc3397a	giti	But, Sir, everybody will know that I have no flu, and that I just want to avoid the blessing.	game/scripts/act4.rpy	346
+act4_scene11_478d3838		Yes, but you can always pretend that you were sick to save face.	game/scripts/act4.rpy	348
+act4_scene11_48abe222	giti	But this wouldn’t be the truth, and…	game/scripts/act4.rpy	350
+act4_scene11_9ee40137	giti	…	game/scripts/act4.rpy	352
+act4_scene11_4ebfe178	giti	I understand, Abhay Sir, I will stay home tomorrow.	game/scripts/act4.rpy	354
+act4_scene12_338168b1		You can have the religion you like, Giti, and I respect that.	game/scripts/act4.rpy	364
+act4_scene12_a0fd72b3	narration	She nods.	game/scripts/act4.rpy	366
+act4_scene12_51cb414f		When the Brahmin will come, just go drink a chai downstairs, or whatever, okay?	game/scripts/act4.rpy	368
+act4_scene12_0b6cfdda		Let’s not make a big issue of this, there’s nothing to worry about.	game/scripts/act4.rpy	370
+act4_scene12_78e0b707	giti	I appreciate it, Abhay Sir.	game/scripts/act4.rpy	372
+act4_scene12_09f8a581		It’s not just me, it’s the Law, Giti, we must abide with the freedom of conscience, and religion.	game/scripts/act4.rpy	374
+act4_scene12_c1b9bc15		I don’t even see how that could be a problem for anyone, we’re not an ashram here.	game/scripts/act4.rpy	376
+act4_scene12_15406696	narration	She laughs, then seems to ponder something.	game/scripts/act4.rpy	378
+act4_scene12_579f01be		What's the matter, Giti?	game/scripts/act4.rpy	380
+act4_scene12_3d85c00a		Nothing, it’s nothing Abhay Sir, thank you.	game/scripts/act4.rpy	382
+act4_scene12_1169d08a	narration	And with that, she salutes you with her hands joined, and leaves your office.	game/scripts/act4.rpy	384
+act4_scene13_06023540	narration	As planned, Giti doesn’t show up on the next day.	game/scripts/act4.rpy	391
+act4_scene13_0c72dd98	narration	With everyone busy watching the Brahmin, or singing mantras, and prayers, her absence didn’t seem to be noticed. If it was, everyone was tactful enough to avoid mentioning it, at the very least. {/i}Problem solved!{i} You congratulate yourself.	game/scripts/act4.rpy	393
+act4_scene13_73fa0b7c	narration	The morning following the ceremony, however, as you fetch your tea and whistle {/i}You are my Soniya{i} on your way, you find Giti waiting for you in front of your office.	game/scripts/act4.rpy	395
+act4_scene13_77ee0967	thinking	{/i}Again?{i}	game/scripts/act4.rpy	397
+act4_scene13_b25b8e5e	narration	You let her in.	game/scripts/act4.rpy	399
+act4_scene13_4c21a608		What can I do for you, Giti Madam?	game/scripts/act4.rpy	403
+act4_scene13_9e83900e	giti	Abhay Sir, I was thinking.	game/scripts/act4.rpy	405
+act4_scene13_24325400		Good, I approve this, we should be thinking more!	game/scripts/act4.rpy	407
+act4_scene13_1113b688	giti	Yes, Abhay Sir.	game/scripts/act4.rpy	409
+act4_scene13_6e00715c		I was kidding, Giti, please tell me.	game/scripts/act4.rpy	411
+act4_scene13_dff32b8c	giti	You know, Sir, since we were talking about it the other day, I thought I needed to tell you everything.	game/scripts/act4.rpy	413
+act4_scene13_a49469d7		About what?	game/scripts/act4.rpy	415
+act4_scene13_d0a8100c	giti	About religion{w=0.25}, you see{w=0.25}, Abhay Sir{w=0.25}, I do my prayers during the day.	game/scripts/act4.rpy	417
+act4_scene13_b0b9db19	giti	And since there's no space to pray, I have to do my prayers in the toilet, and now the ladies' toilets are clogged too so that I have to do in the general toilet.	game/scripts/act4.rpy	419
+act4_scene13_c25ea4a8	thinking	I know what she means.	game/scripts/act4.rpy	421
+act4_scene13_a238fc8b	thinking	The men's loo could use some refresh{w=0.25}, or a flamethrower maybe.	game/scripts/act4.rpy	423
+act4_scene13_42150d58		So what do you want, Giti?	game/scripts/act4.rpy	425
+act4_scene13_6b7137d4	giti	‘I want a room I can use for my prayers, Abhay Sir.	game/scripts/act4.rpy	427
+act4_scene13_a17c70dc	giti	It's not good to pray in the dirt like this.	game/scripts/act4.rpy	429
+act4_scene13_bf8178ba	thinking	What should I do?	game/scripts/act4.rpy	431
+act4_scene14_34f6f9c3	thinking	There can be no compromise on serious issues like religion.	game/scripts/act4.rpy	440
+act4_scene14_2c32a4a2	thinking	I've taken my decision the minute she's started to talk.	game/scripts/act4.rpy	442
+act4_scene15_1cb3c60a	thinking	First things first, a man needs his food three times a day.	game/scripts/act4.rpy	453
+act4_scene15_f5ca0fb5	narration	You open your lunch box, and find delicious paneer fingers inside, with a side of steamed okras.	game/scripts/act4.rpy	455
+act4_scene15_6950c836		Why did it have to be okras...?	game/scripts/act4.rpy	457
+act4_scene15_0837d31f	giti	You have fried paneer, don't you complain.	game/scripts/act4.rpy	459
+act4_scene15_27ea33ec	priyanka	This won't happen if you cook it yourself, Abhay Sir!	game/scripts/act4.rpy	461
+act4_scene15_0b745e87	bapat	This is not a man's job!	game/scripts/act4.rpy	463
+act4_scene15_9fa4fb82		I'm afraid I don't cook so well.	game/scripts/act4.rpy	465
+act4_scene15_9759f094	manali	Then you learn! Hihi!	game/scripts/act4.rpy	467
+act4_scene15_3e6d3824		I will try.{w=0.25} Why not?	game/scripts/act4.rpy	469
+act4_scene15_031a80b1	manali	See, Bapat, Abhay Sir is ready for new experiences at least.	game/scripts/act4.rpy	471
+act4_scene15_13d993aa	bapat	As is Donatello.	game/scripts/act4.rpy	473
+act4_scene15_6d9de8f9	donatello	You're really looking for trouble, aren't you?	game/scripts/act4.rpy	475
+act4_scene15_61afe5af	bapat	Just kidding this time, just kidding, trust me.	game/scripts/act4.rpy	477
+act4_scene15_5514a475	thinking	Well, give peace a chance.	game/scripts/act4.rpy	479
+act4_scene15_de196d07	thinking	It's been only two days, and here they are, talking, and laughing again.	game/scripts/act4.rpy	481
+act4_scene15_6fd5d2ae	narration	You smile, then remember you have a pressing matter to solve, and shuffle back to your office.	game/scripts/act4.rpy	483
+act4_scene15_5f7c0e51	thinking	So, what should I do now?	game/scripts/act4.rpy	487
+act4_scene16_07f46ae8	thinking	Let's not change a winning strategy.	game/scripts/act4.rpy	495
+act4_scene16_743464cd	thinking	Which one should I talk to first?	game/scripts/act4.rpy	497
+act4_scene17_ad755bdf	bapat	The nerve of this woman!	game/scripts/act4.rpy	534
+act4_scene17_77fd9000		Well, Bapat, all that she wants is to be able to pray.	game/scripts/act4.rpy	536
+act4_scene17_db78562f	bapat	She can pray to her God, who am I to say she can't pray?	game/scripts/act4.rpy	538
+act4_scene17_be7e3541		You know very well that praying in the toilets isn’t very nice, Bapat, she does that!	game/scripts/act4.rpy	540
+act4_scene17_e63c9a22		It's been three years!	game/scripts/act4.rpy	542
+act4_scene17_84bf6272	bapat	Oh so she uses our toilets for this as well? {w=0.25}No wonder they’re dirty.	game/scripts/act4.rpy	544
+act4_scene17_92d3ccb2		What can she do, she has no other spaces in the company for praying!	game/scripts/act4.rpy	546
+act4_scene17_2984644c	bapat	She can go to the mosque!	game/scripts/act4.rpy	548
+act4_scene17_60e313bd	bapat	When I pray, I go to the temple myself, why can’t she do the same, why special rights, and service all the time?	game/scripts/act4.rpy	550
+act4_scene17_fd53e2d3	bapat	Do I ask for special rights?	game/scripts/act4.rpy	552
+act4_scene17_fe41e13a		You aren’t exactly a member of a minority in need, Bapat.	game/scripts/act4.rpy	554
+act4_scene17_3d6ae29c	bapat	This is our country, Abhay, don’t fall prey to their stratagems!	game/scripts/act4.rpy	556
+act4_scene17_3be53f86	bapat	Already they should be grateful that we play {i}Khwaja Mere Khwaja{/i} during company functions like we always do, so that they’re happy, that’s it, don’t overdo it!	game/scripts/act4.rpy	558
+act4_scene17_f3cf6b09	thinking	What should I do now?	game/scripts/act4.rpy	560
+act4_scene18_e41fceb0	priyanka	I knew this would happen.	game/scripts/act4.rpy	572
+act4_scene18_d73abc7f	priyanka	The minute you decide to give them special treatment, they ask for more, and more, and-	game/scripts/act4.rpy	574
+act4_scene18_75cf4c9f		I get it, Priyanka.	game/scripts/act4.rpy	576
+act4_scene18_faafb76d	priyanka	You can’t turn this office into a mosque, Abhay!	game/scripts/act4.rpy	578
+act4_scene18_8f3fa95c		We’re talking one room, here, small one, for less than an hour a day in total.	game/scripts/act4.rpy	580
+act4_scene18_fe02f372	priyanka	And then what? What will it be next? More holidays? A salary raise?	game/scripts/act4.rpy	582
+act4_scene18_e046baa5		She never asked for any of this, it’s only decent, Priyanka, she’s been kneeling in the toilets for three years!	game/scripts/act4.rpy	584
+act4_scene18_791a2ee8	priyanka	It makes us all very uncomfortable, Abhay!	game/scripts/act4.rpy	586
+act4_scene18_9f8bf91a		Who's "us", tell me?	game/scripts/act4.rpy	588
+act4_scene18_b5a01005	priyanka	{i}All of us!{/i}	game/scripts/act4.rpy	590
+act4_scene18_f3cf6b09	thinking	What should I do now?	game/scripts/act4.rpy	594
+act4_scene19_ddee653e	donatello	This is too much, Abhay	game/scripts/act4.rpy	604
+act4_scene19_94871ed8		Why?	game/scripts/act4.rpy	606
+act4_scene19_be6d97a2	donatello	Not forcing her to go to Hindu ceremonies is one thing, but this prayer space idea is going too far, it’s not Emirate Airlines here.	game/scripts/act4.rpy	608
+act4_scene19_6bce02ae		You do realize she’s praying in the {i}toilet{/i}, Donald?	game/scripts/act4.rpy	610
+act4_scene19_fa52a18b	donatello	And what of us all?	game/scripts/act4.rpy	612
+act4_scene19_81b424b6	donatello	We don’t have a room either, this is unfair.	game/scripts/act4.rpy	614
+act4_scene19_25d396ce		This is a different religion, that’s why.	game/scripts/act4.rpy	616
+act4_scene19_6a90e1a1		We allow sikhs with turbans, and even kukris, don’t we?	game/scripts/act4.rpy	618
+act4_scene19_170888db	donatello	It’s not the same thing{w=0.25}, we didn’t build a mandir in here, did we?	game/scripts/act4.rpy	620
+act4_scene19_f5386cae		But we have a mandir, just over there.	game/scripts/act4.rpy	622
+act4_scene19_83ff31b6	narration	You point in the general direction of the shrine in the office.	game/scripts/act4.rpy	624
+act4_scene19_33d15363	donatello	Not a mandir room, Abhay, she wants a whole room just for herself!	game/scripts/act4.rpy	626
+act4_scene19_c15d5164	donatello	How can you accept this?	game/scripts/act4.rpy	628
+act4_scene19_91311f16	donatello	How come they have all the benefits, and nothing for us, this is {i}our{/i} country!	game/scripts/act4.rpy	630
+act4_scene19_09150417		You don’t accept her religion, Donald.	game/scripts/act4.rpy	632
+act4_scene19_efa3d0b9	donatello	Of course I do.	game/scripts/act4.rpy	634
+act4_scene19_37f0381e	donatello	Don’t be naive, Abhay, you can’t give them what even we don’t have!	game/scripts/act4.rpy	636
+act4_scene19_f3cf6b09	thinking	What should I do now?	game/scripts/act4.rpy	640
+act4_scene20_5c7315b3	manali	So she's been praying in the toilet for three years?	game/scripts/act4.rpy	650
+act4_scene20_c0bd07f3	narration	You nod. She whistle.	game/scripts/act4.rpy	652
+act4_scene20_e43b4299	manali	Maybe it's about time we do something to change that?	game/scripts/act4.rpy	654
+act4_scene20_28849288		Yes, Manali, but don’t you think that this would be unfair for Hindus since we have no prayer room either?	game/scripts/act4.rpy	656
+act4_scene20_ee523262	manali	...	game/scripts/act4.rpy	658
+act4_scene20_d5006595	manali	You know, Abhay, if I imagine myself in her place...	game/scripts/act4.rpy	660
+act4_scene20_8e152050	manali	I must say that the whole office is a bit of a prayer room.	game/scripts/act4.rpy	662
+act4_scene20_65b0ffc7	manali	There’s the Ganapati up there, and the incense, and flower offerings we do in the morning.	game/scripts/act4.rpy	664
+act4_scene20_b2806698	manali	We even invite brahmins to bless the office!	game/scripts/act4.rpy	666
+act4_scene20_1ad8c816		Fair enough.	game/scripts/act4.rpy	668
+act4_scene20_a7adf203		So you think I should agree?	game/scripts/act4.rpy	670
+act4_scene20_3f19f97d	manali	I don’t know.{w=0.25} I don’t know how the others will react.	game/scripts/act4.rpy	672
+act4_scene20_2d47fc43		*sigh*	game/scripts/act4.rpy	674
+act4_scene20_bf03580a	manali	Maybe you could ask the brahmin who came yesterday?	game/scripts/act4.rpy	676
+act4_scene20_fe2e657b	manali	He seemed a good man.	game/scripts/act4.rpy	678
+act4_scene20_f3cf6b09	thinking	What should I do now?	game/scripts/act4.rpy	682
+act4_scene21_4ceb4a94	narration	You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later	game/scripts/act4.rpy	688
+act4_scene21_4dc485f0	mail	rajkumarrajkumarltd@gmail.com To: abhay.chandrakant@cryptaloo.in Re: Prayer room Dear M. Chandrakant, The company cannot be held responsible ceteris paribus of the freedom of religion of its employees. As such, and notwithstanding, you are in no legal obligation to provide for a prayer locus, except in such situations where a prayer locus has been created within the company precincts for other confessions, in which case your employee could claim an unequal treatment, and ask for the corresponding damages. Since the matter entails subjects of philosophical, as well as spiritual importance, I kindly urge you to ask to the spiritual authorities of your convenience for the rule of the Law falters in front of such highness. Also, having the toilets cleaned won’t probably hurt your case. With my very best regards, M. Rajkumar	game/scripts/act4.rpy	690
+act4_scene21_f3cf6b09	thinking	What should I do now?	game/scripts/act4.rpy	700
+act4_scene22_6679712a	narration	You write to M. Gopinath, and ask for his advice. You receive an automatic out-of-the-office answer minutes later, and never hear about it again.	game/scripts/act4.rpy	706
+act4_scene22_63a4d27a	mail	adnan.gopinath@cryptaloo.com To: abhay.chandrakant@cryptaloo.in Out of the Office I am currently on leave as I participate in a sledge competition in Finland. I will answer you as soon as I am back in office. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in. Best regards, M. Gopinath	game/scripts/act4.rpy	708
+act4_scene23_3dc16975		I can't do this, Giti.	game/scripts/act4.rpy	724
+act4_scene23_704e620e	thinking	Better get straight to the point.	game/scripts/act4.rpy	726
+act4_scene23_9d0d3aed	giti	Why not, Abhay Sir?	game/scripts/act4.rpy	728
+act4_scene23_40fc3380		Because the others won’t understand why Muslims would get a special place, when we don't have any such spaces for Hindus, they think it’s unfair.	game/scripts/act4.rpy	730
+act4_scene23_11e4f95e	giti	Yet they have a shrine in the office itself, and blessing ceremonies.	game/scripts/act4.rpy	732
+act4_scene23_cbab1526		It’s true, Giti, but that’s how it is, there’s nothing I can do. I am sorry.	game/scripts/act4.rpy	734
+act4_scene23_7405901e	giti	We can’t have everything, can we?	game/scripts/act4.rpy	736
+act4_scene23_05b69145	narration	You nod, and smile, happy that she understands.	game/scripts/act4.rpy	738
+act4_scene23_e491a835	giti	We can't even have tolerance these days, this is too much to ask for in this world.	game/scripts/act4.rpy	740
+act4_scene23_3ece963f	narration	You stop smiling.	game/scripts/act4.rpy	742
+act4_scene23_e982e746		Giti, please, don't talk it like this...	game/scripts/act4.rpy	744
+act4_scene23_706ff8a2	giti	It’s fine, Abhay Sir, I’ve been praying in the toilets for three years.	game/scripts/act4.rpy	746
+act4_scene23_258b7ed1	giti	I can do it some more.	game/scripts/act4.rpy	750
+act4_scene23_234af237	thinking	What now?	game/scripts/act4.rpy	752
+act4_scene24_d3d0edd0		Of course, you'll have it, Giti.	game/scripts/act4.rpy	763
+act4_scene24_49f271dd	giti	...!	game/scripts/act4.rpy	765
+act4_scene24_4d4f480d	giti	Sir, Abhay Sir, this is very good of you.	game/scripts/act4.rpy	767
+act4_scene24_85fadf57		Don’t mention it, Giti, it’s nothing.	game/scripts/act4.rpy	769
+act4_scene24_ab25d505		We never use the fifth floor storage room anyway so, why not get it cleaned, and prepared for your prayers?	game/scripts/act4.rpy	771
+act4_scene24_35c37cf4	giti	I will never forget, Abhay Sir, and I will pray for you!	game/scripts/act4.rpy	773
+act4_scene24_6ca0804b		You can.{w=0.25} You have the room for this now after all!	game/scripts/act4.rpy	775
+act4_scene24_234af237	thinking	What now?	game/scripts/act4.rpy	779
+act4_scene25_099a0bd9	narration	You can’t make a single person happy at the expense of all the others...	game/scripts/act4.rpy	787
+act4_scene25_337d1057	narration	The following weeks, Giti’s a little bit less active during the meetings, and eats more on her own at lunch, you hope she will understand your decision, and come back to her kind, efficient self before the new CEO steps in.	game/scripts/act4.rpy	789
+act4_scene26_34eb344c	narration	Of course, Giti is delighted. All the other employees except Manali resent your decision, though, you can feel it in the way they talk, and look at you.	game/scripts/act4.rpy	797
+act4_scene26_939fabd4	narration	 Well, you’re the Human Resources Manager, not their best friend forever, and you hope that once the dust settles, everybody will get back to their former, friendly selves.	game/scripts/act4.rpy	799
+act4_scene27_eac253ad	narration	You decide to write to the Brahmin who came to bless the office, and to explain him the situation with Giti. After all, you’re dealing with a religious issue, and he’s a religious person. On the other hand, he’s a representative of the Hindus, and you assume that his answer will not help Giti much, but who knows?{p} He answers a few hours later.	game/scripts/act4.rpy	807
+act4_scene27_abf198f6	mail	swamiramram@jio.in To: abhay.chandrakant@cryptaloo.in Re: Giti Madam Abhay, If we want respect from others, we should give them our respect first. We live in peace now in India because of this respect. I have seen prayer rooms in international airports, they are open to all, I have sung prayers in one such room in the past next to a Jewish Rabbi. Maybe you could use airports as an inspiration? Be blessed, Swami Ram Ram	game/scripts/act4.rpy	810
+act4_scene28_3069378b	narration	Following Swami Ram Ram’s advice, you create a neutral space open to the prayers, yoga, and meditation of all religions. There is still some resistance from some of the employees, but at the end, even Bapat uses it for his yoga, and peace has returned to the office. Congratulations.	game/scripts/act4.rpy	823
+closure_8cf23f5f	narration	The big day has finally come.	game/scripts/closure.rpy	3
+closure_8b6c50e0	narration	You're all gathered together, fidgeting as you wait for Ashwini, your new CEO, to step in.	game/scripts/closure.rpy	5
+closure_bf3d77ca	narration	You can't help forming a picture in your mind, an ideal of what CEOs are, and how they should behave, dress, and speak. This one especially comes straight from the international headquarters. Modern, business-oriented, with a low loud voice, you think.	game/scripts/closure.rpy	7
+closure_767e6cfb	narration	You're all nervous, of course, since there's much at stake. In one sweep of the hand, a CEO could kick Bapat, Giti, or yourself.	game/scripts/closure.rpy	11
+closure_2e12630d	narration	You've taken a lot of decisions lately, changed a lot of things for good, or for worse, and you feel like your fate is hanging in the balance.	game/scripts/closure.rpy	13
+closure_aa8388fa	narration	You see M. Gopinath from the corner of your eye, wearing a brand new tan like a new suit, white teeth out like a ravenous tiger, and you wonder where he's been all this time.	game/scripts/closure.rpy	15
+closure_4dcc4c1a	narration	 Everybody stands up as the door opens, staring at the makeshift stage, and at the microphone. A middle-aged woman in a sari steps in, smiling.	game/scripts/closure.rpy	17
+closure_9777eba1	bapat	False alert!	game/scripts/closure.rpy	19
+closure_818a2618	narration	Bapat says this as he sits down, but the woman stares at him, stone cold, and walks straight to the microphone. Bapat stands up, sweating profusely as the woman starts to speak.	game/scripts/closure.rpy	21
+closure_903ba0f3	thinking	{i}Ashwini{/i}, of course!	game/scripts/closure.rpy	23
+closure_01c4a7c0	thinking	Ashwini, why on Earth did I think the CEO was a man ?!	game/scripts/closure.rpy	25
+closure_fe94ff36	ashwini	Good morning everybody. My name is Ashwini Baghyashree.	game/scripts/closure.rpy	27
+closure_9fbbd7f3	ashwini	I am very happy to see you all gathered here today, as CRYPTALOO India is entering a new phase with the full support and guidance of our International Headquarters.	game/scripts/closure.rpy	29
+closure_2f8a3f7a	ashwini	Having worked here for many years, you have paved the ground for CRYPTALOO's future successes, and will play an important role in the developments to come.	game/scripts/closure.rpy	31
+closure_c2d7fc6f	ashwini	For this, I want to thank you all.	game/scripts/closure.rpy	33
+closure_2f7c3788	narration	She pauses. Everybody applauses. You wonder what's coming next.	game/scripts/closure.rpy	35
+closure_869da3fc	ashwini	I am here to take CRYPTALOO India to the next level with the planned extension of four offices around the country, and to help CRYPTALOO India to enter the global market, and culture.	game/scripts/closure.rpy	37
+closure_67fcc091	ashwini	I have followed the recent developments of the past weeks, and I must say that as far as global culture is concerned, I have been surprised!	game/scripts/closure.rpy	39
+closure_2e52e21c	ashwini	I was saddened to learn that a woman could be shamed in your office without any reaction from its head management.	game/scripts/closure.rpy	42
+closure_ee8eb9b1	ashwini	By laying the fault on Priyanka, or letting it happen, you have actually taken sides with the harassers against the victim.	game/scripts/closure.rpy	44
+closure_94688bf0	ashwini	This is not how the culture can change, and this casts a bad light on the company in general.	game/scripts/closure.rpy	46
+closure_49326b0d	narration	Ashwini looks at you straight in the eyes, and speaks.	game/scripts/closure.rpy	48
+closure_f6461f14	ashwini	M. Chandrakant, I know that you did what you thought was right, but you're not the company's psychologist.	game/scripts/closure.rpy	50
+closure_b224325e	ashwini	And trying to meddle with the employee’s private life as you did when Priyanka was having troubles didn't help to solve the situation{w=0.25}, to say the least.	game/scripts/closure.rpy	52
+closure_5ceb7be1	ashwini	We can't confuse private and professional life, or let people take advantage of private informations.	game/scripts/closure.rpy	54
+closure_bc2403cd	narration	She looks at Bapat sideways, and continues.	game/scripts/closure.rpy	56
+closure_19520277	ashwini	In that case, you should have reported the situation, ensured Priyanka of your support, and taken a firm action to stop the shaming she was facing.	game/scripts/closure.rpy	58
+closure_9b89d93c	ashwini	I must say I'm impressed, M. Chandrakant.	game/scripts/closure.rpy	60
+closure_7a86386a	ashwini	Not only did you resolve the situation caused by Priyanka's shaming by implementing a dress code that can’t be disputed since it applies to all of CRYPTALOO’s branches,	game/scripts/closure.rpy	62
+closure_79f42e2f	ashwini	But you have also laid the ground for future policies towards inclusiveness, and tolerance masterfully!	game/scripts/closure.rpy	64
+closure_6ebd69b9		<Error: Act 1 Ending Missing>	game/scripts/closure.rpy	66
+closure_a4715bf9	ashwini	On another subject, I am happy to see that Giti has been promoted.	game/scripts/closure.rpy	69
+closure_76a65f0b	ashwini	It was about time Madam Shaikh was rewarded for her efforts, and takes on more responsibilities with us.	game/scripts/closure.rpy	71
+closure_5cedecaf	ashwini	Too long have we seen people thriving on titles, and positions, while the groundwork was done by someone else, this needs to change.	game/scripts/closure.rpy	73
+closure_dd846281	ashwini	Unfortunately, we now have a lawsuit on our hands because you didn't hear Madam Shaikh's legitimate request out, M. Chandrakant.	game/scripts/closure.rpy	75
+closure_ba4f0729	ashwini	If I'm not mistaken, she was leading the Transportation Department in addition to her job, and took many responsibilities that weren't her own.	game/scripts/closure.rpy	77
+closure_238adba4	ashwini	Why would you ignore her request for a promotion, was it undeserved?	game/scripts/closure.rpy	79
+closure_719b7b26		I-I{w=0.25}, err-{w=0.25}, I wasn't,{w=0.25} I don't know.	game/scripts/closure.rpy	81
+closure_fe08da30	ashwini	Yes, I know you don't know, M. Chandrakant, because you didn't consider her situation, or her value for the company, and now I must defuse this trial.	game/scripts/closure.rpy	83
+closure_c3dbfc71		<Error: Act 2 Ending Missing>	game/scripts/closure.rpy	85
+closure_51f6a9fe	ashwini	This being said, I have been informed of an employee of this company, who had to face a difficult situation because of his sexual orientation.	game/scripts/closure.rpy	88
+closure_c3562f12	ashwini	While I support and endorse your views on inclusiveness on this matter, M. Chandrakant, the way you've dealt with the employees' reactions to this situation was rather harsh, even repressive.	game/scripts/closure.rpy	90
+closure_b9acb96e	ashwini	Since this is a delicate matter, you should have tried to listen more, and gradually bring the employees over to your views instead of punishing them, and reinforcing their prejudices.	game/scripts/closure.rpy	92
+closure_e4446a5b	ashwini	That wasn't very skillful, M. Chandrakant, and I withdraw the collective warning you have issued at that time.	game/scripts/closure.rpy	94
+closure_51f6a9fe_1	ashwini	This being said, I have been informed of an employee of this company, who had to face a difficult situation because of his sexual orientation.	game/scripts/closure.rpy	96
+closure_f5c29622	ashwini	I am well aware that this was a delicate situation, but the least you could have done, M. Chandrakant, was to provide him with your support and understanding instead of howling with the wolves.	game/scripts/closure.rpy	98
+closure_23244955	ashwini	I am truly disappointed.	game/scripts/closure.rpy	100
+closure_f0bddb08	ashwini	This being said, I have been informed of the situation of an employee of this company, who had to face a difficult situation because of his sexual orientation.	game/scripts/closure.rpy	102
+closure_1cba118b	ashwini	You have surprised me, M. Chandrakant, I must say, when you decided to apply the international policy to our Indian branch.	game/scripts/closure.rpy	104
+closure_06f54203	ashwini	It wasn't your call to establish a new policy all by yourself though I understand you did it to defuse a potentially disruptive situation.{w=0.25} I appreciate your efforts.	game/scripts/closure.rpy	106
+closure_c8baa4f2	ashwini	I still need time to consider how to apply the international policy to our branch,	game/scripts/closure.rpy	108
+closure_200c5893	ashwini	But in the meantime I assure all of you that no employee will be discriminated against in this company for his sexual orientation.	game/scripts/closure.rpy	110
+closure_1b76bd7c		<Error: Act 3 Ending Missing>	game/scripts/closure.rpy	112
+closure_7261e9dc	ashwini	Last but not least, I must remind you, M. Chandrakant, that India is a secular country!	game/scripts/closure.rpy	115
+closure_474b3089	ashwini	How on Earth did you come to the conclusion that you could fire an employee because she wouldn't want to participate to a religious ceremony?	game/scripts/closure.rpy	117
+closure_b19febe7	ashwini	This is not a temple, this is a corporate office!	game/scripts/closure.rpy	119
+closure_53c77488	ashwini	An individual's religion shouldn't matter at the office, and if we believe in our Constitution, it shouldn't even matter anywhere in India!	game/scripts/closure.rpy	121
+closure_41b2b66e	ashwini	Last but not least, I wonder why you didn't accept to give your employees a room for their prayers, M. Chandrakant?	game/scripts/closure.rpy	123
+closure_30e95fa6	ashwini	Is that because you think that religion should have no say at all in the company?	game/scripts/closure.rpy	125
+closure_08e0a16d	ashwini	If this is the case, then why is the shrine still in the entrance?	game/scripts/closure.rpy	127
+closure_d468542e	ashwini	It's either all or none, M. Chandrakant, we can't pick and choose, and force our individual beliefs on others.	game/scripts/closure.rpy	129
+closure_0d57eae9	ashwini	Last but not least, I must say that I approve your giving the employees a space for their prayers, M. Chandrakant.	game/scripts/closure.rpy	131
+closure_2b9a7fdb	ashwini	We all work in the same company, but are different people, and we need to welcome everyone as they are regardless of their faith.	game/scripts/closure.rpy	133
+closure_05285383		<Error: Act 4 Ending Missing>	game/scripts/closure.rpy	135
+closure_ending_3e1ddba2	ashwini	As you all can see, our small family is changing, and expanding.	game/scripts/closure.rpy	142
+closure_ending_c27f093f	ashwini	This means that there will be new opportunities for all of you, and new ways of working together.	game/scripts/closure.rpy	144
+closure_ending_ec884346	ashwini	Some of you will feel pushed, and will resent the changes, while others will embrace them.	game/scripts/closure.rpy	146
+closure_ending_32de0581	ashwini	I want to let you know that I will always be available to listen to you, to help, and to support you.	game/scripts/closure.rpy	148
+closure_ending_cbc50334	ashwini	In order to prove these words, I am not taking any action today except for one.	game/scripts/closure.rpy	150
+closure_ending_085e5737	ashwini	Change is a process, it takes time and understanding, and I will give you plenty of those so that you can adjust and determine by yourself how to cope with these changes and new work environment.	game/scripts/closure.rpy	152
+closure_ending_2422e7a5	narration	You raise your hand.	game/scripts/closure.rpy	154
+closure_ending_1159d4cc		Madam, you said you would take one action, which is it?	game/scripts/closure.rpy	156
+closure_ending_d802c9ca	ashwini	Oh yes, that.	game/scripts/closure.rpy	158
+closure_ending_35c2cb55	ashwini	M. Gopinath, can you step forward please?	game/scripts/closure.rpy	160
+closure_ending_0773f4f6	narration	M. Gopinath seems surprised, and moves forward.	game/scripts/closure.rpy	162
+closure_ending_9f58396b	ashwini	Where were you all this time? {w=0.25}Why didn't you answer your emails?	game/scripts/closure.rpy	164
+closure_ending_16fe9922	ashwini	You know that you were supposed to be back last week, didn't you?	game/scripts/closure.rpy	166
+closure_ending_e9a72567	narration	M. Gopinath blushes, and growls something that you can't hear.	game/scripts/closure.rpy	168
+closure_ending_e21d33fb	ashwini	You are fired, M. Gopinath.	game/scripts/closure.rpy	170
+closure_ending_df7aa692	thinking	I see.	game/scripts/closure.rpy	174
+closure_ending_2642e5b3	thinking	Kind words, and a display of power, times are going to be interesting.	game/scripts/closure.rpy	176
+closure_ending_b53db085	ashwini	M. Chandrakant, I have a few words for you as well.	game/scripts/closure.rpy	178
+closure_bad_ending_7b8a019a	ashwini	You have managed to achieve the feat of getting the company sued, an employee quitting, and to change dramatically the atmosphere for the worst in just one week.	game/scripts/closure.rpy	190
+closure_bad_ending_578dadfc	ashwini	I must say I didn’t think it was possible to be lacking empathy to this extent.	game/scripts/closure.rpy	192
+closure_bad_ending_2cb15a0e	ashwini	With M. Gopinath away, you had an opportunity to show what you were capable of, and, well, you did.	game/scripts/closure.rpy	194
+closure_bad_ending_37a2f5c2	thinking	Wrong. Wrong. Wrong. I got it all wrong!	game/scripts/closure.rpy	196
+closure_bad_ending_5def0da4	narration	You thought that you would be congratulated for your hard but necessary decisions, and it sure looks like you’re not going to be.	game/scripts/closure.rpy	198
+closure_bad_ending_5d47d62e	ashwini	I will try to connect with Giti, and to offer her to become our new Human Resources Manager.	game/scripts/closure.rpy	200
+closure_bad_ending_18b27029	ashwini	It’s been a long time she should have been promoted.	game/scripts/closure.rpy	202
+closure_bad_ending_a8dc34cc	thinking	{i}What!{/i}	game/scripts/closure.rpy	204
+closure_bad_ending_4b79aca7	ashwini	If you accept, you can be her assistant, M. Chandrakant{w=0.25}, maybe you’ll learn from her.	game/scripts/closure.rpy	206
+closure_bad_ending_7b170b4e	ashwini	If it doesn’t suit you, you’re free to resign.	game/scripts/closure.rpy	208
+closure_bad_ending_451e2140	thinking	{i}Just.{w=1} Like.{w=1} That.{/i}	game/scripts/closure.rpy	210
+closure_bad_ending_d9111ed6	narration	You redden with anger, and prepare yourself to answer this infamy when the thought hits you like a bullet:{p} {i}What if she has a point?{w=0.5} What if you stayed indeed?{w=0.5} That would be a whole new story, yet to be written.	game/scripts/closure.rpy	212
+closure_good_ending_9acf2df0	ashwini	With M. Gopinath away, and myself still abroad, the fate of the whole Indian branch was lying upon your shoulders, M. Chandrakant.	game/scripts/closure.rpy	218
+closure_good_ending_8b3c22bd	ashwini	Weaker, less resolute men would have left the situations to fester, and waited for my coming, but this is not what you did.	game/scripts/closure.rpy	220
+closure_good_ending_da718186	ashwini	Instead, you took upon you to solve everything as you could, listened to everyone, and tried to find the most inclusive solutions with an open mind.	game/scripts/closure.rpy	222
+closure_good_ending_bbecc9d4	narration	You blush.	game/scripts/closure.rpy	224
+closure_good_ending_176de36d		T-That's only-	game/scripts/closure.rpy	226
+closure_good_ending_d7144d05	ashwini	I am very impressed, and happy to see such qualities of both management, and empathy, in you.	game/scripts/closure.rpy	228
+closure_good_ending_d6992c1c	ashwini	For this reason, I would like to offer you M. Gopinath’s position in this branch, and to commend you for management training sessions at our International Headquarters.	game/scripts/closure.rpy	230
+closure_good_ending_d6c65761	narration	You feel a bit tipsy, and a bit proud. Just a week ago, you were reaching the office with a pang of anxiety, knowing that you would be the one in charge, and now it seems that you’ve been successful all the way.	game/scripts/closure.rpy	232
+closure_good_ending_91dad41e	thinking	{i}Administrative Director? Me?{/i}	game/scripts/closure.rpy	234
+closure_good_ending_f4ce6b87	ashwini	M. Chandrakant?	game/scripts/closure.rpy	236
+closure_good_ending_b3000246	narration	She was talking while you were trying to make sense out of her words.	game/scripts/closure.rpy	238
+closure_good_ending_35687e64		Yes, Madam?	game/scripts/closure.rpy	240
+closure_good_ending_e0ad2370	ashwini	I've asked you a question, {w=0.25}do you accept this position?	game/scripts/closure.rpy	242
+closure_good_ending_f45aa411		YES!	game/scripts/closure.rpy	244
+closure_good_ending_b20b2c1d		YES, MADAM!	game/scripts/closure.rpy	246
+closure_good_ending_89c99536	narration	And everybody laughs.	game/scripts/closure.rpy	248
+closure_mixed_ending_b74ef538	ashwini	You did what you could, M. Chandrakant.	game/scripts/closure.rpy	251
+closure_mixed_ending_b5440402	ashwini	I know that you were alone in here with M. Gopinath on leave, and myself away. I know that it wasn’t easy.	game/scripts/closure.rpy	253
+closure_mixed_ending_e2df5a4d		Yes, Madam.{w=0.25} I did my best, and-	game/scripts/closure.rpy	255
+closure_mixed_ending_c9782119	ashwini	Your best wasn’t enough, M. Chandrakant, because I now have to deal with the aftermath of all this in spite of the good decisions you have taken here and there.	game/scripts/closure.rpy	257
+closure_mixed_ending_b8d01bef		Yes, Madam...	game/scripts/closure.rpy	259
+closure_mixed_ending_bbecc9d4	narration	You blush.	game/scripts/closure.rpy	261
+closure_mixed_ending_53953ac5	ashwini	Since I’m here now, I am confident that these mistakes can be corrected,	game/scripts/closure.rpy	263
+closure_mixed_ending_c3b91dbf	ashwini	And that we can proceed together without leaving any of us on the side of the road{w=0.25}, not even you M. Chandrakant.	game/scripts/closure.rpy	265
+closure_mixed_ending_bb0a4e39	ashwini	But you will need to learn.	game/scripts/closure.rpy	267
+closure_mixed_ending_fe203c99		I will, Madam, I promise, you'll see-	game/scripts/closure.rpy	269
+closure_mixed_ending_0e913a23	ashwini	This is a story that remains to be written. M. Chandrakant.	game/scripts/closure.rpy	271

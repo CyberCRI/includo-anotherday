@@ -35,11 +35,11 @@ label act2:
 
     show giti with dissolve
 
-    "What can I do for you, Giti Madam?"
+    abhay "What can I do for you, Giti Madam?"
 
     giti "I need to talk to you, Abhay Sir. I have been thinking a long time about this."
 
-    "Is this urgent?"
+    abhay "Is this urgent?"
 
     giti "It is not, Abhay Sir, but now is as much a good time as another."
 
@@ -54,13 +54,13 @@ label act2:
 label .scene2:
     giti "Abhay Sir, I have been working hard for M. Gopinath for the last three yea-"
 
-    "I know that."
+    abhay "I know that."
 
-    "Your efforts are very appreciated, Giti."
+    abhay "Your efforts are very appreciated, Giti."
 
     giti "Yes, Abhay Sir, also I have been working overtime in the evenings, and during weekends without even asking for compensatory leaves."
 
-    "You could have asked, I would have approved them, you know. Is this what-"
+    abhay "You could have asked, I would have approved them, you know. Is this what-"
 
     giti "No, Sir, please hear me out."
 
@@ -68,17 +68,17 @@ label .scene2:
 
     giti "like taking care of the transportation department, or of the security shift..."
 
-    thinking "What could she want? Compensation holidays?"
+    thinking "What could she want?{w=0.5} Compensation holidays?"
 
     thinking "Gopinath isn't looking over my shoulder so I could give them."
 
     thinking "Or maybe it's a promotion?"
 
-    thinking "Wait, is she going to resign? Is that what this is about?"
+    thinking "Wait, is she going to resign?{w=0.5} Is that what this is about?"
 
-    giti "Sir, are you listening to me ?"
+    giti "Sir, are you listening to me?"
 
-    "Y-{w=0.5}yes of course, carry on."
+    abhay "Y-{w=0.5}yes of course, carry on."
 
     giti "So I was saying I didn't know why I never got the promotion while Bapat had one in just one year,"
 
@@ -86,27 +86,27 @@ label .scene2:
 
     giti "They said that they made sure that no women gets promoted, that only men can reach the top positions."
 
-    "Who?"
+    abhay "Who?"
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
 
     thinking "{b}Them again...{/b}"
 
-    thinking "Or is she playing me, bouncing on the opportunity because of what happened with Priyanka ?"
+    thinking "Or is she playing me, bouncing on the opportunity because of what happened with Priyanka?"
 
-    "So what do you want me to do, Giti?"
+    abhay "So what do you want me to do, Giti?"
 
     giti "I want to request a promotion, Abhay Sir, and your official answer."
 
     thinking "Really, {w=0.25}just like that."
 
-    thinking "Can I trust her ?"
+    thinking "Can I trust her?"
 
     menu:
         "Approve her request":
             jump .scene4
         "Reject her request":
-            thinking "This, the day after the Priyanka affair? She's trying to take advantage of the situation. I should reject her request."
+            thinking "This, the day after the Priyanka affair?{w=0.5} She's trying to take advantage of the situation. I should reject her request."
             jump .scene5
         "The game is on, I need to investigate":
             jump .scene6
@@ -148,7 +148,7 @@ label .scene3:
 label .scene4:
     hide giti with dissolve
 
-    thinking "Wait, is this the right thing to do ?"
+    thinking "Wait, is this the right thing to do?"
 
     thinking "I should take the time to think about the situation a little."
 
@@ -156,7 +156,7 @@ label .scene4:
 
     thinking "This basically means I can do whatever I want but I'll still need to report to them and explain my decision afterwards."
 
-    thinking "What about the team dynamics at the office? Won't this disrupt it?"
+    thinking "What about the team dynamics at the office?{w=0.5} Won't this disrupt it?"
 
     narration "You take some time to weight all the pros and cons and you answer her."
 
@@ -169,11 +169,9 @@ label .scene5:
 
     narration "This is the expected decision, and you’re pretty confident that everyone at the office will understand it. This way, you preserve the balance of power, and make sure you won’t be bothered when the new CEO will come, and M. Gopinath will return."
 
-    narration "You sigh."
+    thinking "*sigh*{w=1} There are maybe other aspect to deal with."
 
-    thinking "There are maybe other aspect to deal with."
-
-    thinking "What about the team dynamics at the office? Won't this disrupt it?"
+    thinking "What about the team dynamics at the office?{w=0.5} Won't this disrupt it?"
 
     narration "You take some time to weight all the pros and cons and you answer her."
 
@@ -223,11 +221,11 @@ label .scene7:
 
     giti "I can't believe this, did you know they've found a crocodile in a hole of the road!"
 
-    bapat "This is fake news, Giti! I can't believe you fell for it."
+    bapat "This is fake news, Giti!{w=0.5} I can't believe you fell for it."
 
-    donatello "It's not fake, Bapat. It's something concerned citizen have done, it's a plastic crocodile."
+    donatello "It's not fake, Bapat.{w=0.25} It's something concerned citizen have done, it's a plastic crocodile."
 
-    giti "No, no, it was a real crocodile, Donald Sir! It has even attacked a child!"
+    giti "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
 
     bapat "A {i}crocodile child molester{/i} now, Giti, please think!"
 
@@ -252,37 +250,37 @@ label .scene8:
 
     narration "You decide to play it clever."
 
-    "I need your advice Bapat."
+    abhay "I need your advice Bapat."
 
     bapat "Of course, Abhay, whatever you need."
 
-    "I’m going through the evaluation files today, and planning internal evolutions for the staff, "
+    abhay "I’m going through the evaluation files today, and planning internal evolutions for the staff, "
 
-    "Would you help me?"
+    abhay "Would you help me?"
 
     narration "Bapat nods, happy to be considered."
 
-    "Good."
+    abhay "Good."
 
-    "My first problem is that, judging from the efforts, and responsibilities taken this year,"
+    abhay "My first problem is that, judging from the efforts, and responsibilities taken this year,"
 
-    "The three employees which stand out are {w=0.25}Manali, {w=0.25}Priyanka, {w=0.25}and Giti."
+    abhay "The three employees which stand out are {w=0.25}Manali, {w=0.25}Priyanka, {w=0.25}and Giti."
 
-    "I'm not talking about your department of course."
+    abhay "I'm not talking about your department of course."
 
     narration "Bapat grunts."
 
-    "Obviously, I can't offer to promote all three, but I need to reward their efforts."
+    abhay "Obviously, I can't offer to promote all three, but I need to reward their efforts."
 
     bapat "Maybe you can promote Manali, Abhay?"
 
-    "Why only her"
+    abhay "Why only her"
 
     bapat "Abhay, if you promote the others, you will push women into the head management."
 
     bapat "We have enough problems right now."
 
-    "Why is that a problem?"
+    abhay "Why is that a problem?"
 
     bapat "Ah, they’re not like us, Abhay, "
 
@@ -290,9 +288,9 @@ label .scene8:
 
     bapat "They’re good housewife material, but none of us will accept being commanded by a woman."
 
-    "I see.{w=0.5} Thank you, Bapat."
+    abhay "I see.{w=0.5} Thank you, Bapat."
 
-    "Now will you help me with the network?"
+    abhay "Now will you help me with the network?"
 
     narration "With that, you talk, and talk for long enough for Bapat to forget that you've asked about the women."
 
@@ -320,31 +318,31 @@ label .scene9:
     narration "Obviously, Donatello doesn't know what to expect from this meeting.
                 He looks a bit confused, and wary. You have to play it cautious, and beat about the bush a little"
 
-    "I need your advice, Donatello."
+    abhay "I need your advice, Donatello."
 
     donatello "Yes, of course, what is it?"
 
-    "I have a lot of paperwork to do for the next review of the sales department’s employees, and I don’t understand the sales figures."
+    abhay "I have a lot of paperwork to do for the next review of the sales department’s employees, and I don’t understand the sales figures."
 
     donatello "Show me that."
 
     narration "You hand him the sale reports."
 
-    "That's a lot of work, maybe Giti, or Priyanka can help you?"
+    abhay "That's a lot of work, maybe Giti, or Priyanka can help you?"
 
     narration "You see him hesitating."
 
-    "What's the matter, Donatello?"
+    abhay "What's the matter, Donatello?"
 
     donatello "Well, {w=0.25}Abhay, {w=0.25}you know I would rather trust my own analysis."
 
     donatello "Sales reviews are complex, and require a lot of experience."
 
-    "But Priyanka has been here longer than you, Donatello, why can’t she help?"
+    abhay "But Priyanka has been here longer than you, Donatello, why can’t she help?"
 
     donatello "Abhay, talking to clients is one thing, but this is high level managerial stuff-"
 
-    "And you think she can't do it?"
+    abhay "And you think she can't do it?"
 
     donatello "She can’t, Abhay."
 
@@ -354,17 +352,17 @@ label .scene9:
 
     donatello "It's a very different situation."
 
-    "I see."
+    abhay "I see."
 
-    "Thank you, Donatello."
+    abhay "Thank you, Donatello."
 
-    "Can you get back to me with your analysis by tomorrow?"
+    abhay "Can you get back to me with your analysis by tomorrow?"
 
     narration "With that, you talk, and talk for long enough for Donatello to forget what you just asked."
 
     hide donatello with dissolve
 
-    thinking "What should I do now ?"
+    thinking "What should I do now?"
 
     if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
         thinking "I could take a decision right now or keep investigating."
@@ -416,33 +414,33 @@ label .scene11:
     narration "You sit next to Priyanka and engage in a small talk with her.{p}
                 After a while, you decide to jump in."
 
-    "How come you've been working here for 2 years, and never asked for a promotion, Priyanka?"
+    abhay "How come you've been working here for 2 years, and never asked for a promotion, Priyanka?"
 
     priyanka "Because promotions have to be approved by the higher management, Abhay"
 
     priyanka "And they clearly told everyone that there won’t be any in my department for the next three years…"
 
-    "But Bapat is in your department, and has been promoted, hasn't he?"
+    abhay "But Bapat is in your department, and has been promoted, hasn't he?"
 
     priyanka "It's not the same."
 
-    "How so ?"
+    abhay "How so?"
 
     priyanka "..."
 
-    "How so, Priyanka ?"
+    abhay "How so, Priyanka?"
 
     priyanka "He’s friends with The Gopi, and The Donald—{w=0.5}Gopinath, and Donatello Sirs, I mean, and-"
 
-    "That shouldn't matter, this is a {i}company{/i}, not a club!"
+    abhay "That shouldn't matter, this is a {i}company{/i}, not a club!"
 
     priyanka "Yes, Abhay, but it’s like that, and I’m a woman."
 
     priyanka "Have you ever seen a woman being promoted here?"
 
-    "Many of them."
+    abhay "Many of them."
 
-    "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
+    abhay "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
 
     priyanka "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
 
@@ -478,39 +476,39 @@ label .scene12:
     narration "You catch up with Manali as she’s about to finish her lunch.{p}
                 You take the time to grab a tray, pour yourself some spinach soup, sit next to her, and start talking about her department."
 
-    "I’ve heard it’s going well, congratulations."
+    abhay "I’ve heard it’s going well, congratulations."
 
-    "You’re doing a great job, handling the secretary, the security, and the transportation all together!"
+    abhay "You’re doing a great job, handling the secretary, the security, and the transportation all together!"
 
     manali "It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient."
 
-    "It’s been what? Three years now that she’s doing that?"
+    abhay "It’s been what?{w=0.5} Three years now that she’s doing that?"
 
     narration "You drink a mouthful of soup, it’s cold already."
 
     manali "Three years, Abhay Sir, and she never complains."
 
-    "Yet she’s never been promoted"
+    abhay "Yet she’s never been promoted"
 
-    "Manali, I will talk to M. Gopinath about it."
+    abhay "Manali, I will talk to M. Gopinath about it."
 
     narration "You take another spoon of soup, still looking at her, drink it with a grimace, and push the bowl aside on your tray."
 
     manali "You should, Sir, but he probably will not listen."
 
-    "And why is that?"
+    abhay "And why is that?"
 
     manali "I don’t know, Sir, I just said that for no reason."
 
-    "Of course there's a reason, please tell me."
+    abhay "Of course there's a reason, please tell me."
 
     manali "She’s got a very good position already, and maybe they don’t want to give her too much responsibilities because-"
 
-    "Because she's a woman?"
+    abhay "Because she's a woman?"
 
     manali "I didn’t say that, Sir!"
 
-    "But you meant that."
+    abhay "But you meant that."
 
     show manali blushing
 
@@ -577,7 +575,7 @@ label .scene14:
 
     narration "Once she's sat, you begin."
 
-    "I have decided to approve your promotion request, Giti."
+    abhay "I have decided to approve your promotion request, Giti."
 
     show giti surprised
 
@@ -587,9 +585,9 @@ label .scene14:
 
     giti "Thank you, Abhay Sir, {b}thank you{/b}."
 
-    "Hahaha !"
+    abhay "Hahaha!"
 
-    "About time, isn't it? Things should change around here."
+    abhay "About time, isn't it?{w=0.5} Things should change around here."
 
     giti "About time, Abhay Sir, about time, thank you."
 
@@ -662,8 +660,7 @@ label .scene18:
                 You surmise that M. Gopinath won’t be happy, and hope that the new CEO will understand your position. Time will tell."
 
     $act_2_ending_18 = True
-    $act_2_completed = True
-    return
+    jump .end
 
 label .scene19:
     narration "A few hours later, someone knocks at your door, and hands you a piece of paper before leaving.{p}
@@ -692,17 +689,17 @@ label .scene20:
 
     narration "Once she's sat, you begin."
 
-    "I have decided to approve your promotion request, Giti."
+    abhay "I have decided to approve your promotion request, Giti."
 
     giti "It's only fair, Abhay Sir."
 
-    "So you will drop this case, won’t you?"
+    abhay "So you will drop this case, won’t you?"
 
     giti "Yes, Sir, I only want the promotion I should have had long ago."
 
-    "Well, you have it."
+    abhay "Well, you have it."
 
-    "Please send me the acknowledgement of cancellation for the case, and I will promote you as I said."
+    abhay "Please send me the acknowledgement of cancellation for the case, and I will promote you as I said."
 
     giti "No, Abhay Sir, {nw=0.5}{nw}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
 
@@ -710,7 +707,7 @@ label .scene20:
 
     thinking "She has obviously studied this."
 
-    "Okay, okay, kindly plan this meeting after working hours, and make it happen quick."
+    abhay "Okay, okay, kindly plan this meeting after working hours, and make it happen quick."
 
     menu:
         "The aftermath.":
@@ -751,7 +748,13 @@ label .scene23:
     narration "Surely, the new CEO will surely know how to handle a court case better than you, and everything will be fine again."
 
     $act_2_ending_23 = True
+    jump .end
+
+label .end:
+    narration "Act 2 End"
     $act_2_completed = True
+    $renpy.call_screen("act_menu")
+
     return
 
 
