@@ -61,7 +61,7 @@ define gui.text_font = "fonts/Oswald-Regular.ttf"
 define gui.name_text_font = "fonts/Oswald-Bold.ttf"
 
 ## The font used for out-of-game text.
-define gui.interface_text_font = "fonts/Slopes.ttf"
+define gui.interface_text_font = "fonts/Oswald-Regular.ttf"
 
 ## The size of normal dialogue text.
 define gui.text_size = 22
@@ -70,7 +70,7 @@ define gui.text_size = 22
 define gui.name_text_size = 25
 
 ## The size of text in the game's user interface.
-define gui.interface_text_size = 80
+define gui.interface_text_size = 30
 
 ## The size of labels in the game's user interface.
 define gui.label_text_size = 28
@@ -143,6 +143,54 @@ define gui.dialogue_text_xalign = 0.0
 define gui.dialogue_text_color = "#FFFFFF"
 define gui.dialogue_text_font = "fonts/Oswald-Regular.ttf"
 define gui.dialogue_text_size = 30
+
+define gui.mail_xpos = 100
+define gui.mail_ypos = 350
+
+define gui.mail_width = 900
+define gui.mail_text_xalign = 0.0
+define gui.mail_text_color = "#FFFFFF"
+define gui.mail_text_font = "fonts/Oswald-Regular.ttf"
+define gui.mail_text_size = 20
+
+define gui.mail_from_xpos = 230
+define gui.mail_from_ypos = 225
+
+define gui.mail_from_width = 900
+define gui.mail_from_text_xalign = 0.0
+define gui.mail_from_text_color = "#FFFFFF"
+define gui.mail_from_text_font = "fonts/Mizo Arial.ttf"
+define gui.mail_from_text_size = 10
+
+define gui.mail_to_xpos = 230
+define gui.mail_to_ypos = 245
+
+define gui.mail_to_width = 900
+define gui.mail_to_text_xalign = 0.0
+define gui.mail_to_text_color = "#FFFFFF"
+define gui.mail_to_text_font = "fonts/Mizo Arial.ttf"
+define gui.mail_to_text_size = 10
+
+define gui.mail_subject_xpos = 230
+define gui.mail_subject_ypos = 185
+
+define gui.mail_subject_width = 900
+define gui.mail_subject_text_xalign = 0.0
+define gui.mail_subject_text_color = "#FFFFFF"
+define gui.mail_subject_text_font = "fonts/Mizo Arial.ttf"
+define gui.mail_subject_text_size = 18
+
+define gui.mail_signature_xpos = 125
+define gui.mail_signature_ypos = 350
+
+define gui.mail_signature_width = 900
+define gui.mail_signature_text_xalign = 0.0
+define gui.mail_signature_text_color = "#FFFFFF"
+define gui.mail_signature_text_font = "fonts/Oswald-Regular.ttf"
+define gui.mail_signature_text_size = 18
+
+
+
 
 ## Buttons #####################################################################
 ##
@@ -362,11 +410,11 @@ define gui.history_text_xalign = 0.0
 ## The NVL-mode screen displays the dialogue spoken by NVL-mode characters.
 
 ## The borders of the background of the NVL-mode background window.
-define gui.nvl_borders = Borders(0, 10, 0, 20)
+define gui.nvl_borders = Borders(0, 10, 0, 0)
 
 ## The height of an NVL-mode entry. Set this to None to have the entries
 ## dynamically adjust height.
-define gui.nvl_height = 115
+define gui.nvl_height = None
 
 ## The spacing between NVL-mode entries when gui.nvl_height is None, and between
 ## NVL-mode entries and an NVL-mode menu.
@@ -380,7 +428,7 @@ define gui.nvl_name_width = 150
 define gui.nvl_name_xalign = 1.0
 
 ## The position, width, and alignment of the dialogue text.
-define gui.nvl_text_xpos = 450
+define gui.nvl_text_xpos = 250
 define gui.nvl_text_ypos = 8
 define gui.nvl_text_width = 590
 define gui.nvl_text_xalign = 0.0
@@ -422,18 +470,18 @@ init python:
     if renpy.variant("small"):
 
         ## Font sizes.
-        gui.text_size = 30
-        gui.name_text_size = 36
-        gui.notify_text_size = 25
-        gui.interface_text_size = 36
-        gui.button_text_size = 34
-        gui.label_text_size = 36
+        #gui.text_size = 30
+        #gui.name_text_size = 36
+        #gui.notify_text_size = 25
+        #gui.interface_text_size = 36
+        #gui.button_text_size = 34
+        #gui.label_text_size = 36
 
         ## Adjust the location of the textbox.
-        gui.textbox_height = 240
-        gui.name_xpos = 80
-        gui.text_xpos = 90
-        gui.text_width = 1100
+        #gui.textbox_height = 240
+        #gui.name_xpos = 80
+        #gui.text_xpos = 90
+        #gui.text_width = 1100
 
         ## Change the size and spacing of items in the game menu.
         gui.choice_button_width = 1240

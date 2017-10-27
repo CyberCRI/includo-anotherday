@@ -43,9 +43,8 @@ label act2:
 
     giti "It is not, Abhay Sir, but now is as much a good time as another."
 
-    thinking "What do I answer her?"
-
     menu:
+        thinking "What do I answer her?"
         "\"Tell me, Giti. What happened?\"":
             jump .scene2
         "\"Not now, Giti, today's not a good day.\"":
@@ -62,11 +61,13 @@ label .scene2:
 
     abhay "You could have asked, I would have approved them, you know. Is this what-"
 
-    giti "No, Sir, please hear me out."
+    show giti angry
 
-    giti "Not only have I worked hard, but I have accepted more and more responsibilities, "
+    giti angry "No, Sir, please hear me out."
 
-    giti "like taking care of the transportation department, or of the security shift..."
+    giti angry "Not only have I worked hard, but I have accepted more and more responsibilities, "
+
+    giti angry "like taking care of the transportation department, or of the security shift..."
 
     thinking "What could she want?{w=0.5} Compensation holidays?"
 
@@ -76,6 +77,8 @@ label .scene2:
 
     thinking "Wait, is she going to resign?{w=0.5} Is that what this is about?"
 
+    show giti
+
     giti "Sir, are you listening to me?"
 
     abhay "Y-{w=0.5}yes of course, carry on."
@@ -84,9 +87,13 @@ label .scene2:
 
     giti "but when I heard them, it all became clear."
 
-    giti "They said that they made sure that no women gets promoted, that only men can reach the top positions."
+    show giti sad
+
+    giti sad "They said that they made sure that no women gets promoted, that only men can reach the top positions."
 
     abhay "Who?"
+
+    show giti
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
 
@@ -96,19 +103,20 @@ label .scene2:
 
     abhay "So what do you want me to do, Giti?"
 
-    giti "I want to request a promotion, Abhay Sir, and your official answer."
+    show giti angry
+
+    giti angry "I want to request a promotion, Abhay Sir, and your official answer."
 
     thinking "Really, {w=0.25}just like that."
 
-    thinking "Can I trust her?"
-
     menu:
-        "Approve her request":
+        thinking "Can I trust her?"
+        "Approve her request.":
             jump .scene4
-        "Reject her request":
+        "Reject her request.":
             thinking "This, the day after the Priyanka affair?{w=0.5} She's trying to take advantage of the situation. I should reject her request."
             jump .scene5
-        "The game is on, I need to investigate":
+        "The game is on, I need to investigate.":
             jump .scene6
 
 label .scene3:
@@ -139,9 +147,8 @@ label .scene3:
 
     thinking "Now, that sound ominous, almost a threat, what's the hurry?"
 
-    thinking "Looks like I need to answer her now."
-
     menu:
+        thinking "Looks like I need to answer her now."
         "Answer her.":
             jump .scene13
 
@@ -190,11 +197,10 @@ label .scene6:
                 On the other hand, if Giti has told you the truth about the conversation she has overheard, it is possible that Bapat, and Donatello have influenced him, and writing him will lead to Giti’s rejection.{p}
                 Still, you can’t bypass him, or can you?"
 
-    thinking "I have many options here."
-
 label .investigate:
 
     menu:
+        thinking "I have many options here."
         "Talk with the other women?" if talk_women == False:
             jump .scene7
         "Talk with Bapat?" if talk_bapat == False:
@@ -215,28 +221,27 @@ label .scene7:
 
     donatello "So that there are potholes everywhere."
 
-    bapat "Ah, you just wait until the next elections, they will repair the roads then."
+    bapat smug "Ah, you just wait until the next elections, they will repair the roads then."
 
     donatello "Superpower in 2020."
 
     giti "I can't believe this, did you know they've found a crocodile in a hole of the road!"
 
-    bapat "This is fake news, Giti!{w=0.5} I can't believe you fell for it."
+    bapat angry "This is fake news, Giti!{w=0.5} I can't believe you fell for it."
 
     donatello "It's not fake, Bapat.{w=0.25} It's something concerned citizen have done, it's a plastic crocodile."
 
-    giti "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
+    giti angry "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
 
-    bapat "A {i}crocodile child molester{/i} now, Giti, please think!"
+    bapat smug "A {i}crocodile child molester{/i} now, Giti, please think!"
 
     narration "With that, the conversation trails off, and you remember that you wanted to talk to the women."
 
-    thinking "Ok, which one first?"
-
     menu:
-        "Talk to Priyanka?":
+        thinking "Ok, which one first?"
+        "Priyanka.":
             jump .scene11
-        "Talk to Manali?":
+        "Manali.":
             jump .scene12
 
 label .scene8:
@@ -260,6 +265,8 @@ label .scene8:
 
     narration "Bapat nods, happy to be considered."
 
+    show bapat happy
+
     abhay "Good."
 
     abhay "My first problem is that, judging from the efforts, and responsibilities taken this year,"
@@ -268,7 +275,9 @@ label .scene8:
 
     abhay "I'm not talking about your department of course."
 
-    narration "Bapat grunts."
+    show bapat
+
+    bapat "..."
 
     abhay "Obviously, I can't offer to promote all three, but I need to reward their efforts."
 
@@ -364,7 +373,7 @@ label .scene9:
 
     thinking "What should I do now?"
 
-    if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
+    if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
         thinking "I could take a decision right now or keep investigating."
     else:
         thinking "I have done enough investigating, it's time to take a decision."
@@ -372,7 +381,7 @@ label .scene9:
     menu:
         "Take a decision.":
             jump .scene13
-        "Keep investigating." if talk_women = False or talk_bapat = False or email_act_2 = False:
+        "Keep investigating." if not talk_women or not talk_bapat or not email_act_2:
             jump .investigate
 
 label .scene10:
@@ -396,29 +405,33 @@ label .scene10:
 
     thinking "What now?"
 
-    if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
+    if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
         thinking "I could take a decision right now or keep investigating."
     else:
         thinking "I have done enough investigating, it's time to take a decision."
 
     menu:
-        "Take a decision.":
-            jump .scene13
-        "Keep investigating." if talk_women = False or talk_bapat = False or talk_donatello = False:
-            jump .scene6
+            "Take a decision.":
+                jump .scene13
+            "Keep investigating." if not talk_women or not talk_bapat or not talk_donatello:
+                jump .scene6
 
 label .scene11:
     show bg lunch_room with dissolve
-    show priyanka with dissolve
+    show priyanka smiling with dissolve
 
     narration "You sit next to Priyanka and engage in a small talk with her.{p}
                 After a while, you decide to jump in."
 
     abhay "How come you've been working here for 2 years, and never asked for a promotion, Priyanka?"
 
+    show priyanka
+
     priyanka "Because promotions have to be approved by the higher management, Abhay"
 
     priyanka "And they clearly told everyone that there won’t be any in my department for the next three years…"
+
+    priyanka "So it's no use, you see?"
 
     abhay "But Bapat is in your department, and has been promoted, hasn't he?"
 
@@ -442,29 +455,31 @@ label .scene11:
 
     abhay "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
 
-    priyanka "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
+    show priyanka smiling
+
+    priyanka smiling "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
 
     thinking "I have heard enough."
 
     $talk_priyanka = True
 
-    if talk_manali == True:
-        if talk_bapat == False or talk_donatello == False or email_act_2 == False:
+    if talk_manali:
+        if not talk_bapat or not talk_donatello or not email_act_2:
             thinking "I could talke to Manali, keep investigating or take a decision."
         else:
             thinking "Manali's the only one left."
     else:
         thinking "I have talked to both Manali and Priyanka."
 
-        if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
-            thinking "I could take a decision right now or keep investigating."
-        else:
-            thinking "I have done enough investigating, it's time to take a decision."
+    if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
+        thinking "I could take a decision right now or keep investigating."
+    else:
+        thinking "I have done enough investigating, it's time to take a decision."
 
     menu:
-        "Talk to Manali." if talk_manali == False:
+        "Talk to Manali." if not talk_manali:
             jump .scene12
-        "Keep investigating." if talk_bapat == False or talk_donatello == False if email_act_2 == False:
+        "Keep investigating." if not talk_bapat or not talk_donatello if not email_act_2:
             jump .investigate
         "Take a decision now":
             jump .scene13
@@ -480,15 +495,21 @@ label .scene12:
 
     abhay "You’re doing a great job, handling the secretary, the security, and the transportation all together!"
 
-    manali "It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient."
+    show manali smiling
+
+    manali smiling "It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient."
 
     abhay "It’s been what?{w=0.5} Three years now that she’s doing that?"
 
     narration "You drink a mouthful of soup, it’s cold already."
 
-    manali "Three years, Abhay Sir, and she never complains."
+    manali smiling "Three years, Abhay Sir, and she never complains."
 
     abhay "Yet she’s never been promoted"
+
+    show manali
+
+    manali "...!"
 
     abhay "Manali, I will talk to M. Gopinath about it."
 
@@ -506,13 +527,13 @@ label .scene12:
 
     abhay "Because she's a woman?"
 
-    manali "I didn’t say that, Sir!"
+    show manali nervous
+
+    manali nervous "I didn’t say that, Sir!"
 
     abhay "But you meant that."
 
-    show manali blushing
-
-    pause 2
+    narration "She blushes."
 
     thinking "She did mean that."
 
@@ -520,23 +541,23 @@ label .scene12:
 
     $talk_manali = True
 
-    if talk_priyanka == True:
-        if talk_bapat == False or talk_donatello == False or email_act_2 == False:
+    if talk_priyanka:
+        if not talk_bapat or not talk_donatello or not email_act_2:
             thinking "I could talke to Priyanka, keep investigating or take a decision."
         else:
             thinking "Priyanka's the only one left."
     else:
         thinking "I have talked to both Manali and Priyanka."
 
-        if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
+        if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
             thinking "I could take a decision right now or keep investigating."
         else:
             thinking "I have done enough investigating, it's time to take a decision."
 
     menu:
-        "Talk to Priyanka." if talk_priyanka == False:
+        "Talk to Priyanka." if not talk_priyanka:
             jump .scene12
-        "Keep investigating." if talk_bapat == False or talk_donatello == False if email_act_2 == False:
+        "Keep investigating." if not talk_bapat or not talk_donatello if not email_act_2:
             jump .investigate
         "Take a decision now":
             jump .scene13
@@ -559,7 +580,7 @@ label .decide:
     menu:
         "Approve her promotion.":
             jump .scene14
-        "Write an email to M. Gopinath." if email_act_2_2 == False:
+        "Write an email to M. Gopinath." if not email_act_2_2:
             jump .scene15
         "Ask M. Rajkumar's advice.":
             jump .scene16
@@ -577,15 +598,15 @@ label .scene14:
 
     abhay "I have decided to approve your promotion request, Giti."
 
-    show giti surprised
+    giti "...!"
 
     giti "T-Thank you, Abhay Sir."
 
     show giti smile
 
-    giti "Thank you, Abhay Sir, {b}thank you{/b}."
+    giti smiling "Thank you, Abhay Sir, {b}thank you{/b}."
 
-    abhay "Hahaha!"
+    abhay "*laughs*"
 
     abhay "About time, isn't it?{w=0.5} Things should change around here."
 
@@ -675,9 +696,9 @@ label .scene19:
     menu:
         "You can't risk a trial, promote her.":
             jump .scene20
-        "Ask M. Rajkumar, The company's laywer, for his advice." if email_act_2_3 == False:
+        "Ask M. Rajkumar, The company's laywer, for his advice." if not email_act_2_3:
             jump .scene21
-        "Ask M. Rajkumar for his advice again." if email_act_2_3 == True:
+        "Ask M. Rajkumar for his advice again." if email_act_2_3:
             jump .scene21
         "Laugh and ignore the threat.":
             jump .scene22
@@ -691,19 +712,21 @@ label .scene20:
 
     abhay "I have decided to approve your promotion request, Giti."
 
-    giti "It's only fair, Abhay Sir."
+    show giti angry
+
+    giti angry "It's only fair, Abhay Sir."
 
     abhay "So you will drop this case, won’t you?"
 
-    giti "Yes, Sir, I only want the promotion I should have had long ago."
+    giti angry "Yes, Sir, I only want the promotion I should have had long ago."
 
     abhay "Well, you have it."
 
     abhay "Please send me the acknowledgement of cancellation for the case, and I will promote you as I said."
 
-    giti "No, Abhay Sir, {nw=0.5}{nw}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
+    giti angry "No, Abhay Sir, {w=0.5}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
 
-    giti "At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement."
+    giti angry "At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement."
 
     thinking "She has obviously studied this."
 

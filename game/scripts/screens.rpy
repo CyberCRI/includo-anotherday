@@ -97,7 +97,12 @@ style frame:
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
 
-screen say(who, what):
+transform jobbox_transform:
+    on show:
+        alpha 0.0
+        linear 0.5 alpha 0.7
+
+screen say(who, what, job=None, side_image=True):
     style_prefix "say"
 
     window:
@@ -109,9 +114,15 @@ screen say(who, what):
                 style "namebox"
                 text who id "who"
 
+        if job is not None:
+
+            window:
+                style "jobbox"
+                text job id "job" style "jobbox_label" at jobbox_transform
+
+
         text what id "what"
 
-    if not renpy.variant("small"):
         add SideImage() xalign 1.0 yalign 1.0
 
 
@@ -122,7 +133,6 @@ style say_thought is say_dialogue
 
 style namebox is default
 style namebox_label is say_label
-
 
 style window:
     xalign 0.5
@@ -142,10 +152,18 @@ style namebox:
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
+style jobbox is namebox:
+    xpos 800
+    ypos -9
+
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+
+style jobbox_label:
+    color "#FFFFFF"
+
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
@@ -154,6 +172,80 @@ style say_dialogue:
     xsize gui.dialogue_width
     ypos gui.dialogue_ypos
 
+transform from_top_mail(easein_time=0.5, pause_time=0, ydestination=0):
+    alpha 0.0 ypos 0 yanchor 0.0 zoom 0.0
+    pause_time
+    parallel:
+        linear easein_time alpha 1.0
+    parallel:
+        linear easein_time zoom 1.0
+    1
+    on hide:
+        alpha 1 zoom 1 yanchor ydestination
+        block:
+            linear 0.05 zoom 1.1
+            linear 0.25 zoom 0
+
+screen mail_say(who, what, mail_subject="", mail_from="", mail_to="", mail_signature="", mail_image=False):
+    style_prefix "mail_say"
+    window:
+        id "mail"
+        style "window_mail"
+        at from_top_mail()
+
+        window:
+            style "window_mail_subject"
+            text mail_subject id "mail_subject"
+        window:
+            style "window_mail_from"
+            text mail_from id "mail_from"
+        window:
+            style "window_mail_to"
+            text mail_to id "mail_to"
+        window:
+            style "window_mail_signature"
+            text mail_signature id "mail_signature"
+        window:
+            style "window_content"
+            text what id "what"
+
+style window_mail:
+    background "gui/mail_window.png"
+
+style window_mail_signature:
+    properties gui.text_properties("mail_signature")
+
+    xpos gui.mail_signature_xpos
+    ypos gui.mail_signature_ypos
+    xsize gui.mail_signature_width
+
+style window_mail_subject:
+    properties gui.text_properties("mail_subject")
+
+    xpos gui.mail_subject_xpos
+    ypos gui.mail_subject_ypos
+    xsize gui.mail_subject_width
+
+style window_mail_from:
+    properties gui.text_properties("mail_from")
+
+    xpos gui.mail_from_xpos
+    ypos gui.mail_from_ypos
+    xsize gui.mail_from_width
+
+style window_mail_to:
+    properties gui.text_properties("mail_to")
+
+    xpos gui.mail_to_xpos
+    ypos gui.mail_to_ypos
+    xsize gui.mail_to_width
+
+style window_content:
+    properties gui.text_properties("mail")
+
+    xpos gui.mail_xpos
+    ypos gui.mail_ypos
+    xsize gui.mail_width
 
 ## Input screen ################################################################
 ##
@@ -207,7 +299,7 @@ transform from_horizontal_choice(xorigin, xdestination, easein_time=3.0, pause_t
         easein_cubic easein_time alpha 1.0
     parallel:
         easein_cubic easein_time xalign xdestination
-    on selected_idle:
+    on replaced:
         linear 1.0 alpha 0.0
 
 screen choice(items):
@@ -217,7 +309,7 @@ screen choice(items):
         $nbr = 0.0
         for i in items:
             $nbr = nbr + 1.0
-            if nbr % 2 == 0:
+            if nbr % 2 != 0:
                 textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25)
             else:
                 textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25) style "choice_button2"
@@ -404,6 +496,9 @@ transform from_horizontal_label(xorigin, xdestination, easein_time=3.0, pause_ti
             linear 0.1 zoom 1.1
             linear 0.5 zoom 0
 
+style main_menu_button_text:
+    font "fonts/Slopes.ttf"
+    size 88
 screen main_menu():
 
 
@@ -459,10 +554,10 @@ screen act_menu():
                     image "closure_checkbox_tick3.png"
                 if act_4_completed == True:
                     image "closure_checkbox_tick4.png"
-                if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
-                    imagebutton idle "closure_unlocked" action Jump("closure")
-                else:
-                    image "closure_locked"
+                #if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
+                imagebutton idle "closure_unlocked" action Jump("closure")
+                #else:
+                    #image "closure_locked"
 
         frame:
             background "act_1_background"
@@ -1549,22 +1644,9 @@ screen quick_menu():
         textbutton _("Auto") action Preference("auto-forward", "toggle")
         textbutton _("Menu") action ShowMenu()
 
-
-style window:
-    variant "small"
-    background "gui/phone/textbox.png"
-
 style nvl_window:
     variant "small"
     background "gui/phone/nvl.png"
-
-style main_menu_frame:
-    variant "small"
-    background "gui/phone/overlay/main_menu.png"
-
-style game_menu_outer_frame:
-    variant "small"
-    background "gui/phone/overlay/game_menu.png"
 
 style game_menu_navigation_frame:
     variant "small"
