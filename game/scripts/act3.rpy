@@ -498,24 +498,34 @@ label .scene10:
     jump .end
 
 label .scene11:
-    narration "You write to M. Rajkumar, You write to M. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
+    narration "You write to Mr. Rajkumar, You write to Mr. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
                 He answers a few hours later."
 
-    mail "rajkumarrajkumarltd@gmail.com 
-            To: abhay.chandrakant@cryptaloo.in
-            Re: Homosexuality and Discrimination
-            Respected M. Chandrakant,
-            It will be very difficult to protect your employee since homosexual intercourse is still considered a criminal offence under the Indian Law, section 377 of the Indian Penal Code. Hence and hereby, he cannot be protected against discrimination where the fact discriminated hitherto would fall under penal Law, and Nemo auditur propriam turpitudinem allegans would apply so that his arguing on the basis of his homosexuality would ipso facto disqualify him from the protections the Law normally applies for discrimination.
-            With my very best regards,
-            M. Rajkumar"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer_act3_1(("Respected Mr. Chandrakant,\n\n"
+        "It will be very difficult to protect your employee since homosexual intercourse is still considered a criminal offence under the Indian Law, section 377 of the Indian Penal Code. Hence and hereby, he cannot be protected against discrimination where the fact discriminated {i}hitherto{/i}"
+        "would fall under penal Law, and {i}Nemo auditur propriam turpitudinem allegans{/i} would apply so that his arguing on the basis of his homosexuality would {i}ipso facto{/i} disqualify him from the protections the Law normally applies for discrimination.\n\n"
+        "With my very best regards,\n\n"
+        "Mr. Rajkumar"))
+
+    hide mail_icon_open
+
+    pause 3.0
 
     narration "After you’ve googled the sentences in Latin to decode this legal talk, you lay back into your chair."
 
-    thinking "{b}Ipso facto{/b} indeed."
+    narration "{b}Ipso facto{/b} indeed."
 
-    thinking "{b}Ipso facto{/b} there's nothing I can do."
+    narration "{b}Ipso facto{/b} there's nothing you can do."
 
-    thinking "{b}Ipso facto{/b}, Donatello is harassed, and you I do nothing but watch."
+    narration "{b}Ipso facto{/b}, Donatello is harassed, and you can do nothing but watch."
 
     thinking "So much for the work atmosphere."
 
@@ -923,7 +933,7 @@ label .scene19:
     thinking "Is that even legally possible?"
 
     menu:
-        "Ask M. Rajkumar, the company's lawyer":
+        "Ask Mr. Rajkumar, the company's lawyer":
             jump .scene20
         "Ask the others.":
             jump .scene21
@@ -931,15 +941,24 @@ label .scene19:
 label .scene20:
     scene bg office with dissolve
 
-    narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
+    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
-    mail "rajkumarrajkumarltd@gmail.com 
-        To: abhay.chandrakant@cryptaloo.in
-        Re: Inclusive Policy
-        Dear M. Chandrakant,
-        Since homosexuality is criminal in India, it is not possible to implement a policy protecting it at the office, cadit quaestio, and casus belli henceforthwith.
-        With my very best regards,
-        M. Rajkumar"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer_act3_2(("Dear Mr. Chandrakant,\n\n"
+        "Since homosexuality is criminal in India, it is not possible to implement a policy protecting it at the office, {i}cadit quaestio{/i}, and {i}casus belli{/i} henceforthwith.\n\n"
+        "With my very best regards,\n\n"
+        "Mr. Rajkumar"))
+
+    hide mail_icon_open
+
+    pause 3.0
 
     menu:
         thinking "A tricky situation."
@@ -967,7 +986,7 @@ label .choices:
     menu:
         "Talk to someone else." if not talk_giti_act3_2 or not talk_manali_act3_2 or not talk_priyanka_act3_2 or not talk_bapat_act3_2:
             jump .scene21
-        "Ask M. Rajkumar." if talk_giti_act3_2:
+        "Ask Mr. Rajkumar." if talk_giti_act3_2:
             jump .scene26
         "Check the international policy." if talk_giti_act3_2:
             jump .scene27
@@ -1124,7 +1143,7 @@ label .scene25:
 
     thinking "Still, this is Giti talking, and she could be wrong in her interpretation of the law."
 
-    thinking "Should I check CRYPTALOO's international policy, or ask M. Rajkumar for his advice?"
+    thinking "Should I check CRYPTALOO's international policy, or ask Mr. Rajkumar for his advice?"
 
     $talk_giti_act3_2 = True
 
@@ -1132,15 +1151,25 @@ label .scene25:
 
 label .scene26:
 
-    narration "You write to M. Rajkumar, the company’s Lawyer, and tell him what Giti’s just told you, asking for his advice."
+    narration "You write to Mr. Rajkumar, the company’s Lawyer, and tell him what Giti’s just told you, asking for his advice."
 
-    mail "rajkumarrajkumarltd@gmail.com 
-        To: abhay.chandrakant@cryptaloo.in
-        Re: Re: Inclusive Policy
-        Dear M. Chandrakant,
-        Technically, your colleague is right, the Indian Penal Code only forbids the sexual intercourse de jure, not the fact of declaring oneself homosexual, which would be doli incapax, but we all know that there cannot be one without the other. Further, it is not because a Law hasn’t been applied that it is invalid, a vote must first happen to change, or cancel the Law accordingly so that you would always take a risk for the future of the company by drafting, and implementing this policy, which I don’t recommend.
-        With my very best regards,
-        M. Rajkumar"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer_act3_3(("Dear Mr. Chandrakant,\n\n"
+        "Technically, your colleague is right, the Indian Penal Code only forbids the sexual intercourse {i}de jure{/i}, not the fact of declaring oneself homosexual, which would be {i}doli incapax{/i}, but we all know that there cannot be one without the other.\n"
+        "Further, it is not because a Law hasn’t been applied that it is invalid, a vote must first happen to change, or cancel the Law accordingly so that you would always take a risk for the future of the company by drafting, and implementing this policy, which I don’t recommend.\n\n"
+        "With my very best regards,\n\n"
+        "Mr. Rajkumar"))
+
+    hide mail_icon_open
+
+    pause 3.0
 
     menu:
         thinking "What should I do?"

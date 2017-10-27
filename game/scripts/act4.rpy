@@ -96,7 +96,7 @@ label .employees:
             jump .scene6
         "Manali." if not talk_manali_act4:
             jump .scene7
-        "Write to M. Gopinath instead." if not talk_gopinath_act4:
+        "Write to Mr. Gopinath instead." if not talk_gopinath_act4:
             jump .scene8
         "I've talked to enough people." if talk_bapat_act4 or talk_priyanka_act4 or talk_donatello_act4 or talk_manali_act4 or talk_gopinath_act4:
             jump .advices
@@ -275,14 +275,14 @@ label .scene7:
 
 label .scene8:
 
-    narration "You decide to write to M. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
+    narration "You decide to write to Mr. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
     mail "adnan.gopinath@cryptaloo.com 
             To: abhay.chandrakant@cryptaloo.in
             Out of the Office
-            I am currently on leave, visiting the jungles of Angkor Wat. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
+            I am currently on leave, visiting the jungles of Angkor Wat. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
             Best regards,
-            M. Gopinath"
+            Mr. Gopinath"
 
     jump .advices
 
@@ -296,11 +296,11 @@ label .scene9:
 
     abhay "Surely you can't go away when your family has a function, can you?"
 
-    show giti eager
+    show giti angry
 
-    giti eager "...!"
+    giti angry "...!"
 
-    giti eager "My family would respect my religion, Abhay Sir."
+    giti angry "My family would respect my religion, Abhay Sir."
 
     abhay "As we all do, as we all do,{w=0.25} but it's not only about religion."
 
@@ -308,7 +308,7 @@ label .scene9:
 
     abhay "This is why I can't have you running away at an important time for the company, I'm sure you understand."
 
-    giti eager "Not really, Abhay Sir, I-"
+    giti angry "Not really, Abhay Sir, I-"
 
     abhay "Now come on."
 
@@ -320,9 +320,9 @@ label .scene9:
 
     abhay "Indeed, indeed, all the more reason why you should come then."
 
-    show giti eager
+    show giti angry
 
-    giti eager "I will not, Sir."
+    giti angry "I will not, Sir."
 
     abhay "..."
 
@@ -350,7 +350,7 @@ label .scene10:
     narration "The next day, Giti doesn’t show up at work.{p}
                 You decide to let it slip, and to welcome her when she finally comes back, but she doesn’t—ever."
 
-    narration "Since she was handling just about everything while M. Gopinath’s away, and left without a notice, or a word, her sudden departure threatens your core business, and no one is ready to replace her."
+    narration "Since she was handling just about everything while Mr. Gopinath’s away, and left without a notice, or a word, her sudden departure threatens your core business, and no one is ready to replace her."
 
     narration "You start looking for a new Chief Secretary, but whoever comes next will need at least six months before he or she can handle Giti’s work efficiently. Let’s hope you can paper over the problems until the new CEO arrives, you want to make a good impression."
 
@@ -566,9 +566,9 @@ label .employees2:
             jump .scene19
         "Manali." if not talk_manali_act4_2:
             jump .scene20
-        "M. Rajkumar, the company's lawyer." if not talk_rajkumar_act4_2:
+        "Mr. Rajkumar, the company's lawyer." if not talk_rajkumar_act4_2:
             jump .scene21
-        "M. Gopinath." if not talk_gopinath_act4_2:
+        "Mr. Gopinath." if not talk_gopinath_act4_2:
             jump .scene22
         "I've talked to enough people." if talk_bapat_act4_2 or talk_priyanka_act4_2 or talk_donatello_act4_2 or talk_manali_act4_2 or talk_rajkumar_act4_2:
             jump .advices2
@@ -775,15 +775,27 @@ label .scene20:
 
 label .scene21:
 
-    narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later"
+    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later"
+    window hide
+    show mail_icon_blink
 
-    mail "rajkumarrajkumarltd@gmail.com 
-        To: abhay.chandrakant@cryptaloo.in
-        Re: Prayer room
-        Dear M. Chandrakant,
-        The company cannot be held responsible ceteris paribus of the freedom of religion of its employees. As such, and notwithstanding, you are in no legal obligation to provide for a prayer locus, except in such situations where a prayer locus has been created within the company precincts for other confessions, in which case your employee could claim an unequal treatment, and ask for the corresponding damages. Since the matter entails subjects of philosophical, as well as  spiritual importance, I kindly urge you to ask to the spiritual authorities of your convenience for the rule of the Law falters in front of such highness. Also, having the toilets cleaned won’t probably hurt your case.
-        With my very best regards,
-        M. Rajkumar"
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer_act4(("Dear Mr. Chandrakant,\n\n"
+        "The company cannot be held responsible {i}ceteris paribus{/i} of the freedom of religion of its employees. As such, and notwithstanding, you are in no legal obligation to provide for a prayer locus, except in such situations where a prayer locus has been created within the company precincts for other confessions, in which case your employee could claim an unequal treatment, and ask for the corresponding damages.\n"
+        "Since the matter entails subjects of philosophical, as well as  spiritual importance, I kindly urge you to ask to the spiritual authorities of your convenience for the rule of the Law falters in front of such highness.\n\n"
+        "Also, having the toilets cleaned won’t probably hurt your case.\n\n"
+        "With my very best regards,\n"
+        "Mr. Rajkumar"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     $talk_rajkumar_act4_2 = True
 
@@ -791,14 +803,28 @@ label .scene21:
 
 label .scene22:
 
-    narration "You write to M. Gopinath, and ask for his advice. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
+    narration "You write to Mr. Gopinath, and ask for his advice. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
-    mail "adnan.gopinath@cryptaloo.com 
-            To: abhay.chandrakant@cryptaloo.in
-            Out of the Office
-            I am currently on leave as I participate in a sledge competition in Finland. I will answer you as soon as I am back in office. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
-            Best regards,
-            M. Gopinath"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_gopinath(("I am currently on leave as I participate in a sledge competition in Finland. I will answer you as soon as I am back in office.\n"
+        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
+        "\nBest regards,\nMr. Gopinath\n"
+        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
+        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
+        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     $talk_gopinath_act4_2 = True
 
@@ -900,15 +926,27 @@ label .scene27:
     narration "You decide to write to the Brahmin who came to bless the office, and to explain him the situation with Giti. After all, you’re dealing with a religious issue, and he’s a religious person. On the other hand, he’s a representative of the Hindus, and you assume that his answer will not help Giti much, but who knows?{p}
                 He answers a few hours later."
 
-    mail "swamiramram@jio.in 
-        To: abhay.chandrakant@cryptaloo.in
-        Re: Giti Madam
-        Abhay,
-        If we want respect from others, we should give them our respect first. We live in peace now in India because of this respect. I have seen prayer rooms in international airports, they are open to all, I have sung prayers in one such room in the past next to a Jewish Rabbi. Maybe you could use airports as an inspiration?
-        Be blessed,
-        Swami Ram Ram"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_brahmin(("Abhay,\n"
+        "If we want respect from others, we should give them our respect first.\nWe live in peace now in India because of this respect.\nI have seen prayer rooms in international airports, they are open to all, I have sung prayers in one such room in the past next to a Jewish Rabbi.\nMaybe you could use airports as an inspiration?\n\n\n"
+        "Be blessed,\n"
+        "Swami Ram Ram"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     menu:
+        thinking "I think I know what to do now."
         "Create a neutral prayer space for all.":
             jump .scene28
 

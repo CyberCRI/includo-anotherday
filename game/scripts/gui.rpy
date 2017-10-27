@@ -144,8 +144,17 @@ define gui.dialogue_text_color = "#FFFFFF"
 define gui.dialogue_text_font = "fonts/Oswald-Regular.ttf"
 define gui.dialogue_text_size = 30
 
-define gui.mail_xpos = 100
-define gui.mail_ypos = 350
+define gui.mail_image_xpos = 110
+define gui.mail_image_ypos = 350
+
+define gui.mail_image_width = 900
+define gui.mail_image_text_xalign = 0.0
+define gui.mail_image_text_color = "#FFFFFF"
+define gui.mail_image_text_font = "fonts/Oswald-Regular.ttf"
+define gui.mail_image_text_size = 20
+
+define gui.mail_xpos = 110
+define gui.mail_ypos = 235
 
 define gui.mail_width = 900
 define gui.mail_text_xalign = 0.0

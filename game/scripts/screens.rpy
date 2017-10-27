@@ -173,18 +173,15 @@ style say_dialogue:
     ypos gui.dialogue_ypos
 
 transform from_top_mail(easein_time=0.5, pause_time=0, ydestination=0):
-    alpha 0.0 ypos 0 yanchor 0.0 zoom 0.0
+    alpha 1.0 ypos 0 yanchor 0.0 zoom 0.0
     pause_time
     parallel:
-        linear easein_time alpha 1.0
-    parallel:
-        linear easein_time zoom 1.0
-    1
+        easein easein_time zoom 1.0
     on hide:
         alpha 1 zoom 1 yanchor ydestination
         block:
-            linear 0.05 zoom 1.1
-            linear 0.25 zoom 0
+            easein 0.05 zoom 1.1
+            easein 0.25 zoom 0
 
 screen mail_say(who, what, mail_subject="", mail_from="", mail_to="", mail_signature="", mail_image=False):
     style_prefix "mail_say"
@@ -206,7 +203,10 @@ screen mail_say(who, what, mail_subject="", mail_from="", mail_to="", mail_signa
             style "window_mail_signature"
             text mail_signature id "mail_signature"
         window:
-            style "window_content"
+            if mail_image:
+                style "window_content_image"
+            else:
+                style "window_content_no_image"
             text what id "what"
 
 style window_mail:
@@ -240,12 +240,19 @@ style window_mail_to:
     ypos gui.mail_to_ypos
     xsize gui.mail_to_width
 
-style window_content:
+style window_content_no_image:
     properties gui.text_properties("mail")
 
     xpos gui.mail_xpos
     ypos gui.mail_ypos
     xsize gui.mail_width
+
+style window_content_image:
+    properties gui.text_properties("mail_image")
+
+    xpos gui.mail_image_xpos
+    ypos gui.mail_image_ypos
+    xsize gui.mail_image_width
 
 ## Input screen ################################################################
 ##
@@ -292,15 +299,14 @@ style input:
 
 transform from_horizontal_choice(xorigin, xdestination, easein_time=3.0, pause_time=0):
     subpixel True
-    alpha 0.0 xalign xorigin xanchor 0.0
+    alpha 0.0 xpos xorigin xanchor 0.0
     time pause_time
-    xalign xorigin
     parallel:
         easein_cubic easein_time alpha 1.0
     parallel:
-        easein_cubic easein_time xalign xdestination
-    on replaced:
-        linear 1.0 alpha 0.0
+        easein_cubic easein_time xpos xdestination
+    on hide:
+        easein_cubic 1.0 alpha 0.0
 
 screen choice(items):
     style_prefix "choice"
@@ -310,9 +316,9 @@ screen choice(items):
         for i in items:
             $nbr = nbr + 1.0
             if nbr % 2 != 0:
-                textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25)
+                textbutton i.caption action i.action at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333)
             else:
-                textbutton i.caption action i.action at from_horizontal_choice(xorigin=.01, xdestination=.5, easein_time=1, pause_time=1 + nbr*0.25) style "choice_button2"
+                textbutton i.caption action i.action at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333) style "choice_button2"
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.

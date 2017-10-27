@@ -51,7 +51,7 @@ label act2:
             jump .scene3
 
 label .scene2:
-    giti "Abhay Sir, I have been working hard for M. Gopinath for the last three yea-"
+    giti "Abhay Sir, I have been working hard for Mr. Gopinath for the last three yea-"
 
     abhay "I know that."
 
@@ -174,7 +174,7 @@ label .scene4:
 label .scene5:
     hide giti with dissolve
 
-    narration "This is the expected decision, and you’re pretty confident that everyone at the office will understand it. This way, you preserve the balance of power, and make sure you won’t be bothered when the new CEO will come, and M. Gopinath will return."
+    narration "This is the expected decision, and you’re pretty confident that everyone at the office will understand it. This way, you preserve the balance of power, and make sure you won’t be bothered when the new CEO will come, and Mr. Gopinath will return."
 
     thinking "*sigh*{w=1} There are maybe other aspect to deal with."
 
@@ -193,7 +193,7 @@ label .scene6:
                 You could meet with Bapat or Donatello to get to the heart of it, and find out whether they’ve been actually pushing a sexist agenda as Giti says,{p}
                  or you could start with the other women to find out whether Giti is alone in this, or if they will support her."
 
-    narration "Since the promotion has to be approved by Giti’s manager, M. Gopinath, you could also write him an email to ask whether he would approve, or reject it.{p}
+    narration "Since the promotion has to be approved by Giti’s manager, Mr. Gopinath, you could also write him an email to ask whether he would approve, or reject it.{p}
                 On the other hand, if Giti has told you the truth about the conversation she has overheard, it is possible that Bapat, and Donatello have influenced him, and writing him will lead to Giti’s rejection.{p}
                 Still, you can’t bypass him, or can you?"
 
@@ -207,7 +207,7 @@ label .investigate:
             jump .scene8
         "Talk with Donatello?" if talk_donatello == False:
             jump .scene9
-        "Write an email to M. Gopinath?" if email_act_2 == False:
+        "Write an email to Mr. Gopinath?" if email_act_2 == False:
             jump .scene10
 
 label .scene7:
@@ -387,7 +387,7 @@ label .scene9:
 label .scene10:
     show bg email
 
-    narration "You decide to write to M. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone."
+    narration "You decide to write to Mr. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone."
 
     narration "There’s a chance that Bapat, and Donatello have influenced him, though, and you need to write this email in such a way that he will answer this issue without being offended, quite a feat in itself."
 
@@ -395,13 +395,24 @@ label .scene10:
 
     narration "You receive an automatic out-of-the-office answer minutes later, and never hear about it again"
 
-    email "adnan.gopinath@cryptaloo.com 
-                To: abhay.chandrakant@cryptaloo.in
-                Out of the Office
-                I am currently on leave, enjoying the warm beaches of Diu Island. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
-                Best regards,
-                M. Gopinath"
+    window hide
+    show mail_icon_blink
 
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_gopinath(("I am currently on leave, enjoying the warm beaches of Diu Island. I will answer you as soon as I reach my office back.\n"
+        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
+        "\nBest regards,\nMr. Gopinath\n"
+        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
+        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
+        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
+
+    hide mail_icon_open
+
+    pause 3.0
 
     thinking "What now?"
 
@@ -625,14 +636,26 @@ label .scene15:
     narration "You write to M. Gopinath, asking him clearly and directly to take the matter into his hands so that you can escape the storm that will follow either decision you might take,
                 receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
-    email "adnan.gopinath@cryptaloo.com 
-            To: abhay.chandrakant@cryptaloo.in
-            Out of the Office
-            I am currently on a pilgrimage to Kailash Mountain. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to M. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
-            Best regards,
-            M. Gopinath"
+    window hide
+    show mail_icon_blink
 
-    $email_act_2_2 = True
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_gopinath(("I am currently on leave, enjoying the warm beaches of Diu Island. I will answer you as soon as I reach my office back.\n"
+        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
+        "\nBest regards,\nMr. Gopinath\n"
+        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
+        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
+        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     menu:
         "You really need to decide by yourself.":
@@ -644,14 +667,28 @@ label .scene16:
 
     narration "He answers a few hours later."
 
-    email "rajkumarrajkumarltd@gmail.com 
-        To: abhay.chandrakant@cryptaloo.in
-        Re: Promotion and Discrimination
-        Dear M. Chandrakant,
-        If your Mrs. Shaikh Giti can prove the alleged discrimination she suffers mutatis mutandis, the situation could lead to a case in court indeed, and involve liabilities, and damages as per the accessory of the main article to be continued habeas corpus. In all actuality (Ibid.), discrimination is very difficult to prove as she would require either written proofs, several witnesses, or written proof of a constant pattern from the company’s side to support her claim. Since she will find deprived of these proofs, it is most probable that she will not escalate as fees will discourage her from doing so as well. Unless you are certain that she has gathered said means of proof, I would advise to reject her plea, and act on the sole base of her professional merit and quality.
-        Yours truly,
-        M. Rajkumar
-        Rajkumar & Rajkumar Ltd."
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer_act2(("Dear Mr. Chandrakant,\n\n"
+        "If your Mrs. Shaikh Giti can prove the alleged discrimination she suffers {i}mutatis mutandis{/i}, the situation could lead to a case in court indeed, and involve liabilities, and damages as per the accessory of the main article to be continued {i}habeas corpus.{/i}\n"
+        "In all actuality ({i}Ibid.{/i}), discrimination is very difficult to prove as she would require either several witnesses, or written proof of a constant pattern from the company’s side to support her claim."
+        "Since she will find deprived of these proofs, it is most probable that she will not escalate as fees will discourage her from doing so as well.\n"
+        "Unless you are certain that she has gathered said means of proof, I would advise to reject her plea, and act on the sole base of her professional merit and quality.\n"
+        "Yours truly,\n"
+        "Mr. Rajkumar\n\n"
+        "Rajkumar & Rajkumar Ltd."))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     $email_act_2_3 = True
 

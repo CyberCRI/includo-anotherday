@@ -13,25 +13,6 @@ label act1:
     scene bg meeting_room
     with dissolve
 
-    show mail_icon_blink
-
-    pause
-
-    hide mail_icon_blink
-    show mail_icon_open
-
-    $mail(("I am currently on leave, swimming and snorkeling in the warm waters of the Andaman Islands.\n"
-        "You wouldn’t believe the fishes there! I will answer you as soon as I reach my office back.\n"
-        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
-        "\nBest regards,\nMr. Gopinath\n"
-        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
-        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
-        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
-
-    pause 1
-
-    hide mail_icon_open
-
     narration "You reach the office early as usual."
 
     narration "You like taking your time, and sipping on your first tea in the open space,
@@ -40,7 +21,7 @@ label act1:
     narration "Your office feels homely in a way. It’s a box, really,
                 but you like to think you’ve made the most of it though you took great care in stripping it of anything too personal,
                 you’re the Human Resources Manager after all.{p}
-                With the CEO still abroad, and M. Gopinath, the Administrative Director,
+                With the CEO still abroad, and Mr. Gopinath, the Administrative Director,
                 on leave, you’re the one in charge of the whole office this week."
 
     narration "You sigh, and wish silently that you won’t have to take too many decisions.
@@ -64,7 +45,7 @@ label .scene2:
 
     abhay "What’s the matter, Priyanka?{w=0.5} It’s very early."
 
-    priyanka crying "I can’t stand it anymore, M. Chandrakant, I just can’t."
+    priyanka crying "I can’t stand it anymore, Mr. Chandrakant, I just can’t."
 
     priyanka crying "Every day.{w=0.25}.{w=0.25}.{w=0.25} Every day I come in, and it’s the same, they just won’t stop-"
 
@@ -232,7 +213,7 @@ label .scene6:
 
     abhay "You can’t call for a public meeting, especially when you exclude another employee from this meeting."
 
-    abhay "I am the one in charge of Human Resources here, and with M. Gopinath away, and the new CEO on the way, of the whole company at the moment."
+    abhay "I am the one in charge of Human Resources here, and with Mr. Gopinath away, and the new CEO on the way, of the whole company at the moment."
 
     abhay "If I wanted to call for a public meeting I would have done it."
 
@@ -386,7 +367,7 @@ label .scene10:
 label .scene11:
     narration "You draft a dress code forbidding short dresses, heels, and skirts, and requesting decency from the employees"
 
-    narration "Later this day, you send it to all, and forward your email to M. GOPINATH, the Administrative Director, and to the new CEO. Better safe than sorry."
+    narration "Later this day, you send it to all, and forward your email to Mr. GOPINATH, the Administrative Director, and to the new CEO. Better safe than sorry."
 
     menu:
         "The next morning…":
@@ -479,14 +460,14 @@ label .scene15:
 
     narration "Gossips, and issues all the time.
     The conversation then trails off on the subject of the new CEO.
-    M. BAJU, the former, wasn’t proactive, to put it mildly, but he maintained a peaceful if a bit droning work environment.
+    Mr. BAJU, the former, wasn’t proactive, to put it mildly, but he maintained a peaceful if a bit droning work environment.
     We are creatures of habit, and don’t like to be shaken off them, and BAJU was our habit of a CEO, aloof, quiet, almost jaded.
     You all got used to this. That was relaxing in a way.{p=1}
     Now that he’s gone, people are excited, and the bad stuff surfaces in this ungoverned space."
 
-    narration "This is usually where you fall back on M. GOPINATH, the Administrative Director, but he’s taken his annual leave, and has left you alone to deal with everything."
+    narration "This is usually where you fall back on Mr. GOPINATH, the Administrative Director, but he’s taken his annual leave, and has left you alone to deal with everything."
 
-    narration "Without active CEO, and M. GOPINATH being away, you are the highest ranking employee in the company right now, a company in turmoil with Priyanka’s issue this morning."
+    narration "Without active CEO, and Mr. GOPINATH being away, you are the highest ranking employee in the company right now, a company in turmoil with Priyanka’s issue this morning."
 
     thinking "I need to solve it, and to gather everyone's opinion."
 
@@ -501,7 +482,7 @@ label .scene16:
 
     thinking "I need to gather the opinion of the other employees."
 
-    thinking "And maybe ask M. RAJKUMAR, to give me his opinion."
+    thinking "And maybe ask Mr. RAJKUMAR, to give me his opinion."
 
     $email = False
     $gopinath = False
@@ -511,10 +492,10 @@ label .scene16:
 
 label .employees:
     menu:
-        "Write an email to M. Gopinath." if not gopinath:
+        "Write an email to Mr. Gopinath." if not gopinath:
             $gopinath = False
             jump .gopinath
-        "Write an email to M. Rajkumar." if not email:
+        "Write an email to Mr. Rajkumar." if not email:
             $email = True
             jump .scene17
         "Talk to Giti, the chief secretary, in your office" if not talk_giti:
@@ -527,9 +508,29 @@ label .employees:
             jump .scene20
 
 label .gopinath:
-    narration "You decide to write to M. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
+    narration "You decide to write to Mr. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
-    narration "<INSERT MAIL HERE>"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_gopinath(("I am currently on leave, swimming and snorkeling in the warm waters of the Andaman Islands.\n"
+        "You wouldn’t believe the fishes there! I will answer you as soon as I reach my office back.\n"
+        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
+        "\nBest regards,\nMr. Gopinath\n"
+        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
+        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
+        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     menu:
         "Talk to someone else.":
@@ -538,10 +539,31 @@ label .gopinath:
 label .scene17:
     scene bg email_screen
 
-    narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
+    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
-    #TODO:MAIL
-    narration "<INSERT MAIL HERE>"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_lawyer(("Dear Mr. Chandrakant,\n\n"
+        "I would advise to avoid disciplinary measures since terminating an employee’s contract, or issuing a warning {i}per se{/i} could lead this employee to sue the company if she can prove at some point that your decision was taken without grounds. "
+        "If you can prove said situation with objective information rather than gossip, and subjective appreciations, the warning can be issued with limited risks regardless of all pending liabilities {i}fluctuat.{/i}\n"
+        "A better option would be to start gathering a file compiling all of Priyanka’s strictly professional faults so that you will be able to terminate her contract for professional reasons. "
+        "There’s always a way to find such mistakes: a 10-minutes late attendance, an angry customer, a few errors in the documents she provides, etc. "
+        "Please investigate the matter further, and estimate whether her behaviour can be proven disruptive or not, as this proof will be pivotal in the following course of action you determine to take.\n\n"
+        "{i}In cause venenum{/i}\n\n"
+        "Mr. Rajkumar\n\n"
+        "Rajkumar & Rajkumar Ltd."))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     menu:
         "Talk to someone else.":
