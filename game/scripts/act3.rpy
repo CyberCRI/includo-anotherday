@@ -17,9 +17,16 @@ label act3:
     $act_3_ending_10 = False
     $act_3_ending_13 = False
 
-    scene bg lunch_room with dissolve
+    window hide
+
+    scene bg none
+
+    $renpy.pause(3.0)
 
     narration "Everybody’s at lunch, gathered together in the small canteen."
+
+    scene bg lunch_room
+    with Dissolve(3.0)
 
     narration "You unpack your lunchbox, and share around the delicious parathas you find inside before starting to eat.{p}
             The last events have taken their toll, and the atmosphere is rather uneasy."
@@ -87,6 +94,11 @@ label act3:
             jump .scene2
 
 label .scene2:
+
+    window hide
+
+    show bg none with fade
+
     narration "You see Bapat and Donatello whispering furiously to each other near the sink. From the sound of it, their conversation doesn't seem especially friendly."
 
     menu:
@@ -200,7 +212,9 @@ label .scene4:
     narration "You’re not supposed to be spying on the employees, so you walk away, and let them sort out whatever it is they need to sort out among themselves.{p}
                 The rest of the day is uneventful though you can’t dismiss the feeling that you’ve missed something important no matter how hard you try to shrug it off."
 
-    scene bg office with dissolve
+    window hide
+
+    show bg office with dissolve
 
     narration "The next day, just before lunch break, Donatello asks to see you."
 
@@ -290,6 +304,8 @@ label .gay:
 
 
 label .scene5:
+    window hide 
+
     scene bg office with dissolve
 
     show bapat at left with dissolve
@@ -342,9 +358,11 @@ label .scene6:
 
     thinking "It's better to let it slip."
 
-    scene bg office with dissolve
+    window hide
 
-    pause 1.0
+    scene bg office with Dissolve(3.0)
+
+    pause 3.0
 
     narration "The next day, just before lunch break, Donatello asks to see you."
 
@@ -377,6 +395,8 @@ label .scene7:
     narration "You lean back into your chair, surprised by the turn the events have taken."
 
     narration "A few minutes later, you start wondering where Donatello might have gone after storming out of your office, and you head to the canteen."
+
+    window hide
 
     scene bg lunch_room with dissolve
 
@@ -502,6 +522,7 @@ label .scene11:
                 He answers a few hours later."
 
     window hide
+
     show mail_icon_blink
 
     pause
@@ -552,11 +573,13 @@ label .scene12:
     thinking "Is this because there's no CEO yet?{w=0.5} Well, they sure will sing a different kind of song when the CEO will come!"
 
     menu:
-        "The next weeks.":
+        "The next days.":
             jump .scene13
 
 label .scene13:
-    scene none with dissolve
+    window hide
+
+    scene bg none with dissolve
 
     narration "Since you did nothing, the situation escalates quickly. Every day, you receive a new formal complaint from an employee, or another, telling you how Donatello leaned too close to them, or was looking at them suggestively."
 
@@ -602,7 +625,9 @@ label .employees:
             jump .scene19
 
 label .scene15:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     show bapat angry with dissolve
 
@@ -675,7 +700,9 @@ label .scene15:
             jump .employees
 
 label .scene16:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     show manali with dissolve
 
@@ -758,7 +785,9 @@ label .scene16:
             jump .employees
 
 label .scene17:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     show priyanka with dissolve
 
@@ -807,7 +836,9 @@ label .scene17:
             jump .employees
 
 label .scene18:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     show giti with dissolve
 
@@ -872,7 +903,9 @@ label .scene18:
             jump .employees
 
 label .scene19:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     narration "The sound of the printer is relaxing sometimes, you think. You hear the sheets shuffle back and forth, as if the machine were purring. It smells of fresh ink, and of warm paper, lulling you to sleep."
 
@@ -939,7 +972,9 @@ label .scene19:
             jump .scene21
 
 label .scene20:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
@@ -969,7 +1004,9 @@ label .scene20:
 
 
 label .scene21:
-    scene bg office with dissolve
+    window hide
+
+    scene bg office with fade
 
     menu:
         thinking "Who do I want to talk to?"
@@ -992,7 +1029,8 @@ label .choices:
             jump .scene27
 
 label .scene22:
-    scene bg office with dissolve
+    window hide 
+    scene bg office with fade
     show bapat angry with dissolve
 
     bapat angry "A policy?"
@@ -1036,7 +1074,8 @@ label .scene22:
     jump .choices
 
 label .scene23:
-    scene bg office with dissolve
+    window hide
+    scene bg office with fade
     show manali with dissolve
 
     if talk_manali_act3:
@@ -1061,6 +1100,7 @@ label .scene23:
     jump .choices
 
 label .scene24:
+    window hide
     scene bg office with dissolve
     show priyanka with dissolve
 
@@ -1111,7 +1151,8 @@ label .scene24:
     jump .choices
 
 label .scene25:
-    scene bg office with dissolve
+    window hide
+    scene bg office with fade
 
     show giti determined with dissolve
 
@@ -1179,7 +1220,8 @@ label .scene26:
             jump .scene13
 
 label .scene27:
-    scene bg office with dissolve
+    window hide
+    scene bg office with fade
 
     narration "You can’t believe what you find  when you finally receive the international inclusivity policy from CRYPTALOO’s headquarters.{p}
                 Not only is discrimination on the basis of sexual orientation forbidden, but it is severely punished as well, a rightful cause of the work contract’s termination, as is the protection of the person’s privacy."
@@ -1193,7 +1235,8 @@ label .scene27:
             jump .scene28
 
 label .scene28:
-    scene bg none with dissolve
+    window hide
+    scene bg none with fade
 
     narration "Now that a policy has been passed, effective immediately, nobody dares harass Donatello anymore.{p}
                 Some employees have sent emails to complain about you, and threatened to leave.{p}
@@ -1205,6 +1248,7 @@ label .scene28:
 label .end:
     narration "Act 3 End."
     $act_3_completed = True
+    window hide
     $renpy.call_screen("act_menu")
 
     return

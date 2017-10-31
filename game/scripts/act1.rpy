@@ -10,8 +10,11 @@ label act1:
 
     $lunch = False
 
-    scene bg meeting_room
-    with dissolve
+    window hide
+
+    scene bg none
+
+    $renpy.pause(3.0)
 
     narration "You reach the office early as usual."
 
@@ -33,11 +36,16 @@ label act1:
             jump .scene2
 
 label .scene2:
-    show bg office with dissolve
+
+    window hide 
+
+    show bg office
+    with Dissolve(3.0)
 
     narration "Priyanka was sitting inside, facing your desk. You wonder how long she’s been waiting here."
 
-    show priyanka crying with dissolve 
+    show priyanka crying
+    with dissolve 
 
     narration "When she sees you, she stands up clumsily, tries to wipe her tears away, then sits back again. "
 
@@ -71,6 +79,8 @@ label .scene2:
 
     priyanka angry "Am I supposed to come in a sari with flowers every day?"
 
+    
+
     thinking "I’m in a bit of a pickle now."
 
     thinking "Bapat is the Marketing Executive, and Donatello is the Senior Commercial Assistant."
@@ -83,7 +93,8 @@ label .scene2:
 
     thinking "Or maybe she’s plain wrong?"
 
-    hide priyanka with dissolve
+    hide priyanka
+    with dissolve
 
     menu:
         thinking "What should I do?"
@@ -93,29 +104,49 @@ label .scene2:
             jump .scene6
 
 label .scene3:
-    show bg lunch_room with dissolve
+
+    window hide 
+
+    show bg lunch_room
+    with fade
+
+    
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
     show donatello neutral at left
+    with moveinleft
     show bapat neutral at right
+    with moveinright
 
     narration "Looks like the whole team has decided to get up early today."
+
+    
+
+    
 
     abhay "Did you two fall out of your beds?"
 
     bapat "We were waiting for you, Abhay."
 
+    
+
     narration "Donatello nods."
+
+    
 
     abhay "That’s interesting because I was looking for the two of you myself."
 
     show donatello smug at left
     show bapat smug at right
 
+    
+
     thinking "Something must have happened yesterday, you think, else they wouldn’t all be gathered around me this morning like they are now."
 
     thinking "Let's bet on it."
+
+    
 
     abhay "So who’s going to tell me about what happened yesterday?"
 
@@ -127,7 +158,7 @@ label .scene3:
 
     abhay "So nothing happened?"
 
-    show donatello angry at right
+    show donatello angry at left
 
     donatello angry "Of course, we tried to tell her with humor, but she doesn’t get it!"
 
@@ -139,19 +170,31 @@ label .scene3:
 
     abhay "I’ve heard enough, guys, let me decide about this."
 
+    
+
     menu:
         thinking "What to choose next?"
         "Get to the bottom of this, and talk to the others.":
-            hide donatello with dissolve
-            hide bapat with dissolve
+            hide donatello
+            with dissolve
+            hide bapat
+            with dissolve
             jump .scene4
         "Leave it be":
-            hide donatello with dissolve
-            hide bapat with dissolve
+            hide donatello
+            with dissolve
+            hide bapat
+            with dissolve
             jump .scene5
 
 label .scene4:
-    show bg lunch_room with dissolve
+
+    window hide
+
+    show bg lunch_room
+    with fade
+
+    
 
     narration "Bapat and Donatello have left, leaving you alone in the canteen."
 
@@ -164,9 +207,16 @@ label .scene4:
             jump .scene6
 
 label .scene5:
+
+    window hide 
+
     show bg lunch_room with dissolve
 
+    
+
     narration "Bapat and Donatello have left, leaving you alone in the canteen."
+
+    
 
     thinking "That was a close one."
 
@@ -180,9 +230,13 @@ label .scene5:
 
 label .scene6:
 
+    
+
     narration "It looks like you won’t get away with Bapat, and Donatello so easily."
 
     narration "Before you could take a decision about the situation yourself—if you had any intention of taking one—they’ve gathered everyone for a meeting to address what they describe as \"decency issues\"."
+
+    
 
     thinking "Why the haste?"
 
@@ -194,7 +248,10 @@ label .scene6:
 
     thinking "Is it possible that they’re pushing hard because they genuinely feel offended?"
 
-    show bg meeting_room with dissolve
+    window hide 
+
+    show bg meeting_room
+    with fade
 
     narration "Whatever the case, you now find yourself in the meeting room with everyone but Priyanka. You double-check your emails to verify that she’s been invited as well, and find that she wasn’t."
 
@@ -203,13 +260,20 @@ label .scene6:
     This sure seems like a there’s a situation, and that the situation needs to be addressed.
     Still, you can’t ignore the feeling that something unusual happened yesterday, and that the reason of all this ruckus escapes you."
 
+    
+
     abhay "I am sorry to interrupt,{w=0.5} but this isn’t how it works."
 
-    show donatello at left with dissolve
-    show giti with dissolve 
-    show bapat at right with dissolve
+    show donatello at left
+    show giti
+    show bapat at right
+    with dissolve
+
+    
 
     narration "Everybody looks at you now."
+
+    
 
     abhay "You can’t call for a public meeting, especially when you exclude another employee from this meeting."
 
@@ -217,7 +281,11 @@ label .scene6:
 
     abhay "If I wanted to call for a public meeting I would have done it."
 
+    
+
     narration "There’s a lot of shoegazing as everybody falls silent."
+
+     
 
     abhay "I’d rather we stop this, and get back to work, we all have more important matters on our plates."
 
@@ -226,6 +294,8 @@ label .scene6:
     hide giti with dissolve
 
     abhay "As employees leave the meeting room one by one, you halt one of the culprits to speak with him privately."
+
+    
 
     menu:
         thinking "Who should I talk to?"
@@ -237,6 +307,11 @@ label .scene6:
             jump .scene8
 
 label .scene7:
+
+    
+
+    show bapat with moveinright
+
     abhay "I want you to tell me what happened yesterday."
 
     bapat "Ah, it’s nothing, Abhay, don’t get all wrangled up."
@@ -277,6 +352,11 @@ label .scene7:
             jump .scene9
 
 label .scene8:
+
+    
+
+    show donatello with moveinleft
+
     abhay "I want you to tell me what happened yesterday."
 
     donatello "Nothing, why do you bother?"
@@ -327,9 +407,13 @@ label .scene8:
 
 label .scene9:
 
+    
+
     narration "Before he leaves, his accomplice steps in as you are about to alight."
 
     narration "They both look at you with a strange mixture of mistrust, and eagerness."
+
+    
 
     menu:
         bapat "Are you going to do something about it, Abhay?"
@@ -337,13 +421,20 @@ label .scene9:
             hide donatello with dissolve
             hide bapat with dissolve
             jump .scene10
-        "\"After my lunch.\"" if lunch == False:
-            $lunch =  True
+        "\"After my lunch.\"" if not lunch:
+            hide donatello with dissolve
+            hide bapat with dissolve
+            $lunch = True
             jump .scene15
 
 label .scene10:
+
+    window hide 
+
     scene bg office
-    with dissolve
+    with fade
+
+    
 
     narration "You’ve heard their explanations, and have gathered enough information to take a decision, and solve this problem now."
 
@@ -365,6 +456,13 @@ label .scene10:
             jump .scene15
 
 label .scene11:
+
+    
+
+    window hide
+
+    show bg none with fade
+
     narration "You draft a dress code forbidding short dresses, heels, and skirts, and requesting decency from the employees"
 
     narration "Later this day, you send it to all, and forward your email to Mr. GOPINATH, the Administrative Director, and to the new CEO. Better safe than sorry."
@@ -374,13 +472,30 @@ label .scene11:
             jump .scene14
 
 label .scene12:
+
+    window hide
+
+    show bg none with fade
+
     narration "You’ve decided to call for a public poll, and gather everyone once again in the meeting room."
 
     narration "Priyanka joined you, eager to find a solution, but when you describe the situation to the people, Bapat, and Donatello are very vocal, and slowly get everyone on board with their agenda."
 
+    
+
+    window hide
+
+    show bg meeting_room with fade
+
+    show bapat angry with dissolve
+
     bapat angry "Why does she have to dress like this?{w=0.5} This isn’t a party!"
 
+    show priyanka angry
+
     priyanka angry "And how do I dress exactly, Bapat, do tell me?{w=0.5} Is this because I’m not wrapped head to toe in a sari?"
+
+    show donatello smug
 
     donatello smug "It’s either sari, or panties with you."
 
@@ -390,11 +505,19 @@ label .scene12:
 
     bapat smug "..."
 
+    show priyanka angry
+
     priyanka angry "How can you-"
+
+    show bapat smug
 
     bapat smug "Look at Giti Madam, Priyanka, or sweet Manali, they dress with de-{w=0.25}cen-{w=0.25}cy."
 
+    show priyanka angry
+
     priyanka angry "What’s your prob-"
+
+    show bapat
 
     bapat "When you dress like this, like western people trying to find a partner, of course we’re just men, "
 
@@ -406,7 +529,22 @@ label .scene12:
 
     abhay "The same goes for you,{w=0.25} Donatello"
 
+    show donatello angry
+
     donatello angry "Then she needs to help us being in control, this shameless woman!"
+
+    show priyanka
+
+    priyanka "..."
+
+    show priyanka crying
+
+    priyanka crying "..."
+
+    hide priyanka
+    with Dissolve(2.0)
+
+    
 
     narration "With this, Priyanka leaves the meeting room in tears while the others whistle, and laugh.
     {p} Since the public meeting has turned into a nightmare, and added to Priyanka’s shaming, you regret this idea, but it’s a little too late."
@@ -416,6 +554,12 @@ label .scene12:
             jump .scene14
 
 label .scene13:
+    window hide
+
+    
+
+    scene bg none with dissolve
+
     narration "Since Priyanka is the only one causing trouble, you see no need to bother everyone with a dress code, or a public poll."
 
     narration "After all, Bapat, and Donatello have both explained the situation to you, and though you dislike doing it, you decide to issue Priyanka a warning.{p}
@@ -425,7 +569,13 @@ label .scene13:
             jump .scene14
 
 label .scene14:
+
+    window hide
+
     scene bg none
+
+    
+
     narration "Following your decision, and the events of the day, Priyanka gives you her resignation letter the next morning.{p=1}
     Bapat and Donatello gloat in the open space, and start making jokes about Manali, the Secretary, as well.{p=1}
     Given the terms of her contract, Priyanka has to stay for a month, now wearing an oversized sweater, and trousers, and will be there when the new CEO comes.{p=1}
@@ -436,9 +586,16 @@ label .scene14:
     jump .end
 
 label .scene15:
+
+    window hide 
+
     show bg lunch_room with dissolve
 
+    
+
     narration "You unpack your lunch box in the canteen. It’s a most welcomed time of the day as everybody blows off some steam, and engage in small talk."
+
+     
 
     donatello "…can you believe this?"
 
@@ -458,6 +615,8 @@ label .scene15:
 
     bapat angry "What we’ve always done!"
 
+    
+
     narration "Gossips, and issues all the time.
     The conversation then trails off on the subject of the new CEO.
     Mr. BAJU, the former, wasn’t proactive, to put it mildly, but he maintained a peaceful if a bit droning work environment.
@@ -476,7 +635,12 @@ label .scene15:
             jump .scene16
 
 label .scene16:
-    show bg office with dissolve
+    window hide
+
+    show bg office
+    with fade
+
+    
 
     thinking "If all I do to find the truth about people harassing women is talk with the harasser, I won't go very far."
 
@@ -493,7 +657,7 @@ label .scene16:
 label .employees:
     menu:
         "Write an email to Mr. Gopinath." if not gopinath:
-            $gopinath = False
+            $gopinath = True
             jump .gopinath
         "Write an email to Mr. Rajkumar." if not email:
             $email = True
@@ -504,10 +668,11 @@ label .employees:
         "Talk to Manali, the secretary, in your office" if not talk_manali:
             $talk_manali = True
             jump .scene19
-        "You've talked to enough people." if not talk_manali:
+        "You've talked to enough people." if talk_manali:
             jump .scene20
 
 label .gopinath:
+
     narration "You decide to write to Mr. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
     window hide
@@ -530,14 +695,13 @@ label .gopinath:
 
     pause 3.0
 
-    window show
-
     menu:
         "Talk to someone else.":
             jump .employees
 
 label .scene17:
-    scene bg email_screen
+
+    
 
     narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
@@ -549,7 +713,7 @@ label .scene17:
     hide mail_icon_blink
     show mail_icon_open
 
-    $mail_lawyer(("Dear Mr. Chandrakant,\n\n"
+    $mail_lawyer_act1(("Dear Mr. Chandrakant,\n\n"
         "I would advise to avoid disciplinary measures since terminating an employee’s contract, or issuing a warning {i}per se{/i} could lead this employee to sue the company if she can prove at some point that your decision was taken without grounds. "
         "If you can prove said situation with objective information rather than gossip, and subjective appreciations, the warning can be issued with limited risks regardless of all pending liabilities {i}fluctuat.{/i}\n"
         "A better option would be to start gathering a file compiling all of Priyanka’s strictly professional faults so that you will be able to terminate her contract for professional reasons. "
@@ -563,18 +727,17 @@ label .scene17:
 
     pause 3.0
 
-    window show
-
     menu:
         "Talk to someone else.":
             jump .employees
 
 label .scene18:
-    scene bg office
 
     show giti smiling with dissolve
 
     narration "Giti smiles intently while you explain her the situation, trying to offer both points of views as you do so. She cuts you off as you’re about to ask for her opinion."
+
+    
 
     giti smiling "I know very well everything you’re talking about, Abhay Sir."
 
@@ -620,6 +783,8 @@ label .scene18:
 
     hide giti sad with dissolve
 
+    
+
     narration "This being said, Giti leaves your office."
 
     menu:
@@ -628,6 +793,8 @@ label .scene18:
 
 label .scene19:
     scene bg office
+
+     
 
     narration "When Manali sits down in your office, you feel like a police officer conducting an interrogation. {p=1}
     She gazes at her shoes, and blushes a lot, twisting her fingers as she does."
@@ -940,6 +1107,7 @@ label .end:
     narration "Act 1 End"
 
     $act_1_completed = True
+    window hide
     $renpy.call_screen("act_menu")
 
     return

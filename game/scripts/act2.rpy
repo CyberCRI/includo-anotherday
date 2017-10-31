@@ -16,7 +16,10 @@ label act2:
     $act_2_ending_23 = False
 
     window hide 
-    scene bg office with dissolve
+
+    scene bg none
+
+    $renpy.pause(3.0)
 
     narration "You are in a fool mood today.{p}
                 The traffic was a nightmare to begin with,
@@ -29,6 +32,9 @@ label act2:
                 Maybe being the Human Resources Manager is all about knowing what to hide, and how to hide it well."
 
     thinking "I should have worked in a casino. At least, I would have made some big bucks."
+
+    show bg office
+    with Dissolve(3.0)
 
     narration "When you reach the office, you’re a little bit late, and spill your tea as you hurry to your desk.{p}
                 You swear under your breath, and keep striding to your place, where you find Giti waiting for you."
@@ -172,6 +178,7 @@ label .scene4:
             jump .scene13
 
 label .scene5:
+
     hide giti with dissolve
 
     narration "This is the expected decision, and you’re pretty confident that everyone at the office will understand it. This way, you preserve the balance of power, and make sure you won’t be bothered when the new CEO will come, and Mr. Gopinath will return."
@@ -187,7 +194,10 @@ label .scene5:
             jump .scene13
 
 label .scene6:
-    show bg meeting_room with dissolve
+
+    window hide
+
+    show bg meeting_room with fade
 
     narration "You walk to the meeting room, pour yourself another tea, and weigh your options.{p}
                 You could meet with Bapat or Donatello to get to the heart of it, and find out whether they’ve been actually pushing a sexist agenda as Giti says,{p}
@@ -214,7 +224,9 @@ label .scene7:
     $talk_women = True
     narration "You don't want to make it too formal, and wait until the lunch break to get a chance to catch up with them."
 
-    show bg lunch_room with dissolve
+    window hide
+
+    show bg lunch_room with fade
 
     narration "When you enter the canteen, both Priyanka, and Manali are present, each in a different corner of the room.
     The other employees are gathered together in the middle, and have started to eat, and talk."
@@ -245,7 +257,8 @@ label .scene7:
             jump .scene12
 
 label .scene8:
-    $talk_bapat = True
+
+    window hide
     show bg meeting_room with dissolve
 
     show bapat with dissolve
@@ -307,7 +320,9 @@ label .scene8:
 
     thinking "He's gone now."
 
-    if talk_bapat == False or talk_donatello == False or email_act_2 == False or talk_women == False:
+    $talk_bapat = True
+
+    if not talk_bapat or not talk_donatelloor or not email_act_2 or not talk_women:
         thinking "I could take a decision right now or keep investigating."
     else:
         thinking "I have done enough investigating, it's time to take a decision."
@@ -315,13 +330,15 @@ label .scene8:
     menu:
         "Take a decision now.":
             jump .scene13
-        "Keep investigating." if talk_women = False or talk_donatello = False or email_act_2 = False:
+        "Keep investigating." if not talk_women or not talk_donatello or not email_act_2:
             jump .investigate
 
 label .scene9:
-    $talk_donatello = True
 
-    show bg meeting_room with dissolve
+    window hide 
+
+    show bg meeting_room with fade
+
     show donatello with dissolve
 
     narration "Obviously, Donatello doesn't know what to expect from this meeting.
@@ -373,6 +390,8 @@ label .scene9:
 
     thinking "What should I do now?"
 
+    $talk_donatello = True
+
     if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
         thinking "I could take a decision right now or keep investigating."
     else:
@@ -385,7 +404,9 @@ label .scene9:
             jump .investigate
 
 label .scene10:
-    show bg email
+    window hide
+
+    show bg office with fade
 
     narration "You decide to write to Mr. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone."
 
@@ -396,6 +417,7 @@ label .scene10:
     narration "You receive an automatic out-of-the-office answer minutes later, and never hear about it again"
 
     window hide
+
     show mail_icon_blink
 
     pause
@@ -428,7 +450,8 @@ label .scene10:
                 jump .scene6
 
 label .scene11:
-    show bg lunch_room with dissolve
+    window hide
+    show bg lunch_room with fade
     show priyanka smiling with dissolve
 
     narration "You sit next to Priyanka and engage in a small talk with her.{p}
@@ -496,6 +519,7 @@ label .scene11:
             jump .scene13
 
 label .scene12:
+    window hide
     show bg lunch_room with dissolve
     show manali with dissolve
 
@@ -599,6 +623,8 @@ label .decide:
             jump .scene17
 
 label .scene14:
+    window hide
+
     show bg office with dissolve
 
     narration "You call Giti to your office."
@@ -632,6 +658,8 @@ label .scene14:
             jump .scene18
 
 label .scene15:
+    window hide
+
     show bg office with dissolve
     narration "You write to M. Gopinath, asking him clearly and directly to take the matter into his hands so that you can escape the storm that will follow either decision you might take,
                 receive an automatic out-of-the-office answer minutes later, and never hear about it again."
@@ -655,13 +683,13 @@ label .scene15:
 
     pause 3.0
 
-    window show
-
     menu:
         "You really need to decide by yourself.":
             jump .decide
 
 label .scene16:
+    window hide
+
     show bg office with dissolve
     narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice."
 
@@ -675,7 +703,7 @@ label .scene16:
     hide mail_icon_blink
     show mail_icon_open
 
-    $mail_lawyer_act2(("Dear Mr. Chandrakant,\n\n"
+    $mail_lawyer_act2_1(("Dear Mr. Chandrakant,\n\n"
         "If your Mrs. Shaikh Giti can prove the alleged discrimination she suffers {i}mutatis mutandis{/i}, the situation could lead to a case in court indeed, and involve liabilities, and damages as per the accessory of the main article to be continued {i}habeas corpus.{/i}\n"
         "In all actuality ({i}Ibid.{/i}), discrimination is very difficult to prove as she would require either several witnesses, or written proof of a constant pattern from the company’s side to support her claim."
         "Since she will find deprived of these proofs, it is most probable that she will not escalate as fees will discourage her from doing so as well.\n"
@@ -688,7 +716,7 @@ label .scene16:
 
     pause 3.0
 
-    window show
+    
 
     $email_act_2_3 = True
 
@@ -713,6 +741,9 @@ label .scene17:
             jump .scene19
 
 label .scene18:
+    window hide
+
+    show bg none with fade
     narration "You’ve sent an email to inform everyone about Giti’s promotion, not forgetting to send a copy to M. Gopinath.{p}
                 Bapat and Donatello, have stormed into your office several times since then, trying to prove their point, but you’re the HR Manager, and with M. Gopinath, and the new CEO away, there’s nothing they can do.{p}
                 You surmise that M. Gopinath won’t be happy, and hope that the new CEO will understand your position. Time will tell."
@@ -780,14 +811,15 @@ label .scene21:
 
     narration "You write him, explaining the situation, and joining a scanned copy of the subpoena. He answers almost immediately."
 
-    email "rajkumarrajkumarltd@gmail.com 
-            To: abhay.chandrakant@cryptaloo.in
-            Re: Subpoena/Giti Shaikh
-            Dear M. Chandrakant,
-            So far, all that we know is that Mrs. Shaikh Giti is suing the company on the basis of the Denial of Equal Opportunity. She says that she has collected proofs, but we have not seen these proofs as yet, and we might be in a position to challenge them if they seem weak. Only then will I know what our chances to win the trial are, and if they seem low, to open negotiations with her. If, from your position you can gather already that she will have a decent amount of solid proof, I advise you to promote her so that you can avoid paying for the damages she requests. If this isn’t the case, I advise you to proceed so that we can see what she has, and take appropriate action.
-            Yours truly,
-            M. Rajkumar
-            Rajkumar & Rajkumar Ltd."
+
+    $mail_lawyer_act2_2(("Dear Mr. Chandrakant,\n"
+            "So far, all that we know is that Mrs. Shaikh Giti is suing the company on the basis of the Denial of Equal Opportunity. She says that she has collected proofs, but we have not seen these proofs as yet, and we might be in a position to challenge them if they seem weak.\n"
+            "Only then will I know what our chances to win the trial are, and if they seem low, to open negotiations with her.\n"
+            "If, from your position you can gather already that she will have a decent amount of solid proof, I advise you to promote her so that you can avoid paying for the damages she requests.\n"
+            "If this isn’t the case, I advise you to proceed so that we can see what she has, and take appropriate action.\n\n"
+            "Yours truly,\n"
+            "M. Rajkumar\n"
+            "Rajkumar & Rajkumar Ltd."))
 
     thinking "It's time to take my decision."
 
@@ -801,18 +833,26 @@ label .scene22:
     narration "You don’t even answer her. One simply doesn’t threaten the HR Manager."
 
 label .scene23:
+    window hide
+
+    show bg none with fade
+
     narration "You can’t fire Giti because she sues the company, that in itself would open a whole new case against you so she stays, brooding, waiting for the trial.{p}
-    he atmosphere of the office changes, there’s no more friendly banter now.{p}
+    The atmosphere of the office changes, there’s no more friendly banter now.{p}
     Bapat and Donatello are obviously on your side, you’re part of their gang now.{p}"
 
     narration "Surely, the new CEO will surely know how to handle a court case better than you, and everything will be fine again."
 
     $act_2_ending_23 = True
+
     jump .end
 
 label .end:
     narration "Act 2 End"
     $act_2_completed = True
+
+    window hide
+
     $renpy.call_screen("act_menu")
 
     return

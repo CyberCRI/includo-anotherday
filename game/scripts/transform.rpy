@@ -55,6 +55,10 @@ transform bloom(easein_time=1.0, time_value=0.0, zoom_value=1.0):
     subpixel True
     easein easein_time alpha 1.0
 
+transform fade_in(easein_time=1.0):
+    alpha 0.0
+    easein easein_time alpha 1.0
+
 transform zoom_on_hover(idle_value, hover_value):
     on hover:
         easein 0.25 zoom hover_value
@@ -85,4 +89,4 @@ transform change_transform(old, new):
         parallel:
             easein 0.5 alpha 1.0
 
-define config.side_image_change_transform = change_transform
+#define config.side_image_change_transform = change_transform

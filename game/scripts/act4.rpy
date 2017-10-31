@@ -20,7 +20,11 @@ label act4:
     $act_4_ending_26 = False
     $act_4_ending_28 = False
 
-    scene bg office with dissolve
+    window hide
+
+    scene bg none
+
+    $renpy.pause(3.0)
 
     thinking "The issues have been piling up lately, forcing me to take difficult decisions."
 
@@ -33,6 +37,10 @@ label act4:
     thinking "Which is why I thought it would be a good idea to copy our competitor BUNGALOO and invite a Brahmin to bless the office."
 
     thinking "Nothing like a joyful, and beautiful ceremony to rekindle the bonding."
+
+    window hide
+
+    show bg office with Dissolve(3.0)
 
     narration "Just as you’re imagining the ceremony, smiling to yourself, you notice Giti waiting for you by your office’s door with a grim expression."
 
@@ -56,6 +64,8 @@ label act4:
 
     giti sad "I cannot participate, Abhay Sir, these are not my beliefs."
 
+    show narration_background
+
     menu:
         thinking "..."
         "\"I know exactly what to do, what about this...\"":
@@ -75,6 +85,8 @@ label .scene2:
             jump .scene12
 
 label .scene3:
+
+    window hide
 
     scene bg meeting_room with dissolve 
 
@@ -277,18 +289,34 @@ label .scene8:
 
     narration "You decide to write to Mr. Gopinath about it, and explain the situation. You receive an automatic out-of-the-office answer minutes later, and never hear about it again."
 
-    mail "adnan.gopinath@cryptaloo.com 
-            To: abhay.chandrakant@cryptaloo.in
-            Out of the Office
-            I am currently on leave, visiting the jungles of Angkor Wat. I will answer you as soon as I reach my office back. If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: abhay.chandrakant@cryptaloo.in.
-            Best regards,
-            Mr. Gopinath"
+    window hide
+    show mail_icon_blink
+
+    pause
+
+    hide mail_icon_blink
+    show mail_icon_open
+
+    $mail_gopinath(("I am currently on leave, visiting the jungles of Angkor Wat. I will answer you as soon as I reach my office back.\n"
+        "If you have any urgent matter, kindly write to Mr. Chandrakant at the following email: {color=#0000FF}{u}abhay.chandrakant@cryptaloo.in{/u}{/color}.\n"
+        "\nBest regards,\nMr. Gopinath\n"
+        "{font=fonts/Oswald-Regular.ttf}{size=14}{k=-1}{color=#009fff}Adnan Gopinath, Administrative Director{/color}{/k}{/size}\n"
+        "{size=12}{k=-1}Pearls Omaxe Building, Off # 1005, 10th Floor, First Tower{/k}{/size}\n"
+        "{size=12}{k=-1}Netaji Subhash Place Complex, Pitampura, Delhi 110034, INDIA{/k}{/size}{/font}"))
+
+    hide mail_icon_open
+
+    pause 3.0
+
+    window show
 
     jump .advices
 
 label .scene9:
 
-    scene bg office with dissolve
+    window hide 
+
+    show bg office with dissolve
 
     show giti with dissolve
 
@@ -343,6 +371,8 @@ label .scene9:
 
 label .scene10:
 
+    window hide 
+
     scene bg none with dissolve
 
     narration "You left her no choice."
@@ -358,8 +388,9 @@ label .scene10:
     jump .end
 
 label .scene11:
+    window hide
 
-    scene bg office with dissolve
+    show bg office with dissolve
 
     show giti with dissolve
 
@@ -441,6 +472,11 @@ label .scene12:
             jump .scene13
 
 label .scene13:
+
+    window hide
+
+    show bg none with fade
+
     narration "As planned, Giti doesn’t show up on the next day."
 
     narration "With everyone busy watching the Brahmin, or singing mantras, and prayers, her absence didn’t seem to be noticed. If it was, everyone was tactful enough to avoid mentioning it, at the very least. {/i}Problem solved!{i} You congratulate yourself."
@@ -509,7 +545,9 @@ label .scene14:
             jump .scene24
 
 label .scene15:
-    scene bg lunch_room with dissolve
+    window hide
+
+    show bg lunch_room with dissolve
 
     thinking "First things first, a man needs his food three times a day."
 
@@ -543,7 +581,9 @@ label .scene15:
 
     narration "You smile, then remember you have a pressing matter to solve, and shuffle back to your office."
 
-    scene bg office with dissolve
+    window hide
+
+    show bg office with dissolve
 
     menu:
         thinking "So, what should I do now?"
@@ -587,7 +627,9 @@ label .advices2:
             jump .employees2
 
 label .scene17:
-    scene bg meeting_room with dissolve
+    window hide
+
+    show bg meeting_room with dissolve
 
     show bapat angry with dissolve
 
@@ -641,7 +683,9 @@ label .scene17:
 
 label .scene18:
 
-    scene bg meeting_room with dissolve
+    window hide
+
+    show bg meeting_room with dissolve
 
     show priyanka with dissolve
 
@@ -674,8 +718,9 @@ label .scene18:
     jump .advices2
 
 label .scene19:
+    window hide
 
-    scene bg meeting_room with dissolve
+    show bg meeting_room with dissolve
 
     show donatello with dissolve
 
@@ -735,7 +780,9 @@ label .scene19:
 
 label .scene20:
 
-    scene bg office with dissolve
+    window hide
+
+    show bg office with dissolve
 
     show manali with dissolve
 
@@ -831,7 +878,9 @@ label .scene22:
     jump .advices2
 
 label .scene23:
-    scene bg meeting_room with dissolve
+    window hide
+
+    show bg meeting_room with dissolve
 
     show giti with dissolve
 
@@ -875,7 +924,9 @@ label .scene23:
             jump .scene25
 
 label .scene24:
-    scene bg meeting_room with dissolve
+    window hide
+
+    show bg meeting_room with dissolve
 
     show giti with dissolve
 
@@ -907,6 +958,10 @@ label .scene24:
 
 label .scene25:
 
+    window hide
+
+    show bg none with fade
+
     narration "You can’t make a single person happy at the expense of all the others..."
 
     narration "The following weeks, Giti’s a little bit less active during the meetings, and eats more on her own at lunch, you hope she will understand your decision, and come back to her kind, efficient self before the new CEO steps in."
@@ -915,12 +970,17 @@ label .scene25:
     jump .end
 
 label .scene26:
+
+    window hide
+
+    scene bg none with fade
+
     narration "Of course, Giti is delighted. All the other employees except Manali resent your decision, though, you can feel it in the way they talk, and look at you."
 
     narration " Well, you’re the Human Resources Manager, not their best friend forever, and you hope that once the dust settles, everybody will get back to their former, friendly selves."
 
     $act_4_ending_26 = True
-    jump .end
+    
 
 label .scene27:
     narration "You decide to write to the Brahmin who came to bless the office, and to explain him the situation with Giti. After all, you’re dealing with a religious issue, and he’s a religious person. On the other hand, he’s a representative of the Hindus, and you assume that his answer will not help Giti much, but who knows?{p}
@@ -951,6 +1011,8 @@ label .scene27:
             jump .scene28
 
 label .scene28:
+    window hide
+    scene bg none with fade
     narration "Following Swami Ram Ram’s advice, you create a neutral space open to the prayers, yoga, and meditation of all religions. There is still some resistance from some of the employees, but at the end, even Bapat uses it for his yoga, and peace has returned to the office. Congratulations."
     
     $act_4_ending_28 = True
@@ -959,6 +1021,7 @@ label .scene28:
 label .end:
     narration "Act 4 End."
     $act_4_completed = True
+    window hide
     $renpy.call_screen("act_menu")
 
     return
