@@ -53,6 +53,8 @@ label .scene2:
 
     abhay "What’s the matter, Priyanka?{w=0.5} It’s very early."
 
+    play music "music/discussion.mp3" fadein 1.0 fadeout 1.0
+
     priyanka crying "I can’t stand it anymore, Mr. Chandrakant, I just can’t."
 
     priyanka crying "Every day.{w=0.25}.{w=0.25}.{w=0.25} Every day I come in, and it’s the same, they just won’t stop-"
@@ -110,7 +112,7 @@ label .scene3:
     show bg lunch_room
     with fade
 
-    
+    stop music fadeout 3.0
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
@@ -1107,6 +1109,7 @@ label .end:
     narration "Act 1 End"
 
     $act_1_completed = True
+    stop music fadeout 3.0
     window hide
     $renpy.call_screen("act_menu")
 
