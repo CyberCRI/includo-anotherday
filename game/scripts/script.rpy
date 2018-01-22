@@ -52,9 +52,9 @@ image side placeholder:
 
     on replace:
         alpha 0.0
-        linear .5 alpha 1.0
+        linear 0.5 alpha 1.0
     on replaced:
-        linear .5 alpha 0.0
+        linear 0.5 alpha 0.0
 
 image meeting_room:
     "images/background/meeting_room.jpg"
