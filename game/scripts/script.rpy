@@ -59,11 +59,23 @@ image side placeholder:
 image meeting_room:
     "images/background/meeting_room.jpg"
 
+image giti:
+    "images/characters/giti.png"
+    yalign 0.01
+
+image bapat:
+    "images/characters/bapat.png"
+    yalign 0.01
+
+image donatello:
+    "images/characters/donatello.png"
+    yalign 0.01
+
 define employee = Character(None, image="placeholder", who_color="#CAE7FE", ctc="ctc_blink", ctc_position="nestled", screen="say", callback=hide_narration_background)
 define priyanka = Character("PRIYANKA", kind=employee, image="placeholder", show_job="{i}Marketing Assistant{/i}")
-define bapat = Character("BAPAT", kind=employee, show_job="{i}Marketing Executive{/i}")
-define donatello = Character("DONATELLO", kind=employee, show_job="{i}Senior Commercial Assistant{/i}")
-define giti = Character("GITI", kind=employee, show_job="{i}Chief Secretary{/i}")
+define bapat = Character("BAPAT", image="bapat", kind=employee, show_job="{i}Marketing Executive{/i}")
+define donatello = Character("DONATELLO", image="donatello", kind=employee, show_job="{i}Senior Commercial Assistant{/i}")
+define giti = Character("GITI", image="giti", kind=employee, show_job="{i}Chief Secretary{/i}")
 define manali = Character("MANALI", kind=employee, show_job="{i}Secretary{/i}")
 define ashwini = Character("ASHWINI", kind=employee, show_job="{i}CEO of CRYPTALOO{/i}")
 

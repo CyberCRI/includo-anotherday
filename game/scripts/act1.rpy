@@ -310,8 +310,6 @@ label .scene6:
 
 label .scene7:
 
-    
-
     show bapat with moveinright
 
     abhay "I want you to tell me what happened yesterday."
