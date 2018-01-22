@@ -67,13 +67,13 @@ label .scene2:
 
     abhay "You could have asked, I would have approved them, you know. Is this what-"
 
-    show giti angry
+    show giti stern with dissolve
 
-    giti angry "No, Sir, please hear me out."
+    giti stern "No, Sir, please hear me out."
 
-    giti angry "Not only have I worked hard, but I have accepted more and more responsibilities, "
+    giti stern "Not only have I worked hard, but I have accepted more and more responsibilities, "
 
-    giti angry "like taking care of the transportation department, or of the security shift..."
+    giti stern "like taking care of the transportation department, or of the security shift..."
 
     thinking "What could she want?{w=0.5} Compensation holidays?"
 
@@ -83,7 +83,7 @@ label .scene2:
 
     thinking "Wait, is she going to resign?{w=0.5} Is that what this is about?"
 
-    show giti
+    show giti with dissolve
 
     giti "Sir, are you listening to me?"
 
@@ -93,13 +93,13 @@ label .scene2:
 
     giti "but when I heard them, it all became clear."
 
-    show giti sad
+    show giti sad with dissolve
 
     giti sad "They said that they made sure that no women gets promoted, that only men can reach the top positions."
 
     abhay "Who?"
 
-    show giti
+    show giti with dissolve
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
 
@@ -109,9 +109,9 @@ label .scene2:
 
     abhay "So what do you want me to do, Giti?"
 
-    show giti angry
+    show giti stern with dissolve
 
-    giti angry "I want to request a promotion, Abhay Sir, and your official answer."
+    giti stern "I want to request a promotion, Abhay Sir, and your official answer."
 
     thinking "Really, {w=0.25}just like that."
 
@@ -195,6 +195,8 @@ label .scene5:
 
 label .scene6:
 
+    hide giti with dissolve
+
     window hide
 
     show bg meeting_room with fade
@@ -243,7 +245,7 @@ label .scene7:
 
     donatello "It's not fake, Bapat.{w=0.25} It's something concerned citizen have done, it's a plastic crocodile."
 
-    giti angry "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
+    giti stern "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
 
     bapat smug "A {i}crocodile child molester{/i} now, Giti, please think!"
 
@@ -278,7 +280,7 @@ label .scene8:
 
     narration "Bapat nods, happy to be considered."
 
-    show bapat happy
+    show bapat smug with dissolve
 
     abhay "Good."
 
@@ -288,7 +290,7 @@ label .scene8:
 
     abhay "I'm not talking about your department of course."
 
-    show bapat
+    show bapat with dissolve
 
     bapat "..."
 
@@ -322,7 +324,7 @@ label .scene8:
 
     $talk_bapat = True
 
-    if not talk_bapat or not talk_donatelloor or not email_act_2 or not talk_women:
+    if not talk_bapat or not talk_donatello or not email_act_2 or not talk_women:
         thinking "I could take a decision right now or keep investigating."
     else:
         thinking "I have done enough investigating, it's time to take a decision."
@@ -459,7 +461,7 @@ label .scene11:
 
     abhay "How come you've been working here for 2 years, and never asked for a promotion, Priyanka?"
 
-    show priyanka
+    show priyanka with dissolve
 
     priyanka "Because promotions have to be approved by the higher management, Abhay"
 
@@ -489,7 +491,7 @@ label .scene11:
 
     abhay "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
 
-    show priyanka smiling
+    show priyanka smiling with dissolve
 
     priyanka smiling "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
 
@@ -530,7 +532,7 @@ label .scene12:
 
     abhay "You’re doing a great job, handling the secretary, the security, and the transportation all together!"
 
-    show manali smiling
+    show manali smiling with dissolve
 
     manali smiling "It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient."
 
@@ -542,7 +544,7 @@ label .scene12:
 
     abhay "Yet she’s never been promoted"
 
-    show manali
+    show manali with dissolve
 
     manali "...!"
 
@@ -562,7 +564,7 @@ label .scene12:
 
     abhay "Because she's a woman?"
 
-    show manali nervous
+    show manali nervous with dissolve
 
     manali nervous "I didn’t say that, Sir!"
 
@@ -617,7 +619,7 @@ label .decide:
             jump .scene14
         "Write an email to M. Gopinath." if not email_act_2_2:
             jump .scene15
-        "Ask M. Rajkumar's advice.":
+        "Ask M. Rajkumar's advice." if not email_act_2_3:
             jump .scene16
         "Reject her request.":
             jump .scene17
@@ -780,21 +782,21 @@ label .scene20:
 
     abhay "I have decided to approve your promotion request, Giti."
 
-    show giti angry
+    show giti stern with dissolves
 
-    giti angry "It's only fair, Abhay Sir."
+    giti stern "It's only fair, Abhay Sir."
 
     abhay "So you will drop this case, won’t you?"
 
-    giti angry "Yes, Sir, I only want the promotion I should have had long ago."
+    giti stern "Yes, Sir, I only want the promotion I should have had long ago."
 
     abhay "Well, you have it."
 
     abhay "Please send me the acknowledgement of cancellation for the case, and I will promote you as I said."
 
-    giti angry "No, Abhay Sir, {w=0.5}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
+    giti stern "No, Abhay Sir, {w=0.5}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
 
-    giti angry "At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement."
+    giti stern "At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement."
 
     thinking "She has obviously studied this."
 

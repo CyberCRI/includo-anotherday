@@ -1126,7 +1126,7 @@ label .scene24:
 
     show priyanka angry
 
-    priyanka "But precisely, Abhay, the company’s image will suffer."
+    priyanka angry "But precisely, Abhay, the company’s image will suffer."
 
     abhay "From {i}whom{/i}?"
 
