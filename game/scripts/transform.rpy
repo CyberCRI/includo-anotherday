@@ -71,6 +71,30 @@ transform rotate(value):
     rotate_pad True
     rotate value
 
+transform center:
+    yalign -0.25 xalign 0.5
+
+transform center_left:
+    yalign -0.25 xalign 0.1
+
+transform center_right:
+    yalign -0.25 xalign 1.0
+
+transform talking:
+    easein 0.25 zoom 1.025
+
+transform not_talking:
+    easein 0.25 zoom 1.0
+
+transform move_right:
+    easein 2.0 xalign 1.0
+
+transform move_left:
+    easein 2.0 xalign 0.1
+
+transform move_center:
+    easein 2.0 xalign 0.5
+
 transform change_transform(old, new):
     contains:
         old

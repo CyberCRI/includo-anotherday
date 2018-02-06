@@ -39,13 +39,19 @@ label act2:
     narration "When you reach the office, you’re a little bit late, and spill your tea as you hurry to your desk.{p}
                 You swear under your breath, and keep striding to your place, where you find Giti waiting for you."
 
-    show giti with dissolve
+    show giti dark at not_talking, center with dissolve
 
     abhay "What can I do for you, Giti Madam?"
 
+    show giti at talking
+
     giti "I need to talk to you, Abhay Sir. I have been thinking a long time about this."
 
+    show giti dark at not_talking
+
     abhay "Is this urgent?"
+
+    show giti at talking
 
     giti "It is not, Abhay Sir, but now is as much a good time as another."
 
@@ -59,15 +65,21 @@ label act2:
 label .scene2:
     giti "Abhay Sir, I have been working hard for Mr. Gopinath for the last three yea-"
 
+    show giti dark at not_talking
+
     abhay "I know that."
 
     abhay "Your efforts are very appreciated, Giti."
 
+    show giti at talking
+
     giti "Yes, Abhay Sir, also I have been working overtime in the evenings, and during weekends without even asking for compensatory leaves."
+
+    show giti dark at not_talking
 
     abhay "You could have asked, I would have approved them, you know. Is this what-"
 
-    show giti stern with dissolve
+    show giti stern at talking
 
     giti stern "No, Sir, please hear me out."
 
@@ -87,7 +99,11 @@ label .scene2:
 
     giti "Sir, are you listening to me?"
 
+    show giti dark at not_talking
+
     abhay "Y-{w=0.5}yes of course, carry on."
+
+    show giti at talking
 
     giti "So I was saying I didn't know why I never got the promotion while Bapat had one in just one year,"
 
@@ -97,9 +113,11 @@ label .scene2:
 
     giti sad "They said that they made sure that no women gets promoted, that only men can reach the top positions."
 
+    show giti sad dark at not_talking
+
     abhay "Who?"
 
-    show giti with dissolve
+    show giti at talking
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
 
@@ -107,11 +125,15 @@ label .scene2:
 
     thinking "Or is she playing me, bouncing on the opportunity because of what happened with Priyanka?"
 
+    show giti dark at not_talking
+
     abhay "So what do you want me to do, Giti?"
 
-    show giti stern with dissolve
+    show giti stern at talking
 
     giti stern "I want to request a promotion, Abhay Sir, and your official answer."
+
+    show giti dark at not_talking
 
     thinking "Really, {w=0.25}just like that."
 
@@ -233,21 +255,54 @@ label .scene7:
     narration "When you enter the canteen, both Priyanka, and Manali are present, each in a different corner of the room.
     The other employees are gathered together in the middle, and have started to eat, and talk."
 
+    show donatello at center, talking with dissolve 
+
     donatello "So that there are potholes everywhere."
+
+    hide donatello
+    show bapat smug at center
+    with dissolve
 
     bapat smug "Ah, you just wait until the next elections, they will repair the roads then."
 
+    hide bapat
+    show donatello at center
+    with dissolve
+
     donatello "Superpower in 2020."
+
+    hide donatello
+    show giti at center
+    with dissolve
 
     giti "I can't believe this, did you know they've found a crocodile in a hole of the road!"
 
+    hide giti
+    show bapat angry at center
+    with dissolve
+
     bapat angry "This is fake news, Giti!{w=0.5} I can't believe you fell for it."
+
+    hide bapat
+    show donatello at center
+    with dissolve
 
     donatello "It's not fake, Bapat.{w=0.25} It's something concerned citizen have done, it's a plastic crocodile."
 
+    hide donatello
+    show giti stern at center
+    with dissolve
+
     giti stern "No, no, it was a real crocodile, Donald Sir!{w=0.5} It has even attacked a child!"
 
+    hide giti
+    show bapat smug at center
+    with dissolve
+
     bapat smug "A {i}crocodile child molester{/i} now, Giti, please think!"
+
+    hide bapat
+    with dissolve
 
     narration "With that, the conversation trails off, and you remember that you wanted to talk to the women."
 
@@ -263,7 +318,8 @@ label .scene8:
     window hide
     show bg meeting_room with dissolve
 
-    show bapat with dissolve
+    show bapat dark at center, not_talking
+    with dissolve
 
     narration "You have summoned Bapat to the meeting room, not as relaxed as the canteen, but not as formal as your office.
                 You don’t want him to feel like he’s being under scrutiny, but you need to keep this conversation private."  
@@ -272,7 +328,11 @@ label .scene8:
 
     abhay "I need your advice Bapat."
 
+    show bapat at talking
+
     bapat "Of course, Abhay, whatever you need."
+
+    show bapat dark at not_talking
 
     abhay "I’m going through the evaluation files today, and planning internal evolutions for the staff, "
 
@@ -280,7 +340,8 @@ label .scene8:
 
     narration "Bapat nods, happy to be considered."
 
-    show bapat smug with dissolve
+    show bapat dark smug
+    with dissolve
 
     abhay "Good."
 
@@ -290,27 +351,40 @@ label .scene8:
 
     abhay "I'm not talking about your department of course."
 
-    show bapat with dissolve
+    show bapat dark
+    with dissolve
 
     bapat "..."
 
     abhay "Obviously, I can't offer to promote all three, but I need to reward their efforts."
 
+    show bapat at talking
+
     bapat "Maybe you can promote Manali, Abhay?"
 
-    abhay "Why only her"
+    show bapat dark at not_talking
+
+    abhay "Why only her?"
+
+    show bapat at talking
 
     bapat "Abhay, if you promote the others, you will push women into the head management."
 
     bapat "We have enough problems right now."
 
+    show bapat dark at not_talking
+
     abhay "Why is that a problem?"
+
+    show bapat at talking
 
     bapat "Ah, they’re not like us, Abhay, "
 
     bapat "They’re full of gossip, and all, "
 
     bapat "They’re good housewife material, but none of us will accept being commanded by a woman."
+
+    show bapat dark at not_talking
 
     abhay "I see.{w=0.5} Thank you, Bapat."
 
@@ -341,20 +415,29 @@ label .scene9:
 
     show bg meeting_room with fade
 
-    show donatello with dissolve
+    show donatello dark at center, not_talking
+    with dissolve
 
     narration "Obviously, Donatello doesn't know what to expect from this meeting.
                 He looks a bit confused, and wary. You have to play it cautious, and beat about the bush a little"
 
     abhay "I need your advice, Donatello."
 
+    show donatello at talking
+
     donatello "Yes, of course, what is it?"
 
+    show donatello dark at not_talking
+
     abhay "I have a lot of paperwork to do for the next review of the sales department’s employees, and I don’t understand the sales figures."
+
+    show donatello at talking
 
     donatello "Show me that."
 
     narration "You hand him the sale reports."
+
+    show donatello dark at not_talking
 
     abhay "That's a lot of work, maybe Giti, or Priyanka can help you?"
 
@@ -362,23 +445,35 @@ label .scene9:
 
     abhay "What's the matter, Donatello?"
 
+    show donatello at talking
+
     donatello "Well, {w=0.25}Abhay, {w=0.25}you know I would rather trust my own analysis."
 
     donatello "Sales reviews are complex, and require a lot of experience."
 
+    show donatello dark at not_talking
+
     abhay "But Priyanka has been here longer than you, Donatello, why can’t she help?"
+
+    show donatello at talking
 
     donatello "Abhay, talking to clients is one thing, but this is high level managerial stuff-"
 
+    show donatello dark at not_talking
+
     abhay "And you think she can't do it?"
+
+    show donatello at talking
 
     donatello "She can’t, Abhay."
 
     donatello "She’s not fit for this level of responsibility."
 
-    donatello "She may have received the same education, but she’s a woman,"
+    donatello "She may have received the same education, but she’s a woman."
 
     donatello "It's a very different situation."
+
+    show donatello dark at not_talking 
 
     abhay "I see."
 
@@ -388,7 +483,8 @@ label .scene9:
 
     narration "With that, you talk, and talk for long enough for Donatello to forget what you just asked."
 
-    hide donatello with dissolve
+    hide donatello
+    with dissolve
 
     thinking "What should I do now?"
 
@@ -454,14 +550,16 @@ label .scene10:
 label .scene11:
     window hide
     show bg lunch_room with fade
-    show priyanka smiling with dissolve
+    show priyanka smiling dark at center, not_talking
+    with dissolve
 
     narration "You sit next to Priyanka and engage in a small talk with her.{p}
                 After a while, you decide to jump in."
 
     abhay "How come you've been working here for 2 years, and never asked for a promotion, Priyanka?"
 
-    show priyanka with dissolve
+    show priyanka at talking
+    with dissolve
 
     priyanka "Because promotions have to be approved by the higher management, Abhay"
 
@@ -469,9 +567,15 @@ label .scene11:
 
     priyanka "So it's no use, you see?"
 
+    show priyanka dark at not_talking
+
     abhay "But Bapat is in your department, and has been promoted, hasn't he?"
 
+    show priyanka at talking
+
     priyanka "It's not the same."
+
+    show priyanka dark at not_talking
 
     abhay "How so?"
 
@@ -479,21 +583,31 @@ label .scene11:
 
     abhay "How so, Priyanka?"
 
+    show priyanka at talking
+
     priyanka "He’s friends with The Gopi, and The Donald—{w=0.5}Gopinath, and Donatello Sirs, I mean, and-"
 
+    show priyanka dark at not_talking
+
     abhay "That shouldn't matter, this is a {i}company{/i}, not a club!"
+
+    show priyanka at talking
 
     priyanka "Yes, Abhay, but it’s like that, and I’m a woman."
 
     priyanka "Have you ever seen a woman being promoted here?"
 
+    show priyanka dark at not_talking
+
     abhay "Many of them."
 
     abhay "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
 
-    show priyanka smiling with dissolve
+    show priyanka smiling at talking
 
     priyanka smiling "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
+
+    show priyanka dark at talking
 
     thinking "I have heard enough."
 
@@ -512,10 +626,12 @@ label .scene11:
     else:
         thinking "I have done enough investigating, it's time to take a decision."
 
+    hide priyanka with dissolve
+
     menu:
-        "Talk to Manali." if not talk_manali:
+        "Take a decision." if not talk_manali:
             jump .scene12
-        "Keep investigating." if not talk_bapat or not talk_donatello if not email_act_2:
+        "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
             jump .investigate
         "Take a decision now":
             jump .scene13
@@ -523,7 +639,8 @@ label .scene11:
 label .scene12:
     window hide
     show bg lunch_room with dissolve
-    show manali with dissolve
+    show manali dark at center, not_talking
+    with dissolve
 
     narration "You catch up with Manali as she’s about to finish her lunch.{p}
                 You take the time to grab a tray, pour yourself some spinach soup, sit next to her, and start talking about her department."
@@ -532,19 +649,28 @@ label .scene12:
 
     abhay "You’re doing a great job, handling the secretary, the security, and the transportation all together!"
 
-    show manali smiling with dissolve
+    show manali smiling at talking
+    with dissolve
 
     manali smiling "It’s Giti, Abhay Sir, she’s working so much, and she’s very efficient."
+
+    show manali smiling dark at not_talking
+    with dissolve
 
     abhay "It’s been what?{w=0.5} Three years now that she’s doing that?"
 
     narration "You drink a mouthful of soup, it’s cold already."
 
+    show manali smiliing at talking
+
     manali smiling "Three years, Abhay Sir, and she never complains."
+
+    show manali smiling dark at not_talking
 
     abhay "Yet she’s never been promoted"
 
-    show manali with dissolve
+    show manali dark at not_talking
+    with dissolve
 
     manali "...!"
 
@@ -552,21 +678,35 @@ label .scene12:
 
     narration "You take another spoon of soup, still looking at her, drink it with a grimace, and push the bowl aside on your tray."
 
+    show manali at talking
+
     manali "You should, Sir, but he probably will not listen."
+
+    show manali dark at not_talking
 
     abhay "And why is that?"
 
+    show manali at talking
+
     manali "I don’t know, Sir, I just said that for no reason."
+
+    show manali dark at not_talking
 
     abhay "Of course there's a reason, please tell me."
 
+    show manali at talking
+
     manali "She’s got a very good position already, and maybe they don’t want to give her too much responsibilities because-"
+
+    show manali dark at not_talking
 
     abhay "Because she's a woman?"
 
-    show manali nervous with dissolve
+    show manali nervous at talking
 
     manali nervous "I didn’t say that, Sir!"
+
+    show manali nervous dark at not_talking
 
     abhay "But you meant that."
 
@@ -591,10 +731,13 @@ label .scene12:
         else:
             thinking "I have done enough investigating, it's time to take a decision."
 
+    hide manali
+    with dissolve
+
     menu:
         "Talk to Priyanka." if not talk_priyanka:
             jump .scene12
-        "Keep investigating." if not talk_bapat or not talk_donatello if not email_act_2:
+        "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
             jump .investigate
         "Take a decision now":
             jump .scene13
@@ -631,7 +774,8 @@ label .scene14:
 
     narration "You call Giti to your office."
 
-    show giti with dissolve
+    show giti dark at center, not_talking
+    with dissolve
 
     narration "Once she's sat, you begin."
 
@@ -639,17 +783,27 @@ label .scene14:
 
     giti "...!"
 
+    show giti at talking
+
     giti "T-Thank you, Abhay Sir."
 
     show giti smile
+    with dissolve
 
     giti smiling "Thank you, Abhay Sir, {b}thank you{/b}."
+
+    show giti smile dark at not_talking
 
     abhay "*laughs*"
 
     abhay "About time, isn't it?{w=0.5} Things should change around here."
 
+    show giti at talking
+
     giti "About time, Abhay Sir, about time, thank you."
+
+    hide giti
+    with dissolve
 
     narration "When she leaves, you fall back into your chair, resting your head upon your hands above your neck."
 
@@ -776,31 +930,45 @@ label .scene19:
 label .scene20:
     narration "You call Giti to your office."
 
-    show giti with dissolve
+    show giti dark at not_talking
+    with dissolve
 
     narration "Once she's sat, you begin."
 
     abhay "I have decided to approve your promotion request, Giti."
 
-    show giti stern with dissolves
+    show giti stern at talking
 
     giti stern "It's only fair, Abhay Sir."
 
+    show giti stern dark at not_talking
+
     abhay "So you will drop this case, won’t you?"
 
+    show giti stern at talking
+
     giti stern "Yes, Sir, I only want the promotion I should have had long ago."
+
+    show giti stern dark at not_talking
 
     abhay "Well, you have it."
 
     abhay "Please send me the acknowledgement of cancellation for the case, and I will promote you as I said."
 
+    show giti stern at talking
+
     giti stern "No, Abhay Sir, {w=0.5}you need to sign the promotion in counterpart with my Lawyer so that we are sure that it happens, and is registered."
 
     giti stern "At the same time, he will sign the cancellation in front of you, and provide you with the acknowledgement."
 
+    show giti stern dark at not_talking
+
     thinking "She has obviously studied this."
 
     abhay "Okay, okay, kindly plan this meeting after working hours, and make it happen quick."
+
+    hide giti
+    with dissolve
 
     menu:
         "The aftermath.":
