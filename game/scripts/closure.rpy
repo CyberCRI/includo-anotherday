@@ -1,5 +1,7 @@
 
 label closure:
+    scene bg closure_empty
+
     narration "The big day has finally come."
 
     narration "You're all gathered together, fidgeting as you wait for Ashwini, your new CEO, to step in."
@@ -14,23 +16,35 @@ label closure:
 
     narration "You see M. Gopinath from the corner of your eye, wearing a brand new tan like a new suit, white teeth out like a ravenous tiger, and you wonder where he's been all this time."
 
-    narration " Everybody stands up as the door opens, staring at the makeshift stage, and at the microphone. A middle-aged woman in a sari steps in, smiling."
+    show bg closure_ashwini
+
+    narration "Everybody stands up as the door opens, staring at the makeshift stage, and at the microphone. A middle-aged woman in a sari steps in, smiling."
 
     bapat "False alert!"
 
     narration "Bapat says this as he sits down, but the woman stares at him, stone cold, and walks straight to the microphone. Bapat stands up, sweating profusely as the woman starts to speak."
 
+    show ashwini dark at not_talking, center_left
+
     thinking "{i}Ashwini{/i}, of course!"
 
     thinking "Ashwini, why on Earth did I think the CEO was a man?!"
 
-    ashwini smiling "Good morning everybody. My name is Ashwini Baghyashree."
+    show ashwini smiling at talking
 
-    ashwini smiling "I am very happy to see you all gathered here today, as CRYPTALOO India is entering a new phase with the full support and guidance of our International Headquarters."
+    ashwini "Good morning everybody. My name is Ashwini Baghyashree."
+
+    ashwini "I am very happy to see you all gathered here today, as CRYPTALOO India is entering a new phase with the full support and guidance of our International Headquarters."
+
+    show ashwini
+    with dissolve
 
     ashwini "Having worked here for many years, you have paved the ground for CRYPTALOO's future successes, and will play an important role in the developments to come."
 
-    ashwini smiling "For this, I want to thank you all."
+    show ashwini smiling
+    with dissolve
+
+    ashwini "For this, I want to thank you all."
 
     narration "She pauses. Everybody applauses. You wonder what's coming next."
 
@@ -41,6 +55,9 @@ label closure:
     ashwini "I have followed the recent developments of the past weeks, and I must say that as far as global culture is concerned, I have been surprised!"
 
     if act_1_ending_14 == True or act_1_ending_33 == True:
+        show ashwini disappointed
+        with dissolve
+
         ashwini disappointed "I was saddened to learn that a woman could be shamed in your office without any reaction from its head management."
 
         ashwini disappointed "By laying the fault on Priyanka, or letting it happen, you have actually taken sides with the harassers against the victim."
@@ -59,37 +76,65 @@ label closure:
 
         ashwini "In that case, you should have reported the situation, ensured Priyanka of your support, and taken a firm action to stop the shaming she was facing."
     elif act_1_ending_34 == True:
-        ashwini smiling"I must say I'm impressed, M. Chandrakant."
+        show ashwini smiling
+        with dissolve
 
-        ashwini smiling "Not only did you resolve the situation caused by Priyanka's shaming by implementing a dress code that can’t be disputed since it applies to all of CRYPTALOO’s branches,"
+        ashwini "I must say I'm impressed, M. Chandrakant."
 
-        ashwini smiling "But you have also laid the ground for future policies towards inclusiveness, and tolerance masterfully!"
+        ashwini "Not only did you resolve the situation caused by Priyanka's shaming by implementing a dress code that can’t be disputed since it applies to all of CRYPTALOO’s branches,"
+
+        ashwini "But you have also laid the ground for future policies towards inclusiveness, and tolerance masterfully!"
     else:
         "<Error: Act 1 Ending Missing>"
 
     if act_2_ending_18 == True:
+        show ashwini smiling
+        with dissolve
+
         ashwini smiling "On another subject, I am happy to see that Giti has been promoted."
+
+        show ashwini
+        with dissolve
 
         ashwini "It was about time Madam Shaikh was rewarded for her efforts, and takes on more responsibilities with us."
 
         ashwini "Too long have we seen people thriving on titles, and positions, while the groundwork was done by someone else, this needs to change."
     elif act_2_ending_23 == True:
+        show ashwini disappointed
+        with dissolve
+
         ashwini disappointed "Unfortunately, we now have a lawsuit on our hands because you didn't hear Madam Shaikh's legitimate request out, M. Chandrakant."
+
+        show ashwini
+        with dissolve
 
         ashwini "If I'm not mistaken, she was leading the Transportation Department in addition to her job, and took many responsibilities that weren't her own."
 
-        ashwini disappointed "Why would you ignore her request for a promotion, was it undeserved?"
+        show ashwini disappointed
+        with dissolve
 
-        "I-I{w=0.25}, err-{w=0.25}, I wasn't,{w=0.25} I don't know."
+        ashwini "Why would you ignore her request for a promotion, was it undeserved?"
+
+        show ashwini dark at not_talking
+
+        abhay "I-I{w=0.25}, err-{w=0.25}, I wasn't,{w=0.25} I don't know."
+
+        show ashwini disappointed at talking
 
         ashwini disappointed "Yes, I know you don't know, M. Chandrakant, because you didn't consider her situation, or her value for the company, and now I must defuse this trial."
     else:
         "<Error: Act 2 Ending Missing>"
 
     if act_3_ending_10 == True:
+        show ashwini
+        with dissolve
+
         ashwini "This being said, I have been informed of an employee of this company, who had to face a difficult situation because of his sexual orientation."
 
-        ashwini "While I support and endorse your views on inclusiveness on this matter, M. Chandrakant, "
+        ashwini "While I support and endorse your views on inclusiveness on this matter, M. Chandrakant..."
+
+        show ashwini disappointed
+        with dissolve
 
         ashwini disappointed "The way you've dealt with the employees' reactions to this situation was rather harsh, even repressive."
 
@@ -99,6 +144,9 @@ label closure:
 
         ashwini disappointed "That wasn't very skillful, M. Chandrakant, and I withdraw the collective warning you have issued at that time."
     elif act_3_ending_13 == True:
+        show ashwini disappointed
+        with dissolve
+
         ashwini disappointed "This being said, I have been informed of an employee of this company, who had to face a difficult situation because of his sexual orientation."
 
         ashwini disappointed "I am well aware that this was a delicate situation."
@@ -107,13 +155,28 @@ label closure:
 
         ashwini disappointed "I am truly disappointed."
     elif act_3_ending_28 == True:
+        show ashwini
+        with dissolve
+
         ashwini "This being said, I have been informed of the situation of an employee of this company, who had to face a difficult situation because of his sexual orientation."
+
+        show ashwini smiling
+        with dissolve
 
         ashwini smiling "You have surprised me, M. Chandrakant, I must say, when you decided to apply the international policy to our Indian branch."
 
+        show ashwini
+        with dissolve
+
         ashwini "It wasn't your call to establish a new policy all by yourself though I understand you did it to defuse a potentially disruptive situation."
 
+        show ashwini smiling
+        with dissolve
+
         ashwini smiling "I appreciate your efforts."
+
+        show ashwini
+        with dissolve
 
         ashwini "I still need time to consider how to apply the international policy to our branch..."
 
@@ -122,6 +185,9 @@ label closure:
         "<Error: Act 3 Ending Missing>"
 
     if act_4_ending_10 == True:
+        show ashwini disappointed
+        with dissolve
+
         ashwini disappointed "Last but not least, I must remind you, M. Chandrakant, that India is a secular country!"
 
         ashwini disappointed "How on Earth did you come to the conclusion that you could fire an employee because she wouldn't want to participate to a religious ceremony?"
@@ -130,15 +196,30 @@ label closure:
 
         ashwini disappointed "An individual's religion shouldn't matter at the office, and if we believe in our Constitution, it shouldn't even matter anywhere in India!"
     elif act_4_ending_25 == True:
+        show ashwini
+        with dissolve
+
         ashwini "Last but not least, I wonder why you didn't accept to give your employees a room for their prayers, M. Chandrakant?"
 
         ashwini "Is that because you think that religion should have no say at all in the company?"
 
+        show ashwini disappointed
+        with dissolve
+
         ashwini disappointed "If this is the case, then why is the shrine still in the entrance?"
+
+        show ashwini
+        with dissolve
 
         ashwini "It's either all or none, M. Chandrakant, we can't pick and choose, and force our individual beliefs on others."
     elif act_4_ending_26 == True or act_4_ending_28 == True:
+        show ashwini
+        with dissolve
+
         ashwini "Last but not least, I must say that I approve your giving the employees a space for their prayers, M. Chandrakant."
+
+        show ashwini smiling
+        with dissolve
 
         ashwini smiling "We all work in the same company, but are different people, and we need to welcome everyone as they are regardless of their faith."
     else:
@@ -149,13 +230,22 @@ label closure:
             jump .ending
 
 label .ending:
+    show ashwini
+    with dissolve 
+
     ashwini "As you all can see, our small family is changing, and expanding."
 
     ashwini "This means that there will be new opportunities for all of you, and new ways of working together."
 
     ashwini "Some of you will feel pushed, and will resent the changes, while others will embrace them."
 
+    show ashwini smiling
+    with dissolve
+
     ashwini smiling "I want to let you know that I will always be available to listen to you, to help, and to support you."
+
+    show ashwini
+    with dissolve
 
     ashwini "In order to prove these words, I am not taking any action today except for one."
 
@@ -165,7 +255,11 @@ label .ending:
 
     narration "You raise your hand."
 
-    "Madam, you said you would take one action, which is it?"
+    show ashwini dark at not_talking
+
+    abhay "Madam, you said you would take one action, which is it?"
+
+    show ashwini at talking
 
     ashwini "Oh yes, that."
 
@@ -175,11 +269,14 @@ label .ending:
 
     ashwini "Where were you all this time?{w=0.5} Why didn't you answer your emails?"
 
-    ashwini disappointed "You know that you were supposed to be back last week, didn't you?"
+    show ashwini disappointed
+    with dissolve
+
+    ashwini "You know that you were supposed to be back last week, didn't you?"
 
     narration "M. Gopinath blushes, and growls something that you can't hear."
 
-    ashwini disappointed "You are fired, M. Gopinath."
+    ashwini "You are fired, M. Gopinath."
 
     pause 2
 
@@ -199,6 +296,9 @@ label .ending:
         jump .mixed_ending
 
 label .bad_ending:
+    show ashwini disappointed
+    with dissolve
+
     ashwini disappointed "You have managed to achieve the feat of getting the company sued, an employee quitting, "
 
     ashwini disappointed "And to change dramatically the atmosphere for the worst in just one week."
@@ -206,6 +306,9 @@ label .bad_ending:
     ashwini disappointed "I must say I didn’t think it was possible to be lacking empathy to this extent."
 
     ashwini disappointed "With M. Gopinath away, you had an opportunity to show what you were capable of, and, well, you did."
+
+    show ashwini
+    with dissolve
 
     thinking "Wrong. Wrong. Wrong. I got it all wrong!"
 
@@ -217,14 +320,20 @@ label .bad_ending:
 
     thinking "{i}What!{/i}"
 
+    show ashwini smiling
+    with dissolve
+
     ashwini smiling "If you accept, you can be her assistant, M. Chandrakant{w=0.25}, maybe you’ll learn from her."
 
-    ashwini disappointed "If it doesn’t suit you, you’re free to resign."
+    show ashwini
+    with dissolve
+
+    ashwini "If it doesn’t suit you, you’re free to resign."
 
     thinking "{i}Just.{w=1} Like.{w=1} That.{/i}"
 
     narration "You redden with anger, and prepare yourself to answer this infamy when the thought hits you like a bullet:{p}
-    {\i}What if she has a point?{w=0.5} What if you stayed indeed?{w=0.5} That would be a whole new story, yet to be written."
+    {\i}What if she has a point?{w=0.5} What if you stayed indeed?{w=0.5}{i} That would be a whole new story, yet to be written."
 
     jump .end
 
@@ -233,13 +342,20 @@ label .good_ending:
 
     ashwini "Weaker, less resolute men would have left the situations to fester, and waited for my coming."
 
+    show ashwini smiling
+    with dissolve
+
     ashwini smiling "But this is not what you did."
 
     ashwini smiling "Instead, you took upon you to solve everything as you could, listened to everyone, and tried to find the most inclusive solutions with an open mind."
 
+    show ashwini smiling dark at not_talking
+
     narration "You blush."
 
-    "T-That's only-"
+    abhay "T-That's only-"
+
+    show ashwini smiling at talking
 
     ashwini smiling "I am very impressed, and happy to see such qualities of both management, and empathy, in you."
 
@@ -247,21 +363,31 @@ label .good_ending:
 
     ashwini smiling "And to commend you for management training sessions at our International Headquarters."
 
+    show ashwini dark at not_talking
+
     narration "You feel a bit tipsy, and a bit proud. Just a week ago, you were reaching the office with a pang of anxiety, knowing that you would be the one in charge, and now it seems that you’ve been successful all the way."
 
     thinking "{i}Administrative Director?{w=1} Me?{/i}"
+
+    show ashwini at talking
 
     ashwini "M. Chandrakant?"
 
     narration "She was talking while you were trying to make sense out of her words."
 
-    "Yes, Madam?"
+    show ashwini dark at not_talking
+
+    abhay "Yes, Madam?"
+
+    show ashwini smiling at talking
 
     ashwini "I've asked you a question, {w=0.25}do you accept this position?"
 
-    "YES!"
+    show ashwini smiling dark at not_talking
 
-    "YES, MADAM!"
+    abhay "YES!"
+
+    abhay "YES, MADAM!"
 
     narration "And everybody laughs."
 
@@ -272,13 +398,21 @@ label .mixed_ending:
 
     ashwini "I know that you were alone in here with M. Gopinath on leave, and myself away. I know that it wasn’t easy."
 
-    "Yes, Madam.{w=0.25} I did my best, and-"
+    show ashwini dark at not_talking
 
-    ashwini disappointed "Your best wasn’t enough, M. Chandrakant, because I now have to deal with the aftermath of all this in spite of the good decisions you have taken here and there."
+    abhay "Yes, Madam.{w=0.25} I did my best, and-"
 
-    "Yes, Madam..."
+    show ashwini at talking
+
+    ashwini "Your best wasn’t enough, M. Chandrakant, because I now have to deal with the aftermath of all this in spite of the good decisions you have taken here and there."
+
+    show ashwini dark at not_talking
+
+    abhay "Yes, Madam..."
 
     narration "You blush."
+
+    show ashwini at talking
 
     ashwini "Since I’m here now, I am confident that these mistakes can be corrected."
 
@@ -286,7 +420,11 @@ label .mixed_ending:
 
     ashwini "But you will need to learn."
 
-    "I will, Madam, I promise, you'll see-"
+    show ashwini at not_talking
+
+    abhay "I will, Madam, I promise, you'll see-"
+
+    show ashwini at talking 
 
     ashwini smiling "This is a story that remains to be written. M. Chandrakant."
 

@@ -80,6 +80,12 @@ transform center_left:
 transform center_right:
     yalign -0.25 xalign 1.0
 
+transform center_center_left:
+    yalign -0.25 xalign 0.33
+
+transform center_center_right:
+    yalign -0.25 xalign 0.66
+
 transform talking:
     easein 0.25 zoom 1.025
 
@@ -92,7 +98,8 @@ transform move_right:
 transform move_left:
     easein 2.0 xalign 0.1
 
-transform move_center:
+transform move_center_from_right:
+    xalign 1.0
     easein 2.0 xalign 0.5
 
 transform change_transform(old, new):
@@ -113,4 +120,6 @@ transform change_transform(old, new):
         parallel:
             easein 0.5 alpha 1.0
 
+transform flip:
+    xzoom -1
 #define config.side_image_change_transform = change_transform

@@ -234,7 +234,7 @@ label .scene6:
 label .investigate:
 
     menu:
-        thinking "I have many options here."
+        thinking "How can I resolve this situation?"
         "Talk with the other women?" if talk_women == False:
             jump .scene7
         "Talk with Bapat?" if talk_bapat == False:
@@ -307,7 +307,7 @@ label .scene7:
     narration "With that, the conversation trails off, and you remember that you wanted to talk to the women."
 
     menu:
-        thinking "Ok, which one first?"
+        thinking "Ok, which one should I talk to first?"
         "Priyanka.":
             jump .scene11
         "Manali.":
@@ -351,10 +351,11 @@ label .scene8:
 
     abhay "I'm not talking about your department of course."
 
-    show bapat dark
-    with dissolve
+    show bapat at talking
 
     bapat "..."
+
+    show bapat dark at not_talking
 
     abhay "Obviously, I can't offer to promote all three, but I need to reward their efforts."
 
@@ -542,6 +543,7 @@ label .scene10:
         thinking "I have done enough investigating, it's time to take a decision."
 
     menu:
+            thinking "I know what my next move will be."
             "Take a decision.":
                 jump .scene13
             "Keep investigating." if not talk_women or not talk_bapat or not talk_donatello:
@@ -579,7 +581,11 @@ label .scene11:
 
     abhay "How so?"
 
+    show priyanka at talking
+
     priyanka "..."
+
+    show priyanka dark at not_talking
 
     abhay "How so, Priyanka?"
 
@@ -605,7 +611,7 @@ label .scene11:
 
     show priyanka smiling at talking
 
-    priyanka smiling "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
+    priyanka "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
 
     show priyanka dark at talking
 
@@ -629,6 +635,7 @@ label .scene11:
     hide priyanka with dissolve
 
     menu:
+        thinking "The next move should be obvious."
         "Take a decision." if not talk_manali:
             jump .scene12
         "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
@@ -669,10 +676,11 @@ label .scene12:
 
     abhay "Yet she’s never been promoted"
 
-    show manali dark at not_talking
-    with dissolve
+    show manali at talking
 
-    manali "...!"
+    manali "..."
+
+    show manali dark at not_talking
 
     abhay "Manali, I will talk to M. Gopinath about it."
 
@@ -735,6 +743,7 @@ label .scene12:
     with dissolve
 
     menu:
+        "What should I do ?"
         "Talk to Priyanka." if not talk_priyanka:
             jump .scene12
         "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
@@ -758,6 +767,7 @@ label .scene13:
 label .decide:
 
     menu:
+        thinking "My decision will be..."
         "Approve her promotion.":
             jump .scene14
         "Write an email to M. Gopinath." if not email_act_2_2:
@@ -781,18 +791,19 @@ label .scene14:
 
     abhay "I have decided to approve your promotion request, Giti."
 
-    giti "...!"
-
     show giti at talking
+
+    giti "..."
+
+    show giti dark at not_talking
 
     giti "T-Thank you, Abhay Sir."
 
-    show giti smile
-    with dissolve
+    show giti smiling
 
-    giti smiling "Thank you, Abhay Sir, {b}thank you{/b}."
+    giti "Thank you, Abhay Sir, {b}thank you{/b}."
 
-    show giti smile dark at not_talking
+    show giti smiling dark at not_talking
 
     abhay "*laughs*"
 
@@ -801,6 +812,8 @@ label .scene14:
     show giti at talking
 
     giti "About time, Abhay Sir, about time, thank you."
+
+    show giti dark at talking
 
     hide giti
     with dissolve
@@ -918,6 +931,7 @@ label .scene19:
     thinking "Looks like she's been prepared all along."
 
     menu:
+        thinking "How can I deal with the Giti situation?"
         "You can't risk a trial, promote her.":
             jump .scene20
         "Ask M. Rajkumar, The company's laywer, for his advice." if not email_act_2_3:
@@ -994,6 +1008,7 @@ label .scene21:
     thinking "It's time to take my decision."
 
     menu:
+        thinking "Either I promote her or I just ignore her."
         "Promote Giti.":
             jump .scene20
         "Ignore her.":

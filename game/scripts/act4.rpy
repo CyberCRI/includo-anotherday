@@ -44,30 +44,41 @@ label act4:
 
     narration "Just as you’re imagining the ceremony, smiling to yourself, you notice Giti waiting for you by your office’s door with a grim expression."
 
-    show giti with dissolve
+    show giti dark at not_talking, center
+    with dissolve
 
     thinking "What now?"
 
     narration "You let her in, and she starts talking straight away."
 
+    show giti at talking
+
     giti "Abhay Sir, this is because of the ceremony."
+
+    show giti dark at not_talking
 
     abhay "Oh yes, Giti! {w=0.25}It's going to be great!"
 
-    show giti sad
+    show giti sad at talking
 
-    giti sad "Abhay Sir, maybe you forgot, I am Muslim."
+    giti "Abhay Sir, maybe you forgot, I am Muslim."
+
+    show giti sad dark at not_talking
 
     thinking "{b}Of course{/b}, how could I have forgotten?"
 
     abhay "My goodness, that's true!{w=0.5} Let's-"
 
-    giti sad "I cannot participate, Abhay Sir, these are not my beliefs."
+    show giti at talking
+
+    giti "I cannot participate, Abhay Sir, these are not my beliefs."
+
+    show giti dark at not_talking
 
     show narration_background
 
     menu:
-        thinking "..."
+        thinking "What should I tell her?"
         "\"I know exactly what to do, what about this...\"":
             jump .scene2
         "\"Give me today to think about it, and talk with the others\"":
@@ -115,6 +126,7 @@ label .employees:
 
 label .advices:
     menu:
+        thinking "Now know what my next move will be."
         "Tell Giti you'll fire her if she doesn't come." if talk_bapat_act4 or talk_priyanka_act4 or talk_donatello_act4:
             jump .scene9
         "Offer Giti to take a sick leave tomorrow." if talk_donatello_act4:
@@ -126,35 +138,48 @@ label .advices:
 
 label .scene4:
 
-    show bapat with dissolve
+    show bapat at talking, center
+    with dissolve
 
     bapat "Abhay, it will ruin the ceremony if she doesn’t come!"
 
     bapat "It's either all of us, or none of us."
 
+    show bapat dark at not_talking
+    with dissolve
+
     abhay "But Bapat, she's not Hindu."
+
+    show bapat at talking
 
     bapat "Hindu, or not, Abhay, it's not the point, it's being together for the company."
 
     show bapat angry
+    with dissolve
 
     bapat angry "How can she exclude herself, and still pretend she's working with us?"
 
+    show bapat dark at not_talking
+
     abhay "Well, technically, Bapat, we also exclude her by having a Hindu ceremony."
 
-    show bapat
+    show bapat at talking
 
     bapat "No, no, Abhay, you don't get it, it's not about religion, it's about the team spirit."
 
     bapat "You know how much it matters to me."
 
+    show bapat dark at not_talking
+
     abhay "Indeed."
 
     abhay "You have proven it {i}quite a lot{/i} these last few days... {w=0.5}*sigh*"
 
-    show bapat smug
+    show bapat smug at talking
 
-    bapat smug "Yes, Abhay, you know me well."
+    bapat "Yes, Abhay, you know me well."
+
+    show bapat smug dark at not_talking
 
     thinking "Seems like he didn't take the hint."
 
@@ -162,51 +187,66 @@ label .scene4:
 
     abhay "So what would you advise me?"
 
-    show bapat
+    show bapat at talking
 
     bapat "Tell her that she's fired if she doesn't come, it's the only way, Abhay."
+
+    show bapat at not_talking
 
     thinking "Should I listen to his advice?"
 
     $talk_bapat_act4 = True
 
-    hide bapat with dissolve
+    hide bapat
+    with dissolve
 
     jump .advices
 
 label .scene5:
     
-    show priyanka with dissolve
+    show priyanka at talking, center
+    with dissolve
 
     priyanka "We can't have this, Abhay."
+
+    show priyanka dark at not_talking
 
     abhay "And why not?"
 
     abhay "Why not respect her religion?"
 
-    show priyanka angry
+    show priyanka angry at talking
 
-    priyanka angry "This is India, Abhay, the Motherland, this is a Hindu country."
+    priyanka "This is India, Abhay, the Motherland, this is a Hindu country."
 
-    priyanka angry "Everyone has to accept, or to leave, Abhay."
+    priyanka "Everyone has to accept, or to leave, Abhay."
 
-    priyanka angry "This is as much a part of being Indian as knowing the language, or the National Anthem."
+    priyanka "This is as much a part of being Indian as knowing the language, or the National Anthem."
+
+    show priyanka dark at not_talking
 
     abhay "How-{w=0.25}{nw}"
 
-    priyanka angry "She can have her religion of course, but this is a public function, that she has to attend."
+    show priyanka at talking
+
+    priyanka "She can have her religion of course, but this is a public function, that she has to attend."
+
+    show priyanka dark at not_talking
 
     abhay "You know that India is a secular country, don't you?"
 
-    show priyanka
+    show priyanka at talking
 
     priyanka "This has nothing to do with that, Abhay, this is official business."
+
+    show priyanka dark at not_talking
 
     abhay "I've heard you, Priyanka."
 
     abhay "*sigh*{w=1} Let me consider it."
 
-    hide priyanka with dissolve
+    hide priyanka
+    with dissolve
 
     thinking "Should I listen to her advice?"
 
@@ -216,31 +256,45 @@ label .scene5:
 
 label .scene6:
 
-    show donatello determined with dissolve
+    show donatello determined at center, talking
+    with dissolve
 
-    donatello determined "This is tricky, Abhay."
+    donatello "This is tricky, Abhay."
 
-    donatello determined "The others won't understand if she won't come, but if you force her, she will snap."
+    donatello "The others won't understand if she won't come, but if you force her, she will snap."
+
+    show donatello determined dark at not_talking
 
     abhay "Exactly."
 
-    donatello determined "Still, if you want this to be an opportunity to unite the employees, it needs to happen."
+    show donatello determined at talking
+
+    donatello "Still, if you want this to be an opportunity to unite the employees, it needs to happen."
 
     show donatello
+    with dissolve
 
     donatello "So I really don't know what to advise you."
 
+    show donatello at not_talking
+
     abhay "What would you do yourself in my position?"
+
+    show donatello at talking
 
     donatello "I don't know. She can't just skip it openly."
 
     show donatello determined
+    with dissolve
 
     donatello determined "Either you force her, and see what happens,{w=0.25} or you let her call in sick, maybe?"
 
-    show donatello
+    show donatello thoughtful
+    with dissolve
 
     donatello "She could take a sick leave, and you would tell she's got a flu, or something?"
+
+    show donatello thoughtful dark at not_talking
 
     thinking "Should I listen to his advice?"
 
@@ -251,31 +305,44 @@ label .scene6:
     jump .advices
 
 label .scene7:
-    show manali with dissolve
+    show manali at center, talking
+    with dissolve
 
     manali "Oh why bother, respected Sir?"
 
     manali "One India, many religions."
 
+    show manali dark at not_talking
+
     thinking "I-I didn't expect this. She's surprising me this time."
 
     thinking "So this is where she takes a stand?"
 
+    show manali at talking
+
     manali "Why not let Giti be, she can always come later, why the intolerance?"
+
+    show manali dark at not_talking
 
     abhay "It's just that the others won't like this, Manali."
 
+    show manali at talking
+
     manali "Abhay Sir, let them talk."
 
-    manali "why is it that we always hurt the feelings of someone in this company?"
+    manali "Why is it that we always hurt the feelings of someone in this company?"
+
+    show manali dark at not_talking
 
     abhay "I wish this could be as simple as that, Manali."
 
-    show manali smiling
+    show manali smiling at talking
 
     manali smiling "Of course, this would be more simple if we were all Hindus, Abhay Sir, but this isn’t our reality."
 
     manali smiling "This is why we have national holidays for all religions."
+
+    show manali smiling dark at not_talking
 
     abhay "You may have a point here. I need to think about it."
 
@@ -318,17 +385,23 @@ label .scene9:
 
     show bg office with dissolve
 
-    show giti with dissolve
+    show giti dark at not_talking, center
+    with dissolve
 
     abhay "It's not possible, Giti.{w=0.25} We are like one family here."
 
     abhay "Surely you can't go away when your family has a function, can you?"
 
-    show giti angry
+    show giti at talking
 
-    giti angry "...!"
+    giti "..."
 
-    giti angry "My family would respect my religion, Abhay Sir."
+    show giti stern
+    with dissolve
+
+    giti "My family would respect my religion, Abhay Sir."
+
+    show giti stern dark at not_talking
 
     abhay "As we all do, as we all do,{w=0.25} but it's not only about religion."
 
@@ -336,21 +409,29 @@ label .scene9:
 
     abhay "This is why I can't have you running away at an important time for the company, I'm sure you understand."
 
-    giti angry "Not really, Abhay Sir, I-"
+    show giti stern at talking
+
+    giti "Not really, Abhay Sir, I-"
+
+    show giti stern dark at not_talking
 
     abhay "Now come on."
 
     abhay "I'm sure you want to reassure everybody that you belong here."
 
-    show giti sad
+    show giti compassionate at talking
 
-    giti sad "I thought I was belonging already, Abhay Sir."
+    giti "I thought I was belonging already, Abhay Sir."
+
+    show giti sad dark at not_talking
 
     abhay "Indeed, indeed, all the more reason why you should come then."
 
-    show giti angry
+    show giti stern at talking
 
-    giti angry "I will not, Sir."
+    giti "I will not, Sir."
+
+    show giti stern dark at not_talking
 
     abhay "..."
 
@@ -362,7 +443,8 @@ label .scene9:
 
     narration "You leave the office."
 
-    hide giti with dissolve
+    hide giti
+    with dissolve
 
     menu:
         thinking "That went well."
@@ -392,78 +474,107 @@ label .scene11:
 
     show bg office with dissolve
 
-    show giti with dissolve
+    show giti dark at center, not_talking
+    with dissolve
 
     abhay "I think I have found a solution, Giti."
 
+    show giti at talking
+
     giti "Yes, Abhay Sir?"
+
+    show giti at not_talking
 
     abhay "I understand that you don’t want to participate in the ceremony..."
 
     abhay "...But from what I’ve gathered, it’s not so easy for everyone to accept that."
 
+    show giti at talking
+
     giti "What's so difficult to accept, Abhay Sir?"
+
+    show giti dark at not_talking
 
     abhay "Oh you know very well, Giti, please, let me help you with this."
 
-    show giti determined
+    show giti stern at talking
 
-    giti determined "I am listening, Abhay Sir."
+    giti "I am listening, Abhay Sir."
+
+    show giti dark at not_talking
 
     abhay "Let’s just say you caught a flu{w=0.25}, or something, you know,{w=0.25} call in sick, and take a leave tomorrow so that you can skip the blessing."
 
-    show giti sad
+    show giti compassionate at talking
 
-    giti sad "But, Sir, everybody will know that I have no flu, and that I just want to avoid the blessing."
+    giti "But, Sir, everybody will know that I have no flu, and that I just want to avoid the blessing."
+
+    show giti compassionate dark at not_talking
 
     abhay "Yes, but you can always pretend that you were sick to save face."
 
-    giti sad "But this wouldn’t be the truth, and…"
+    show giti compassionate at talking
 
-    show giti 
+    giti "But this wouldn’t be the truth, and…"
+
+    show giti
+    with dissolve
 
     giti ".{w=0.25}.{w=0.25}."
 
-    show giti determined
+    show giti stern
+    with dissolve
 
-    giti determined "I understand, Abhay Sir, I will stay home tomorrow."
+    giti "I understand, Abhay Sir, I will stay home tomorrow."
+
+    hide giti
+    with dissolve
 
     menu:
         "The aftermath.":
-            hide giti with dissolve
             jump .scene13
 
 label .scene12:
 
-    show giti with dissolve
+    show giti compassionate dark at not_talking, center
+    with dissolve
 
     abhay "You can have the religion you like, Giti, and I respect that."
 
     narration "She nods."
 
-    abhay "When the Brahmin will come, just go drink a chai downstairs, or whatever, okay?"
+    show giti dark
+    with dissolve
+
+    abhay "When the Brahmin will come, just go drink a chair downstairs, or whatever, okay?"
 
     abhay "Let’s not make a big issue of this, there’s nothing to worry about."
 
+    show giti at talking
+
     giti "I appreciate it, Abhay Sir."
+
+    show giti at not_talking
 
     abhay "It’s not just me, it’s the Law, Giti, we must abide with the freedom of conscience, and religion."
 
     abhay "I don’t even see how that could be a problem for anyone, we’re not an ashram here."
 
-    show giti smiling
+    show giti smiling at talking
 
     giti "*laughs*"
 
-    show giti determined
+    show giti stern dark at not_talking
 
-    giti determined ".{w=0.25}.{w=0.25}."
+    giti ".{w=0.25}.{w=0.25}."
 
     abhay "What's the matter, Giti?"
 
-    show giti
+    show giti at talking
 
     giti "Nothing, it’s nothing Abhay Sir, thank you."
+
+    show giti dark at not_talking
 
     narration "And with that, she salutes you with her hands joined, and leaves your office."
 
@@ -487,25 +598,36 @@ label .scene13:
 
     narration "You let her in."
 
-    show giti with dissolve
+    show giti dark at center, not_talking
+    with dissolve
 
     abhay "What can I do for you, Giti Madam?"
 
+    show giti at talking
+
     giti "Abhay Sir, I was thinking."
+
+    show giti dark at not_talking
 
     abhay "Good, I approve this, we should be thinking more!"
 
+    show giti at talking
+
     giti "Yes, Abhay Sir."
+
+    show giti dark at not_talking
 
     abhay "I was kidding, Giti, please tell me."
 
-    show giti determined
+    show giti stern at talking
 
-    giti determined "You know, Sir, since we were talking about it the other day, I thought I needed to tell you everything."
+    giti "You know, Sir, since we were talking about it the other day, I thought I needed to tell you everything."
+
+    show giti stern dark at not_talking 
 
     abhay "About what?"
 
-    show giti
+    show giti at talking
 
     giti "About religion{w=0.25}, you see{w=0.25}, Abhay Sir{w=0.25}, I do my prayers during the day."
 
@@ -513,19 +635,22 @@ label .scene13:
 
     giti "And now the ladies' toilets are clogged too so that I have to do in the general toilet."
 
+    show giti dark at not_talking
+
     thinking "I know what she means."
 
     thinking "The men's loo could use some refresh{w=0.25}, or a flamethrower maybe."
 
     abhay "So what do you want, Giti?"
 
-    show giti determined 
+    show giti determined at talking
 
-    giti determined "I want a room I can use for my prayers, Abhay Sir."
+    giti "I want a room I can use for my prayers, Abhay Sir."
 
     show giti sad
+    with dissolve
 
-    giti sad "It's not good to pray in the dirt like this."
+    giti "It's not good to pray in the dirt like this."
 
     menu:
         thinking "What should I do?"
@@ -555,25 +680,56 @@ label .scene15:
 
     abhay "Why did it have to be okras...?"
 
+    show giti smiling at left, talking
+    with dissolve
+
     giti smiling "You have fried paneer, don't you complain."
 
-    priyanka smiling "This won't happen if you cook it yourself, Abhay Sir!"
+    show giti smiling dark at not_talking with None
+    show priyanka smiling at center_center_right, talking
+    with dissolve
+
+    priyanka "This won't happen if you cook it yourself, Abhay Sir!"
+
+    show priyanka smiling dark at not_talking with None
+    show bapat angry at center_center_left, talking
+    with dissolve
 
     bapat angry "This is not a man's job!"
 
+    show bapat dark at not_talking with None
+
     abhay "I'm afraid I don't cook so well."
+
+    show manali smiling at right, talking
+    with dissolve
 
     manali smiling "Then you learn! Hihi!"
 
+    show manali smiling dark at not_talking
+
     abhay "I will try.{w=0.25} Why not?"
 
-    manali smiling "See, Bapat, Abhay Sir is ready for new experiences at least."
+    show manali smiling at talking
+
+    manali "See, Bapat, Abhay Sir is ready for new experiences at least."
+
+    show manali smiling dark at not_talking
+    show bapat smug at talking
 
     bapat smug "As is Donatello."
 
-    donatello determined "You're really looking for trouble, aren't you?"
+    show bapat smug dark at not_talking with None
+    show donatello determined at talking, center with dissolve
+
+    donatello "You're really looking for trouble, aren't you?"
+
+    show donatello determined dark at not_talking behind bapat
+    show bapat at talking
 
     bapat "Just kidding this time, just kidding, trust me."
+
+    show bapat dark at not_talking
 
     thinking "Well, give peace a chance."
 
@@ -631,13 +787,20 @@ label .scene17:
 
     show bg meeting_room with dissolve
 
-    show bapat angry with dissolve
+    show bapat angry at center, talking 
+    with dissolve
 
-    bapat angry "The nerve of this woman!"
+    bapat "The nerve of this woman!"
+
+    show bapat dark at not_talking
 
     abhay "Well, Bapat, all that she wants is to be able to pray."
 
+    show bapat angry at talking
+
     bapat angry "She can pray to her God, who am I to say she can't pray?"
+
+    show bapat angry dark at not_talking
 
     abhay "You know very well that praying in the toilets isn’t very nice, Bapat, she does that!"
 
@@ -647,13 +810,16 @@ label .scene17:
 
     bapat "Oh so she uses our toilets for this as well?"
 
-    show bapat smug 
+    show bapat smug
+    with dissolve
 
     bapat smug "No wonder they’re dirty."
 
+    show bapat smug dark at not_talking
+
     abhay "What can she do, she has no other spaces in the company for praying!"
 
-    show bapat angry
+    show bapat angry at talking
 
     bapat angry "She can go to the mosque!"
 
@@ -661,21 +827,28 @@ label .scene17:
 
     bapat angry "Do I ask for special rights?"
 
+    show bapat dark at not_talking
+
     abhay "You aren’t exactly a member of a minority in need, Bapat."
 
-    show bapat angry
+    show bapat angry at talking
 
     bapat angry "This is our country, Abhay, don’t fall prey to their stratagems!"
 
     show bapat smug
+    with dissolve
 
     bapat smug "Already they should be grateful that we play {i}Khwaja Mere Khwaja{/i} during company functions like we always do, so that they’re happy"
 
     show bapat angry
+    with dissolve
 
     bapat angry "That’s it, don’t overdo it!"
 
+    show bapat angry dark at not_talking
+
     hide bapat
+    with dissolve
 
     $talk_bapat_act4_2 = True
 
@@ -687,31 +860,49 @@ label .scene18:
 
     show bg meeting_room with dissolve
 
-    show priyanka with dissolve
+    show priyanka at talking, center
+    with dissolve
 
     priyanka "I knew this would happen."
 
     priyanka "The minute you decide to give them special treatment, they ask for more, and more, and-"
 
+    show priyanka annoyed dark at not_talking
+
     abhay "I get it, Priyanka."
 
-    show priyanka angry
+    show priyanka angry at talking
 
-    priyanka angry "You can’t turn this office into a mosque, Abhay!"
+    priyanka "You can’t turn this office into a mosque, Abhay!"
+
+    show priyanka angry dark at not_talking
 
     abhay "We’re talking one room, here, small one, for less than an hour a day in total."
 
+    show priyanka angry at talking
+
     priyanka angry "And then what?{w=0.5} What will it be next?{w=0.5} More holidays?{w=0.5} A salary raise?"
+
+    show priyanka angry dark at not_talking
 
     abhay "She never asked for any of this, it’s only decent, Priyanka, she’s been kneeling in the toilets for three years!"
 
+    show priyanka angry at talking
+
     priyanka angry "It makes us all very uncomfortable, Abhay!"
+
+    show priyanka angry dark at not_talking
 
     abhay "Who's \"us\", tell me?"
 
-    priyanka angry"{i}All of us!{/i}"
+    show priyanka angry at talking
+
+    priyanka "{i}All of us!{/i}"
+
+    show priyanka dark angry at not_talking
 
     hide priyanka
+    with dissolve
 
     $talk_priyanka_act4_2 = True
 
@@ -722,57 +913,76 @@ label .scene19:
 
     show bg meeting_room with dissolve
 
-    show donatello with dissolve
+    show donatello at talking, center
+    with dissolve
 
     donatello "This is too much, Abhay"
 
+    show donatello dark at not_talking
+
     abhay "Why?"
+
+    show donatello thoughtful at talking
 
     donatello "Not forcing her to go to Hindu ceremonies is one thing, but this prayer space idea is going too far."
 
     donatello "It’s not Emirate Airlines here."
 
+    show donatello thoughtful at not_talking
+
     abhay "You do realize she’s praying in the {i}toilet{/i}, Donald?"
 
-    show donatello determined
+    show donatello determined at talking
 
-    donatello determined "And what of us all?"
+    donatello "And what of us all?"
 
-    donatello determined "We don’t have a room either, this is unfair."
+    donatello "We don’t have a room either, this is unfair."
+
+    show donatello determined dark at not_talking
 
     abhay "This is a different religion, that’s why."
 
     abhay "We allow sikhs with turbans, and even kukris, don’t we?"
 
-    show donatello
+    show donatello nervous at talking
 
     donatello "It’s not the same thing,{w=0.25} we didn’t build a mandir in here, did we?"
+
+    show donatello nervous dark at not_talking
 
     abhay "But we have a mandir, just over there."
 
     narration "You point in the general direction of the shrine in the office."
 
-    show donatello angry
+    show donatello angry at talking
 
     donatello angry "Not a mandir room, Abhay, she wants a whole room just for herself!"
 
-    show donatello
+    show donatello thoughtful
+    with dissolve
 
     donatello "How can you accept this?"
 
     show donatello angry
+    with dissolve
 
     donatello angry "How come they have all the benefits, and nothing for us, this is {i}our{/i} country!"
 
+    show donatello determined dark at not_talking
+
     abhay "You don’t accept her religion, Donald."
 
-    show donatello determined
+    show donatello at talking
 
-    donatello determined "Of course I do."
+    donatello "Of course I do."
 
-    show donatello
+    show donatello thoughtful
+    with dissolve
 
     donatello "Don’t be naive, Abhay, you can’t give them what even we don’t have!"
+
+    hide donatello
+    with dissolve
 
     $talk_donatello_act4_2 = True
 
@@ -784,37 +994,69 @@ label .scene20:
 
     show bg office with dissolve
 
-    show manali with dissolve
+    show manali at center, talking
+    with dissolve
 
     manali "So she's been praying in the toilet for three years?"
 
+    show manali dark at not_talking
+
     narration "You nod. She whistle."
+
+    show manali at talking
 
     manali "Maybe it's about time we do something to change that?"
 
+    show manali dark at not_talking
+
     abhay "Yes, Manali, but don’t you think that this would be unfair for Hindus since we have no prayer room either?"
+
+    show manali at talking 
 
     manali "..."
 
+    show manali smiling
+    with dissolve
+
     manali "You know, Abhay, if I imagine myself in her place..."
 
+    show manali nervous
+    with dissolve
+
     manali "I must say that the whole office is a bit of a prayer room."
+
+    show manali
+    with dissolve
 
     manali "There’s the Ganapati up there, and the incense, and flower offerings we do in the morning."
 
     manali "We even invite brahmins to bless the office!"
 
+    show manali dark at not_talking
+
     abhay "Fair enough."
 
     abhay "So you think I should agree?"
 
+    show manali at talking
+
     manali "I don’t know.{w=0.25} I don’t know how the others will react."
+
+    show manali dark at not_talking
 
     abhay "*sigh*"
 
+    show manali at talking
+
     manali "Maybe you could ask the brahmin who came yesterday?"
 
+    show manali smiling
+    with dissolve
+
     manali "He seemed a good man."
+
+    hide manali
+    with dissolve
 
     $talk_manali_act4_2 = True
 
@@ -882,41 +1124,56 @@ label .scene23:
 
     show bg meeting_room with dissolve
 
-    show giti with dissolve
+    show giti dark at center, not_talking
+    with dissolve
 
     abhay "I can't do this, Giti."
 
     thinking "Better get straight to the point."
 
+    show giti at talking
+
     giti "Why not, Abhay Sir?"
+
+    show giti dark at not_talking
 
     abhay "Because the others won’t understand why Muslims would get a special place, when we don't have any such spaces for Hindus, they think it’s unfair."
 
+    show giti stern at talking
+
     giti "Yet they have a shrine in the office itself, and blessing ceremonies."
+
+    show giti stern dark at not_talking
 
     abhay "It’s true, Giti, but that’s how it is, there’s nothing I can do. I am sorry."
 
-    show giti compassionate
+    show giti compassionate at talking
 
-    giti compassionate "We can’t have everything, can we?"
+    giti "We can’t have everything, can we?"
+
+    show giti compassionate at not_talking
 
     narration "You nod, and smile, happy that she understands."
 
-    show giti angry
+    show giti stern at talking
 
-    giti angry "We can't even have tolerance these days, this is too much to ask for in this world."
+    giti stern "We can't even have tolerance these days, this is too much to ask for in this world."
+
+    show giti stern dark at not_talking
 
     narration "You stop smiling."
 
     abhay "Giti, please, don't talk it like this..."
 
-    show giti smiling
+    show giti smiling at talking
 
-    giti smiling "It’s fine, Abhay Sir, I’ve been praying in the toilets for three years."
+    giti smiling "It’s fine, Abhay Sir."
 
-    hide giti with dissolve
+    giti smiling "I’ve been praying in the toilets for three years."
 
     giti smiling "I can do it some more."
+
+    hide giti with dissolve
 
     menu:
         thinking "What now?"
@@ -928,23 +1185,31 @@ label .scene24:
 
     show bg meeting_room with dissolve
 
-    show giti with dissolve
+    show giti dark at not_talking
+    with dissolve
 
     abhay "Of course, you'll have it, Giti."
 
-    giti "...!"
+    show giti at talking
+
+    giti "..."
 
     show giti smiling
+    with dissolve
 
     giti smiling "Sir, Abhay Sir, this is very good of you."
+
+    show giti smiling dark at not_talking
 
     abhay "Don’t mention it, Giti, it’s nothing."
 
     abhay "We never use the fifth floor storage room anyway so, why not get it cleaned, and prepared for your prayers?"
 
-    show giti smiling
+    show giti smiling at talking
 
     giti smiling "I will never forget, Abhay Sir, and I will pray for you!"
+
+    show giti smiling dark at not_talking
 
     abhay "You can.{w=0.25} You have the room for this now after all!"
 

@@ -67,7 +67,7 @@ define gui.interface_text_font = "fonts/Oswald-Regular.ttf"
 define gui.text_size = 22
 
 ## The size of character names.
-define gui.name_text_size = 25
+define gui.name_text_size = 30
 
 ## The size of text in the game's user interface.
 define gui.interface_text_size = 30
@@ -98,30 +98,31 @@ define gui.show_name = True
 ## time.
 
 ## The height of the textbox containing dialogue.
-define gui.textbox_height = 185
+define gui.textbox_height = 200
 
 ## The placement of the textbox vertically on the screen. 0.0 is the top, 0.5 is
 ## center, and 1.0 is the bottom.
-define gui.textbox_yalign = 1.0
+define gui.textbox_yalign = 0.95
 
 
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
-define gui.name_xpos = 90
-define gui.name_ypos = -10
+define gui.name_xpos = 125
+define gui.name_ypos = -40
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.name_xalign = 0.0
+define gui.name_yalign = 0.0
 
 ## The width, height, and borders of the box containing the character's name, or
 ## None to automatically size it.
-define gui.namebox_width = None
-define gui.namebox_height = None
+define gui.namebox_width = 307
+define gui.namebox_height = 78
 
 ## The borders of the box containing the character's name, in left, top, right,
 ## bottom order.
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(10, 0, 10, 5)
 
 ## If True, the background of the namebox will be tiled, if False, the
 ## background if the namebox will be scaled.
@@ -131,18 +132,18 @@ define gui.namebox_tile = False
 ## The placement of dialogue relative to the textbox. These can be a whole
 ## number of pixels relative to the left or top side of the textbox, or 0.5 to
 ## center.
-define gui.dialogue_xpos = 125
+define gui.dialogue_xpos = 100
 define gui.dialogue_ypos = 50
 
 ## The maximum width of dialogue text, in pixels.
-define gui.dialogue_width = 900
+define gui.dialogue_width = 1100
 
 ## The horizontal alignment of the dialogue text. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
 define gui.dialogue_text_xalign = 0.0
 define gui.dialogue_text_color = "#FFFFFF"
 define gui.dialogue_text_font = "fonts/Oswald-Regular.ttf"
-define gui.dialogue_text_size = 30
+define gui.dialogue_text_size = 40
 
 define gui.mail_image_xpos = 110
 define gui.mail_image_ypos = 350

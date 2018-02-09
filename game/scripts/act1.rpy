@@ -123,7 +123,7 @@ label .scene3:
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
-    show donatello dark at center_left, not_talking with moveinleft
+    show donatello dark at center_left, not_talking, flip with moveinleft
     show bapat dark at center_right, not_talking with moveinright
 
     narration "Looks like the whole team has decided to get up early today."
@@ -132,9 +132,9 @@ label .scene3:
 
     show bapat at talking
 
-    bapat "We were waiting for you, Abhay."
+    bapat "We were waiting for you, Abhay." (show_namepos="right")
 
-    narration "Donatello nods."
+    donatello "*nods*" (show_namepos="left")
 
     show bapat dark at not_talking
 
@@ -144,20 +144,27 @@ label .scene3:
     show bapat smug dark at not_talking
     with dissolve
 
-    thinking "Something must have happened yesterday, you think, else they wouldn’t all be gathered around me this morning like they are now."
+    thinking "Something must have happened yesterday."
+
+    thinking "They wouldn’t all be gathered around me this morning like they are now if it didn't."
 
     thinking "Let's bet on it."
 
     abhay "So who’s going to tell me about what happened yesterday?"
 
-    show bapat angry at talking with dissolve
+    show bapat at talking
 
-    bapat angry "It’s the same as usual, Abhay, this Priyanka she walks around half-naked, it’s not decent!"
+    bapat "It’s the same as usual, Abhay, this Priyanka she walks around half-naked." (show_namepos="right")
+    
+    show bapat angry
+    with dissolve
+
+    bapat "It’s not decent!" (show_namepos="right")
 
     show donatello at talking
     show bapat angry dark at not_talking
 
-    donatello "And because of this, people cannot work properly, what is she looking for?"
+    donatello "And because of this, people cannot work properly, what is she looking for?" (show_namepos="left")
 
     show donatello dark at not_talking
 
@@ -165,15 +172,15 @@ label .scene3:
 
     show donatello angry at talking
 
-    donatello angry "Of course, we tried to tell her with humor, but she doesn’t get it!"
+    donatello "Of course, we tried to tell her with humor, but she doesn’t get it!" (show_namepos="left")
 
-    donatello angry "And she has the nerve to pretend to be angry at us now!"
+    donatello "And she has the nerve to pretend to be angry at us now!" (show_namepos="left")
 
     show donatello angry dark at not_talking
 
     show bapat angry at talking
 
-    bapat angry "And pretending to cry with that!{w=0.5} Like we’re the bad guys now!"
+    bapat "And pretending to cry with that!{w=0.5} Like we’re the bad guys now!" (show_namepos="right")
 
     abhay "Hold on a second."
 
@@ -261,7 +268,7 @@ label .scene6:
 
     abhay "I am sorry to interrupt,{w=0.5} but this isn’t how it works."
 
-    show donatello dark at center_left
+    show donatello dark at flip, center_left
     show giti dark at center
     show bapat dark at center_right
     with dissolve
@@ -270,7 +277,9 @@ label .scene6:
 
     abhay "You can’t call for a public meeting, especially when you exclude another employee from this meeting."
 
-    abhay "I am the one in charge of Human Resources here, and with Mr. Gopinath away, and the new CEO on the way, of the whole company at the moment."
+    abhay "I am the one in charge of Human Resources here."
+
+    abhay "With Mr. Gopinath away, and the new CEO on the way, I'm in charge of the whole company at the moment."
 
     abhay "If I wanted to call for a public meeting I would have done it."
 
@@ -301,7 +310,7 @@ label .scene7:
 
     show bapat at talking
 
-    bapat "Ah, it’s nothing, Abhay, don’t get all wrangled up."
+    bapat "Ah, it’s nothing, Abhay, don’t get all wrangled up." (show_namepos="right")
 
     show bapat dark at not_talking
 
@@ -313,13 +322,13 @@ label .scene7:
 
     show bapat at talking
 
-    bapat "Ah okay, this Priyanka you know, she came in a mini-skirt like she does sometimes."
+    bapat "Ah okay, this Priyanka you know, she came in a mini-skirt like she does sometimes." (show_namepos="right")
 
-    bapat "All provocation, no shame."
+    bapat "All provocation, no shame." (show_namepos="right")
 
-    bapat "And there are many men in the office."
+    bapat "And there are many men in the office." (show_namepos="right")
 
-    bapat "Even Giti was shocked."
+    bapat "Even Giti was shocked." (show_namepos="right")
 
     show bapat dark at not_talking
 
@@ -327,9 +336,11 @@ label .scene7:
 
     show bapat at talking
 
-    bapat "And The Donald, Donatello I mean, well, he’s a man, Abhay."
+    bapat "And The Donald, Donatello I mean, well, he’s a man, Abhay." (show_namepos="right")
 
-    bapat "He made some noises,{w=0.25} and maybe a couple of jokes,{w=0.25} and there she went, crying all over like a baby girl, and-"
+    bapat "He made some noises,{w=0.25} and maybe a couple of jokes..." (show_namepos="right")
+
+    bapat "And there she went, crying all over like a baby girl, and-" (show_namepos="right")
 
     show bapat dark at not_talking
 
@@ -337,9 +348,9 @@ label .scene7:
 
     show bapat angry at talking
 
-    bapat angry "You don’t get it, Abhay, not at all!"
+    bapat "You don’t get it, Abhay, not at all!" (show_namepos="right")
 
-    bapat angry "We just want to work peacefully, this is interfering with productivity!"
+    bapat "We just want to work peacefully, this is interfering with productivity!" (show_namepos="right")
 
     show bapat dark at not_talking
 
@@ -358,40 +369,41 @@ label .scene8:
 
     show donatello at talking
 
-    donatello "Nothing, why do you bother?"
+    donatello "Nothing, why do you bother?" (show_namepos="left")
 
     show donatello dark at not_talking
 
     abhay "I bother because I’m the HR Manager of this company, Donatello, not you."
 
-    abhay "And you called for a public meeting the very same day I find Priyanka in my office,
-    and didn’t even bother to invite her to this meeting."
+    abhay "You called for a public meeting the very same day I find Priyanka in my office."
+
+    abhay "And didn’t even bother to invite her to this meeting."
 
     show donatello at talking
 
-    donatello "This woman is really a problem, you know, Abhay."
+    donatello "This woman is really a problem, you know, Abhay." (show_namepos="left")
 
     show donatello dark at not_talking
 
-    abhay "Well at least she doesn’t raise a ruckus like you and Bapat did…"
+    abhay "Well at least she doesn’t raise a ruckus like you and Bapat did…" 
 
     abhay "Now kindly tell me what happened."
 
     show donatello at talking
 
-    donatello "Oh well, she came to work like she’s going to party all night."
+    donatello "Oh well, she came to work like she’s going to party all night." (show_namepos="left")
 
-    donatello "And Bapat, well, he’s just a man, Abhay."
+    donatello "And Bapat, well, he’s just a man, Abhay." (show_namepos="left")
 
     show donatello smug
     with dissolve
 
-    donatello smug "He made noises,{w=0.25} and motions,{w=0.25} and maybe I made a couple of jokes,{w=0.25} and felt her a bit."
+    donatello smug "He made noises,{w=0.25} and motions,{w=0.25} and maybe I made a couple of jokes,{w=0.25} and felt her a bit." (show_namepos="left")
 
     show donatello angry
     with dissolve
 
-    donatello angry "And she started to cry, and become angry as if WE were the problem, not her{w=0.25}, and-"
+    donatello angry "And she started to cry, and become angry as if WE were the problem, not her{w=0.25}, and-" (show_namepos="left")
 
     show donatello angry dark at not_talking
 
@@ -399,17 +411,17 @@ label .scene8:
 
     show donatello angry at talking
 
-    donatello "I only think about the well-being of the company, Abhay."
+    donatello "I only think about the well-being of the company, Abhay." (show_namepos="left")
 
-    donatello "Customers come in here sometimes, what impression do we give to them by having Priyanka dressed up like this?"
+    donatello "Customers come in here sometimes, what impression do we give to them by having Priyanka dressed up like this?" (show_namepos="left")
 
-    donatello "This isn’t a massage parlor, and what if the others, like Manali, start to copy her?"
+    donatello "This isn’t a massage parlor, and what if the others, like Manali, start to copy her?" (show_namepos="left")
 
     show donatello smug with dissolve
 
-    donatello smug "Men have drives, Abhay, she’s asking for it."
+    donatello smug "Men have drives, Abhay, she’s asking for it." (show_namepos="left")
 
-    donatello smug "I can’t blame her really because we’re good-looking and all, but she must keep her instincts in control."
+    donatello smug "I can’t blame her really because we’re good-looking and all, but she must keep her instincts in control." (show_namepos="left")
 
     show donatello smug dark at not_talking
 
@@ -454,6 +466,7 @@ label .scene10:
     narration "Or maybe you think that sometimes, a HR Manager has to take difficult decisions, and since Priyanka is the root of this trouble, you will issue her a warning to have her start dressing more appropriately, after all, she’s the only troublesome one as nobody ever complains about the other women."
 
     menu:
+        thinking "What should I do now?"
         "Draft a dress code.":
             jump .scene11
         "Call for a public poll.":
@@ -510,19 +523,19 @@ label .scene12:
     donatello smug "It’s either sari, or panties with you."
 
     hide donatello
-    show giti smiling
+    show giti smiling at center
     with dissolve
 
     giti smiling "*laugh*"
 
     hide giti
-    show manali smiling
+    show manali smiling at center
     with dissolve
 
     manali smiling "*laugh*"
 
     hide manali
-    show bapat smug
+    show bapat smug at center
     with dissolve 
 
     bapat smug "..."
@@ -577,7 +590,7 @@ label .scene12:
 
     priyanka "..."
 
-    show priyanka crying
+    show priyanka crying at center
     with dissolve
 
     priyanka crying "..."
@@ -718,6 +731,7 @@ label .scene16:
 
 label .employees:
     menu:
+        thinking "What's my next move?"
         "Write an email to Mr. Gopinath." if not gopinath:
             $gopinath = True
             jump .gopinath

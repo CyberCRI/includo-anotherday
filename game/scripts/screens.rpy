@@ -102,24 +102,48 @@ transform jobbox_transform:
         alpha 0.0
         linear 0.5 alpha 0.7
 
-screen say(who, what, job=None, side_image=True):
+transform namebox_right:
+    xalign 0.9
+
+transform namebox_left:
+    xalign 0.1
+
+transform namebox_center:
+    xalign 0.5
+
+transform namebox_right_move:
+    xalign 1.5
+    easein 0.15 xalign 0.9
+
+transform namebox_left_move:
+    xalign -0.5
+    easein 0.15 xalign 0.1
+
+transform namebox_center_move:
+    xalign 0.01
+    easein 0.15 xalign 0.5
+
+screen say(who, what, job=None, side_image=True, namepos="center", main_character=False):
     style_prefix "say"
 
     window:
         id "window"
 
         if who is not None:
-
             window:
-                style "namebox"
+                if main_character:
+                    style "namebox2"
+                else:
+                    style "namebox"
                 text who id "who"
-
-        if job is not None:
-
-            window:
-                style "jobbox"
-                text job id "job" style "jobbox_label" at jobbox_transform
-
+                if job is not None:
+                    text job id "job" style "jobbox_label"
+                if namepos == "left":
+                    at namebox_left
+                if namepos == "right":
+                    at namebox_right
+                if namepos == "center":
+                    at namebox_center
 
         text what id "what"
 
@@ -152,17 +176,18 @@ style namebox:
     background Frame("gui/namebox.png", gui.namebox_borders, tile=gui.namebox_tile, xalign=gui.name_xalign)
     padding gui.namebox_borders.padding
 
-style jobbox is namebox:
-    xpos 800
-    ypos -9
+style namebox2 is namebox:
+    background Frame("gui/namebox2.png")
+
 
 style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
-    yalign 0.5
+    yalign gui.name_yalign
 
 style jobbox_label:
     color "#FFFFFF"
+    ypos gui.name_ypos + 80
 
 
 style say_dialogue:
