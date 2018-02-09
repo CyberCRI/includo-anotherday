@@ -38,15 +38,20 @@ transform from_top(easein_time=3.0, pause_time=0, ydestination=0.5):
 
 transform elastic_splash(zoom_value=1.0, time_value=0.0):
     alpha 0.0
-    zoom 4.0
+    zoom 5.0
     time time_value
     subpixel True
     alpha 1.0
     linear 0.2 zoom zoom_value
 
 transform elastic_splash_rotate(zoom_value=1.0, time_value=0.0, rotate_value=-3.0):
-    elastic_splash(zoom_value, rotate_value)
-    pause 6
+    alpha 0.0
+    zoom 5.0
+    time time_value
+    subpixel True
+    alpha 1.0
+    linear 0.2 zoom zoom_value
+    pause 2
     easein_elastic 1.5 rotate rotate_value
 
 transform bloom(easein_time=1.0, time_value=0.0, zoom_value=1.0):

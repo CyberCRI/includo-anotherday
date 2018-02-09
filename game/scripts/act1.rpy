@@ -1240,9 +1240,11 @@ label .scene34:
     jump .end
 
 label .end:
-    narration "Act 1 End"
-
     $act_1_completed = True
+    show bg end_act_1 with Dissolve(3.0)
+
+    pause 10
+
     stop music fadeout 3.0
     window hide
     $renpy.call_screen("act_menu")

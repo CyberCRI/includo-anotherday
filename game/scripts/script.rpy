@@ -63,7 +63,7 @@ define bapat = Character("BAPAT", image="bapat", kind=employee, show_job="{i}Mar
 define donatello = Character("DONATELLO", image="donatello", kind=employee, show_job="{i}Senior Commercial Assistant{/i}")
 define giti = Character("GITI", image="giti", kind=employee, show_job="{i}Chief Secretary{/i}")
 define manali = Character("MANALI", image="manali", kind=employee, show_job="{i}Secretary{/i}")
-define ashwini = Character("ASHWINI", image="ashwini", kind=employee, show_job="{i}CEO of CRYPTALOO{/i}")
+define ashwini = Character("ASHWINI", image="ashwini", kind=employee, show_job="{i}CEO of CRYPTALOO{/i}", show_namepos="left")
 
 define abhay = Character("ABHAY", who_color="#032837", ctc="ctc_blink", ctc_position="nestled",screen="say", show_job="{i}Human Resources Manager{/i}", show_side_image=False, callback=hide_narration_background, show_namepos="left", show_main_character=True)
 define thinking = Character("ABHAY", who_color="#032837", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}", ctc="ctc_blink", ctc_position="nestled", show_job="{i}Human Resources Manager{/i}", show_side_image=False, show_namepos="left", callback=show_narration_background, show_main_character=True)
@@ -75,7 +75,7 @@ define mail_gopinath = Character(kind=mail,
                         show_mail_subject="{k=-1}Out of the Office{/k}",
                         show_mail_from="{size=12}{k=-1}{b}Adnan Gopinath{/b} <adnan.gopinath@cryptaloo.com>{/k}{/size}",
                         show_mail_to="{size=12}{k=-1}to abhay.chandrakant@cryptaloo.in{/k}{/size}",
-                        show_mail_image=True)
+                        show_mail_image=False)
 
 define mail_brahmin = Character(kind=mail,
                         show_mail_subject="{k=-1}Re: Giti Madam{/k}",

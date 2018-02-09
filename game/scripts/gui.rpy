@@ -158,10 +158,10 @@ define gui.mail_xpos = 110
 define gui.mail_ypos = 235
 
 define gui.mail_width = 900
-define gui.mail_text_xalign = 0.0
+define gui.mail_text_xalign = -0.02
 define gui.mail_text_color = "#FFFFFF"
 define gui.mail_text_font = "fonts/Oswald-Regular.ttf"
-define gui.mail_text_size = 20
+define gui.mail_text_size = 40
 
 define gui.mail_from_xpos = 230
 define gui.mail_from_ypos = 225

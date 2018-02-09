@@ -499,17 +499,17 @@ style navigation_button_text:
 image main_menu cryptaloo_text:
     "cryptaloo_text"
     alpha 0
-    yalign 0.5
+    yalign 0.3
     time 2.0
-    from_left(xdestination=0.075, easein_time=2.0)
+    from_left(xdestination=0.025, easein_time=2.0)
 image main_menu another_day_text:
     "another_day_text"
     alpha 0
-    yalign 0.65
+    yalign 0.45
     time 4.0
-    from_left(xdestination=0.075, easein_time=2.0)
+    from_left(xdestination=0.025, easein_time=2.0)
 image main_menu background_image:
-    "main_menu_white_background"
+    "main_menu_black_background"
     "main_menu_background" with Dissolve(2.0)
 
 transform from_horizontal_label(xorigin, xdestination, easein_time=3.0, pause_time=0):
@@ -568,9 +568,9 @@ screen act_menu():
         frame:
             background "closure_background"
             style_prefix "act_menu"
-            at bloom(1, 1.25, .75)
-            xalign .1
-            yalign .43
+            at bloom(1, 1.25, 1.0)
+            xalign .22
+            yalign .35
 
             fixed:
                 xmaximum 1
@@ -585,17 +585,17 @@ screen act_menu():
                     image "closure_checkbox_tick3.png"
                 if act_4_completed == True:
                     image "closure_checkbox_tick4.png"
-                #if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
-                imagebutton idle "closure_unlocked" action Jump("closure")
-                #else:
-                    #image "closure_locked"
+                if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
+                    imagebutton idle "closure_unlocked" action Jump("closure")
+                else:
+                    image "closure_locked"
 
         frame:
             background "act_1_background"
             style_prefix "act_menu"
-            at bloom(1, .25, .75)
-            xalign .25
-            yalign 0
+            at bloom(1, .25, 1.0)
+            xalign 0.04
+            yalign 0.03
 
             fixed:
                 xmaximum 1
@@ -609,8 +609,8 @@ screen act_menu():
         frame:
             background "act_2_background"
             style_prefix "act_menu"
-            at bloom(1, .5, .75)
-            xalign .59
+            at bloom(1, .5, 1.0)
+            xalign .70
             yalign .05
 
             fixed:
@@ -625,9 +625,9 @@ screen act_menu():
         frame:
             background "act_3_background"
             style_prefix "act_menu"
-            at bloom(1, .75, .75)
-            xalign .58
-            yalign .35
+            at bloom(1, .75, 1.0)
+            xalign .055
+            yalign .40
 
             fixed:
                 xmaximum 1
@@ -641,9 +641,9 @@ screen act_menu():
         frame:
             background "act_4_background"
             style_prefix "act_menu"
-            at bloom(1, 1, .75)
-            xalign .035
-            yalign .18
+            at bloom(1, 1, 1.0)
+            xalign .68
+            yalign .42
 
             fixed:
                 xmaximum 1

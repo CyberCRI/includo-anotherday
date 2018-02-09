@@ -1681,8 +1681,12 @@ label .scene28:
     jump .end
 
 label .end:
-    narration "Act 3 End."
     $act_3_completed = True
+    show bg end_act_3 with Dissolve(3.0)
+
+    pause
+
+    show bg none with Dissolve(3.0)
     window hide
     $renpy.call_screen("act_menu")
 

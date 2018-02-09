@@ -1033,8 +1033,12 @@ label .scene23:
     jump .end
 
 label .end:
-    narration "Act 2 End"
     $act_2_completed = True
+    show bg end_act_2 with Dissolve(3.0)
+
+    pause
+
+    show bg none with Dissolve(3.0)
 
     window hide
 
