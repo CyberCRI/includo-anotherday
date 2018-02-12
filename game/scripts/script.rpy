@@ -6,12 +6,18 @@ init python:
         if event == "show":
             renpy.show("narration_background")
 
+        if event == "end":
+            renpy.sound.play("sound/click.wav")
+
     def hide_narration_background(event, interact=True, **kwargs):
         if not interact:
             return
 
         if event == "show":
             renpy.hide("narration_background")
+
+        if event == "end":
+            renpy.sound.play("sound/click.wav")
 
 
 init 9999 python:

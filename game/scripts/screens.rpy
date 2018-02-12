@@ -351,9 +351,9 @@ screen choice(items):
         for i in items:
             $nbr = nbr + 1.0
             if nbr % 2 != 0:
-                textbutton i.caption action i.action at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333)
+                textbutton i.caption action [Play("sound", "sound/misc_menu_4.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333)
             else:
-                textbutton i.caption action i.action at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333) style "choice_button2"
+                textbutton i.caption action [Play("sound", "sound/misc_menu_4.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333) style "choice_button2"
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
@@ -410,13 +410,13 @@ screen quick_menu():
             xalign 0.5
             yalign 1.0
 
-            ##textbutton _("Back") action Rollback()
+            textbutton _("Back") action Rollback()
             textbutton _("History") action ShowMenu('history')
-            ##textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-            ##textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
             textbutton _("Save") action ShowMenu('save')
-            ##textbutton _("Q.Save") action QuickSave()
-            ##textbutton _("Q.Load") action QuickLoad()
+            textbutton _("Q.Save") action QuickSave()
+            textbutton _("Q.Load") action QuickLoad()
             textbutton _("Prefs") action ShowMenu('preferences')
 
 
@@ -561,8 +561,8 @@ screen main_menu():
 
         spacing 100
 
-        textbutton _("START") action Start()
-        textbutton _("LOAD") action ShowMenu("load")
+        textbutton _("START") action [Play("sound", "sound/misc_sound.wav"), Start()]
+        textbutton _("LOAD") action [Play("sound", "sound/misc_menu2.wav"), ShowMenu("load")]
         textbutton _("QUIT") action Quit(confirm=False)
 
 
@@ -596,7 +596,7 @@ screen act_menu():
                 if act_4_completed == True:
                     image "closure_checkbox_tick4.png"
                 if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
-                    imagebutton idle "closure_unlocked" action Jump("closure")
+                    imagebutton idle "closure_unlocked" action [Play("sound", "sound/load.wav"), Jump("closure")]
                 else:
                     image "closure_locked"
 
@@ -610,7 +610,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_1_button.png" action Jump("act1") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_1_button.png" action [Play("sound", "sound/load.wav"), Jump("act1")] at zoom_on_hover(1, 1.025)
                 image "act_1_label.png" at from_horizontal_label(pause_time=0.75, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_1_checkbox.png" at elastic_splash(time_value=0.75)
                 if act_1_completed == True:
@@ -626,7 +626,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_2_button.png" action Jump("act2") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_2_button.png" action [Play("sound", "sound/load.wav"), Jump("act2")] at zoom_on_hover(1, 1.025)
                 image "act_2_label.png" at from_horizontal_label(pause_time=1.0, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_2_checkbox.png" at elastic_splash(time_value=0.85)
                 if act_2_completed == True:
@@ -642,7 +642,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_3_button.png" action Jump("act3") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_3_button.png" action [Play("sound", "sound/load.wav"), Jump("act3")] at zoom_on_hover(1, 1.025)
                 image "act_3_label.png" at from_horizontal_label(pause_time=1.25, easein_time=3.0, xorigin=.5, xdestination=.01)
                 image "act_3_checkbox.png" at elastic_splash(time_value=0.95)
                 if act_3_completed == True:
@@ -658,7 +658,7 @@ screen act_menu():
             fixed:
                 xmaximum 1
                 ymaximum 1
-                imagebutton idle "act_4_button.png" action Jump("act4") at zoom_on_hover(1, 1.025)
+                imagebutton idle "act_4_button.png" action [Play("sound", "sound/load.wav"), Jump("act4")] at zoom_on_hover(1, 1.025)
                 image "act_4_checkbox.png" at elastic_splash(time_value=1.05)
                 image "act_4_label.png" at from_horizontal_label(pause_time=1.5, easein_time=3.0, xorigin=.5, xdestination=.01)
                 if act_4_completed == True:
