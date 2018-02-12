@@ -108,8 +108,14 @@ transform namebox_right:
 transform namebox_left:
     xalign 0.1
 
+transform namebox_center_left:
+    xalign 0.3
+
 transform namebox_center:
     xalign 0.5
+
+transform namebox_center_right:
+    xalign 0.7
 
 transform namebox_right_move:
     xalign 1.5
@@ -144,6 +150,10 @@ screen say(who, what, job=None, side_image=True, namepos="center", main_characte
                     at namebox_right
                 if namepos == "center":
                     at namebox_center
+                if namepos == "center_left":
+                    at namebox_center_left
+                if namepos == "center_right":
+                    at namebox_center_right
 
         text what id "what"
 

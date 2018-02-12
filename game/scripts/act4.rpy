@@ -657,10 +657,13 @@ label .scene13:
         "Take a decision straight away.":
             jump .scene14
         "Have lunch first":
+            hide giti with dissolve
             jump .scene15
 
 label .scene14:
     thinking "There can be no compromise on serious issues like religion."
+
+    hide giti with dissolve
 
     menu:
         thinking "I've taken my decision the minute she's started to talk."
@@ -680,31 +683,31 @@ label .scene15:
 
     abhay "Why did it have to be okras...?"
 
-    show giti smiling at left, talking
+    show giti smiling at center_left, talking
     with dissolve
 
-    giti smiling "You have fried paneer, don't you complain."
+    giti smiling "You have fried paneer, don't you complain." (show_namepos="left")
 
     show giti smiling dark at not_talking with None
     show priyanka smiling at center_center_right, talking
     with dissolve
 
-    priyanka "This won't happen if you cook it yourself, Abhay Sir!"
+    priyanka "This won't happen if you cook it yourself, Abhay Sir!" (show_namepos="center_right")
 
     show priyanka smiling dark at not_talking with None
     show bapat angry at center_center_left, talking
     with dissolve
 
-    bapat angry "This is not a man's job!"
+    bapat angry "This is not a man's job!" (show_namepos="center_left")
 
     show bapat dark at not_talking with None
 
     abhay "I'm afraid I don't cook so well."
 
-    show manali smiling at right, talking
+    show manali smiling at center_right, talking
     with dissolve
 
-    manali smiling "Then you learn! Hihi!"
+    manali smiling "Then you learn! Hihi!" (show_namepos="center_right")
 
     show manali smiling dark at not_talking
 
@@ -712,12 +715,12 @@ label .scene15:
 
     show manali smiling at talking
 
-    manali "See, Bapat, Abhay Sir is ready for new experiences at least."
+    manali "See, Bapat, Abhay Sir is ready for new experiences at least." (show_namepos="center_right")
 
     show manali smiling dark at not_talking
     show bapat smug at talking
 
-    bapat smug "As is Donatello."
+    bapat smug "As is Donatello." (show_namepos="center_left")
 
     show bapat smug dark at not_talking with None
     show donatello determined at talking, center with dissolve
@@ -727,7 +730,7 @@ label .scene15:
     show donatello determined dark at not_talking behind bapat
     show bapat at talking
 
-    bapat "Just kidding this time, just kidding, trust me."
+    bapat "Just kidding this time, just kidding, trust me." (show_namepos="center_left")
 
     show bapat dark at not_talking
 
@@ -736,6 +739,14 @@ label .scene15:
     thinking "It's been only two days, and here they are, talking, and laughing again."
 
     narration "You smile, then remember you have a pressing matter to solve, and shuffle back to your office."
+
+
+    hide bapat
+    hide donatello
+    hide giti
+    hide manali
+    hide priyanka
+    with dissolve
 
     window hide
 
