@@ -363,7 +363,7 @@ label .scene7:
 
 label .scene8:
 
-    show donatello dark with moveinleft
+    show donatello dark at flip with moveinleft
 
     abhay "I want you to tell me what happened yesterday."
 
@@ -1243,7 +1243,9 @@ label .end:
     $act_1_completed = True
     show bg end_act_1 with Dissolve(3.0)
 
-    pause 10
+    pause
+
+    show bg none with Dissolve(3.0)
 
     stop music fadeout 3.0
     window hide

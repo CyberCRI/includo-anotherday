@@ -138,7 +138,6 @@ label act3:
     donatello "..." (show_namepos="right")
 
     hide bapat
-    show bapat nervous dark at not_talking
     show manali smiling at center_left, talking
     with dissolve
 
