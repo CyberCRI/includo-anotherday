@@ -14,6 +14,10 @@ label act1:
 
     scene bg none
 
+    stop music fadeout 1.0
+
+    stop background fadeout 1.0
+
     $renpy.pause(3.0)
 
     narration "You reach the office early as usual."
@@ -42,9 +46,12 @@ label .scene2:
     show bg office
     with Dissolve(3.0)
 
+    play music "music/Kai_Engel_Moonlight_Reprise.mp3" fadeout 1.0
+
     narration "Priyanka was sitting inside, facing your desk. You wonder how long she’s been waiting here."
 
     show priyanka crying dark at center, not_talking
+    with dissolve
 
     narration "When she sees you, she stands up clumsily, tries to wipe her tears away, then sits back again. "
 
@@ -52,7 +59,6 @@ label .scene2:
 
     abhay "What’s the matter, Priyanka?{w=0.5} It’s very early."
 
-    play music "music/discussion.mp3" fadein 1.0 fadeout 1.0
 
     show priyanka crying at talking
 
@@ -90,6 +96,8 @@ label .scene2:
 
     show priyanka crying dark at not_talking
 
+    
+
     thinking "I’m in a bit of a pickle now."
 
     thinking "Bapat is the Marketing Executive, and Donatello is the Senior Commercial Assistant."
@@ -114,12 +122,15 @@ label .scene2:
 
 label .scene3:
 
+    stop music fadeout 3.0
+
     window hide 
 
     show bg lunch_room
     with fade
 
-    stop music fadeout 3.0
+    play background "music/crowd.ogg" fadein 3.0
+    play music "music/Kai_Engel_Machinery.mp3" fadein 1.0
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
@@ -143,6 +154,8 @@ label .scene3:
     show donatello smug dark at not_talking 
     show bapat smug dark at not_talking
     with dissolve
+
+    
 
     thinking "Something must have happened yesterday."
 
@@ -214,6 +227,7 @@ label .scene4:
 
     narration "While you ponder, you receive an email from Bapat on your phone asking all employees to come and meet him and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a rebellion."
 
+    stop music fadeout 3.0
     menu:
         "Go to the meeting room.":
             jump .scene6
@@ -231,6 +245,8 @@ label .scene5:
     narration "Since you want everyone on board, and can’t afford to lose either Priyanka, Bapat, or Donatello before the new CEO comes in, you’ve chosen the path of least resistance: doing nothing."
 
     narration "While you congratulate yourself for your wisdom, you receive an email from Bapat on your phone asking all employees to come meet him, and Donatello in the meeting room to discuss ‘A Matter of Decency’. Brilliant, all you needed was a revolution."
+
+    stop music fadeout 3.0
 
     menu:
         "Go to the meeting room.":
@@ -252,7 +268,11 @@ label .scene6:
 
     thinking "Is it possible that they’re pushing hard because they genuinely feel offended?"
 
-    window hide 
+    stop background fadeout 3.0
+
+    window hide
+
+    play music "music/Kevin_MacLeod_I_Knew_A_Guy.mp3" fadein 1.0
 
     show bg meeting_room
     with fade
@@ -263,8 +283,6 @@ label .scene6:
     Everybody else listens, scolds, or nod in agreement with them as statements go.
     This sure seems like a there’s a situation, and that the situation needs to be addressed.
     Still, you can’t ignore the feeling that something unusual happened yesterday, and that the reason of all this ruckus escapes you."
-
-    
 
     abhay "I am sorry to interrupt,{w=0.5} but this isn’t how it works."
 
@@ -454,8 +472,12 @@ label .scene10:
 
     window hide 
 
+    stop music fadeout 3.0
+
     scene bg office
     with fade
+
+    play music "music/Kai_Engel_Moonlight_Reprise.mp3"
 
     narration "You’ve heard their explanations, and have gathered enough information to take a decision, and solve this problem now."
 
@@ -464,7 +486,7 @@ label .scene10:
     narration "You could also take even less risks by calling for a public poll in the meeting room, so that everybody will have the opportunity to give one’s advice, and if anything goes wrong, you won’t be held responsible for it."
 
     narration "Or maybe you think that sometimes, a HR Manager has to take difficult decisions, and since Priyanka is the root of this trouble, you will issue her a warning to have her start dressing more appropriately, after all, she’s the only troublesome one as nobody ever complains about the other women."
-
+    
     menu:
         thinking "What should I do now?"
         "Draft a dress code.":
@@ -480,6 +502,8 @@ label .scene10:
 label .scene11:
 
     window hide
+
+    stop music fadeout 3.0
 
     show bg none with fade
 
@@ -497,6 +521,8 @@ label .scene12:
 
     show bg none with fade
 
+    stop music fadeout 3.0
+
     narration "You’ve decided to call for a public poll, and gather everyone once again in the meeting room."
 
     narration "Priyanka joined you, eager to find a solution, but when you describe the situation to the people, Bapat, and Donatello are very vocal, and slowly get everyone on board with their agenda."
@@ -504,6 +530,8 @@ label .scene12:
     window hide
 
     show bg meeting_room with fade
+
+    play music "music/Kai_Engel_Anxiety.mp3"
 
     show bapat angry at center
     with dissolve
@@ -598,6 +626,8 @@ label .scene12:
     hide priyanka
     with Dissolve(2.0)
 
+    stop music fadeout 3.0
+
     narration "With this, Priyanka leaves the meeting room in tears while the others whistle, and laugh.
     {p} Since the public meeting has turned into a nightmare, and added to Priyanka’s shaming, you regret this idea, but it’s a little too late."
 
@@ -608,6 +638,8 @@ label .scene12:
 label .scene13:
     window hide
     scene bg none with dissolve
+
+    stop music fadeout 3.0
 
     narration "Since Priyanka is the only one causing trouble, you see no need to bother everyone with a dress code, or a public poll."
 
@@ -623,6 +655,8 @@ label .scene14:
 
     scene bg none
 
+    stop music fadeout 3.0
+
     narration "Following your decision, and the events of the day, Priyanka gives you her resignation letter the next morning.{p=1}
     Bapat and Donatello gloat in the open space, and start making jokes about Manali, the Secretary, as well.{p=1}
     Given the terms of her contract, Priyanka has to stay for a month, now wearing an oversized sweater, and trousers, and will be there when the new CEO comes.{p=1}
@@ -636,7 +670,11 @@ label .scene15:
 
     window hide 
 
-    show bg lunch_room with dissolve    
+    show bg lunch_room with dissolve
+
+    play background "music/crowd.ogg"
+
+    play music "music/Kai_Engel_Machinery.mp3"  
 
     narration "You unpack your lunch box in the canteen. It’s a most welcomed time of the day as everybody blows off some steam, and engage in small talk."
 
@@ -707,6 +745,10 @@ label .scene15:
 
     thinking "I need to solve it, and to gather everyone's opinion."
 
+    stop music fadeout 3.0
+
+    stop background fadeout 3.0
+
     menu:
         "Talk to the other employees individually.":
             jump .scene16
@@ -716,6 +758,8 @@ label .scene16:
 
     show bg office
     with fade
+
+    play music "music/Kai_Engel_Moonlight_Reprise.mp3" fadein 1.0
 
     thinking "If all I do to find the truth about people harassing women is talk with the harasser, I won't go very far."
 
@@ -730,6 +774,7 @@ label .scene16:
     jump .employees
 
 label .employees:
+
     menu:
         thinking "What's my next move?"
         "Write an email to Mr. Gopinath." if not gopinath:
@@ -885,6 +930,10 @@ label .scene18:
 label .scene19:
     scene bg office
 
+    stop music fadeout 3.0
+
+    play music "music/Kai_Engel_Ode_To_The_World.mp3"
+
     narration "When Manali sits down in your office, you feel like a police officer conducting an interrogation. {p=1}
     She gazes at her shoes, and blushes a lot, twisting her fingers as she does."
 
@@ -927,6 +976,8 @@ label .scene19:
 
     manali nervous "Just that you should talk to her, so that she can change maybe?{w=0.5} Please?"
 
+    stop music fadeout 3.0
+
     menu:
         thinking "I feel she's hiding something, but pushing her is maybe a bad idea. What should I do?"
         "Talk to someone else.":
@@ -944,13 +995,15 @@ label .scene20:
             jump .scene10
 
 label .scene21:
-    abhay "I need to know, Manali, I am the HR Manager here, I can’t take decisions blindly. {p=0.5}You understand that?"
+    abhay "I need to know, Manali, I am the HR Manager here, I can’t take decisions blindly."
+
+    abhay "You understand that?"
 
     narration "She nods."
 
     abhay "If whatever it is that you’re hiding is connected to this situation, and can change the way it is for either Priyanka, Bapat, or Donatello."
 
-    abhay "you need to tell me so that I don’t treat them unfairly."
+    abhay "You need to tell me so that I don’t treat them unfairly."
 
     narration "She nods again."
 
@@ -983,6 +1036,8 @@ label .scene21:
 
 label .scene22:
     narration "Given the new piece of information you’ve collected from Manali, you decide to talk to Bapat privately."
+
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
 
     show bapat dark at center, not_talking 
     with dissolve
@@ -1041,6 +1096,8 @@ label .scene22:
             jump .scene24
 
 label .scene23:
+    stop music fadeout 3.0
+
     narration "Since Bapat knows that you know, even though nothing has been said openly, it’s now easy to ignore the whole situation. {p=1}
     Maybe he, and Donatello will calm down now, and stop shaming Priyanka. Regardless, the situation has become too complicated for you, a mere HR Manager, to dabble in."
 
@@ -1049,6 +1106,7 @@ label .scene23:
             jump .scene33
 
 label .scene24:
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0 
     menu:
         thinking "I have a grasp of the whole situation now. What should I do?"
         "Talk to Bapat again, telling him that you know.":
@@ -1133,22 +1191,23 @@ label .scene26:
 
     priyanka "How can I stay now?"
 
+    stop music fadeout 3.0
+
     menu:
         "How indeed?":
             jump .scene31
 
 label .scene27:
+    scene bg meeting_room
 
     narration "You gather everyone in the meeting room to expose them what you know, and put the shaming to a stop. {p=1}
     When you talk about the affair Priyanka had with Bapat’s son, and explain that it’s the reason why Bapat is now harassing her, things don’t go as you expected as you see them side with Bapat, and accuse Priyanka. {p=1}
     Not only have you failed to defend her, but you have added to her plight as everyone sympathizes with Bapat."
-
     menu:
         "The next morning…":
             jump .scene32
 
 label .scene28:
-
     thinking "This is tricky."
 
     thinking "On one side, Bapat harasses Priyanka with vengeance, and bitterness in mind."
@@ -1199,8 +1258,7 @@ label .scene31:
 
     $act_1_ending_31 = True
     $act_1_completed = True
-
-    return
+    jump .end
 
 label .scene32:
     scene bg none
@@ -1240,6 +1298,7 @@ label .scene34:
     jump .end
 
 label .end:
+    stop music fadeout 3.0
     $act_1_completed = True
     show bg end_act_1 with Dissolve(3.0)
 

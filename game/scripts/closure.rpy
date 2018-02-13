@@ -1,10 +1,24 @@
 
 label closure:
-    scene bg closure_empty
+    window hide
+
+    scene bg none with dissolve 
+
+    stop music fadeout 1.0
+
+    stop background fadeout 1.0
+
+    $renpy.pause(3.0)
+
+    scene bg closure_empty with dissolve 
+
+    play music "music/Kai_Engel_Brand_New_World.mp3" fadein 1.0 fadeout 1.0
 
     narration "The big day has finally come."
 
     narration "You're all gathered together, fidgeting as you wait for Ashwini, your new CEO, to step in."
+
+    play background "music/closure_crowd.ogg" fadein 3.0
 
     narration "You can't help forming a picture in your mind, an ideal of what CEOs are, and how they should behave, dress, and speak.
                 This one especially comes straight from the international headquarters.
@@ -20,11 +34,19 @@ label closure:
 
     narration "Everybody stands up as the door opens, staring at the makeshift stage, and at the microphone. A middle-aged woman in a sari steps in, smiling."
 
+    show bapat at center, talking
+    with dissolve
+
     bapat "False alert!"
+
+    hide bapat with dissolve
 
     narration "Bapat says this as he sits down, but the woman stares at him, stone cold, and walks straight to the microphone. Bapat stands up, sweating profusely as the woman starts to speak."
 
+    play background "music/applause.wav" fadein 3.0 noloop
+
     show ashwini dark at not_talking, center_left
+    with Dissolve (3.0)
 
     thinking "{i}Ashwini{/i}, of course!"
 
@@ -34,19 +56,23 @@ label closure:
 
     ashwini "Good morning everybody. My name is Ashwini Baghyashree."
 
-    ashwini "I am very happy to see you all gathered here today, as CRYPTALOO India is entering a new phase with the full support and guidance of our International Headquarters."
+    ashwini "I am very happy to see you all gathered here today,"
+
+    ashwini "As CRYPTALOO India is entering a new phase with the full support and guidance of our International Headquarters."
 
     show ashwini
     with dissolve
 
-    ashwini "Having worked here for many years, you have paved the ground for CRYPTALOO's future successes, and will play an important role in the developments to come."
+    ashwini "Having worked here for many years, you have paved the ground for CRYPTALOO's future successes."
+
+    ashwini "And will play an important role in the developments to come."
 
     show ashwini smiling
     with dissolve
 
     ashwini "For this, I want to thank you all."
 
-    narration "She pauses. Everybody applauses. You wonder what's coming next."
+    narration "She pauses. You wonder what's coming next."
 
     ashwini "I am here to take CRYPTALOO India to the next level with the planned extension of four offices around the country,"
 
@@ -280,6 +306,8 @@ label .ending:
 
     pause 2
 
+    
+
     thinking "I see."
 
     thinking "Kind words, and a display of power, times are going to be interesting."
@@ -310,6 +338,8 @@ label .bad_ending:
     show ashwini
     with dissolve
 
+    
+
     thinking "Wrong. Wrong. Wrong. I got it all wrong!"
 
     narration "You thought that you would be congratulated for your hard but necessary decisions, and it sure looks like you’re not going to be."
@@ -317,6 +347,8 @@ label .bad_ending:
     ashwini "I will try to connect with Giti, and to offer her to become our new Human Resources Manager."
 
     ashwini "It’s been a long time she should have been promoted."
+
+    
 
     thinking "{i}What!{/i}"
 
@@ -329,6 +361,8 @@ label .bad_ending:
     with dissolve
 
     ashwini "If it doesn’t suit you, you’re free to resign."
+
+    
 
     thinking "{i}Just.{w=1} Like.{w=1} That.{/i}"
 
@@ -366,6 +400,8 @@ label .good_ending:
     show ashwini dark at not_talking
 
     narration "You feel a bit tipsy, and a bit proud. Just a week ago, you were reaching the office with a pang of anxiety, knowing that you would be the one in charge, and now it seems that you’ve been successful all the way."
+
+    
 
     thinking "{i}Administrative Director?{w=1} Me?{/i}"
 
@@ -432,6 +468,13 @@ label .mixed_ending:
 
 label .end:
     narration "CRYPTALOO - Another Day End"
+
+    hide ashwini with dissolve
+
+    show bg end_game with Dissolve(3.0)
+
+    pause
+
 
     return
 

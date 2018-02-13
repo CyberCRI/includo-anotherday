@@ -19,17 +19,26 @@ label act3:
 
     window hide
 
+    stop music fadeout 1.0
+
+    stop background fadeout 1.0
+
     scene bg none
 
     $renpy.pause(3.0)
+
+    play background "music/crowd.ogg" fadein 3.0 
 
     narration "Everybody’s at lunch, gathered together in the small canteen."
 
     scene bg lunch_room
     with Dissolve(3.0)
 
+    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+
     narration "You unpack your lunchbox, and share around the delicious parathas you find inside before starting to eat.{p}
             The last events have taken their toll, and the atmosphere is rather uneasy."
+
 
     thinking "People don't like change."
 
@@ -91,6 +100,8 @@ label act3:
 
     bapat smug "Donatello is a bachelor as well!"
 
+    stop music fadeout 3.0
+
     hide bapat
     show donatello nervous at center, talking
     with dissolve
@@ -109,6 +120,8 @@ label act3:
 
     donatello "..."
 
+    stop music fadeout 3.0
+
     narration "Donatello wipes his mouth with a napkin, and stares into the void a little too long before answering."
 
     show donatello at talking
@@ -121,6 +134,8 @@ label act3:
     with dissolve
 
     show priyanka at move_left
+
+    play music "music/Kai_Engel_Machinery.mp3"
 
     priyanka "How come?!" (show_namepos="left")
 
@@ -184,9 +199,11 @@ label .scene2:
 
     window hide
 
-    show bg meeting_room with fade
+    show bg none with fade
 
-    narration "You see Bapat and Donatello whispering furiously to each other near the sink. From the sound of it, their conversation doesn't seem especially friendly."
+    stop background fadeout 3.0
+
+    narration "You see Bapat and Donatello whispering furiously to each other inside the meeting room. From the sound of it, their conversation doesn't seem especially friendly."    
 
     menu:
         thinking "I'm being too curious there. Maybe I should just let them be..."
@@ -196,9 +213,14 @@ label .scene2:
             jump .scene4
 
 label .scene3:
-    show bapat angry dark at center_left, not_talking with dissolve
+
+    scene bg meeting_room
+    with Dissolve(3.0)
+
+    show bapat angry dark at center_left, not_talking
     show donatello dark at center_right, not_talking with dissolve
-    show bapat angry at talking
+
+    show bapat angry at center_left, talking
 
     bapat "I was going to pay, yes." (show_namepos="left")
 
@@ -284,6 +306,8 @@ label .scene3:
 
     abhay "{i}Ahem.{/i}"
 
+    stop music fadeout 3.0
+
     show bapat at talking
 
     bapat "..." (show_namepos="left")
@@ -352,6 +376,8 @@ label .scene4:
 
     show bg office with dissolve
 
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+
     narration "The next day, just before lunch break, Donatello asks to see you."
 
     narration "Since you remember the last team lunch vividly enough, you let him come into your office, and talk."
@@ -378,11 +404,15 @@ label .scene4:
 
     show donatello nervous dark at not_talking
 
+    stop music fadeout 3.0
+
     abhay "What on Earth are you talking about?"
 
     show donatello determined at talking
 
 label .gay:
+
+    play music "music/Kevin_MacLeod_I_Knew_A_Guy.mp3" fadein 3.0 fadeout 3.0
 
     donatello "I am gay, Abhay, that's why I'm not married."
 
@@ -441,6 +471,8 @@ label .gay:
 
     abhay "There will be consequences, and you won't be able to take it back, and-"
 
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+
     show donatello angry at talking
 
     donatello angry "You, of all people, I thought you would understand, Abhay!"
@@ -466,6 +498,8 @@ label .scene5:
     show bapat dark at center_left, not_talking with dissolve
 
     show donatello dark at center_right, not_talking with dissolve
+
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
 
     narration "You call Bapat and Donatello together into your office just before the lunch break on the next morning.
                 Neither of them sit down. {w=0.5}Instead they both stand in front of you like naughty college students waiting for their scolding."
@@ -506,7 +540,9 @@ label .scene5:
 
     donatello "I don’t see why I should hide, and let people like Bapat try to take advantage of me." (show_namepos="right")
 
-    show donatello determined dark at not_talking 
+    show donatello determined dark at not_talking
+
+    stop music fadeout 3.0
 
     abhay "Wait, say what?"
 
@@ -534,6 +570,8 @@ label .scene6:
     scene bg office with Dissolve(3.0)
 
     pause 3.0
+
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
 
     narration "The next day, just before lunch break, Donatello asks to see you."
 
@@ -566,6 +604,8 @@ label .scene6:
 
     show donatello nervous dark at not_talking
 
+    stop music fadeout 3.0
+
     abhay "What on Earth are you talking about?"
 
     show donatello determined at move_center_from_right, talking
@@ -581,6 +621,8 @@ label .scene7:
     window hide
 
     scene bg lunch_room with dissolve
+
+    play background "music/crowd.ogg"
 
     narration "When you reach it, you hear Donatello’s shaky voice echoing in a dead silence before you open the door."
 
@@ -663,6 +705,8 @@ label .scene7:
     show giti stern at center_right, talking
     with dissolve
 
+    stop music fadeout 3.0
+
     giti "That's enough." (show_namepos="right")
 
     hide giti
@@ -676,6 +720,8 @@ label .scene7:
     show donatello determined at talking
 
     donatello "..." (show_namepos="left")
+
+    stop background fadeout 3.0
 
     show donatello determined dark at not_talking
 
@@ -699,7 +745,7 @@ label .scene7:
     hide donatello
 
     narration "He releases her hands as he leaves the room."
-
+    
     menu:
         thinking "Do I need to do something?{w=0.5} And if yes, what?"
         "Think about it":
@@ -707,12 +753,18 @@ label .scene7:
 
 label .scene8:
 
-    scene bg office with dissolve
+    scene bg none with Dissolve(3.0)
+
+    pause 3.0
 
     narration "Giti’s magic moment didn’t last long."
 
     narration "During the next days, you hear a lot of homophobic “jokes”, and notice that there has been no meeting of the Sales & Marketing Department where Bapat and Donatello are supposed to work together.{p}
             Every time you’ve walked past his office, or his seat at lunch, Donatello was alone, and staring off into the distance."
+
+    scene bg office with Dissolve(3.0)
+
+    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
 
     menu:
         thinking "The situation festers. Should I do something about it?"
@@ -726,6 +778,10 @@ label .scene8:
             jump .scene14
 
 label .scene9:
+
+    scene bg none
+    with dissolve
+
     narration "It’s your duty to preserve a safe and welcoming workspace for all your employees."
 
     narration "You need to keep the team together, and to make sure they can work without harassment because of their orientation, gender, religion, caste, or origin."
@@ -788,7 +844,6 @@ label .scene11:
             jump .scene19
 
 label .scene12:
-
     thinking "I can't spend my whole work day roaming in the office like a traffic cop, handing out warnings to everyone making jokes."
 
     thinking "Furthermore, doing so will only just turn them all against Donatello."
@@ -967,6 +1022,8 @@ label .scene16:
     show manali dark at not_talking, center
     with dissolve
 
+    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+
     abhay "Do you have a boyfriend, Manali?"
 
     show manali nervous dark
@@ -1071,11 +1128,15 @@ label .scene16:
 
     thinking "She'll do it, I'm confident about it."
 
+    stop music fadeout 3.0
+
     hide manali with dissolve
 
     thinking "But things won't ever be the same with Donatello..."
 
     $talk_manali_act3 = True
+
+    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
 
     menu:
         "Talk to someone else":
@@ -1152,6 +1213,8 @@ label .scene17:
 label .scene18:
     window hide
 
+    stop music fadeout 3.0
+
     scene bg office with fade
 
     show giti dark at not_talking, center
@@ -1162,6 +1225,8 @@ label .scene18:
     show giti at talking
 
     giti "No need for surprise, Abhay Sir."
+
+    play music "music/Kai_Engel_Street_As_Friends.mp3" fadein 3.0 fadeout 3.0
 
     show giti dark at not_talking
 
@@ -1215,6 +1280,8 @@ label .scene18:
 
     show giti stern at talking
 
+    stop music fadeout 3.0
+
     giti "It can't, Abhay Sir, here it's too serious, and there's no policy to protect Donatello."
 
     giti "In the office, people won't do anything without a policy, it's not like in the Transportation Department."
@@ -1231,6 +1298,8 @@ label .scene18:
 
     $talk_giti_act3 = True
 
+    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
+
     menu:
         thinking "I wonder if Donatello would be interested in this policy..."
         "Find out.":
@@ -1243,6 +1312,8 @@ label .scene19:
 
     scene bg office with fade
 
+    stop music fadeout 3.0
+
     narration "The sound of the printer is relaxing sometimes, you think. You hear the sheets shuffle back and forth, as if the machine were purring. It smells of fresh ink, and of warm paper, lulling you to sleep."
 
     narration "You fight it to keep up with the day, drinking yet another cup of tea, surveilling the corridor through your open door."
@@ -1251,6 +1322,8 @@ label .scene19:
 
     show donatello nervous dark at not_talking, center
     with dissolve
+    
+    play music "music/Kai_Engel_Anxiety.mp3"
 
     thinking "Up to something again."
 
@@ -1380,6 +1453,7 @@ label .scene21:
             jump .scene25
 
 label .choices:
+
     menu:
         thinking "What's my next move?"
         "Talk to someone else." if not talk_giti_act3_2 or not talk_manali_act3_2 or not talk_priyanka_act3_2 or not talk_bapat_act3_2:
@@ -1458,6 +1532,8 @@ label .scene23:
     show manali at talking, center
     with dissolve
 
+    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+
     if talk_manali_act3:
         manali "I thought about what you've said to me the other day, Abhay Sir."
     else:
@@ -1484,6 +1560,9 @@ label .scene23:
     show manali smiling dark at not_talking
 
     hide manali
+    with dissolve
+
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
 
     $talk_manali_act3_2 = True
 
@@ -1572,6 +1651,8 @@ label .scene25:
     show giti stern at center, talking
     with dissolve
 
+    play music "music/Kai_Engel_Street_As_Friends.mp3" fadein 3.0 fadeout 3.0
+
     giti "I have done my research, Abhay."
 
     show giti stern dark at not_talking
@@ -1613,6 +1694,8 @@ label .scene25:
     giti smiling "Yes, Abhay, that’s a good idea."
 
     show giti smiling dark at not_talking
+
+    stop music fadeout 3.0
 
     thinking "Still, this is Giti talking, and she could be wrong in her interpretation of the law."
 
@@ -1661,8 +1744,6 @@ label .scene27:
                 Not only is discrimination on the basis of sexual orientation forbidden, but it is severely punished as well, a rightful cause of the work contract’s termination, as is the protection of the person’s privacy."
 
     narration "There’s a lot more in this document, but you prefer to take one step at a time. You copy the international policy into the branch’s policy, and send it off to the whole comapny by email. Later, you forward this email to the new CEO."
-
-    narration ""
 
     menu:
         "The aftermath.":

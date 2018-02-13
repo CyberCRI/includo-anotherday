@@ -1,4 +1,5 @@
-init python: 
+init python:
+    renpy.music.register_channel("background", mixer="sfx", loop=True)
     def show_narration_background(event, interact=True, **kwargs):
         if not interact:
             return
@@ -6,8 +7,24 @@ init python:
         if event == "show":
             renpy.show("narration_background")
 
+        if event == "show_done":
+            renpy.sound.play("sound/typewriter.wav")
+
+        if event == "slow_done":
+            renpy.sound.stop()
+
         if event == "end":
-            renpy.sound.play("sound/click.wav")
+            renpy.sound.play("sound/typewriter_linebreak.wav")
+
+    def thinking_callback(event, interact=True, **kwargs):
+        if not interact:
+            return
+
+        if event == "show":
+            renpy.show("narration_background")
+
+        if event == "end":
+            renpy.sound.play("sound/say.wav")
 
     def hide_narration_background(event, interact=True, **kwargs):
         if not interact:
@@ -17,7 +34,7 @@ init python:
             renpy.hide("narration_background")
 
         if event == "end":
-            renpy.sound.play("sound/click.wav")
+            renpy.sound.play("sound/say.wav")
 
 
 init 9999 python:
@@ -72,7 +89,7 @@ define manali = Character("MANALI", image="manali", kind=employee, show_job="{i}
 define ashwini = Character("ASHWINI", image="ashwini", kind=employee, show_job="{i}CEO of CRYPTALOO{/i}", show_namepos="left")
 
 define abhay = Character("ABHAY", who_color="#032837", ctc="ctc_blink", ctc_position="nestled",screen="say", show_job="{i}Human Resources Manager{/i}", show_side_image=False, callback=hide_narration_background, show_namepos="left", show_main_character=True)
-define thinking = Character("ABHAY", who_color="#032837", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}", ctc="ctc_blink", ctc_position="nestled", show_job="{i}Human Resources Manager{/i}", show_side_image=False, show_namepos="left", callback=show_narration_background, show_main_character=True)
+define thinking = Character("ABHAY", who_color="#032837", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}", ctc="ctc_blink", ctc_position="nestled", show_job="{i}Human Resources Manager{/i}", show_side_image=False, show_namepos="left", callback=thinking_callback, show_main_character=True)
 
 
 define mail = Character("mail", what_color="#000000", what_size=20, what_font="fonts/Mizo Arial.ttf", what_prefix="{k=-1}", what_suffix="{/k}", ctc="ctc_blink", ctc_position="nestled", screen="mail_say", callback=show_narration_background)

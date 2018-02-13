@@ -351,9 +351,9 @@ screen choice(items):
         for i in items:
             $nbr = nbr + 1.0
             if nbr % 2 != 0:
-                textbutton i.caption action [Play("sound", "sound/misc_menu_4.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333)
+                textbutton i.caption action [Play("sound", "sound/sharp_echo.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333)
             else:
-                textbutton i.caption action [Play("sound", "sound/misc_menu_4.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333) style "choice_button2"
+                textbutton i.caption action [Play("sound", "sound/sharp_echo.wav"), i.action] at from_horizontal_choice(xorigin=-1000, xdestination=0, easein_time=1, pause_time=0 + nbr*0.333) style "choice_button2"
 
 ## When this is true, menu captions will be spoken by the narrator. When false,
 ## menu captions will be displayed as empty buttons.
@@ -403,6 +403,15 @@ screen quick_menu():
     zorder 100
 
     if quick_menu:
+
+        vbox:
+            xalign 0.98
+            yalign 0.02
+
+            if not _preferences.mute["sfx"] or not _preferences.mute["music"] or not _preferences.mute["voice"]:
+                imagebutton idle "sound.png" action Preference("all mute", "enable")
+            else:
+                imagebutton idle "sound_muted.png" action Preference("all mute", "disable")
 
         hbox:
             style_prefix "quick"
@@ -561,8 +570,8 @@ screen main_menu():
 
         spacing 100
 
-        textbutton _("START") action [Play("sound", "sound/misc_sound.wav"), Start()]
-        textbutton _("LOAD") action [Play("sound", "sound/misc_menu2.wav"), ShowMenu("load")]
+        textbutton _("START") action [Play("sound", "sound/sharp_echo.wav"), Start()]
+        textbutton _("LOAD") action [Play("sound", "sound/sharp_echo.wav"), ShowMenu("load")]
         textbutton _("QUIT") action Quit(confirm=False)
 
 
@@ -596,9 +605,9 @@ screen act_menu():
                 if act_4_completed == True:
                     image "closure_checkbox_tick4.png"
                 if act_1_completed and act_2_completed and act_3_completed and act_4_completed:
-                    imagebutton idle "closure_unlocked" action [Play("sound", "sound/load.wav"), Jump("closure")]
+                    imagebutton idle "closure_unlocked.png" action [Play("sound", "sound/load.wav"), Jump("closure")]
                 else:
-                    image "closure_locked"
+                    image "closure_locked.png"
 
         frame:
             background "act_1_background"
@@ -1673,6 +1682,16 @@ screen quick_menu():
     variant "touch"
 
     zorder 100
+
+    vbox:
+        xalign 0.98
+        yalign 0.02
+
+        if not _preferences.mute["sfx"] or not _preferences.mute["music"] or not _preferences.mute["voice"]:
+            imagebutton idle "sound.png" action Preference("all mute", "enable")
+        else:
+            imagebutton idle "sound_muted.png" action Preference("all mute", "disable")
+
 
     hbox:
         style_prefix "quick"

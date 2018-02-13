@@ -19,6 +19,10 @@ label act2:
 
     scene bg none
 
+    stop music fadeout 1.0
+
+    stop background fadeout 1.0
+
     $renpy.pause(3.0)
 
     narration "You are in a fool mood today.{p}
@@ -35,6 +39,8 @@ label act2:
 
     show bg office
     with Dissolve(3.0)
+
+    play music "music/Kevin_MacLeod_Impact_Prelude.mp3"
 
     narration "When you reach the office, you’re a little bit late, and spill your tea as you hurry to your desk.{p}
                 You swear under your breath, and keep striding to your place, where you find Giti waiting for you."
@@ -85,7 +91,7 @@ label .scene2:
 
     giti stern "Not only have I worked hard, but I have accepted more and more responsibilities, "
 
-    giti stern "like taking care of the transportation department, or of the security shift..."
+    giti stern "like taking care of the transportation department, or of the security shift..."    
 
     thinking "What could she want?{w=0.5} Compensation holidays?"
 
@@ -152,6 +158,8 @@ label .scene3:
 
     narration "Giti left with a harsh face."
 
+    stop music fadeout 3.0
+
     thinking "She can make all the faces she wants, I couldn't care less."
 
     menu:
@@ -182,6 +190,8 @@ label .scene3:
 
 label .scene4:
     hide giti with dissolve
+
+    stop music fadeout 3.0
 
     thinking "Wait, is this the right thing to do?"
 
@@ -223,6 +233,8 @@ label .scene6:
 
     show bg meeting_room with fade
 
+    play music "music/Kai_Engel_Slum_Canto.mp3"
+
     narration "You walk to the meeting room, pour yourself another tea, and weigh your options.{p}
                 You could meet with Bapat or Donatello to get to the heart of it, and find out whether they’ve been actually pushing a sexist agenda as Giti says,{p}
                  or you could start with the other women to find out whether Giti is alone in this, or if they will support her."
@@ -232,6 +244,7 @@ label .scene6:
                 Still, you can’t bypass him, or can you?"
 
 label .investigate:
+    
 
     menu:
         thinking "How can I resolve this situation?"
@@ -251,6 +264,10 @@ label .scene7:
     window hide
 
     show bg lunch_room with fade
+
+    play music "music/Kai_Engel_Machinery.mp3" fadein 3.0
+
+    play background "music/crowd.ogg" fadein 3.0
 
     narration "When you enter the canteen, both Priyanka, and Manali are present, each in a different corner of the room.
     The other employees are gathered together in the middle, and have started to eat, and talk."
@@ -314,12 +331,17 @@ label .scene7:
             jump .scene12
 
 label .scene8:
+    stop music fadeout 3.0
+
+    stop background fadeout 3.0
 
     window hide
     show bg meeting_room with dissolve
 
     show bapat dark at center, not_talking
     with dissolve
+
+    play music "music/Kai_Engel_Slum_Canto.mp3" fadein 1.0
 
     narration "You have summoned Bapat to the meeting room, not as relaxed as the canteen, but not as formal as your office.
                 You don’t want him to feel like he’s being under scrutiny, but you need to keep this conversation private."  
@@ -414,10 +436,16 @@ label .scene9:
 
     window hide 
 
+    stop music fadeout 3.0
+
+    stop background fadeout 3.0
+
     show bg meeting_room with fade
 
     show donatello dark at center, not_talking
     with dissolve
+
+    play music "music/Kai_Engel_Slum_Canto.mp3" fadein 1.0
 
     narration "Obviously, Donatello doesn't know what to expect from this meeting.
                 He looks a bit confused, and wary. You have to play it cautious, and beat about the bush a little"
@@ -505,6 +533,8 @@ label .scene9:
 label .scene10:
     window hide
 
+    stop music fadeout 3.0
+
     show bg office with fade
 
     narration "You decide to write to Mr. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone."
@@ -543,11 +573,11 @@ label .scene10:
         thinking "I have done enough investigating, it's time to take a decision."
 
     menu:
-            thinking "I know what my next move will be."
-            "Take a decision.":
-                jump .scene13
-            "Keep investigating." if not talk_women or not talk_bapat or not talk_donatello:
-                jump .scene6
+        thinking "I know what my next move will be."
+        "Take a decision.":
+            jump .scene13
+        "Keep investigating." if not talk_women or not talk_bapat or not talk_donatello:
+            jump .scene6
 
 label .scene11:
     window hide
@@ -619,7 +649,7 @@ label .scene11:
 
     $talk_priyanka = True
 
-    if talk_manali:
+    if not talk_manali:
         if not talk_bapat or not talk_donatello or not email_act_2:
             thinking "I could talke to Manali, keep investigating or take a decision."
         else:
@@ -636,7 +666,7 @@ label .scene11:
 
     menu:
         thinking "The next move should be obvious."
-        "Take a decision." if not talk_manali:
+        "Talk to Manali." if not talk_manali:
             jump .scene12
         "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
             jump .investigate
@@ -726,7 +756,7 @@ label .scene12:
 
     $talk_manali = True
 
-    if talk_priyanka:
+    if not talk_priyanka:
         if not talk_bapat or not talk_donatello or not email_act_2:
             thinking "I could talke to Priyanka, keep investigating or take a decision."
         else:
@@ -745,14 +775,19 @@ label .scene12:
     menu:
         "What should I do ?"
         "Talk to Priyanka." if not talk_priyanka:
-            jump .scene12
+            jump .scene11
         "Keep investigating." if not talk_bapat or not talk_donatello or not email_act_2:
             jump .investigate
         "Take a decision now":
             jump .scene13
 
 label .scene13:
-    thinking "I guess I know enough by now."
+    scene bg office
+    with dissolve
+
+    stop music fadeout 3.0
+
+    stop background fadeout 3.0
 
     thinking "Since Giti sounded very eager to receive an answer in earnest, I need to take a decision."
 
@@ -765,7 +800,6 @@ label .scene13:
     thinking "Decisions, decisions..."
 
 label .decide:
-
     menu:
         thinking "My decision will be..."
         "Approve her promotion.":
@@ -781,6 +815,8 @@ label .scene14:
     window hide
 
     show bg office with dissolve
+
+    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0
 
     narration "You call Giti to your office."
 
@@ -913,6 +949,7 @@ label .scene18:
     window hide
 
     show bg none with fade
+
     narration "You’ve sent an email to inform everyone about Giti’s promotion, not forgetting to send a copy to M. Gopinath.{p}
                 Bapat and Donatello, have stormed into your office several times since then, trying to prove their point, but you’re the HR Manager, and with M. Gopinath, and the new CEO away, there’s nothing they can do.{p}
                 You surmise that M. Gopinath won’t be happy, and hope that the new CEO will understand your position. Time will tell."
@@ -921,6 +958,8 @@ label .scene18:
     jump .end
 
 label .scene19:
+    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0
+
     narration "A few hours later, someone knocks at your door, and hands you a piece of paper before leaving.{p}
                 The paper bears several stamps, and signs, a subpoena."
 
@@ -944,7 +983,7 @@ label .scene19:
 label .scene20:
     narration "You call Giti to your office."
 
-    show giti dark at not_talking
+    show giti dark at not_talking, center
     with dissolve
 
     narration "Once she's sat, you begin."
@@ -1004,6 +1043,8 @@ label .scene21:
             "Yours truly,\n"
             "M. Rajkumar\n"
             "Rajkumar & Rajkumar Ltd."))
+    
+    
 
     thinking "It's time to take my decision."
 
@@ -1025,6 +1066,8 @@ label .scene23:
     narration "You can’t fire Giti because she sues the company, that in itself would open a whole new case against you so she stays, brooding, waiting for the trial.{p}
     The atmosphere of the office changes, there’s no more friendly banter now.{p}
     Bapat and Donatello are obviously on your side, you’re part of their gang now.{p}"
+
+    stop music fadeout 3.0
 
     narration "Surely, the new CEO will surely know how to handle a court case better than you, and everything will be fine again."
 
