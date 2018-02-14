@@ -26,7 +26,7 @@ label act4:
 
     stop background fadeout 1.0
 
-    scene bg none
+    scene bg none with Dissolve(3.0)
 
     $renpy.pause(3.0)
 
@@ -106,7 +106,7 @@ label .scene3:
 
     window hide
 
-    scene bg meeting_room with dissolve
+    scene bg meeting_room with Dissolve(3.0)
 
     narration "To find the true feelings of your employees on such a delicate matter, you don't think that calling people to your office is the best idea."
 
@@ -476,7 +476,7 @@ label .scene10:
 
     window hide 
 
-    scene bg none with dissolve
+    scene bg none with Dissolve(3.0)
 
     narration "You left her no choice."
 
@@ -495,7 +495,7 @@ label .scene11:
 
     stop music fadeout 3.0
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show giti dark at center, not_talking
     with dissolve
@@ -563,7 +563,7 @@ label .scene12:
 
     stop music fadeout 3.0
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show giti compassionate dark at not_talking, center
     with dissolve
@@ -1296,7 +1296,7 @@ label .scene25:
 
     window hide
 
-    show bg none with fade
+    show bg none with Dissolve(3.0)
 
     narration "You can’t make a single person happy at the expense of all the others..."
 
@@ -1309,7 +1309,7 @@ label .scene26:
 
     window hide
 
-    scene bg none with fade
+    scene bg none with Dissolve(3.0)
 
     narration "Of course, Giti is delighted. All the other employees except Manali resent your decision, though, you can feel it in the way they talk, and look at you."
 
@@ -1351,7 +1351,7 @@ label .scene27:
 
 label .scene28:
     window hide
-    scene bg none with fade
+    scene bg none with Dissolve(3.0)
     narration "Following Swami Ram Ram’s advice, you create a neutral space open to the prayers, yoga, and meditation of all religions. There is still some resistance from some of the employees, but at the end, even Bapat uses it for his yoga, and peace has returned to the office. Congratulations."
     
     $act_4_ending_28 = True
@@ -1361,7 +1361,7 @@ label .end:
     $act_4_completed = True
 
     $renpy.hide("narration_background")
-    
+
     show bg end_act_4 with Dissolve(3.0)
 
     pause

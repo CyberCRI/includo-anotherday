@@ -23,7 +23,7 @@ label act3:
 
     stop background fadeout 1.0
 
-    scene bg none
+    scene bg none with Dissolve(3.0)
 
     $renpy.pause(3.0)
 
@@ -199,7 +199,7 @@ label .scene2:
 
     window hide
 
-    show bg none with fade
+    show bg none with Dissolve(3.0)
 
     stop background fadeout 3.0
 
@@ -374,7 +374,7 @@ label .scene4:
 
     window hide
 
-    show bg office with dissolve
+    show bg office with Dissolve(3.0)
 
     play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
@@ -493,7 +493,7 @@ label .gay:
 label .scene5:
     window hide 
 
-    scene bg office with dissolve
+    scene bg office with Dissolve(3.0)
 
     show bapat dark at center_left, not_talking with dissolve
 
@@ -620,7 +620,7 @@ label .scene7:
 
     window hide
 
-    scene bg lunch_room with dissolve
+    scene bg lunch_room with Dissolve(3.0)
 
     play background "music/crowd.ogg"
 
@@ -780,7 +780,7 @@ label .scene8:
 label .scene9:
 
     scene bg none
-    with dissolve
+    with Dissolve(3.0)
 
     narration "It’s your duty to preserve a safe and welcoming workspace for all your employees."
 
@@ -867,7 +867,7 @@ label .scene12:
 label .scene13:
     window hide
 
-    scene bg none with dissolve
+    scene bg none with Dissolve(3.0)
 
     narration "Since you did nothing, the situation escalates quickly. Every day, you receive a new formal complaint from an employee, or another, telling you how Donatello leaned too close to them, or was looking at them suggestively."
 
@@ -916,7 +916,7 @@ label .employees:
 label .scene15:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show bapat angry at talking, center
     with dissolve
@@ -1017,7 +1017,7 @@ label .scene15:
 label .scene16:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show manali dark at not_talking, center
     with dissolve
@@ -1145,7 +1145,7 @@ label .scene16:
 label .scene17:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show priyanka at talking, center
     with dissolve
@@ -1215,7 +1215,7 @@ label .scene18:
 
     stop music fadeout 3.0
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show giti dark at not_talking, center
     with dissolve
@@ -1310,7 +1310,7 @@ label .scene18:
 label .scene19:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     stop music fadeout 3.0
 
@@ -1407,7 +1407,7 @@ label .scene19:
 label .scene20:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
@@ -1439,7 +1439,7 @@ label .scene20:
 label .scene21:
     window hide
 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     menu:
         thinking "Who do I want to talk to?"
@@ -1465,7 +1465,7 @@ label .choices:
 
 label .scene22:
     window hide 
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
     show bapat angry at talking, center
     with dissolve
 
@@ -1528,7 +1528,7 @@ label .scene22:
 
 label .scene23:
     window hide
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
     show manali at talking, center
     with Dissolve(3.0)
 
@@ -1570,7 +1570,7 @@ label .scene23:
 
 label .scene24:
     window hide
-    scene bg office with dissolve
+    scene bg office with Dissolve(3.0)
     show priyanka dark at not_talking, center
     with Dissolve(3.0)
 
@@ -1646,7 +1646,7 @@ label .scene24:
 
 label .scene25:
     window hide
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     show giti stern at center, talking
     with Dissolve(3.0)
@@ -1738,7 +1738,7 @@ label .scene26:
 
 label .scene27:
     window hide
-    scene bg office with fade
+    scene bg office with Dissolve(3.0)
 
     narration "You can’t believe what you find  when you finally receive the international inclusivity policy from CRYPTALOO’s headquarters.{p}
                 Not only is discrimination on the basis of sexual orientation forbidden, but it is severely punished as well, a rightful cause of the work contract’s termination, as is the protection of the person’s privacy."
@@ -1751,7 +1751,7 @@ label .scene27:
 
 label .scene28:
     window hide
-    scene bg none with fade
+    scene bg none with Dissolve(3.0)
 
     narration "Now that a policy has been passed, effective immediately, nobody dares harass Donatello anymore.{p}
                 Some employees have sent emails to complain about you, and threatened to leave.{p}

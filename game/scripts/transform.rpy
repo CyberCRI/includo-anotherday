@@ -51,6 +51,7 @@ transform elastic_splash_rotate(zoom_value=1.0, time_value=0.0, rotate_value=-3.
     subpixel True
     alpha 1.0
     linear 0.2 zoom zoom_value
+    function play_effect
     pause 2
     easein_elastic 1.5 rotate rotate_value
 

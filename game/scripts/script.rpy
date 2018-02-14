@@ -1,5 +1,9 @@
 init python:
     renpy.music.register_channel("background", mixer="sfx", loop=True)
+
+    def play_effect(trans, st, at):
+        renpy.play("sound/paperdrop.wav", "sound")
+
     def show_narration_background(event, interact=True, **kwargs):
         if not interact:
             return
