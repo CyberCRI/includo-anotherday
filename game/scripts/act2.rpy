@@ -85,13 +85,19 @@ label .scene2:
 
     abhay "You could have asked, I would have approved them, you know. Is this what-"
 
+    show giti stern dark
+    with dissolve
+
     show giti stern at talking
 
     giti stern "No, Sir, please hear me out."
 
     giti stern "Not only have I worked hard, but I have accepted more and more responsibilities, "
 
-    giti stern "like taking care of the transportation department, or of the security shift..."    
+    show giti compassionate
+    with dissolve
+
+    giti "like taking care of the transportation department, or of the security shift..."    
 
     thinking "What could she want?{w=0.5} Compensation holidays?"
 
@@ -123,6 +129,9 @@ label .scene2:
 
     abhay "Who?"
 
+    show giti dark
+    with dissolve
+
     show giti at talking
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
@@ -135,11 +144,17 @@ label .scene2:
 
     abhay "So what do you want me to do, Giti?"
 
+    show giti stern dark
+    with dissolve
+
     show giti stern at talking
 
     giti stern "I want to request a promotion, Abhay Sir, and your official answer."
 
-    show giti dark at not_talking
+    show giti stern dark at not_talking with None
+
+    show giti dark
+    with dissolve
 
     thinking "Really, {w=0.25}just like that."
 
@@ -231,7 +246,7 @@ label .scene6:
 
     window hide
 
-    show bg meeting_room with fade
+    show bg meeting_room with Dissolve(3.0)
 
     play music "music/Kai_Engel_Slum_Canto.ogg"
 
@@ -639,11 +654,16 @@ label .scene11:
 
     abhay "There's Vina from the Front Desk,{w=0.5}Karuna from the Distribution Department,{w=0.5}Shruti from-"
 
+    show priyanka smiling dark
+    with dissolve
+
     show priyanka smiling at talking
 
     priyanka "But none from the Marketing,{w=0.5}the Sales Department,{w=0.5} or the Head Administration, Abhay, that’s what I’m telling you."
 
-    show priyanka dark at talking
+    show priyanka smiling dark at not_talking with None
+
+    show priyanka dark at talking with dissolve
 
     thinking "I have heard enough."
 
@@ -706,6 +726,9 @@ label .scene12:
 
     abhay "Yet she’s never been promoted"
 
+    show manali dark
+    with dissolve
+
     show manali at talking
 
     manali "..."
@@ -739,6 +762,8 @@ label .scene12:
     show manali dark at not_talking
 
     abhay "Because she's a woman?"
+
+    show manali nervous dark with dissolve
 
     show manali nervous at talking
 
@@ -831,11 +856,13 @@ label .scene14:
 
     giti "..."
 
-    show giti dark at not_talking
+    show giti compassionate
+    with dissolve
 
     giti "T-Thank you, Abhay Sir."
 
     show giti smiling
+    with dissolve
 
     giti "Thank you, Abhay Sir, {b}thank you{/b}."
 
@@ -844,6 +871,9 @@ label .scene14:
     abhay "*laughs*"
 
     abhay "About time, isn't it?{w=0.5} Things should change around here."
+
+    show giti dark
+    with dissolve
 
     show giti at talking
 
@@ -990,6 +1020,9 @@ label .scene20:
     narration "Once she's sat, you begin."
 
     abhay "I have decided to approve your promotion request, Giti."
+
+    show giti stern dark
+    with dissolve
 
     show giti stern at talking
 

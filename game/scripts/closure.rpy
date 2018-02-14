@@ -402,11 +402,11 @@ label .good_ending:
 
     ashwini smiling "And to commend you for management training sessions at our International Headquarters."
 
-    show ashwini dark at not_talking
+    show ashwini smiling dark at not_talking
+
+    show ashwini dark with dissolve
 
     narration "You feel a bit tipsy, and a bit proud. Just a week ago, you were reaching the office with a pang of anxiety, knowing that you would be the one in charge, and now it seems that you’ve been successful all the way."
-
-    
 
     thinking "{i}Administrative Director?{w=1} Me?{/i}"
 
@@ -419,6 +419,9 @@ label .good_ending:
     show ashwini dark at not_talking
 
     abhay "Yes, Madam?"
+
+    show ashwini smiling dark
+    with dissolve
 
     show ashwini smiling at talking
 

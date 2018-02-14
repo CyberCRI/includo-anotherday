@@ -46,7 +46,7 @@ label act3:
 
     show priyanka smiling at center, talking with dissolve
 
-    priyanka smiling "...And then, he turned around and said, “Are you sure these are your trousers?”"
+    priyanka "...And then, he turned around and said, “Are you sure these are your trousers?”"
 
     narration "Manali bursts into laughter, almost tipping her glass over."
 
@@ -226,17 +226,25 @@ label .scene3:
 
     bapat "But no longer." (show_namepos="left")
 
-    show bapat smug dark at not_talking
+    show bapat angry dark at not_talking with None
+    show bapat smug dark
+    show donatello angry dark
+    with dissolve
     show donatello angry at talking
 
     donatello "What are you talking about?" (show_namepos="right")
 
     donatello "Of course you will give me the money back, Bapat, or I will-" (show_namepos="right")
 
+    show donatello angry dark at not_talking with None
     show donatello dark at not_talking
+    show bapat angry dark
+    with dissolve
     show bapat angry at talking
 
     bapat "You will nothing." (show_namepos="left")
+
+    show bapat angry dark at not_talking with None
 
     show bapat smug dark at not_talking
     show donatello nervous dark with dissolve
@@ -248,8 +256,6 @@ label .scene3:
     donatello "And why is that?" (show_namepos="right")
 
     show donatello nervous dark at not_talking
-
-    show bapat smug dark with dissolve
 
     show bapat smug at talking
 
@@ -268,7 +274,9 @@ label .scene3:
 
     donatello "Where did you get this?!" (show_namepos="right")
 
-    show donatello nervous dark at not_talking
+    show donatello angry dark at not_talking with None
+
+    show donatello nervous dark with dissolve
 
     show bapat smug at talking
 
@@ -284,19 +292,28 @@ label .scene3:
 
     bapat "or should I say...{w=0.5} {i}Daisy{/i}?" (show_namepos="left")
 
-    show bapat smug dark at not_talking
+    show bapat smug dark at not_talking with None
+
+    show donatello angry dark
+    with dissolve
 
     show donatello angry at talking 
 
     donatello "Are you threatening me for real?" (show_namepos="right")
 
-    show donatello determined dark at not_talking 
+    show donatello angry dark at not_talking with None
+
+    show donatello determined dark
+    with dissolve
+
+    show bapat dark
+    with dissolve
 
     show bapat at talking
 
     bapat "Oh I am,{w=0.5} yes I am, either you support my decisions, or I tell everyone." (show_namepos="left")
 
-    show bapat with dissolve
+    show bapat smug with dissolve
 
     bapat "How would you like it,{w=0.25} the whole office knowing?" (show_namepos="left")
 
@@ -306,7 +323,11 @@ label .scene3:
 
     abhay "{i}Ahem.{/i}"
 
-    stop music fadeout 3.0
+    stop music fadeout 1.0
+
+    show bapat dark
+    show donatello nervous dark
+    with dissolve
 
     show bapat at talking
 
@@ -318,12 +339,14 @@ label .scene3:
 
     donatello "..." (show_namepos="right")
 
-    show donatello dark at not_talking
+    show donatello nervous dark at not_talking
 
     abhay "Knowing {i}what{/i}?"
 
-    show bapat nervous at talking
+    show bapat nervous dark
     with dissolve
+
+    show bapat nervous at talking
 
     bapat "Nothing, Abhay, it's nothing." (show_namepos="left")
 
@@ -339,6 +362,11 @@ label .scene3:
     abhay "Is there anything you'd like to report to me, Donatello?"
 
     show donatello dark
+    with dissolve
+
+    show bapat nervous dark
+    with dissolve
+
     show bapat nervous at talking
 
     bapat "..." (show_namepos="left")
@@ -392,11 +420,14 @@ label .scene4:
 
     abhay "Wait, say what?{w=0.5} What did Bapat do?"
 
+    show donatello dark
+    with dissolve
+
     show donatello at talking
 
     donatello "Doesn't matter, Abhay."
 
-    show donatello nervouswith dissolve
+    show donatello nervous with dissolve
 
     donatello nervous "What matters is that I need to say it, I really need."
 
@@ -407,6 +438,9 @@ label .scene4:
     stop music fadeout 3.0
 
     abhay "What on Earth are you talking about?"
+
+    show donatello determined dark
+    with dissolve
 
     show donatello determined at talking
 
@@ -434,15 +468,24 @@ label .gay:
 
     abhay "You should have tried to tell her, maybe she would have helped!"
 
+    show donatello thoughtful dark
+    with dissolve
+
     show donatello thoughtful at talking
 
     donatello "You don't know Priyanka so well, Abhay, no offense but-"
 
-    show donatello dark at not_talking
+    show donatello thoughtful dark at not_talking with None
+
+    show donatello dark
+    with dissolve
 
     abhay "Right. But why the hurry?"
 
     abhay "Why do you need to shout it to the whole office, Donald?"
+
+    show donatello determined dark
+    with dissolve
 
     abhay "You're not married with these people, you don't owe them any kind of explanation."
 
@@ -473,11 +516,14 @@ label .gay:
 
     play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
+    show donatello angry dark
+    with dissolve
+
     show donatello angry at talking
 
     donatello angry "You, of all people, I thought you would understand, Abhay!"
 
-    show donatello angry dark at not_talking
+    show donatello angry dark at not_talking with None
 
     hide donatello with dissolve
 
@@ -506,6 +552,9 @@ label .scene5:
 
     abhay "I heard you threatening Donatello yesterday, Bapat"
 
+    show bapat nervous dark
+    with dissolve
+
     show bapat nervous at talking
 
     bapat nervous "Oh, Abhay, it's not like that-" (show_namepos="left")
@@ -523,6 +572,9 @@ label .scene5:
     donatello "But you will." (show_namepos="right")
 
     show donatello determined dark at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     show bapat at talking
 
@@ -608,6 +660,9 @@ label .scene6:
 
     abhay "What on Earth are you talking about?"
 
+    show donatello determined dark
+    with dissolve
+
     show donatello determined at move_center_from_right, talking
 
     jump .gay
@@ -626,12 +681,15 @@ label .scene7:
 
     narration "When you reach it, you hear Donatello’s shaky voice echoing in a dead silence before you open the door."
 
-    show donatello determined at center_left, talking
+    show donatello determined at center_left, talking, flip
     with dissolve
 
     donatello "... So no, I'm not married, and never will be, {w=0.5}or not to a woman." (show_namepos="left")
 
-    show donatello nervous dark at not_talking
+    show donatello determined dark at not_talking with None
+
+    show donatello nervous dark
+    with dissolve
 
     thinking "So he did it."
 
@@ -647,6 +705,9 @@ label .scene7:
     bapat "You should move to the US if you want to marry a man, there will none of it here!" (show_namepos="right")
 
     show bapat angry dark at not_talking with None
+
+    show donatello dark
+    with dissolve
 
     show donatello at talking
 
@@ -665,12 +726,16 @@ label .scene7:
 
     bapat smug "I'm not going to be your girlfriend, you need to move to another office!" (show_namepos="right")
 
+    show bapat smug dark at not_talking with None
     show donatello nervous dark at not_talking
-    show bapat smug dark at not_talking
+    with dissolve
 
     thinking "Just look at him, excited by his own success."
 
     thinking "Everyone has fifteen minutes of glory in life, or so I've heard, maybe this is Bapat's moment of fame."
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -695,6 +760,9 @@ label .scene7:
     with dissolve
 
     abhay "Did he say he wants you for a boyfriend, Bapat?{w=0.5} {i}Who would?{/i}"
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -731,18 +799,20 @@ label .scene7:
     narration "Giti stands up, and takes Donatello’s hands in hers, and for a magic moment, everybody stops, and just watches."
 
     show giti compassionate at center, talking
+    with dissolve
 
     giti compassionate "He is who he is, Bapat Sir, why can’t we just accept it?"
 
-    hide giti
+    hide giti with dissolve
 
     narration "Bapat sits back into his chair, and the laughter stops."
 
     show donatello at center, talking
+    with dissolve
 
     donatello "Thank you for understanding, Giti"
 
-    hide donatello
+    hide donatello with dissolve 
 
     narration "He releases her hands as he leaves the room."
     
@@ -933,9 +1003,15 @@ label .scene15:
 
     bapat "Now, he must leave, there's nothing else we can do!"
 
-    show bapat dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     abhay "I see. {w=0.5}You would try to hide it if it were you, isn't it, Bapat?"
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -944,6 +1020,8 @@ label .scene15:
     show bapat angry dark at not_talking
 
     abhay "But since that's how you would react yourself, you thought that his orientation would be a good tool to threaten him with."
+
+    show bapat nervous dark with dissolve
 
     show bapat nervous at talking
 
@@ -954,9 +1032,15 @@ label .scene15:
 
     bapat "I was just telling him that I could remain silent about it, the best thing for everybody, honest, and that he should be more grateful to me."
 
-    show bapat dark at not_talking
+    show bapat smug dark at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     abhay "Graceful for {i}what?{/i}{w=0.5} For disrespecting him?"
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -972,7 +1056,10 @@ label .scene15:
 
     bapat "And what if we become gay too?!"
 
-    show bapat smug dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat smug dark
+    with dissolve
 
     narration "You suppress a rising laugh."
 
@@ -986,13 +1073,22 @@ label .scene15:
 
     abhay "Oh {i}come on{/i}, Bapat, I was joking.{w=0.5} It's not a disease, you can't catch it!"
 
+    show bapat dark
+    with dissolve
+
     show bapat at talking
 
     bapat "Who knows, Abhay!"
 
+    show bapat angry
+    with dissolve
+
     bapat "And now he's spreading propaganda too!"
 
-    show bapat dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     abhay "He {i}expressed{/i} himself, Bapat, just you would if you ever had anything interesting to say."
 
@@ -1071,6 +1167,9 @@ label .scene16:
 
     abhay "And why not?"
 
+    show manali nervous dark
+    with dissolve
+
     show manali nervous at talking
 
     manali nervous "But why did he have to say it, Sir?"
@@ -1093,10 +1192,14 @@ label .scene16:
 
     show manali nervous at talking
 
-    manali nervous "No, Sir, not that!{w=0.5} Maybe.{w=0.5}I don't know."
+    manali "No, Sir, not that!{w=0.5} Maybe.{w=0.5}I don't know."
 
-    show manali
+    show manali nervous dark at not_talking with None
+
+    show manali dark
     with dissolve
+
+    show manali at talking
 
     manali "But telling us, that's his fault."
 
@@ -1170,33 +1273,44 @@ label .scene17:
 
     abhay "You take this opportunity to bite him back?"
 
+    show priyanka angry dark
+    with dissolve
+
     show priyanka angry at talking
 
-    priyanka angry "No, please, it's not that!"
+    priyanka "No, please, it's not that!"
 
-    priyanka angry "Of course he's been an idiot for a long time, that doesn't change the fact, but we thought he was like us, {w=0.25}normal."
+    priyanka "Of course he's been an idiot for a long time, that doesn't change the fact, but we thought he was like us, {w=0.25}normal."
 
-    show priyanka dark at not_talking
+    show priyanka angry dark at not_talking with None
+
+    show priyanka dark
+    with dissolve
 
     abhay "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
 
-    show priyanka at talking
+    show priyanka annoyed dark with dissolve
+
+    show priyanka annoyed at talking
 
     priyanka "This is difficult to accept, Abhay, what will I say to my family?{w=0.5} They will want me to move."
 
-    show priyanka dark at not_talking
+    show priyanka annoyed dark at not_talking
 
     abhay "So they were happy to let you stay when you stay when you were shamed for the way you dress."
 
     abhay "But they will want you to move is someone being honest with you in the company?"
 
-    show priyanka at talking
+    show priyanka annoyed at talking
 
     priyanka "Maybe, I don't need to tell them."
 
-    show priyanka dark at not_talking
+    show priyanka annoyed dark at not_talking
 
     abhay "Maybe yes, Priyanka, and you need to accept him as he is, the way he is."
+
+    show priyanka dark
+    with dissolve
 
     show priyanka at talking
 
@@ -1232,25 +1346,33 @@ label .scene18:
 
     abhay "I mean, Donatello isn't exactly a nice person, he-"
 
+    show giti stern dark
+    with dissolve
+
     show giti stern at talking
 
     giti "He's not."
 
     giti "But if we are never nice to mean people,{w=0.25} that doesn't leave many people to be nice to."
 
-    show giti dark at not_talking
+    show giti stern dark at not_talking
 
     abhay "*laughs*"
 
     abhay "True, very true."
 
+    show giti compassionate dark
+    with dissolve
+
     show giti compassionate at talking
 
-    giti compassionate "I am not a learned person, Abhay Sir, but I know we are all the same, and all equal."
+    giti "I am not a learned person, Abhay Sir, but I know we are all the same, and all equal."
 
-    giti compassionate "White,{w=0.25} black,{w=0.25} gay,{w=0.25} not gay,{w=0.25} it is not different, Sir."
+    giti "White,{w=0.25} black,{w=0.25} gay,{w=0.25} not gay,{w=0.25} it is not different, Sir."
 
-    show giti compassionate dark at not_talking
+    show giti compassionate dark at not_talking with None
+
+    show giti dark with dissolve
 
     abhay "..."
 
@@ -1278,6 +1400,9 @@ label .scene18:
 
     abhay "If only that worked here."
 
+    show giti stern dark
+    with dissolve
+
     show giti stern at talking
 
     stop music fadeout 3.0
@@ -1289,6 +1414,9 @@ label .scene18:
     show giti stern dark at not_talking
 
     abhay "Would he {i}want{/i} that?"
+
+    show giti dark
+    with dissolve
 
     show giti at talking
 
@@ -1329,11 +1457,17 @@ label .scene19:
 
     thinking "I hope it's good..."
 
+    show donatello angry dark
+    with dissolve
+
     show donatello angry at talking
 
     donatello angry "It doesn't work, Abhay!"
 
-    show donatello nervous dark at not_talking
+    show donatello angry dark at not_talking
+
+    show donatello nervous dark
+    with dissolve
 
     abhay "What doesn't work?"
 
@@ -1346,9 +1480,15 @@ label .scene19:
 
     donatello angry "They simply won’t accept me, and won’t work with me anymore. This is all falling apart!"
 
-    show donatello nervous dark at not_talking
+    show donatello angry dark at not_talking with None
+
+    show donatello nervous dark
+    with dissolve
 
     abhay "And what's your solution, then?"
+
+    show donatello thoughtful dark
+    with dissolve
 
     show donatello thoughtful at talking
 
@@ -1359,9 +1499,15 @@ label .scene19:
 
     donatello "But fortunately I spoke with Giti, and she gave me an idea."
 
-    show donatello nervous dark at not_talking
+    show donatello smug dark at not_talking with None
+
+    show donatello nervous dark
+    with dissolve
 
     abhay "Tell me."
+
+    show donatello determined dark at not_talking
+    with dissolve
 
     show donatello determined at talking
 
@@ -1380,6 +1526,9 @@ label .scene19:
 
     abhay "I'm not sure I can, Donald, because-"
 
+    show donatello angry dark
+    with dissolve
+
     show donatello angry at talking
 
     donatello "Because {i}what{/i}?!"
@@ -1396,6 +1545,8 @@ label .scene19:
     thinking "How will the others react to that?"
 
     thinking "Is that even legally possible?"
+
+    hide donatello with dissolve
 
     menu:
         thinking "Mr. Rajkumar could help me with legal matters."
@@ -1473,9 +1624,15 @@ label .scene22:
 
     bapat "A {i}policy{/i}?!{w=0.5} And why not a bonus!"
 
-    show bapat dark at not_talking
+    show bapat angry at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     abhay "It's just to protect him, Bapat"
+
+    show bapat smug dark
+    with dissolve
 
     show bapat smug at talking
 
@@ -1485,13 +1642,21 @@ label .scene22:
 
     abhay "You work here, Bapat, right?"
 
+    show bapat dark
+    with dissolve
+
     show bapat at talking
 
     bapat "I do, Abhay brother."
 
+    show bapat dark at not_talking with None
+
     show bapat smug dark at not_talking
+    with dissolve
 
     abhay "So if a policy is implemented, and approved at the highest level, you will have no choice, will you?"
+
+    show bapat dark with dissolve
 
     show bapat at talking
 
@@ -1513,6 +1678,9 @@ label .scene22:
     show bapat smug dark at not_talking
 
     abhay "See, the way you talk convinces me even more to draft it."
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -1553,6 +1721,9 @@ label .scene23:
 
     abhay "You would be OK with a policy protecting our employees from this kind of discrimination, then?"
 
+    show manali smiling dark
+    with dissolve
+
     show manali smiling at talking
 
     manali "Yes, I would, Sir, since I'm doing it already."
@@ -1586,7 +1757,10 @@ label .scene24:
 
     abhay "No you don’t, Priyanka, think about Donatello."
 
-    show priyanka angry at talking
+    show priyanka annoyed dark
+    with dissolve
+
+    show priyanka annoyed at talking
 
     priyanka "But he’s mean anyway, why protect him?"
 
@@ -1615,6 +1789,9 @@ label .scene24:
 
     abhay "We sell to the younger generations, don’t you think this can convey a positive message, I don’t know, like we’re Apple or something?"
 
+    show priyanka annoyed dark
+    with dissolve
+    
     show priyanka annoyed at talking
 
     priyanka "Apple works with China, Abhay, and I am representative of the young generation."

@@ -59,7 +59,6 @@ label .scene2:
 
     abhay "What’s the matter, Priyanka?{w=0.5} It’s very early."
 
-
     show priyanka crying at talking
 
     priyanka crying "I can’t stand it anymore, Mr. Chandrakant, I just can’t."
@@ -88,15 +87,19 @@ label .scene2:
 
     abhay "Why don’t you change the way you dress?"
 
+    show priyanka angry dark
+    with dissolve
+
     show priyanka angry at talking
 
     priyanka angry "Why is it to me to change my ways?{w=0.5} Why can’t I be myself?"
 
     priyanka angry "Am I supposed to come in a sari with flowers every day?"
 
-    show priyanka crying dark at not_talking
+    show priyanka angry dark at not_talking with None
 
-    
+    show priyanka crying dark
+    with dissolve
 
     thinking "I’m in a bit of a pickle now."
 
@@ -129,8 +132,8 @@ label .scene3:
     show bg lunch_room
     with Dissolve(3.0)
 
-    play background "music/crowd.ogg" fadein 3.0
-    play music "music/Kai_Engel_Machinery.ogg" fadein 1.0
+    play background "music/crowd.ogg" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Machinery.ogg" fadein 1.0 fadeout 1.0
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
@@ -168,6 +171,7 @@ label .scene3:
     bapat "It’s the same as usual, Abhay, this Priyanka she walks around half-naked." (show_namepos="right")
     
     show bapat angry
+    show donatello dark
     with dissolve
 
     bapat "It’s not decent!" (show_namepos="right")
@@ -180,6 +184,9 @@ label .scene3:
     show donatello dark at not_talking
 
     abhay "So nothing happened?"
+
+    show donatello dark angry
+    with dissolve
 
     show donatello angry at talking
 
@@ -234,7 +241,7 @@ label .scene5:
 
     window hide 
 
-    show bg lunch_room with dissolve
+    show bg lunch_room with Dissolve(3.0)
 
     narration "Bapat and Donatello have left, leaving you alone in the canteen."  
 
@@ -361,6 +368,9 @@ label .scene7:
     show bapat dark at not_talking
 
     abhay "So you thought that he could be in trouble, hence the ruckus you raise this morning."
+
+    show bapat dark angry
+    with dissolve
 
     show bapat angry at talking
 
@@ -875,6 +885,9 @@ label .scene18:
 
     abhay "Why would she?{w=0.5} Are they so gorgeous?"
 
+    show giti dark
+    with dissolve
+
     show giti at talking
 
     giti "Women should have a sense of decency, we’re not in New York Miami USA here."
@@ -890,19 +903,33 @@ label .scene18:
 
     abhay "*sigh* {w=1}Carry on."
 
+    show giti smiling dark
+    with dissolve
+
     show giti smiling at talking
 
     giti smiling "I have said what I needed to, Abhay Sir."
 
-    show giti dark at not_talking
+    show giti smiling dark at not_talking
+
+    show giti dark
+    with dissolve
 
     abhay "What should I do then?{w=0.5} Should I punish Priyanka, and leave the guys alone?"
+
+    show giti smiling dark
+    with dissolve
 
     show giti smiling at talking
 
     giti smiling "Maybe you should give them all a warning, then decide on a dress code, or give Priyanka more warnings if she doesn’t change her ways."
 
+    show giti smiling dark at not_talking
+
     abhay "By company policy, I have to fire her after three warnings have been issued, Giti, did you know that?"
+
+    show giti sad dark
+    with dissolve
 
     show giti sad at talking
 
@@ -912,7 +939,10 @@ label .scene18:
 
     abhay "But you still advise me to do it?"
 
-    show giti at talking
+    show giti dark
+    with dissolve
+
+    show giti   at talking
 
     giti "No Sir, I have no solution."
 
@@ -1050,6 +1080,9 @@ label .scene22:
 
     abhay "Is there something I should know about Priyanka that you didn’t tell me yet?"
 
+    show bapat nervous dark
+    with dissolve
+
     show bapat nervous at talking
 
     bapat nervous "W-{w=0.25}What is this nonsense?"
@@ -1058,17 +1091,23 @@ label .scene22:
 
     abhay "You tell me."
 
+    show bapat angry dark
+    with dissolve
+
     show bapat angry at talking
 
     bapat angry "What did she tell you?!"
 
-    show bapat nervous dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat nervous dark
+    with dissolve
 
     abhay "She told me nothing, Bapat, I’m fumbling in the dark here."
 
     show bapat dark with dissolve
 
-    show bapat at talking with None
+    show bapat at talking
 
     bapat "There’s nothing, Abhay, nothing."
 
@@ -1128,13 +1167,22 @@ label .scene25:
 
     abhay "I know everything, Bapat, about your son."
 
+    show bapat angry dark
+    with dissolve
+
     show bapat angry at talking
 
     bapat angry "Ah now she decided to tell you, she really has no shame, this woman!"
 
-    show bapat dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat dark
+    with dissolve
 
     abhay "So it is true."
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -1142,9 +1190,15 @@ label .scene25:
 
     bapat angry "She dresses like this because she’s a tease!{w=0.5} No other reason!"
 
-    show bapat dark at not_talking
+    show bapat angry dark at not_talking
+
+    show bapat dark
+    with dissolve
 
     abhay "She didn’t tell me, Bapat. I don’t think she would have."
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -1152,9 +1206,15 @@ label .scene25:
 
     bapat angry "We can’t have women like this going around the office, breaking hearts and all!"
 
-    show bapat nervous dark at not_talking
+    show bapat angry dark at not_talking with None
+
+    show bapat nervous dark
+    with dissolve
 
     abhay "You never did anything against her before she left your son. This needs to stop!"
+
+    show bapat angry dark
+    with dissolve
 
     show bapat angry at talking
 
@@ -1305,7 +1365,7 @@ label .end:
     $act_1_completed = True
 
     $renpy.hide("narration_background")
-    
+
     show bg end_act_1 with Dissolve(3.0)
 
     pause
