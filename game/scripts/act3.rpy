@@ -34,7 +34,7 @@ label act3:
     scene bg lunch_room
     with Dissolve(3.0)
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
     narration "You unpack your lunchbox, and share around the delicious parathas you find inside before starting to eat.{p}
             The last events have taken their toll, and the atmosphere is rather uneasy."
@@ -135,7 +135,7 @@ label act3:
 
     show priyanka at move_left
 
-    play music "music/Kai_Engel_Machinery.mp3"
+    play music "music/Kai_Engel_Machinery.ogg"
 
     priyanka "How come?!" (show_namepos="left")
 
@@ -376,7 +376,7 @@ label .scene4:
 
     show bg office with dissolve
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     narration "The next day, just before lunch break, Donatello asks to see you."
 
@@ -412,7 +412,7 @@ label .scene4:
 
 label .gay:
 
-    play music "music/Kevin_MacLeod_I_Knew_A_Guy.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_I_Knew_A_Guy.ogg" fadein 3.0 fadeout 3.0
 
     donatello "I am gay, Abhay, that's why I'm not married."
 
@@ -471,7 +471,7 @@ label .gay:
 
     abhay "There will be consequences, and you won't be able to take it back, and-"
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     show donatello angry at talking
 
@@ -499,7 +499,7 @@ label .scene5:
 
     show donatello dark at center_right, not_talking with dissolve
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     narration "You call Bapat and Donatello together into your office just before the lunch break on the next morning.
                 Neither of them sit down. {w=0.5}Instead they both stand in front of you like naughty college students waiting for their scolding."
@@ -571,7 +571,7 @@ label .scene6:
 
     pause 3.0
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     narration "The next day, just before lunch break, Donatello asks to see you."
 
@@ -764,7 +764,7 @@ label .scene8:
 
     scene bg office with Dissolve(3.0)
 
-    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
+    play music "music/Kevin_MacLeod_Impact_Prelude.ogg" fadein 3.0
 
     menu:
         thinking "The situation festers. Should I do something about it?"
@@ -1022,7 +1022,7 @@ label .scene16:
     show manali dark at not_talking, center
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
     abhay "Do you have a boyfriend, Manali?"
 
@@ -1136,7 +1136,7 @@ label .scene16:
 
     $talk_manali_act3 = True
 
-    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
+    play music "music/Kevin_MacLeod_Impact_Prelude.ogg" fadein 3.0
 
     menu:
         "Talk to someone else":
@@ -1226,7 +1226,7 @@ label .scene18:
 
     giti "No need for surprise, Abhay Sir."
 
-    play music "music/Kai_Engel_Street_As_Friends.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Street_As_Friends.ogg" fadein 3.0 fadeout 3.0
 
     show giti dark at not_talking
 
@@ -1298,7 +1298,7 @@ label .scene18:
 
     $talk_giti_act3 = True
 
-    play music "music/Kevin_MacLeod_Impact_Prelude.mp3" fadein 3.0
+    play music "music/Kevin_MacLeod_Impact_Prelude.ogg" fadein 3.0
 
     menu:
         thinking "I wonder if Donatello would be interested in this policy..."
@@ -1323,7 +1323,7 @@ label .scene19:
     show donatello nervous dark at not_talking, center
     with dissolve
     
-    play music "music/Kai_Engel_Anxiety.mp3"
+    play music "music/Kai_Engel_Anxiety.ogg"
 
     thinking "Up to something again."
 
@@ -1532,7 +1532,7 @@ label .scene23:
     show manali at talking, center
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
     if talk_manali_act3:
         manali "I thought about what you've said to me the other day, Abhay Sir."
@@ -1562,7 +1562,7 @@ label .scene23:
     hide manali
     with dissolve
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     $talk_manali_act3_2 = True
 
@@ -1651,7 +1651,7 @@ label .scene25:
     show giti stern at center, talking
     with dissolve
 
-    play music "music/Kai_Engel_Street_As_Friends.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Street_As_Friends.ogg" fadein 3.0 fadeout 3.0
 
     giti "I have done my research, Abhay."
 

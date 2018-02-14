@@ -30,7 +30,7 @@ label act4:
 
     $renpy.pause(3.0)
 
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
     thinking "The issues have been piling up lately, forcing me to take difficult decisions."
 
@@ -114,7 +114,7 @@ label .scene3:
 
     narration "You move to the meeting room with a pen, and a piece of paper, you want this to be as informal as possible, but you need to hear what they think about the situation."
 
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
 label .employees:
     menu:
@@ -321,7 +321,7 @@ label .scene7:
     show manali at center, talking
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 2.0 fadeout 2.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 2.0 fadeout 2.0
 
     manali "Oh why bother, respected Sir?"
 
@@ -363,7 +363,7 @@ label .scene7:
 
     hide manali with dissolve
 
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
     $talk_manali_act4 = True
 
@@ -456,7 +456,7 @@ label .scene9:
 
     thinking "She's stubborn, but I will leave her no choice, this is too important."
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 1.0 fadeout 1.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 1.0 fadeout 1.0
 
     abhay "You will, or you will no longer be part of this company."
 
@@ -526,7 +526,7 @@ label .scene11:
 
     show giti dark at not_talking
 
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
     abhay "Let’s just say you caught a flu{w=0.25}, or something, you know,{w=0.25} call in sick, and take a leave tomorrow so that you can skip the blessing."
 
@@ -575,7 +575,7 @@ label .scene12:
     show giti dark
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0
 
     abhay "When the Brahmin will come, just go drink a chair downstairs, or whatever, okay?"
 
@@ -622,7 +622,7 @@ label .scene13:
 
     show bg none with Dissolve (3.0)
 
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
     narration "As planned, Giti doesn’t show up on the next day."
 
@@ -720,7 +720,7 @@ label .scene15:
 
     show bg lunch_room with dissolve
 
-    play music "music/Kai_Engel_Holyday_Gift.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Holyday_Gift.ogg" fadein 3.0 fadeout 3.0
 
     play background "music/crowd.ogg" fadein 3.0 fadeout 3.0
 
@@ -808,7 +808,7 @@ label .scene15:
 label .scene16:
     thinking "Let's not change a winning strategy."
 
-    play music "music/Kai_Engel_Machinery.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Machinery.ogg" fadein 3.0 fadeout 3.0
 
 label .employees2:
     menu:
@@ -1056,7 +1056,7 @@ label .scene20:
     show manali at center, talking
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
     manali "So she's been praying in the toilet for three years?"
 
@@ -1121,7 +1121,7 @@ label .scene20:
 
     $talk_manali_act4_2 = True
 
-    play music "music/Kai_Engel_Machinery.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Machinery.ogg" fadein 3.0 fadeout 3.0
 
     jump .advices2
 
@@ -1190,7 +1190,7 @@ label .scene23:
     show giti dark at center, not_talking
     with dissolve
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     abhay "I can't do this, Giti."
 
@@ -1240,7 +1240,7 @@ label .scene23:
 
     giti smiling "I can do it some more."
 
-    play music "music/Kai_Engel_Moonlight_Reprise.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Moonlight_Reprise.ogg" fadein 3.0 fadeout 3.0
 
     hide giti with dissolve
 
@@ -1257,7 +1257,7 @@ label .scene24:
     show giti dark at not_talking, center
     with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
     abhay "Of course, you'll have it, Giti."
 
@@ -1320,7 +1320,7 @@ label .scene26:
     
 
 label .scene27:
-    play music "music/Kevin_MacLeod_Eastminster.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kevin_MacLeod_Eastminster.ogg" fadein 3.0 fadeout 3.0
 
     narration "You decide to write to the Brahmin who came to bless the office, and to explain him the situation with Giti. After all, you’re dealing with a religious issue, and he’s a religious person. On the other hand, he’s a representative of the Hindus, and you assume that his answer will not help Giti much, but who knows?{p}
                 He answers a few hours later."

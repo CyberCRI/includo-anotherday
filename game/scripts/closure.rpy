@@ -12,7 +12,7 @@ label closure:
 
     scene bg closure_empty with dissolve 
 
-    play music "music/Kai_Engel_Brand_New_World.mp3" fadein 1.0 fadeout 1.0
+    play music "music/Kai_Engel_Brand_New_World.ogg" fadein 1.0 fadeout 1.0
 
     narration "The big day has finally come."
 

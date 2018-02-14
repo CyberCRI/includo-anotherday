@@ -40,7 +40,7 @@ label act2:
     show bg office
     with Dissolve(3.0)
 
-    play music "music/Kevin_MacLeod_Impact_Prelude.mp3"
+    play music "music/Kevin_MacLeod_Impact_Prelude.ogg"
 
     narration "When you reach the office, you’re a little bit late, and spill your tea as you hurry to your desk.{p}
                 You swear under your breath, and keep striding to your place, where you find Giti waiting for you."
@@ -233,7 +233,7 @@ label .scene6:
 
     show bg meeting_room with fade
 
-    play music "music/Kai_Engel_Slum_Canto.mp3"
+    play music "music/Kai_Engel_Slum_Canto.ogg"
 
     narration "You walk to the meeting room, pour yourself another tea, and weigh your options.{p}
                 You could meet with Bapat or Donatello to get to the heart of it, and find out whether they’ve been actually pushing a sexist agenda as Giti says,{p}
@@ -265,7 +265,7 @@ label .scene7:
 
     show bg lunch_room with fade
 
-    play music "music/Kai_Engel_Machinery.mp3" fadein 3.0
+    play music "music/Kai_Engel_Machinery.ogg" fadein 3.0
 
     play background "music/crowd.ogg" fadein 3.0
 
@@ -341,7 +341,7 @@ label .scene8:
     show bapat dark at center, not_talking
     with dissolve
 
-    play music "music/Kai_Engel_Slum_Canto.mp3" fadein 1.0
+    play music "music/Kai_Engel_Slum_Canto.ogg" fadein 1.0
 
     narration "You have summoned Bapat to the meeting room, not as relaxed as the canteen, but not as formal as your office.
                 You don’t want him to feel like he’s being under scrutiny, but you need to keep this conversation private."  
@@ -445,7 +445,7 @@ label .scene9:
     show donatello dark at center, not_talking
     with dissolve
 
-    play music "music/Kai_Engel_Slum_Canto.mp3" fadein 1.0
+    play music "music/Kai_Engel_Slum_Canto.ogg" fadein 1.0
 
     narration "Obviously, Donatello doesn't know what to expect from this meeting.
                 He looks a bit confused, and wary. You have to play it cautious, and beat about the bush a little"
@@ -816,7 +816,7 @@ label .scene14:
 
     show bg office with dissolve
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3" fadein 3.0
+    play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0
 
     narration "You call Giti to your office."
 
@@ -958,7 +958,7 @@ label .scene18:
     jump .end
 
 label .scene19:
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0
 
     narration "A few hours later, someone knocks at your door, and hands you a piece of paper before leaving.{p}
                 The paper bears several stamps, and signs, a subpoena."

@@ -46,7 +46,7 @@ label .scene2:
     show bg office
     with Dissolve(3.0)
 
-    play music "music/Kai_Engel_Moonlight_Reprise.mp3" fadeout 1.0
+    play music "music/Kai_Engel_Moonlight_Reprise.ogg" fadeout 1.0
 
     narration "Priyanka was sitting inside, facing your desk. You wonder how long she’s been waiting here."
 
@@ -130,7 +130,7 @@ label .scene3:
     with fade
 
     play background "music/crowd.ogg" fadein 3.0
-    play music "music/Kai_Engel_Machinery.mp3" fadein 1.0
+    play music "music/Kai_Engel_Machinery.ogg" fadein 1.0
 
     narration "As you stride away from your office, determined to get to the bottom of this, you meet Bapat and Donatello as they drink their first coffee of the day in the company’s small canteen."
 
@@ -272,7 +272,7 @@ label .scene6:
 
     window hide
 
-    play music "music/Kevin_MacLeod_I_Knew_A_Guy.mp3" fadein 1.0
+    play music "music/Kevin_MacLeod_I_Knew_A_Guy.ogg" fadein 1.0
 
     show bg meeting_room
     with fade
@@ -477,7 +477,7 @@ label .scene10:
     scene bg office
     with fade
 
-    play music "music/Kai_Engel_Moonlight_Reprise.mp3"
+    play music "music/Kai_Engel_Moonlight_Reprise.ogg"
 
     narration "You’ve heard their explanations, and have gathered enough information to take a decision, and solve this problem now."
 
@@ -531,7 +531,7 @@ label .scene12:
 
     show bg meeting_room with fade
 
-    play music "music/Kai_Engel_Anxiety.mp3"
+    play music "music/Kai_Engel_Anxiety.ogg"
 
     show bapat angry at center
     with dissolve
@@ -674,7 +674,7 @@ label .scene15:
 
     play background "music/crowd.ogg"
 
-    play music "music/Kai_Engel_Machinery.mp3"  
+    play music "music/Kai_Engel_Machinery.ogg"  
 
     narration "You unpack your lunch box in the canteen. It’s a most welcomed time of the day as everybody blows off some steam, and engage in small talk."
 
@@ -759,7 +759,7 @@ label .scene16:
     show bg office
     with fade
 
-    play music "music/Kai_Engel_Moonlight_Reprise.mp3" fadein 1.0
+    play music "music/Kai_Engel_Moonlight_Reprise.ogg" fadein 1.0
 
     thinking "If all I do to find the truth about people harassing women is talk with the harasser, I won't go very far."
 
@@ -932,7 +932,7 @@ label .scene19:
 
     stop music fadeout 3.0
 
-    play music "music/Kai_Engel_Ode_To_The_World.mp3"
+    play music "music/Kai_Engel_Ode_To_The_World.ogg"
 
     narration "When Manali sits down in your office, you feel like a police officer conducting an interrogation. {p=1}
     She gazes at her shoes, and blushes a lot, twisting her fingers as she does."
@@ -1037,7 +1037,7 @@ label .scene21:
 label .scene22:
     narration "Given the new piece of information you’ve collected from Manali, you decide to talk to Bapat privately."
 
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0
 
     show bapat dark at center, not_talking 
     with dissolve
@@ -1106,7 +1106,7 @@ label .scene23:
             jump .scene33
 
 label .scene24:
-    play music "music/Kai_Engel_Anxiety.mp3" fadein 3.0 fadeout 3.0 
+    play music "music/Kai_Engel_Anxiety.ogg" fadein 3.0 fadeout 3.0 
     menu:
         thinking "I have a grasp of the whole situation now. What should I do?"
         "Talk to Bapat again, telling him that you know.":
