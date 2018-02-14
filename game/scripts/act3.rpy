@@ -1530,7 +1530,7 @@ label .scene23:
     window hide
     scene bg office with fade
     show manali at talking, center
-    with dissolve
+    with Dissolve(3.0)
 
     play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0 fadeout 3.0
 
@@ -1572,7 +1572,7 @@ label .scene24:
     window hide
     scene bg office with dissolve
     show priyanka dark at not_talking, center
-    with dissolve
+    with Dissolve(3.0)
 
     abhay "So here’s what I’m thinking, Priyanka."
 
@@ -1649,7 +1649,7 @@ label .scene25:
     scene bg office with fade
 
     show giti stern at center, talking
-    with dissolve
+    with Dissolve(3.0)
 
     play music "music/Kai_Engel_Street_As_Friends.ogg" fadein 3.0 fadeout 3.0
 
@@ -1762,6 +1762,9 @@ label .scene28:
 
 label .end:
     $act_3_completed = True
+       
+    $renpy.hide("narration_background")
+    
     show bg end_act_3 with Dissolve(3.0)
 
     pause

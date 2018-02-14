@@ -263,7 +263,7 @@ label .scene7:
 
     window hide
 
-    show bg lunch_room with fade
+    show bg lunch_room with Dissolve(3.0)
 
     play music "music/Kai_Engel_Machinery.ogg" fadein 3.0
 
@@ -336,7 +336,7 @@ label .scene8:
     stop background fadeout 3.0
 
     window hide
-    show bg meeting_room with dissolve
+    show bg meeting_room with Dissolve(3.0)
 
     show bapat dark at center, not_talking
     with dissolve
@@ -440,7 +440,7 @@ label .scene9:
 
     stop background fadeout 3.0
 
-    show bg meeting_room with fade
+    show bg meeting_room with Dissolve(3.0)
 
     show donatello dark at center, not_talking
     with dissolve
@@ -535,7 +535,7 @@ label .scene10:
 
     stop music fadeout 3.0
 
-    show bg office with fade
+    show bg office with Dissolve(3.0)
 
     narration "You decide to write to Mr. Gopinath. He’s Giti’s manager, after all, and you don’t want to bypass his authority, and take this decision alone."
 
@@ -581,7 +581,7 @@ label .scene10:
 
 label .scene11:
     window hide
-    show bg lunch_room with fade
+    show bg lunch_room with Dissolve(3.0)
     show priyanka smiling dark at center, not_talking
     with dissolve
 
@@ -675,7 +675,7 @@ label .scene11:
 
 label .scene12:
     window hide
-    show bg lunch_room with dissolve
+    show bg lunch_room with Dissolve(3.0)
     show manali dark at center, not_talking
     with dissolve
 
@@ -783,7 +783,7 @@ label .scene12:
 
 label .scene13:
     scene bg office
-    with dissolve
+    with Dissolve(3.0)
 
     stop music fadeout 3.0
 
@@ -814,7 +814,7 @@ label .decide:
 label .scene14:
     window hide
 
-    show bg office with dissolve
+    show bg office with Dissolve(3.0)
 
     play music "music/Kai_Engel_Ode_To_The_World.ogg" fadein 3.0
 
@@ -895,7 +895,8 @@ label .scene15:
 label .scene16:
     window hide
 
-    show bg office with dissolve
+    show bg office with Dissolve(3.0)
+
     narration "You write to M. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice."
 
     narration "He answers a few hours later."
@@ -948,7 +949,7 @@ label .scene17:
 label .scene18:
     window hide
 
-    show bg none with fade
+    show bg none with Dissolve(3.0)
 
     narration "You’ve sent an email to inform everyone about Giti’s promotion, not forgetting to send a copy to M. Gopinath.{p}
                 Bapat and Donatello, have stormed into your office several times since then, trying to prove their point, but you’re the HR Manager, and with M. Gopinath, and the new CEO away, there’s nothing they can do.{p}
@@ -1061,7 +1062,7 @@ label .scene22:
 label .scene23:
     window hide
 
-    show bg none with fade
+    show bg none with Dissolve(3.0)
 
     narration "You can’t fire Giti because she sues the company, that in itself would open a whole new case against you so she stays, brooding, waiting for the trial.{p}
     The atmosphere of the office changes, there’s no more friendly banter now.{p}
@@ -1077,6 +1078,9 @@ label .scene23:
 
 label .end:
     $act_2_completed = True
+
+    $renpy.hide("narration_background")
+
     show bg end_act_2 with Dissolve(3.0)
 
     pause

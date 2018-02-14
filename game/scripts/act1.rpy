@@ -127,7 +127,7 @@ label .scene3:
     window hide 
 
     show bg lunch_room
-    with fade
+    with Dissolve(3.0)
 
     play background "music/crowd.ogg" fadein 3.0
     play music "music/Kai_Engel_Machinery.ogg" fadein 1.0
@@ -154,8 +154,6 @@ label .scene3:
     show donatello smug dark at not_talking 
     show bapat smug dark at not_talking
     with dissolve
-
-    
 
     thinking "Something must have happened yesterday."
 
@@ -275,7 +273,7 @@ label .scene6:
     play music "music/Kevin_MacLeod_I_Knew_A_Guy.ogg" fadein 1.0
 
     show bg meeting_room
-    with fade
+    with Dissolve(3.0)
 
     narration "Whatever the case, you now find yourself in the meeting room with everyone but Priyanka. You double-check your emails to verify that she’s been invited as well, and find that she wasn’t."
 
@@ -475,7 +473,7 @@ label .scene10:
     stop music fadeout 3.0
 
     scene bg office
-    with fade
+    with Dissolve(3.0)
 
     play music "music/Kai_Engel_Moonlight_Reprise.ogg"
 
@@ -505,7 +503,7 @@ label .scene11:
 
     stop music fadeout 3.0
 
-    show bg none with fade
+    show bg none with Dissolve(3.0)
 
     narration "You draft a dress code forbidding short dresses, heels, and skirts, and requesting decency from the employees"
 
@@ -529,7 +527,7 @@ label .scene12:
  
     window hide
 
-    show bg meeting_room with fade
+    show bg meeting_room with Dissolve(3.0)
 
     play music "music/Kai_Engel_Anxiety.ogg"
 
@@ -637,7 +635,7 @@ label .scene12:
 
 label .scene13:
     window hide
-    scene bg none with dissolve
+    scene bg none with Dissolve(3.0)
 
     stop music fadeout 3.0
 
@@ -653,7 +651,7 @@ label .scene14:
 
     window hide
 
-    scene bg none
+    scene bg none with Dissolve(3.0)
 
     stop music fadeout 3.0
 
@@ -670,7 +668,7 @@ label .scene15:
 
     window hide 
 
-    show bg lunch_room with dissolve
+    show bg lunch_room with Dissolve(3.0)
 
     play background "music/crowd.ogg"
 
@@ -1250,6 +1248,8 @@ label .scene30:
 
 label .scene31:
     scene bg none
+    with Dissolve(3.0)
+
     narration "Instead of helping her, exposing Priyanka’s former relationship with Bapat’s son has fuelled the attacks against her. {p=1}
     For most people at the office, this is a proof that Bapat is a bad person, but also that Priyanka has no decency, and that Bapat was right in shaming her."
 
@@ -1262,6 +1262,7 @@ label .scene31:
 
 label .scene32:
     scene bg none
+    with Dissolve(3.0)
 
     narration "Given the way the last meeting went, the situation becomes unbearable for Priyanka. {p=1}
     Since you don’t want her to be punished, you need to find a way to offer her another position in another Indian branch of the company. {p=1}
@@ -1273,6 +1274,7 @@ label .scene32:
 
 label .scene33:
     scene bg none
+    with Dissolve(3.0)
 
     narration "You simply ignore the situation, forgetting that this all started with Priyanka crying in your office this very morning. {p=1}
     Sure, you’ve managed to escape the most immediate threats, but nothing is solved, and Priyanka is shamed, and harassed every day by the same gang during the next week. {p=1}
@@ -1283,6 +1285,7 @@ label .scene33:
 
 label .scene34:
     scene bg none
+    with Dissolve(3.0)
 
     narration "Looks like the international Head Office has faced the same kind of problems before, because they’ve just sent you the dress code they use in PDF format so that you can copy it instead of going all mohawks, and chapals. {p=1}
     It’s pretty inclusive as well, but better written that what you’ve sent them, and less chaotic. {p=1}
@@ -1300,6 +1303,9 @@ label .scene34:
 label .end:
     stop music fadeout 3.0
     $act_1_completed = True
+
+    $renpy.hide("narration_background")
+    
     show bg end_act_1 with Dissolve(3.0)
 
     pause

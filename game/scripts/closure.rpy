@@ -214,13 +214,18 @@ label closure:
         show ashwini disappointed
         with dissolve
 
-        ashwini disappointed "Last but not least, I must remind you, M. Chandrakant, that India is a secular country!"
+        ashwini "Last but not least, I must remind you, M. Chandrakant, that India is a secular country!"
 
-        ashwini disappointed "How on Earth did you come to the conclusion that you could fire an employee because she wouldn't want to participate to a religious ceremony?"
+        show ashwini
+        with dissolve
 
-        ashwini disappointed "This is not a temple, this is a corporate office!"
+        ashwini "How on Earth did you come to the conclusion..."
 
-        ashwini disappointed "An individual's religion shouldn't matter at the office, and if we believe in our Constitution, it shouldn't even matter anywhere in India!"
+        ashwini "...That you could fire an employee because she wouldn't want to participate to a religious ceremony?"
+
+        ashwini "This is not a temple, this is a corporate office!"
+
+        ashwini "An individual's religion shouldn't matter at the office, and if we believe in our Constitution, it shouldn't even matter anywhere in India!"
     elif act_4_ending_25 == True:
         show ashwini
         with dissolve
@@ -440,7 +445,9 @@ label .mixed_ending:
 
     show ashwini at talking
 
-    ashwini "Your best wasn’t enough, M. Chandrakant, because I now have to deal with the aftermath of all this in spite of the good decisions you have taken here and there."
+    ashwini "Your best wasn’t enough, M. Chandrakant."
+
+    ashwini "Because I now have to deal with the aftermath of all this in spite of the good decisions you have taken here and there."
 
     show ashwini dark at not_talking
 
@@ -467,9 +474,13 @@ label .mixed_ending:
     jump .end
 
 label .end:
+    hide ashwini with dissolve
+
+    show bg none with Dissolve(3.0)
+    
     narration "CRYPTALOO - Another Day End"
 
-    hide ashwini with dissolve
+    $renpy.hide("narration_background")
 
     show bg end_game with Dissolve(3.0)
 

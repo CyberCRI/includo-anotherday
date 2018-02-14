@@ -1359,6 +1359,9 @@ label .scene28:
 
 label .end:
     $act_4_completed = True
+
+    $renpy.hide("narration_background")
+    
     show bg end_act_4 with Dissolve(3.0)
 
     pause
