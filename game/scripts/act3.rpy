@@ -14,6 +14,8 @@ label act3:
     $talk_priyanka_act3_2 = False
     $talk_giti_act3_2 = False
 
+    $show_quick_menu = True
+
     $act_3_ending_10 = False
     $act_3_ending_13 = False
 
@@ -563,7 +565,7 @@ label .scene5:
 
     abhay "I've heard it!{w=0.5} Kindly don't insult my intelligence."
 
-    narration "You give him {b}the look{/b}, forehead lowered, eyes looking up straight at him like a bull."
+    narration "You give him the look, forehead lowered, eyes looking up straight at him like a bull."
 
     abhay "I don’t want to know what you’ve threatened him with, Bapat, I just-"
 
@@ -877,7 +879,7 @@ label .scene10:
     jump .end
 
 label .scene11:
-    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
+    narration "You write to Mr. Rajkumar, the lawyer of the company, and explain the situation to him so that he can give you his advice.{p}
                 He answers a few hours later."
 
     window hide
@@ -901,11 +903,11 @@ label .scene11:
 
     narration "After you’ve googled the sentences in Latin to decode this legal talk, you lay back into your chair."
 
-    narration "{b}Ipso facto{/b} indeed."
+    narration "Ipso facto indeed."
 
-    narration "{b}Ipso facto{/b} there's nothing you can do."
+    narration "Ipso facto there's nothing you can do."
 
-    narration "{b}Ipso facto{/b}, Donatello is harassed, and you can do nothing but watch."
+    narration "Ipso facto, Donatello is harassed, and you can do nothing but watch."
 
     thinking "So much for the work atmosphere."
 
@@ -1287,7 +1289,7 @@ label .scene17:
     show priyanka dark
     with dissolve
 
-    abhay "My goodness, Priyanka, he {b}is{/b} normal, or maybe nobody is."
+    abhay "My goodness, Priyanka, he is normal, or maybe nobody is."
 
     show priyanka annoyed dark with dissolve
 
@@ -1564,7 +1566,7 @@ label .scene20:
 
     scene bg office with Dissolve(3.0)
 
-    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
+    narration "You write to Mr. Rajkumar, the company’s lawyer, and explain him the situation so that he can give you his advice. He answers a few hours later."
 
     window hide
     show mail_icon_blink
@@ -1890,7 +1892,7 @@ label .scene25:
 
 label .scene26:
 
-    narration "You write to Mr. Rajkumar, the company’s Lawyer, and tell him what Giti’s just told you, asking for his advice."
+    narration "You write to Mr. Rajkumar, the company’s lawyer, and tell him what Giti’s just told you, asking for his advice."
 
     window hide
     show mail_icon_blink
@@ -1951,6 +1953,8 @@ label .end:
     pause
 
     show bg none with Dissolve(3.0)
+
+    $show_quick_menu = False
     window hide
     $renpy.call_screen("act_menu")
 

@@ -11,6 +11,7 @@ label act2:
     $email_act_2_3 = False
     $talk_manali = False
     $talk_priyanka = False
+    $show_quick_menu = True
 
     $act_2_ending_18 = False
     $act_2_ending_23 = False
@@ -136,7 +137,7 @@ label .scene2:
 
     giti "I told you already, Ahbay Sir, Bapat, and Donatello, but little did they know that I was listening, and-"
 
-    thinking "{b}Them again...{/b}"
+    thinking "Them again..."
 
     thinking "Or is she playing me, bouncing on the opportunity because of what happened with Priyanka?"
 
@@ -189,7 +190,7 @@ label .scene3:
 
     thinking "I watch stupid videos."
 
-    narration "After a particulary exalted dance sequence on {b}Tu Meri Bang Bang!{/b} featuring no less than a blue parrot,
+    narration "After a particulary exalted dance sequence on {i}Tu Meri Bang Bang!{/i} featuring no less than a blue parrot,
     you open your email, and find a message from Giti formally requesting a promotion."
 
     narration "She stresses on all the overtime she did during the last three years,
@@ -864,7 +865,7 @@ label .scene14:
     show giti smiling
     with dissolve
 
-    giti "Thank you, Abhay Sir, {b}thank you{/b}."
+    giti "Thank you, Abhay Sir, thank you."
 
     show giti smiling dark at not_talking
 
@@ -1121,6 +1122,8 @@ label .end:
     show bg none with Dissolve(3.0)
 
     window hide
+
+    $show_quick_menu = False
 
     $renpy.call_screen("act_menu")
 

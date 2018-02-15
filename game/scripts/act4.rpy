@@ -20,6 +20,8 @@ label act4:
     $act_4_ending_26 = False
     $act_4_ending_28 = False
 
+    $show_quick_menu = True
+
     window hide
 
     stop music fadeout 1.0
@@ -76,7 +78,7 @@ label act4:
 
     show giti sad dark at not_talking
 
-    thinking "{b}Of course{/b}, how could I have forgotten?"
+    thinking "Of course, how could I have forgotten?"
 
     abhay "My goodness, that's true!{w=0.5} Let's-"
 
@@ -1467,6 +1469,8 @@ label .end:
     pause
 
     show bg none with Dissolve(3.0)
+
+    $show_quick_menu = False
 
     $renpy.call_screen("act_menu")
 

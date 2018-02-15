@@ -78,19 +78,19 @@ transform rotate(value):
     rotate value
 
 transform center:
-    yalign -0.25 xalign 0.5
+    yalign -0.05 xalign 0.5
 
 transform center_left:
-    yalign -0.25 xalign 0.1
+    yalign -0.05 xalign 0.1
 
 transform center_right:
-    yalign -0.25 xalign 1.0
+    yalign -0.05 xalign 1.0
 
 transform center_center_left:
-    yalign -0.25 xalign 0.33
+    yalign -0.05 xalign 0.33
 
 transform center_center_right:
-    yalign -0.25 xalign 0.66
+    yalign -0.05 xalign 0.66
 
 transform talking:
     easein 0.25 zoom 1.025

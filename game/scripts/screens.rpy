@@ -457,7 +457,7 @@ style quick_button_text:
 
 screen navigation():
 
-    vbox:
+   vbox:
         style_prefix "navigation"
 
         xpos gui.navigation_xpos
@@ -567,10 +567,10 @@ screen main_menu():
 
         has vbox
 
-        spacing 100
+        spacing 125
 
         textbutton _("START") action [Play("sound", "sound/sharp_echo.wav"), Start()]
-        textbutton _("LOAD") action [Play("sound", "sound/sharp_echo.wav"), ShowMenu("load")]
+        textbutton _("CREDITS") action [Play("sound", "sound/sharp_echo.wav"), ShowMenu("about")]
         textbutton _("QUIT") action Quit(confirm=False)
 
 
@@ -735,12 +735,7 @@ screen game_menu(title, scroll=None):
 
                     transclude
 
-    use navigation
-
-    textbutton _("Return"):
-        style "return_button"
-
-        action Return()
+    #use navigation
 
     label title
 
@@ -807,26 +802,16 @@ style return_button:
 ## example of how to make a custom screen.
 
 screen about():
-
     tag menu
 
-    ## This use statement includes the game_menu screen inside this one. The
-    ## vbox child is then included inside the viewport inside the game_menu
-    ## screen.
-    use game_menu(_("About"), scroll="viewport"):
+    imagemap:
+        ground "credits.png"
 
-        style_prefix "about"
 
-        vbox:
+    textbutton _("Return"):
+        style "return_button"
 
-            label "[config.name!t]"
-            text _("Version [config.version!t]\n")
-
-            ## gui.about is usually set in options.rpy.
-            if gui.about:
-                text "[gui.about!t]\n"
-
-            text _("Made with {a=https://www.renpy.org/}Ren'Py{/a} [renpy.version_only].\n\n[renpy.license!t]")
+        action Return()
 
 
 ## This is redefined in options.rpy to add text to the about screen.
@@ -1691,17 +1676,18 @@ screen quick_menu():
         else:
             imagebutton idle "sound_muted.png" action Preference("all mute", "disable")
 
+    if show_quick_menu:
+        hbox:
+            style_prefix "quick"
 
-    hbox:
-        style_prefix "quick"
+            xalign 0.5
+            yalign 1.0
 
-        xalign 0.5
-        yalign 1.0
-
-        textbutton _("Back") action Rollback()
-        textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
-        textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Menu") action ShowMenu()
+            textbutton _("Back") action Rollback()
+            textbutton _("Skip") action Skip() alternate Skip(fast=True, confirm=True)
+            textbutton _("Auto") action Preference("auto-forward", "toggle")
+            textbutton _("Credits") action ShowMenu("about")
+            textbutton _("Quit") action MainMenu()
 
 style nvl_window:
     variant "small"

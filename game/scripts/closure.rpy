@@ -1,5 +1,7 @@
 
 label closure:
+    $show_quick_menu = True
+    
     window hide
 
     scene bg none with dissolve 

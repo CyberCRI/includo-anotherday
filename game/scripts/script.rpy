@@ -83,6 +83,8 @@ image side placeholder:
         linear 0.5 alpha 1.0
     on replaced:
         linear 0.5 alpha 0.0
+
+default show_quick_menu = True
         
 define employee = Character(None, who_color="#032837", ctc="ctc_blink", ctc_position="nestled", screen="say", callback=hide_narration_background)
 define priyanka = Character("PRIYANKA", image="priyanka", kind=employee, show_job="{i}Marketing Assistant{/i}")
@@ -96,7 +98,7 @@ define abhay = Character("ABHAY", who_color="#032837", ctc="ctc_blink", ctc_posi
 define thinking = Character("ABHAY", who_color="#032837", what_color="#85B3D9", what_prefix="{i}(", what_suffix="){/i}", ctc="ctc_blink", ctc_position="nestled", show_job="{i}Human Resources Manager{/i}", show_side_image=False, show_namepos="left", callback=thinking_callback, show_main_character=True)
 
 
-define mail = Character("mail", what_color="#000000", what_size=20, what_font="fonts/Mizo Arial.ttf", what_prefix="{k=-1}", what_suffix="{/k}", ctc="ctc_blink", ctc_position="nestled", screen="mail_say", callback=show_narration_background)
+define mail = Character("mail", what_color="#000000", what_size=22, what_font="fonts/Mizo Arial.ttf", what_prefix="{k=-1}", what_suffix="{/k}", ctc="ctc_blink", ctc_position="nestled", screen="mail_say", callback=show_narration_background)
 
 define mail_gopinath = Character(kind=mail,
                         show_mail_subject="{k=-1}Out of the Office{/k}",
@@ -110,7 +112,7 @@ define mail_brahmin = Character(kind=mail,
                         show_mail_to="{size=12}{k=-1}to abhay.chandrakant@cryptaloo.in{/k}{/size}",
                         show_mail_image=False)
 
-define mail_lawyer = Character(kind=mail, what_size=18,
+define mail_lawyer = Character(kind=mail, what_size=22,
                         show_mail_from="{size=12}{k=-1}{b}Mr. Rajkumar{/b} <rajkumarrajkumarltd@gmail.com>{/k}{/size}",
                         show_mail_to="{size=12}{k=-1}to abhay.chandrakant@cryptaloo.in{/k}{/size}",
                         show_mail_image=False)
@@ -147,5 +149,6 @@ label start:
     $act_4_ending_26 = False
     $act_4_ending_28 = False
 
+    $show_quick_menu = False
     call screen act_menu
     return

@@ -8,6 +8,8 @@ label act1:
     $act_1_ending_32 = False
     $act_1_ending_33 = False
 
+    $show_quick_menu = True
+
     $lunch = False
 
     window hide
@@ -286,7 +288,7 @@ label .scene6:
 
     narration "Bapat, and Donatello, are talking loud, and fast.
     Everybody else listens, scolds, or nod in agreement with them as statements go.
-    This sure seems like a there’s a situation, and that the situation needs to be addressed.
+    This sure seems like there’s a situation, and that the situation needs to be addressed.
     Still, you can’t ignore the feeling that something unusual happened yesterday, and that the reason of all this ruckus escapes you."
 
     abhay "I am sorry to interrupt,{w=0.5} but this isn’t how it works."
@@ -785,10 +787,10 @@ label .employees:
 
     menu:
         thinking "What's my next move?"
-        "Write an email to Mr. Gopinath." if not gopinath:
+        "Write an email to Mr. Gopinath, the Administrative Director" if not gopinath:
             $gopinath = True
             jump .gopinath
-        "Write an email to Mr. Rajkumar." if not email:
+        "Write an email to Mr. Rajkumar, the lawyer." if not email:
             $email = True
             jump .scene17
         "Talk to Giti, the chief secretary, in your office" if not talk_giti:
@@ -1220,7 +1222,7 @@ label .scene25:
 
     bapat angry "What’s the difference?{w=0.5} People are with me!"
 
-    bapat angry "They think the same, we can’t have {b}sluts{/b} around!"
+    bapat angry "They think the same, we can’t have sluts around!"
 
     show bapat angry dark at not_talking
 
@@ -1296,7 +1298,7 @@ label .scene29:
 
     menu:
         "Read the answer.":
-            jump .scene30
+            jump .scene34
 
 label .scene30:
     narration "You write an email to the international Head Office, but they never answer you back."
@@ -1374,6 +1376,9 @@ label .end:
 
     stop music fadeout 3.0
     window hide
+
+    $show_quick_menu = False
+
     $renpy.call_screen("act_menu")
 
     return
