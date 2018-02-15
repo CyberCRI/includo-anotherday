@@ -877,7 +877,7 @@ label .scene10:
     jump .end
 
 label .scene11:
-    narration "You write to Mr. Rajkumar, You write to Mr. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
+    narration "You write to Mr. Rajkumar, the company’s Lawyer, and explain the situation to him so that he can give you his advice.{p}
                 He answers a few hours later."
 
     window hide
@@ -1442,11 +1442,15 @@ label .scene19:
 
     stop music fadeout 3.0
 
+    play background "music/printer.ogg" fadein 1.0
+
     narration "The sound of the printer is relaxing sometimes, you think. You hear the sheets shuffle back and forth, as if the machine were purring. It smells of fresh ink, and of warm paper, lulling you to sleep."
 
     narration "You fight it to keep up with the day, drinking yet another cup of tea, surveilling the corridor through your open door."
 
     narration "Seeing Donatello walk straight to your office wakes you up instantly."
+
+    stop background fadeout 3.0
 
     show donatello nervous dark at not_talking, center
     with dissolve
