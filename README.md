@@ -5,4 +5,4 @@ Another Day is a visual novel exploring diversity and inclusivity in the workpla
 
 Another Day is played ahead of and between workshops in order to sensitive players to common issues and arguments that come from embracing a diverse workforce. There are also role playing exercises that use characters from Another Day as a way to work through workplace conflict.
 
-More on includo : (http://www.includo.in/)
+[More on Includo](http://www.includo.in/)
